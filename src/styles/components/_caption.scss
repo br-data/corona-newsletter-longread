@@ -1,0 +1,25 @@
+// Captions
+.caption {
+  margin-top: 0;
+  color: $dark-grey;
+  padding: .5em 1em;
+  background: $light-grey;
+  font-size: .88em;
+}
+
+section > .caption {
+
+  @include desktop {
+    margin: 0 .8em;
+  }
+
+  @include tablet {
+    margin-left: $margin-tablet;
+    margin-right: $margin-tablet;
+  }
+
+  @include mobile {
+    margin-left: $margin-mobile;
+    margin-right: $margin-mobile;
+  }
+}

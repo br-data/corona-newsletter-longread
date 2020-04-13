@@ -1,0 +1,122 @@
+// Footer
+footer {
+  background: $very-dark-grey;
+  color: $white;
+  padding: 1.5em 2em;
+  margin-top: 5em;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    a {
+      opacity: .6;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .column {
+      flex: 1 1 auto;
+      margin-right: 0;
+
+      @include tablet {
+        flex: 1 0 40%;
+        margin-right: 2em;
+      }
+
+      @include mobile {
+        flex: 1 0 100%;
+        margin-right: 0;
+      }
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+
+      &:checked {
+        +.label {
+          &::after {
+            transform: rotate(270deg);
+          }
+        }
+
+        ~.content {
+          max-height: 100vh;
+        }
+      }
+    }
+
+    .label {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      border-bottom: 0.5em;
+
+      &:after {
+
+        @include tablet {
+          content: url('../../assets/images/arrow.svg');
+          fill: $white;
+          height: 20px;
+          width: 20px;
+          transform: rotate(90deg);
+          transition: transform 200ms ease-in-out;
+        }
+      }
+    }
+
+    .content {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @include tablet {
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      li {
+        line-height: 1.8;
+      }
+    }
+
+    .separator {
+      display: none;
+
+      @include tablet {
+        display: block;
+        border: .5px solid $white;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1em;
+        margin-top: .5em;
+      }
+    }
+  }
+
+  aside {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+
+    .br-logo {
+      height: 46px;
+      width: 58px;
+    }
+
+    .ard-logo {
+      height: 28px;
+      width: 148px;
+    }
+  }
+}

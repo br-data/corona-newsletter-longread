@@ -1,0 +1,15 @@
+.chart {
+  svg {
+    text {
+      font-size: 14px;
+    }
+
+    .axis path {
+      display: none;
+    }
+  }
+}
+
+#chart {
+  height: 300px;
+}

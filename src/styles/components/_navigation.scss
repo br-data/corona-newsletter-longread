@@ -1,0 +1,116 @@
+// Sticky navigation
+.navigation {
+  height: 60px;
+  max-width: $desktop-width;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  color: $white;
+  transition: transform 200ms ease-in;
+  background: linear-gradient(
+    to bottom,
+    $dark-grey 0%,
+    $dark-grey 80%,
+    $blue 80%,
+    $blue 100%
+  );
+
+  @include tablet {
+    &.hidden {
+      transform: translate3d(0px, -100%, 0px);
+    }
+  }
+
+  @include mobile {
+    height: 50px;
+    background: $dark-grey;
+  }
+
+  @include future {
+    height: 70px;
+  }
+
+  section {
+    margin-top: 5px;
+    pointer-events: none;
+
+     @include future {
+      margin-top: 8px;
+    }
+  }
+
+  .logo {
+
+    img {
+      margin-right: 20px;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      float: left;
+
+      @include mobile {
+        width: 50px;
+        height: 50px;
+      }
+
+      @include future {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  .logo:hover {
+    filter: brightness(90%);
+  }
+
+  .title {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  // Sharing
+  .sharing {
+    line-height: 40px;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: $white;
+    margin: 5px 1em 0;
+    float: right;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+
+    @include future {
+      margin-top: 8px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .icon-facebook:hover {
+      color: $facebook-blue;
+    }
+
+    .icon-twitter:hover {
+      color: $twitter-blue;
+    }
+
+    .icon-whatsapp:hover {
+      color: $whatsapp-green;
+    }
+
+    .icon-mail:hover {
+      color: $mail-red;
+    }
+  }
+}

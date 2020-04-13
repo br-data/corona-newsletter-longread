@@ -1,0 +1,29 @@
+.scrolly {
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .step {
+    position: relative;
+    min-height: 100vh;
+    z-index: 10;
+    transform: translateZ(0); // Fix visibility in Safari
+  }
+
+  .step-content {
+    background: white;
+    padding: .25em 2em;
+
+    @include mobile {
+      padding: .25em 1em;
+
+      p {
+        margin: .75em 0 1em;
+      }
+    }
+  }
+}
+
