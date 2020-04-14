@@ -1,13 +1,13 @@
 {
   "name": "corona-zahlen-newsletter",
-  "description": "Newsletter about the current Corona situation",
+  "description": "Newsletter with all the latest Corona figures and statistics",
   "author": "Steffen Kühne",
   "version": "2.0.1",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:br-data/corona-zahlen-newsletter.git"
+    "url": "git@github.com:br-data/corona-newsletter-longread.git"
   },
   "scripts": {
     "build": "webpack --config webpack.config.prod.js --colors",
