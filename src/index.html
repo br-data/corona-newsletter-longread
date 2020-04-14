@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
 
-  <title>Corona: Aktuelle Zahlen für Bayern und Deutschland</title>
+  <title>Coronavirus: Aktuelle Zahlen für Bayern und Deutschland</title>
 </head>
 
 <body>
@@ -23,18 +23,28 @@
       </a>
 
       <section>
-        <p class="block title">Corona: Aktuelle Zahlen für Bayern und Deutschland</p>
+        <p class="block title">Situation am 14. April 2020</p>
       </section>
     </nav>
 
     <article>
       <section>
         <div class="block">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+          <h1>Coronavirus: Aktuelle Zahlen für Bayern und Deutschland</h1>
 
-          <p>Etiam ultrices. Suspendisse <a href="https://br.de/">in justo eu magna</a> luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit <a href="https://br.de/">amet pede facilisis</a> laoreet. Donec lacus nunc, viverra nec, blandit vel egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim.</p>
+          <p>Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als tagesaktueller Newsletter. Ein Angebot für alle Redaktionen und Abteilungen des Bayerischen Rundfunks.</p>
 
-          <h3>Embed example with 16:9 intrinsic ratio</h3>
+          <h2>Bayern</h2>
+
+          <p id="bayern"></p>
+
+          <p id="bayern-landkreise"></p>
+
+          <!-- <div class="chart" id="chart"></div> -->
+
+          <h2>Deutschland</h2>
+
+          <h3>Wichtige Hinweise</h3>
         </div>
       </section>
 
@@ -157,53 +167,5 @@
       </aside>
     </footer>
   </main>
-
-  <!-- AT Internet -->
-  <script id="ati" src="https://tag.aticdn.net/596277/smarttag.js" async="true"></script>
-  <script>
-    document.querySelector('#ati').addEventListener('load', function () {
-      var referrer = (function () {
-        return typeof window != 'undefined' ? window.document.referrer : null;
-      })();
-      var tag = new ATInternet.Tracker.Tag({
-        secure: true,
-        cookieSecure: true,
-        ignoreEmptyChapterValue: true
-      });
-      tag.page.set({
-        name: 'longread-template',
-        chapter1: null,
-        chapter2: null,
-        level2: 19
-      });
-      tag.customVars.set({
-        site: {
-          1: '[BR24]',
-          2: '[ohne Wellenbezug]',
-          5: '[keine Sendereihe]',
-          6: '[Artikel]',
-          7: '[longread-template]',
-          8: '[Longread Template]',
-          10: 20190611,
-          11: '[https://web.br.de/interaktiv/longread-webpack/]',
-          12: '[longread-template]',
-          13: referrer ? ('[' + referrer + ']') : null,
-          14: '[Web]'
-        }
-      });
-      tag.dispatch();
-    });
-  </script>
-
-  <!-- IVW -->
-  <script id="iam" src="https://script.ioam.de/iam.js" async="true"></script>
-  <script type="text/javascript">
-    document.querySelector('#iam').addEventListener('load', function () {
-      iom.c({
-        'st': 'bronline',
-        'cp': 'br_online\/nachrichten\/'
-      }, 1);
-    })
-  </script>
 </body>
 </html>
