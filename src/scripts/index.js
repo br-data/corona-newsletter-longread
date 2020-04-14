@@ -7,10 +7,12 @@ import * as marginals from './components/marginals';
 import * as navigation from './components/navigation';
 
 import * as bayernText from './custom/text/bayern';
+import * as bayernRegierungsbezirkeText from './custom/text/bayern-regierungsbezirke';
 import * as bayernLandkreiseText from './custom/text/bayern-landkreise';
 
 // Mock data for testing
 import bayernData from './data/bayern.json';
+import bayernRegierungsbezirkeData from './data/bayern-regierungsbezirke.json';
 import bayernLandkreiseData from './data/bayern-landkreise.json';
 
 // import Chart from './custom/chart/chart';
@@ -26,6 +28,13 @@ async function init() {
   bayernText.init({
     selector: '#bayern',
     data: bayernData
+  });
+
+  // const bayernRegierungsbezirkeData = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern').then((response) => { return response.json(); });
+
+  bayernRegierungsbezirkeText.init({
+    selector: '#bayern-regierungsbezirke',
+    data: bayernRegierungsbezirkeData
   });
 
   // const bayernLandkreiseData = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?group=Landkreis&bundesland=Bayern').then((response) => { return response.json(); });
