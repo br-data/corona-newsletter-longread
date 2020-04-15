@@ -1,0 +1,3298 @@
+[
+  {
+    "name": "München",
+    "rkiName": "SK München",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 1471508,
+    "ags": "09162"
+  },
+  {
+    "name": "Hamburg",
+    "rkiName": "SK Hamburg",
+    "type": "Stadt",
+    "state": "Hamburg",
+    "pop": 1841179,
+    "ags": "02000"
+  },
+  {
+    "name": "Köln",
+    "rkiName": "SK Köln",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 1085664,
+    "ags": "05315"
+  },
+  {
+    "name": "Rosenheim",
+    "rkiName": "LK Rosenheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 260983,
+    "ags": "09187"
+  },
+  {
+    "name": "Heinsberg",
+    "rkiName": "LK Heinsberg",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 254322,
+    "ags": "05370"
+  },
+  {
+    "name": "Städteregion Aachen",
+    "rkiName": "StadtRegion Aachen",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 555465,
+    "ags": "05334"
+  },
+  {
+    "name": "Region Hannover",
+    "rkiName": "Region Hannover",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 1157624,
+    "ags": "03241"
+  },
+  {
+    "name": "Esslingen",
+    "rkiName": "LK Esslingen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 533859,
+    "ags": "08116"
+  },
+  {
+    "name": "Ludwigsburg",
+    "rkiName": "LK Ludwigsburg",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 543984,
+    "ags": "08118"
+  },
+  {
+    "name": "Böblingen",
+    "rkiName": "LK Böblingen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 391640,
+    "ags": "08115"
+  },
+  {
+    "name": "Stuttgart",
+    "rkiName": "SK Stuttgart",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 634830,
+    "ags": "08111"
+  },
+  {
+    "name": "Tübingen",
+    "rkiName": "LK Tübingen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 227331,
+    "ags": "08416"
+  },
+  {
+    "name": "Reutlingen",
+    "rkiName": "LK Reutlingen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 286748,
+    "ags": "08415"
+  },
+  {
+    "name": "München",
+    "rkiName": "LK München",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 348871,
+    "ags": "09184"
+  },
+  {
+    "name": "Regionalverband Saarbrücken",
+    "rkiName": "LK Stadtverband Saarbrücken",
+    "type": "Landkreis",
+    "state": "Saarland",
+    "pop": 329708,
+    "ags": "10041"
+  },
+  {
+    "name": "Tirschenreuth",
+    "rkiName": "LK Tirschenreuth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 72504,
+    "ags": "09377"
+  },
+  {
+    "name": "Steinfurt",
+    "rkiName": "LK Steinfurt",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 447614,
+    "ags": "05566"
+  },
+  {
+    "name": "Rems-Murr-Kreis",
+    "rkiName": "LK Rems-Murr-Kreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 426158,
+    "ags": "08119"
+  },
+  {
+    "name": "Frankfurt am Main",
+    "rkiName": "SK Frankfurt am Main",
+    "type": "Stadt",
+    "state": "Hessen",
+    "pop": 753056,
+    "ags": "06412"
+  },
+  {
+    "name": "Rhein-Sieg-Kreis",
+    "rkiName": "LK Rhein-Sieg-Kreis",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 599780,
+    "ags": "05382"
+  },
+  {
+    "name": "Breisgau-Hochschwarzwald",
+    "rkiName": "LK Breisgau-Hochschwarzwald",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 262795,
+    "ags": "08315"
+  },
+  {
+    "name": "Freising",
+    "rkiName": "LK Freising",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 179116,
+    "ags": "09178"
+  },
+  {
+    "name": "Freiburg im Breisgau",
+    "rkiName": "SK Freiburg i.Breisgau",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 230241,
+    "ags": "08311"
+  },
+  {
+    "name": "Ortenaukreis",
+    "rkiName": "LK Ortenaukreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 429479,
+    "ags": "08317"
+  },
+  {
+    "name": "Düsseldorf",
+    "rkiName": "SK Düsseldorf",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 619294,
+    "ags": "05111"
+  },
+  {
+    "name": "Borken",
+    "rkiName": "LK Borken",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 370676,
+    "ags": "05554"
+  },
+  {
+    "name": "Traunstein",
+    "rkiName": "LK Traunstein",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 177089,
+    "ags": "09189"
+  },
+  {
+    "name": "Osnabrück",
+    "rkiName": "LK Osnabrück",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 357343,
+    "ags": "03459"
+  },
+  {
+    "name": "Rhein-Erft-Kreis",
+    "rkiName": "LK Rhein-Erft-Kreis",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 470089,
+    "ags": "05362"
+  },
+  {
+    "name": "Zollernalbkreis",
+    "rkiName": "LK Zollernalbkreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 188935,
+    "ags": "08417"
+  },
+  {
+    "name": "Karlsruhe",
+    "rkiName": "LK Karlsruhe",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 444232,
+    "ags": "08215"
+  },
+  {
+    "name": "Berlin Mitte",
+    "rkiName": "SK Berlin Mitte",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 384172,
+    "ags": null
+  },
+  {
+    "name": "Rhein-Neckar-Kreis",
+    "rkiName": "LK Rhein-Neckar-Kreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 547625,
+    "ags": "08226"
+  },
+  {
+    "name": "Nürnberg",
+    "rkiName": "SK Nürnberg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 518365,
+    "ags": "09564"
+  },
+  {
+    "name": "Mettmann",
+    "rkiName": "LK Mettmann",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 485684,
+    "ags": "05158"
+  },
+  {
+    "name": "Hohenlohekreis",
+    "rkiName": "LK Hohenlohekreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 112010,
+    "ags": "08126"
+  },
+  {
+    "name": "Göppingen",
+    "rkiName": "LK Göppingen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 257253,
+    "ags": "08117"
+  },
+  {
+    "name": "Heilbronn",
+    "rkiName": "LK Heilbronn",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 343068,
+    "ags": "08125"
+  },
+  {
+    "name": "Zwickau",
+    "rkiName": "LK Zwickau",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 317531,
+    "ags": "14524"
+  },
+  {
+    "name": "Fürstenfeldbruck",
+    "rkiName": "LK Fürstenfeldbruck",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 219320,
+    "ags": "09179"
+  },
+  {
+    "name": "Rottal-Inn",
+    "rkiName": "LK Rottal-Inn",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 120659,
+    "ags": "09277"
+  },
+  {
+    "name": "Recklinghausen",
+    "rkiName": "LK Recklinghausen",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 615261,
+    "ags": "05562"
+  },
+  {
+    "name": "Schwäbisch Hall",
+    "rkiName": "LK Schwäbisch Hall",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 195861,
+    "ags": "08127"
+  },
+  {
+    "name": "Sigmaringen",
+    "rkiName": "LK Sigmaringen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 130873,
+    "ags": "08437"
+  },
+  {
+    "name": "Dachau",
+    "rkiName": "LK Dachau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 153884,
+    "ags": "09174"
+  },
+  {
+    "name": "Münster",
+    "rkiName": "SK Münster",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 314319,
+    "ags": "05515"
+  },
+  {
+    "name": "Neustadt a.d. Waldnaab",
+    "rkiName": "LK Neustadt a.d.Waldnaab",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 94352,
+    "ags": "09374"
+  },
+  {
+    "name": "Ostalbkreis",
+    "rkiName": "LK Ostalbkreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 314002,
+    "ags": "08136"
+  },
+  {
+    "name": "Wuppertal",
+    "rkiName": "SK Wuppertal",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 354382,
+    "ags": "05124"
+  },
+  {
+    "name": "Berlin Charlottenburg-Wilmersdorf",
+    "rkiName": "SK Berlin Charlottenburg-Wilmersdorf",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 342332,
+    "ags": null
+  },
+  {
+    "name": "Duisburg",
+    "rkiName": "SK Duisburg",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 498590,
+    "ags": "05112"
+  },
+  {
+    "name": "Dortmund",
+    "rkiName": "SK Dortmund",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 587010,
+    "ags": "05913"
+  },
+  {
+    "name": "Landshut",
+    "rkiName": "LK Landshut",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 158698,
+    "ags": "09274"
+  },
+  {
+    "name": "Wunsiedel i. Fichtelgebirge",
+    "rkiName": "LK Wunsiedel i.Fichtelgebirge",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 73178,
+    "ags": "09479"
+  },
+  {
+    "name": "Calw",
+    "rkiName": "LK Calw",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 158397,
+    "ags": "08235"
+  },
+  {
+    "name": "Bonn",
+    "rkiName": "SK Bonn",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 327258,
+    "ags": "05314"
+  },
+  {
+    "name": "Lippe",
+    "rkiName": "LK Lippe",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 348391,
+    "ags": "05766"
+  },
+  {
+    "name": "Hochsauerlandkreis",
+    "rkiName": "LK Hochsauerlandkreis",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 260475,
+    "ags": "05958"
+  },
+  {
+    "name": "Rhein-Kreis Neuss",
+    "rkiName": "LK Rhein-Kreis Neuss",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 451007,
+    "ags": "05162"
+  },
+  {
+    "name": "Essen",
+    "rkiName": "SK Essen",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 583109,
+    "ags": "05113"
+  },
+  {
+    "name": "Nürnberger Land",
+    "rkiName": "LK Nürnberger Land",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 170365,
+    "ags": "09574"
+  },
+  {
+    "name": "Erding",
+    "rkiName": "LK Erding",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 137660,
+    "ags": "09177"
+  },
+  {
+    "name": "Leipzig",
+    "rkiName": "SK Leipzig",
+    "type": "Stadt",
+    "state": "Sachsen",
+    "pop": 587857,
+    "ags": "14713"
+  },
+  {
+    "name": "Berlin Neukölln",
+    "rkiName": "SK Berlin Neukölln",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 329691,
+    "ags": null
+  },
+  {
+    "name": "Berlin Tempelhof-Schöneberg",
+    "rkiName": "SK Berlin Tempelhof-Schöneberg",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 351644,
+    "ags": null
+  },
+  {
+    "name": "Emmendingen",
+    "rkiName": "LK Emmendingen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 165383,
+    "ags": "08316"
+  },
+  {
+    "name": "Paderborn",
+    "rkiName": "LK Paderborn",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 306890,
+    "ags": "05774"
+  },
+  {
+    "name": "Bremen",
+    "rkiName": "SK Bremen",
+    "type": "Stadt",
+    "state": "Bremen",
+    "pop": 569352,
+    "ags": "04011"
+  },
+  {
+    "name": "Rottweil",
+    "rkiName": "LK Rottweil",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 139455,
+    "ags": "08325"
+  },
+  {
+    "name": "Berlin Pankow",
+    "rkiName": "SK Berlin Pankow",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 407765,
+    "ags": null
+  },
+  {
+    "name": "Ravensburg",
+    "rkiName": "LK Ravensburg",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 284285,
+    "ags": "08436"
+  },
+  {
+    "name": "Pinneberg",
+    "rkiName": "LK Pinneberg",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 314391,
+    "ags": "01056"
+  },
+  {
+    "name": "Miesbach",
+    "rkiName": "LK Miesbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 99726,
+    "ags": "09182"
+  },
+  {
+    "name": "Starnberg",
+    "rkiName": "LK Starnberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 136092,
+    "ags": "09188"
+  },
+  {
+    "name": "Coesfeld",
+    "rkiName": "LK Coesfeld",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 219929,
+    "ags": "05558"
+  },
+  {
+    "name": "Göttingen",
+    "rkiName": "LK Göttingen",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 328074,
+    "ags": "03159"
+  },
+  {
+    "name": "Lörrach",
+    "rkiName": "LK Lörrach",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 228639,
+    "ags": "08336"
+  },
+  {
+    "name": "Düren",
+    "rkiName": "LK Düren",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 263722,
+    "ags": "05358"
+  },
+  {
+    "name": "Dresden",
+    "rkiName": "SK Dresden",
+    "type": "Stadt",
+    "state": "Sachsen",
+    "pop": 554649,
+    "ags": "14612"
+  },
+  {
+    "name": "Gütersloh",
+    "rkiName": "LK Gütersloh",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 364083,
+    "ags": "05754"
+  },
+  {
+    "name": "Freudenstadt",
+    "rkiName": "LK Freudenstadt",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 117935,
+    "ags": "08237"
+  },
+  {
+    "name": "Alb-Donau-Kreis",
+    "rkiName": "LK Alb-Donau-Kreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 196047,
+    "ags": "08425"
+  },
+  {
+    "name": "Rastatt",
+    "rkiName": "LK Rastatt",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 231018,
+    "ags": "08216"
+  },
+  {
+    "name": "Altötting",
+    "rkiName": "LK Altötting",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 111210,
+    "ags": "09171"
+  },
+  {
+    "name": "Würzburg",
+    "rkiName": "SK Würzburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 127880,
+    "ags": "09663"
+  },
+  {
+    "name": "Biberach",
+    "rkiName": "LK Biberach",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 199742,
+    "ags": "08426"
+  },
+  {
+    "name": "Ostallgäu",
+    "rkiName": "LK Ostallgäu",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 140316,
+    "ags": "09777"
+  },
+  {
+    "name": "Kleve",
+    "rkiName": "LK Kleve",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 310974,
+    "ags": "05154"
+  },
+  {
+    "name": "Berlin Steglitz-Zehlendorf",
+    "rkiName": "SK Berlin Steglitz-Zehlendorf",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 308697,
+    "ags": null
+  },
+  {
+    "name": "Unna",
+    "rkiName": "LK Unna",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 394782,
+    "ags": "05978"
+  },
+  {
+    "name": "Viersen",
+    "rkiName": "LK Viersen",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 298935,
+    "ags": "05166"
+  },
+  {
+    "name": "Saarlouis",
+    "rkiName": "LK Saarlouis",
+    "type": "Landkreis",
+    "state": "Saarland",
+    "pop": 195201,
+    "ags": "10044"
+  },
+  {
+    "name": "Berlin Friedrichshain-Kreuzberg",
+    "rkiName": "SK Berlin Friedrichshain-Kreuzberg",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 289762,
+    "ags": null
+  },
+  {
+    "name": "Olpe",
+    "rkiName": "LK Olpe",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 134775,
+    "ags": "05966"
+  },
+  {
+    "name": "Warendorf",
+    "rkiName": "LK Warendorf",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 277783,
+    "ags": "05570"
+  },
+  {
+    "name": "Erzgebirgskreis",
+    "rkiName": "LK Erzgebirgskreis",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 337696,
+    "ags": "14521"
+  },
+  {
+    "name": "Potsdam",
+    "rkiName": "SK Potsdam",
+    "type": "Stadt",
+    "state": "Brandenburg",
+    "pop": 178089,
+    "ags": "12054"
+  },
+  {
+    "name": "Main-Kinzig-Kreis",
+    "rkiName": "LK Main-Kinzig-Kreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 418950,
+    "ags": "06435"
+  },
+  {
+    "name": "Mühldorf a. Inn",
+    "rkiName": "LK Mühldorf a.Inn",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 115250,
+    "ags": "09183"
+  },
+  {
+    "name": "Wesel",
+    "rkiName": "LK Wesel",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 459809,
+    "ags": "05170"
+  },
+  {
+    "name": "Schwarzwald-Baar-Kreis",
+    "rkiName": "LK Schwarzwald-Baar-Kreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 212381,
+    "ags": "08326"
+  },
+  {
+    "name": "Osnabrück",
+    "rkiName": "SK Osnabrück",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 164748,
+    "ags": "03404"
+  },
+  {
+    "name": "Berlin Reinickendorf",
+    "rkiName": "SK Berlin Reinickendorf",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 265225,
+    "ags": null
+  },
+  {
+    "name": "Mannheim",
+    "rkiName": "SK Mannheim",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 309370,
+    "ags": "08222"
+  },
+  {
+    "name": "Minden-Lübbecke",
+    "rkiName": "LK Minden-Lübbecke",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 310710,
+    "ags": "05770"
+  },
+  {
+    "name": "Aschaffenburg",
+    "rkiName": "LK Aschaffenburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 174208,
+    "ags": "09671"
+  },
+  {
+    "name": "Rheinisch-Bergischer Kreis",
+    "rkiName": "LK Rheinisch-Bergischer Kreis",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 283455,
+    "ags": "05378"
+  },
+  {
+    "name": "Harburg",
+    "rkiName": "LK Harburg",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 252776,
+    "ags": "03353"
+  },
+  {
+    "name": "Oberbergischer Kreis",
+    "rkiName": "LK Oberbergischer Kreis",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 272471,
+    "ags": "05374"
+  },
+  {
+    "name": "Bielefeld",
+    "rkiName": "SK Bielefeld",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 333786,
+    "ags": "05711"
+  },
+  {
+    "name": "Fürth",
+    "rkiName": "LK Fürth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 117387,
+    "ags": "09573"
+  },
+  {
+    "name": "Mönchengladbach",
+    "rkiName": "SK Mönchengladbach",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 261454,
+    "ags": "05116"
+  },
+  {
+    "name": "Märkischer Kreis",
+    "rkiName": "LK Märkischer Kreis",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 412120,
+    "ags": "05962"
+  },
+  {
+    "name": "Kelheim",
+    "rkiName": "LK Kelheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 122258,
+    "ags": "09273"
+  },
+  {
+    "name": "Ansbach",
+    "rkiName": "LK Ansbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 183949,
+    "ags": "09571"
+  },
+  {
+    "name": "Ebersberg",
+    "rkiName": "LK Ebersberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 142142,
+    "ags": "09175"
+  },
+  {
+    "name": "Mainz",
+    "rkiName": "SK Mainz",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 217118,
+    "ags": "07315"
+  },
+  {
+    "name": "Schwalm-Eder-Kreis",
+    "rkiName": "LK Schwalm-Eder-Kreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 180222,
+    "ags": "06634"
+  },
+  {
+    "name": "Würzburg",
+    "rkiName": "LK Würzburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 161834,
+    "ags": "09679"
+  },
+  {
+    "name": "Offenbach",
+    "rkiName": "LK Offenbach",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 354092,
+    "ags": "06438"
+  },
+  {
+    "name": "Tuttlingen",
+    "rkiName": "LK Tuttlingen",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 140152,
+    "ags": "08327"
+  },
+  {
+    "name": "Schwandorf",
+    "rkiName": "LK Schwandorf",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 147189,
+    "ags": "09376"
+  },
+  {
+    "name": "Konstanz",
+    "rkiName": "LK Konstanz",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 285325,
+    "ags": "08335"
+  },
+  {
+    "name": "Passau",
+    "rkiName": "LK Passau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 192043,
+    "ags": "09275"
+  },
+  {
+    "name": "Schweinfurt",
+    "rkiName": "LK Schweinfurt",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 115106,
+    "ags": "09678"
+  },
+  {
+    "name": "Bamberg",
+    "rkiName": "LK Bamberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 147086,
+    "ags": "09471"
+  },
+  {
+    "name": "Neu-Ulm",
+    "rkiName": "LK Neu-Ulm",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 174200,
+    "ags": "09775"
+  },
+  {
+    "name": "Bad Tölz-Wolfratshausen",
+    "rkiName": "LK Bad Tölz-Wolfratshausen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 127227,
+    "ags": "09173"
+  },
+  {
+    "name": "Cham",
+    "rkiName": "LK Cham",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 127882,
+    "ags": "09372"
+  },
+  {
+    "name": "Heilbronn",
+    "rkiName": "SK Heilbronn",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 125960,
+    "ags": "08121"
+  },
+  {
+    "name": "Regensburg",
+    "rkiName": "LK Regensburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 193572,
+    "ags": "09375"
+  },
+  {
+    "name": "Regensburg",
+    "rkiName": "SK Regensburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 152610,
+    "ags": "09362"
+  },
+  {
+    "name": "Heidenheim",
+    "rkiName": "LK Heidenheim",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 132472,
+    "ags": "08135"
+  },
+  {
+    "name": "Amberg-Sulzbach",
+    "rkiName": "LK Amberg-Sulzbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 103109,
+    "ags": "09371"
+  },
+  {
+    "name": "Enzkreis",
+    "rkiName": "LK Enzkreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 198905,
+    "ags": "08236"
+  },
+  {
+    "name": "Weilheim-Schongau",
+    "rkiName": "LK Weilheim-Schongau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 135348,
+    "ags": "09190"
+  },
+  {
+    "name": "Augsburg",
+    "rkiName": "LK Augsburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 251534,
+    "ags": "09772"
+  },
+  {
+    "name": "Ingolstadt",
+    "rkiName": "SK Ingolstadt",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 136981,
+    "ags": "09161"
+  },
+  {
+    "name": "Hamm",
+    "rkiName": "SK Hamm",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 179111,
+    "ags": "05915"
+  },
+  {
+    "name": "Ennepe-Ruhr-Kreis",
+    "rkiName": "LK Ennepe-Ruhr-Kreis",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 324296,
+    "ags": "05954"
+  },
+  {
+    "name": "Mayen-Koblenz",
+    "rkiName": "LK Mayen-Koblenz",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 214259,
+    "ags": "07137"
+  },
+  {
+    "name": "Soest",
+    "rkiName": "LK Soest",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 301902,
+    "ags": "05974"
+  },
+  {
+    "name": "Emsland",
+    "rkiName": "LK Emsland",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 325657,
+    "ags": "03454"
+  },
+  {
+    "name": "Lahn-Dill-Kreis",
+    "rkiName": "LK Lahn-Dill-Kreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 253777,
+    "ags": "06532"
+  },
+  {
+    "name": "Bochum",
+    "rkiName": "SK Bochum",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 364628,
+    "ags": "05911"
+  },
+  {
+    "name": "Darmstadt-Dieburg",
+    "rkiName": "LK Darmstadt-Dieburg",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 297399,
+    "ags": "06432"
+  },
+  {
+    "name": "Groß-Gerau",
+    "rkiName": "LK Groß-Gerau",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 274526,
+    "ags": "06433"
+  },
+  {
+    "name": "Sächsische Schweiz-Osterzgebirge",
+    "rkiName": "LK Sächsische Schweiz-Osterzgebirge",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 245611,
+    "ags": "14628"
+  },
+  {
+    "name": "Rosenheim",
+    "rkiName": "SK Rosenheim",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 63324,
+    "ags": "09163"
+  },
+  {
+    "name": "Karlsruhe",
+    "rkiName": "SK Karlsruhe",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 313092,
+    "ags": "08212"
+  },
+  {
+    "name": "Straubing-Bogen",
+    "rkiName": "LK Straubing-Bogen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 100649,
+    "ags": "09278"
+  },
+  {
+    "name": "Stormarn",
+    "rkiName": "LK Stormarn",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 243196,
+    "ags": "01062"
+  },
+  {
+    "name": "Main-Tauber-Kreis",
+    "rkiName": "LK Main-Tauber-Kreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 132321,
+    "ags": "08128"
+  },
+  {
+    "name": "Augsburg",
+    "rkiName": "SK Augsburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 295135,
+    "ags": "09761"
+  },
+  {
+    "name": "Landsberg am Lech",
+    "rkiName": "LK Landsberg a.Lech",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 120071,
+    "ags": "09181"
+  },
+  {
+    "name": "Westerwaldkreis",
+    "rkiName": "LK Westerwaldkreis",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 201597,
+    "ags": "07143"
+  },
+  {
+    "name": "Bayreuth",
+    "rkiName": "LK Bayreuth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 103656,
+    "ags": "09472"
+  },
+  {
+    "name": "Mainz-Bingen",
+    "rkiName": "LK Mainz-Bingen",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 210889,
+    "ags": "07339"
+  },
+  {
+    "name": "Pfaffenhofen a.d. Ilm",
+    "rkiName": "LK Pfaffenhofen a.d.Ilm",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 127151,
+    "ags": "09186"
+  },
+  {
+    "name": "Hof",
+    "rkiName": "LK Hof",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 95311,
+    "ags": "09475"
+  },
+  {
+    "name": "Krefeld",
+    "rkiName": "SK Krefeld",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 227020,
+    "ags": "05114"
+  },
+  {
+    "name": "Euskirchen",
+    "rkiName": "LK Euskirchen",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 192840,
+    "ags": "05366"
+  },
+  {
+    "name": "Heidelberg",
+    "rkiName": "SK Heidelberg",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 160355,
+    "ags": "08221"
+  },
+  {
+    "name": "Herford",
+    "rkiName": "LK Herford",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 250783,
+    "ags": "05758"
+  },
+  {
+    "name": "Vechta",
+    "rkiName": "LK Vechta",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 141598,
+    "ags": "03460"
+  },
+  {
+    "name": "Fulda",
+    "rkiName": "LK Fulda",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 222584,
+    "ags": "06631"
+  },
+  {
+    "name": "Bad Dürkheim",
+    "rkiName": "LK Bad Dürkheim",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 132660,
+    "ags": "07332"
+  },
+  {
+    "name": "Braunschweig",
+    "rkiName": "SK Braunschweig",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 248292,
+    "ags": "03101"
+  },
+  {
+    "name": "Bergstraße",
+    "rkiName": "LK Bergstraße",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 269694,
+    "ags": "06431"
+  },
+  {
+    "name": "Donau-Ries",
+    "rkiName": "LK Donau-Ries",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 133496,
+    "ags": "09779"
+  },
+  {
+    "name": "Halle (Saale)",
+    "rkiName": "SK Halle",
+    "type": "Stadt",
+    "state": "Sachsen-Anhalt",
+    "pop": 239257,
+    "ags": "15002"
+  },
+  {
+    "name": "Bodenseekreis",
+    "rkiName": "LK Bodenseekreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 216227,
+    "ags": "08435"
+  },
+  {
+    "name": "Vogtlandkreis",
+    "rkiName": "LK Vogtlandkreis",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 227796,
+    "ags": "14523"
+  },
+  {
+    "name": "Diepholz",
+    "rkiName": "LK Diepholz",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 216886,
+    "ags": "03251"
+  },
+  {
+    "name": "Roth",
+    "rkiName": "LK Roth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 126958,
+    "ags": "09576"
+  },
+  {
+    "name": "Wiesbaden",
+    "rkiName": "SK Wiesbaden",
+    "type": "Stadt",
+    "state": "Hessen",
+    "pop": 278342,
+    "ags": "06414"
+  },
+  {
+    "name": "Greiz",
+    "rkiName": "LK Greiz",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 98159,
+    "ags": "16076"
+  },
+  {
+    "name": "Wolfsburg",
+    "rkiName": "SK Wolfsburg",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 124151,
+    "ags": "03103"
+  },
+  {
+    "name": "Weißenburg-Gunzenhausen",
+    "rkiName": "LK Weißenburg-Gunzenhausen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 94393,
+    "ags": "09577"
+  },
+  {
+    "name": "Saarpfalz-Kreis",
+    "rkiName": "LK Saar-Pfalz-Kreis",
+    "type": "Landkreis",
+    "state": "Saarland",
+    "pop": 142631,
+    "ags": "10045"
+  },
+  {
+    "name": "Aichach-Friedberg",
+    "rkiName": "LK Aichach-Friedberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 133596,
+    "ags": "09771"
+  },
+  {
+    "name": "Neumarkt i.d. OPf.",
+    "rkiName": "LK Neumarkt i.d.OPf.",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 133561,
+    "ags": "09373"
+  },
+  {
+    "name": "Berlin Treptow-Köpenick",
+    "rkiName": "SK Berlin Treptow-Köpenick",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 271153,
+    "ags": null
+  },
+  {
+    "name": "Fürth",
+    "rkiName": "SK Fürth",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 127748,
+    "ags": "09563"
+  },
+  {
+    "name": "Straubing",
+    "rkiName": "SK Straubing",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 47794,
+    "ags": "09263"
+  },
+  {
+    "name": "Waldshut",
+    "rkiName": "LK Waldshut",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 170619,
+    "ags": "08337"
+  },
+  {
+    "name": "Barnim",
+    "rkiName": "LK Barnim",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 182760,
+    "ags": "12060"
+  },
+  {
+    "name": "Landshut",
+    "rkiName": "SK Landshut",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 72404,
+    "ags": "09261"
+  },
+  {
+    "name": "Miltenberg",
+    "rkiName": "LK Miltenberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 128756,
+    "ags": "09676"
+  },
+  {
+    "name": "Lindau (Bodensee)",
+    "rkiName": "LK Lindau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 81669,
+    "ags": "09776"
+  },
+  {
+    "name": "Ludwigshafen am Rhein",
+    "rkiName": "SK Ludwigshafen",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 171061,
+    "ags": "07314"
+  },
+  {
+    "name": "Höxter",
+    "rkiName": "LK Höxter",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 140667,
+    "ags": "05762"
+  },
+  {
+    "name": "Limburg-Weilburg",
+    "rkiName": "LK Limburg-Weilburg",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 172083,
+    "ags": "06533"
+  },
+  {
+    "name": "Ulm",
+    "rkiName": "SK Ulm",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 126329,
+    "ags": "08421"
+  },
+  {
+    "name": "Bautzen",
+    "rkiName": "LK Bautzen",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 300880,
+    "ags": "14625"
+  },
+  {
+    "name": "Hildesheim",
+    "rkiName": "LK Hildesheim",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 276594,
+    "ags": "03254"
+  },
+  {
+    "name": "Gelsenkirchen",
+    "rkiName": "SK Gelsenkirchen",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 260654,
+    "ags": "05513"
+  },
+  {
+    "name": "Mittelsachsen",
+    "rkiName": "LK Mittelsachsen",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 306185,
+    "ags": "14522"
+  },
+  {
+    "name": "Koblenz",
+    "rkiName": "SK Koblenz",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 114024,
+    "ags": "07111"
+  },
+  {
+    "name": "Kassel",
+    "rkiName": "LK Kassel",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 236633,
+    "ags": "06633"
+  },
+  {
+    "name": "Görlitz",
+    "rkiName": "LK Görlitz",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 254894,
+    "ags": "14626"
+  },
+  {
+    "name": "Hochtaunuskreis",
+    "rkiName": "LK Hochtaunuskreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 236564,
+    "ags": "06434"
+  },
+  {
+    "name": "Berchtesgadener Land",
+    "rkiName": "LK Berchtesgadener Land",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 105722,
+    "ags": "09172"
+  },
+  {
+    "name": "Weiden i.d. OPf.",
+    "rkiName": "SK Weiden i.d.OPf.",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 42520,
+    "ags": "09363"
+  },
+  {
+    "name": "Unterallgäu",
+    "rkiName": "LK Unterallgäu",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 144041,
+    "ags": "09778"
+  },
+  {
+    "name": "Wetteraukreis",
+    "rkiName": "LK Wetteraukreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 306460,
+    "ags": "06440"
+  },
+  {
+    "name": "Garmisch-Partenkirchen",
+    "rkiName": "LK Garmisch-Partenkirchen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 88467,
+    "ags": "09180"
+  },
+  {
+    "name": "Herzogtum Lauenburg",
+    "rkiName": "LK Herzogtum Lauenburg",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 197264,
+    "ags": "01053"
+  },
+  {
+    "name": "Siegen-Wittgenstein",
+    "rkiName": "LK Siegen-Wittgenstein",
+    "type": "Kreis",
+    "state": "Nordrhein-Westfalen",
+    "pop": 278210,
+    "ags": "05970"
+  },
+  {
+    "name": "Odenwaldkreis",
+    "rkiName": "LK Odenwaldkreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 96798,
+    "ags": "06437"
+  },
+  {
+    "name": "Neuburg-Schrobenhausen",
+    "rkiName": "LK Neuburg-Schrobenhausen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 96680,
+    "ags": "09185"
+  },
+  {
+    "name": "Deggendorf",
+    "rkiName": "LK Deggendorf",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 119326,
+    "ags": "09271"
+  },
+  {
+    "name": "Kiel",
+    "rkiName": "SK Kiel",
+    "type": "Stadt",
+    "state": "Schleswig-Holstein",
+    "pop": 247548,
+    "ags": "01002"
+  },
+  {
+    "name": "Rendsburg-Eckernförde",
+    "rkiName": "LK Rendsburg-Eckernförde",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 272775,
+    "ags": "01058"
+  },
+  {
+    "name": "Segeberg",
+    "rkiName": "LK Segeberg",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 276032,
+    "ags": "01060"
+  },
+  {
+    "name": "Neuwied",
+    "rkiName": "LK Neuwied",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 181941,
+    "ags": "07138"
+  },
+  {
+    "name": "Neunkirchen",
+    "rkiName": "LK Neunkirchen",
+    "type": "Landkreis",
+    "state": "Saarland",
+    "pop": 132206,
+    "ags": "10043"
+  },
+  {
+    "name": "Main-Taunus-Kreis",
+    "rkiName": "LK Main-Taunus-Kreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 237735,
+    "ags": "06436"
+  },
+  {
+    "name": "Eichstätt",
+    "rkiName": "LK Eichstätt",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 132341,
+    "ags": "09176"
+  },
+  {
+    "name": "Potsdam-Mittelmark",
+    "rkiName": "LK Potsdam-Mittelmark",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 214664,
+    "ags": "12069"
+  },
+  {
+    "name": "Erlangen-Höchstadt",
+    "rkiName": "LK Erlangen-Höchstadt",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 136271,
+    "ags": "09572"
+  },
+  {
+    "name": "Bad Kissingen",
+    "rkiName": "LK Bad Kissingen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 103218,
+    "ags": "09672"
+  },
+  {
+    "name": "Gießen",
+    "rkiName": "LK Gießen",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 268876,
+    "ags": "06531"
+  },
+  {
+    "name": "Neckar-Odenwald-Kreis",
+    "rkiName": "LK Neckar-Odenwald-Kreis",
+    "type": "Landkreis",
+    "state": "Baden-Württemberg",
+    "pop": 143535,
+    "ags": "08225"
+  },
+  {
+    "name": "Günzburg",
+    "rkiName": "LK Günzburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 125747,
+    "ags": "09774"
+  },
+  {
+    "name": "Berlin Spandau",
+    "rkiName": "SK Berlin Spandau",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 243977,
+    "ags": null
+  },
+  {
+    "name": "Grafschaft Bentheim",
+    "rkiName": "LK Grafschaft Bentheim",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 136511,
+    "ags": "03456"
+  },
+  {
+    "name": "Chemnitz",
+    "rkiName": "SK Chemnitz",
+    "type": "Stadt",
+    "state": "Sachsen",
+    "pop": 247237,
+    "ags": "14511"
+  },
+  {
+    "name": "Berlin Marzahn-Hellersdorf",
+    "rkiName": "SK Berlin Marzahn-Hellersdorf",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 268548,
+    "ags": null
+  },
+  {
+    "name": "Oldenburg",
+    "rkiName": "LK Oldenburg",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 130144,
+    "ags": "03458"
+  },
+  {
+    "name": "Rheingau-Taunus-Kreis",
+    "rkiName": "LK Rheingau-Taunus-Kreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 187157,
+    "ags": "06439"
+  },
+  {
+    "name": "Forchheim",
+    "rkiName": "LK Forchheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 116099,
+    "ags": "09474"
+  },
+  {
+    "name": "Stade",
+    "rkiName": "LK Stade",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 203102,
+    "ags": "03359"
+  },
+  {
+    "name": "Leipzig",
+    "rkiName": "LK Leipzig",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 257763,
+    "ags": "14729"
+  },
+  {
+    "name": "Berlin Lichtenberg",
+    "rkiName": "SK Berlin Lichtenberg",
+    "type": "Stadt",
+    "state": "Berlin",
+    "pop": 291452,
+    "ags": null
+  },
+  {
+    "name": "Hersfeld-Rotenburg",
+    "rkiName": "LK Hersfeld-Rotenburg",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 120829,
+    "ags": "06632"
+  },
+  {
+    "name": "Meißen",
+    "rkiName": "LK Meißen",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 242165,
+    "ags": "14627"
+  },
+  {
+    "name": "Solingen",
+    "rkiName": "SK Solingen",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 159360,
+    "ags": "05122"
+  },
+  {
+    "name": "Hagen",
+    "rkiName": "SK Hagen",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 188814,
+    "ags": "05914"
+  },
+  {
+    "name": "Merzig-Wadern",
+    "rkiName": "LK Merzig-Wadern",
+    "type": "Landkreis",
+    "state": "Saarland",
+    "pop": 103366,
+    "ags": "10042"
+  },
+  {
+    "name": "Erlangen",
+    "rkiName": "SK Erlangen",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 111962,
+    "ags": "09562"
+  },
+  {
+    "name": "Märkisch-Oderland",
+    "rkiName": "LK Märkisch-Oderland",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 194328,
+    "ags": "12064"
+  },
+  {
+    "name": "Remscheid",
+    "rkiName": "SK Remscheid",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 110994,
+    "ags": "05120"
+  },
+  {
+    "name": "Marburg-Biedenkopf",
+    "rkiName": "LK Marburg-Biedenkopf",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 246648,
+    "ags": "06534"
+  },
+  {
+    "name": "Dingolfing-Landau",
+    "rkiName": "LK Dingolfing-Landau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 96217,
+    "ags": "09279"
+  },
+  {
+    "name": "Kulmbach",
+    "rkiName": "LK Kulmbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 71845,
+    "ags": "09477"
+  },
+  {
+    "name": "Dillingen a.d. Donau",
+    "rkiName": "LK Dillingen a.d.Donau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 96021,
+    "ags": "09773"
+  },
+  {
+    "name": "Rhein-Pfalz-Kreis",
+    "rkiName": "LK Rhein-Pfalz-Kreis",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 154201,
+    "ags": "07338"
+  },
+  {
+    "name": "Lichtenfels",
+    "rkiName": "LK Lichtenfels",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 66838,
+    "ags": "09478"
+  },
+  {
+    "name": "Leverkusen",
+    "rkiName": "SK Leverkusen",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 163838,
+    "ags": "05316"
+  },
+  {
+    "name": "Jena",
+    "rkiName": "SK Jena",
+    "type": "Stadt",
+    "state": "Thüringen",
+    "pop": 111407,
+    "ags": "16053"
+  },
+  {
+    "name": "Oberhavel",
+    "rkiName": "LK Oberhavel",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 211249,
+    "ags": "12065"
+  },
+  {
+    "name": "Oberallgäu",
+    "rkiName": "LK Oberallgäu",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 155362,
+    "ags": "09780"
+  },
+  {
+    "name": "Neustadt a.d. Aisch-Bad Windsheim",
+    "rkiName": "LK Neustadt a.d.Aisch-Bad Windsheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 100364,
+    "ags": "09575"
+  },
+  {
+    "name": "Lübeck",
+    "rkiName": "SK Lübeck",
+    "type": "Stadt",
+    "state": "Schleswig-Holstein",
+    "pop": 217198,
+    "ags": "01003"
+  },
+  {
+    "name": "Kassel",
+    "rkiName": "SK Kassel",
+    "type": "Stadt",
+    "state": "Hessen",
+    "pop": 201585,
+    "ags": "06611"
+  },
+  {
+    "name": "Bad Kreuznach",
+    "rkiName": "LK Bad Kreuznach",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 158080,
+    "ags": "07133"
+  },
+  {
+    "name": "Oldenburg (Oldb)",
+    "rkiName": "SK Oldenburg",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 168210,
+    "ags": "03403"
+  },
+  {
+    "name": "Trier-Saarburg",
+    "rkiName": "LK Trier-Saarburg",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 148945,
+    "ags": "07235"
+  },
+  {
+    "name": "Baden-Baden",
+    "rkiName": "SK Baden-Baden",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 55123,
+    "ags": "08211"
+  },
+  {
+    "name": "Freyung-Grafenau",
+    "rkiName": "LK Freyung-Grafenau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 78355,
+    "ags": "09272"
+  },
+  {
+    "name": "Bayreuth",
+    "rkiName": "SK Bayreuth",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 74657,
+    "ags": "09462"
+  },
+  {
+    "name": "Harz",
+    "rkiName": "LK Harz",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 214446,
+    "ags": "15085"
+  },
+  {
+    "name": "Lüneburg",
+    "rkiName": "LK Lüneburg",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 183372,
+    "ags": "03355"
+  },
+  {
+    "name": "Dahme-Spreewald",
+    "rkiName": "LK Dahme-Spreewald",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 169067,
+    "ags": "12061"
+  },
+  {
+    "name": "Worms",
+    "rkiName": "SK Worms",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 83330,
+    "ags": "07319"
+  },
+  {
+    "name": "Bamberg",
+    "rkiName": "SK Bamberg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 77592,
+    "ags": "09461"
+  },
+  {
+    "name": "Oberhausen",
+    "rkiName": "SK Oberhausen",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 210829,
+    "ags": "05119"
+  },
+  {
+    "name": "Eifelkreis Bitburg-Prüm",
+    "rkiName": "LK Bitburg-Prüm",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 98561,
+    "ags": "07232"
+  },
+  {
+    "name": "Wittenberg",
+    "rkiName": "LK Wittenberg",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 125840,
+    "ags": "15091"
+  },
+  {
+    "name": "Alzey-Worms",
+    "rkiName": "LK Alzey-Worms",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 129244,
+    "ags": "07331"
+  },
+  {
+    "name": "Rhein-Hunsrück-Kreis",
+    "rkiName": "LK Rhein-Hunsrück-Kreis",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 102937,
+    "ags": "07140"
+  },
+  {
+    "name": "Coburg",
+    "rkiName": "LK Coburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 86906,
+    "ags": "09473"
+  },
+  {
+    "name": "Ammerland",
+    "rkiName": "LK Ammerland",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 124071,
+    "ags": "03451"
+  },
+  {
+    "name": "Main-Spessart",
+    "rkiName": "LK Main-Spessart",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 126365,
+    "ags": "09677"
+  },
+  {
+    "name": "Rhein-Lahn-Kreis",
+    "rkiName": "LK Rhein-Lahn-Kreis",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 122308,
+    "ags": "07141"
+  },
+  {
+    "name": "Celle",
+    "rkiName": "LK Celle",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 178936,
+    "ags": "03351"
+  },
+  {
+    "name": "Südliche Weinstraße",
+    "rkiName": "LK Südliche Weinstraße",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 110356,
+    "ags": "07337"
+  },
+  {
+    "name": "Havelland",
+    "rkiName": "LK Havelland",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 161909,
+    "ags": "12063"
+  },
+  {
+    "name": "St. Wendel",
+    "rkiName": "LK Sankt Wendel",
+    "type": "Landkreis",
+    "state": "Saarland",
+    "pop": 87397,
+    "ags": "10046"
+  },
+  {
+    "name": "Mülheim an der Ruhr",
+    "rkiName": "SK Mülheim a.d.Ruhr",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 170880,
+    "ags": "05117"
+  },
+  {
+    "name": "Peine",
+    "rkiName": "LK Peine",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 133965,
+    "ags": "03157"
+  },
+  {
+    "name": "Regen",
+    "rkiName": "LK Regen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 77656,
+    "ags": "09276"
+  },
+  {
+    "name": "Schweinfurt",
+    "rkiName": "SK Schweinfurt",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 54032,
+    "ags": "09662"
+  },
+  {
+    "name": "Rhön-Grabfeld",
+    "rkiName": "LK Rhön-Grabfeld",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 79690,
+    "ags": "09673"
+  },
+  {
+    "name": "Schaumburg",
+    "rkiName": "LK Schaumburg",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 157781,
+    "ags": "03257"
+  },
+  {
+    "name": "Cochem-Zell",
+    "rkiName": "LK Cochem-Zell",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 61587,
+    "ags": "07135"
+  },
+  {
+    "name": "Goslar",
+    "rkiName": "LK Goslar",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 137014,
+    "ags": "03153"
+  },
+  {
+    "name": "Darmstadt",
+    "rkiName": "SK Darmstadt",
+    "type": "Stadt",
+    "state": "Hessen",
+    "pop": 159207,
+    "ags": "06411"
+  },
+  {
+    "name": "Germersheim",
+    "rkiName": "LK Germersheim",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 129075,
+    "ags": "07334"
+  },
+  {
+    "name": "Bernkastel-Wittlich",
+    "rkiName": "LK Bernkastel-Wittlich",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 112262,
+    "ags": "07231"
+  },
+  {
+    "name": "Erfurt",
+    "rkiName": "SK Erfurt",
+    "type": "Stadt",
+    "state": "Thüringen",
+    "pop": 213699,
+    "ags": "16051"
+  },
+  {
+    "name": "Waldeck-Frankenberg",
+    "rkiName": "LK Waldeck-Frankenberg",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 156953,
+    "ags": "06635"
+  },
+  {
+    "name": "Wolfenbüttel",
+    "rkiName": "LK Wolfenbüttel",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 119960,
+    "ags": "03158"
+  },
+  {
+    "name": "Ahrweiler",
+    "rkiName": "LK Ahrweiler",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 129727,
+    "ags": "07131"
+  },
+  {
+    "name": "Schleswig-Flensburg",
+    "rkiName": "LK Schleswig-Flensburg",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 200025,
+    "ags": "01059"
+  },
+  {
+    "name": "Passau",
+    "rkiName": "SK Passau",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 52469,
+    "ags": "09262"
+  },
+  {
+    "name": "Vorpommern-Greifswald",
+    "rkiName": "LK Vorpommern-Greifswald",
+    "type": "Landkreis",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 236697,
+    "ags": "13075"
+  },
+  {
+    "name": "Haßberge",
+    "rkiName": "LK Haßberge",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 84599,
+    "ags": "09674"
+  },
+  {
+    "name": "Gifhorn",
+    "rkiName": "LK Gifhorn",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 175920,
+    "ags": "03151"
+  },
+  {
+    "name": "Verden",
+    "rkiName": "LK Verden",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 136792,
+    "ags": "03361"
+  },
+  {
+    "name": "Pforzheim",
+    "rkiName": "SK Pforzheim",
+    "type": "Stadtkreis",
+    "state": "Baden-Württemberg",
+    "pop": 125542,
+    "ags": "08231"
+  },
+  {
+    "name": "Mecklenburgische Seenplatte",
+    "rkiName": "LK Mecklenburgische Seenplatte",
+    "type": "Landkreis",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 259130,
+    "ags": "13071"
+  },
+  {
+    "name": "Herne",
+    "rkiName": "SK Herne",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 156374,
+    "ags": "05916"
+  },
+  {
+    "name": "Ilm-Kreis",
+    "rkiName": "LK Ilm-Kreis",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 108742,
+    "ags": "16070"
+  },
+  {
+    "name": "Plön",
+    "rkiName": "LK Plön",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 128647,
+    "ags": "01057"
+  },
+  {
+    "name": "Vogelsbergkreis",
+    "rkiName": "LK Vogelsbergkreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 105878,
+    "ags": "06535"
+  },
+  {
+    "name": "Vulkaneifel",
+    "rkiName": "LK Vulkaneifel",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 60603,
+    "ags": "07233"
+  },
+  {
+    "name": "Saalekreis",
+    "rkiName": "LK Saalekreis",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 184582,
+    "ags": "15088"
+  },
+  {
+    "name": "Werra-Meißner-Kreis",
+    "rkiName": "LK Werra-Meißner-Kreis",
+    "type": "Landkreis",
+    "state": "Hessen",
+    "pop": 101017,
+    "ags": "06636"
+  },
+  {
+    "name": "Salzgitter",
+    "rkiName": "SK Salzgitter",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 104948,
+    "ags": "03102"
+  },
+  {
+    "name": "Südwestpfalz",
+    "rkiName": "LK Südwestpfalz",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 95113,
+    "ags": "07340"
+  },
+  {
+    "name": "Hameln-Pyrmont",
+    "rkiName": "LK Hameln-Pyrmont",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 148559,
+    "ags": "03252"
+  },
+  {
+    "name": "Donnersbergkreis",
+    "rkiName": "LK Donnersbergkreis",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 75101,
+    "ags": "07333"
+  },
+  {
+    "name": "Oder-Spree",
+    "rkiName": "LK Oder-Spree",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 178658,
+    "ags": "12067"
+  },
+  {
+    "name": "Magdeburg",
+    "rkiName": "SK Magdeburg",
+    "type": "Stadt",
+    "state": "Sachsen-Anhalt",
+    "pop": 238697,
+    "ags": "15003"
+  },
+  {
+    "name": "Saale-Orla-Kreis",
+    "rkiName": "LK Saale-Orla-Kreis",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 80868,
+    "ags": "16075"
+  },
+  {
+    "name": "Holzminden",
+    "rkiName": "LK Holzminden",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 70975,
+    "ags": "03255"
+  },
+  {
+    "name": "Altenkirchen (Westerwald)",
+    "rkiName": "LK Altenkirchen",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 128705,
+    "ags": "07132"
+  },
+  {
+    "name": "Teltow-Fläming",
+    "rkiName": "LK Teltow-Fläming",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 168296,
+    "ags": "12072"
+  },
+  {
+    "name": "Eichsfeld",
+    "rkiName": "LK Eichsfeld",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 100380,
+    "ags": "16061"
+  },
+  {
+    "name": "Börde",
+    "rkiName": "LK Börde",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 171734,
+    "ags": "15083"
+  },
+  {
+    "name": "Aschaffenburg",
+    "rkiName": "SK Aschaffenburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 70527,
+    "ags": "09661"
+  },
+  {
+    "name": "Nordsachsen",
+    "rkiName": "LK Nordsachsen",
+    "type": "Landkreis",
+    "state": "Sachsen",
+    "pop": 197673,
+    "ags": "14730"
+  },
+  {
+    "name": "Trier",
+    "rkiName": "SK Trier",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 110636,
+    "ags": "07211"
+  },
+  {
+    "name": "Kaiserslautern",
+    "rkiName": "SK Kaiserslautern",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 99845,
+    "ags": "07312"
+  },
+  {
+    "name": "Kaiserslautern",
+    "rkiName": "LK Kaiserslautern",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 106057,
+    "ags": "07335"
+  },
+  {
+    "name": "Kempten (Allgäu)",
+    "rkiName": "SK Kempten",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 68907,
+    "ags": "09763"
+  },
+  {
+    "name": "Neustadt an der Weinstraße",
+    "rkiName": "SK Neustadt a.d.Weinstraße",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 53148,
+    "ags": "07316"
+  },
+  {
+    "name": "Hof",
+    "rkiName": "SK Hof",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 45930,
+    "ags": "09464"
+  },
+  {
+    "name": "Kronach",
+    "rkiName": "LK Kronach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 67135,
+    "ags": "09476"
+  },
+  {
+    "name": "Schwerin",
+    "rkiName": "SK Schwerin",
+    "type": "Stadt",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 95818,
+    "ags": "13004"
+  },
+  {
+    "name": "Cloppenburg",
+    "rkiName": "LK Cloppenburg",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 169348,
+    "ags": "03453"
+  },
+  {
+    "name": "Helmstedt",
+    "rkiName": "LK Helmstedt",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 91307,
+    "ags": "03154"
+  },
+  {
+    "name": "Kusel",
+    "rkiName": "LK Kusel",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 70526,
+    "ags": "07336"
+  },
+  {
+    "name": "Kitzingen",
+    "rkiName": "LK Kitzingen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 90909,
+    "ags": "09675"
+  },
+  {
+    "name": "Rotenburg (Wümme)",
+    "rkiName": "LK Rotenburg (Wümme)",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 163455,
+    "ags": "03357"
+  },
+  {
+    "name": "Gotha",
+    "rkiName": "LK Gotha",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 135452,
+    "ags": "16067"
+  },
+  {
+    "name": "Cuxhaven",
+    "rkiName": "LK Cuxhaven",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 198213,
+    "ags": "03352"
+  },
+  {
+    "name": "Kaufbeuren",
+    "rkiName": "SK Kaufbeuren",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 43893,
+    "ags": "09762"
+  },
+  {
+    "name": "Ansbach",
+    "rkiName": "SK Ansbach",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 41847,
+    "ags": "09561"
+  },
+  {
+    "name": "Stendal",
+    "rkiName": "LK Stendal",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 111982,
+    "ags": "15090"
+  },
+  {
+    "name": "Northeim",
+    "rkiName": "LK Northeim",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 132765,
+    "ags": "03155"
+  },
+  {
+    "name": "Vorpommern-Rügen",
+    "rkiName": "LK Vorpommern-Rügen",
+    "type": "Landkreis",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 224684,
+    "ags": "13073"
+  },
+  {
+    "name": "Steinburg",
+    "rkiName": "LK Steinburg",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 131347,
+    "ags": "01061"
+  },
+  {
+    "name": "Rostock",
+    "rkiName": "SK Rostock",
+    "type": "Stadt",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 208886,
+    "ags": "13003"
+  },
+  {
+    "name": "Osterholz",
+    "rkiName": "LK Osterholz",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 113517,
+    "ags": "03356"
+  },
+  {
+    "name": "Leer",
+    "rkiName": "LK Leer",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 169809,
+    "ags": "03457"
+  },
+  {
+    "name": "Aurich",
+    "rkiName": "LK Aurich",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 189848,
+    "ags": "03452"
+  },
+  {
+    "name": "Elbe-Elster",
+    "rkiName": "LK Elbe-Elster",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 102638,
+    "ags": "12062"
+  },
+  {
+    "name": "Birkenfeld",
+    "rkiName": "LK Birkenfeld",
+    "type": "Landkreis",
+    "state": "Rheinland-Pfalz",
+    "pop": 80720,
+    "ags": "07134"
+  },
+  {
+    "name": "Schwabach",
+    "rkiName": "SK Schwabach",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 40792,
+    "ags": "09565"
+  },
+  {
+    "name": "Nordfriesland",
+    "rkiName": "LK Nordfriesland",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 165507,
+    "ags": "01054"
+  },
+  {
+    "name": "Nordwestmecklenburg",
+    "rkiName": "LK Nordwestmecklenburg",
+    "type": "Landkreis",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 156729,
+    "ags": "13074"
+  },
+  {
+    "name": "Gera",
+    "rkiName": "SK Gera",
+    "type": "Stadt",
+    "state": "Thüringen",
+    "pop": 94152,
+    "ags": "16052"
+  },
+  {
+    "name": "Salzlandkreis",
+    "rkiName": "LK Salzlandkreis",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 190560,
+    "ags": "15089"
+  },
+  {
+    "name": "Schmalkalden-Meiningen",
+    "rkiName": "LK Schmalkalden-Meiningen",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 122347,
+    "ags": "16066"
+  },
+  {
+    "name": "Nienburg (Weser)",
+    "rkiName": "LK Nienburg (Weser)",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 121386,
+    "ags": "03256"
+  },
+  {
+    "name": "Offenbach am Main",
+    "rkiName": "SK Offenbach",
+    "type": "Stadt",
+    "state": "Hessen",
+    "pop": 128744,
+    "ags": "06413"
+  },
+  {
+    "name": "Ludwigslust-Parchim",
+    "rkiName": "LK Ludwigslust-Parchim",
+    "type": "Landkreis",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 212618,
+    "ags": "13076"
+  },
+  {
+    "name": "Weimarer Land",
+    "rkiName": "LK Weimarer Land",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 81947,
+    "ags": "16071"
+  },
+  {
+    "name": "Ostholstein",
+    "rkiName": "LK Ostholstein",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 200581,
+    "ags": "01055"
+  },
+  {
+    "name": "Burgenlandkreis",
+    "rkiName": "LK Burgenlandkreis",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 180190,
+    "ags": "15084"
+  },
+  {
+    "name": "Weimar",
+    "rkiName": "SK Weimar",
+    "type": "Stadt",
+    "state": "Thüringen",
+    "pop": 65090,
+    "ags": "16055"
+  },
+  {
+    "name": "Heidekreis",
+    "rkiName": "LK Heidekreis",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 139755,
+    "ags": "03358"
+  },
+  {
+    "name": "Bottrop",
+    "rkiName": "SK Bottrop",
+    "type": "Stadt",
+    "state": "Nordrhein-Westfalen",
+    "pop": 117383,
+    "ags": "05512"
+  },
+  {
+    "name": "Amberg",
+    "rkiName": "SK Amberg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 41970,
+    "ags": "09361"
+  },
+  {
+    "name": "Dithmarschen",
+    "rkiName": "LK Dithmarschen",
+    "type": "Kreis",
+    "state": "Schleswig-Holstein",
+    "pop": 133210,
+    "ags": "01051"
+  },
+  {
+    "name": "Rostock",
+    "rkiName": "LK Rostock",
+    "type": "Landkreis",
+    "state": "Mecklenburg-Vorpommern",
+    "pop": 215113,
+    "ags": "13072"
+  },
+  {
+    "name": "Saalfeld-Rudolstadt",
+    "rkiName": "LK Saalfeld-Rudolstadt",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 106356,
+    "ags": "16073"
+  },
+  {
+    "name": "Spree-Neiße",
+    "rkiName": "LK Spree-Neiße",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 114429,
+    "ags": "12071"
+  },
+  {
+    "name": "Dessau-Roßlau",
+    "rkiName": "SK Dessau-Roßlau",
+    "type": "Stadt",
+    "state": "Sachsen-Anhalt",
+    "pop": 81237,
+    "ags": "15001"
+  },
+  {
+    "name": "Unstrut-Hainich-Kreis",
+    "rkiName": "LK Unstrut-Hainich-Kreis",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 102912,
+    "ags": "16064"
+  },
+  {
+    "name": "Wesermarsch",
+    "rkiName": "LK Wesermarsch",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 88624,
+    "ags": "03461"
+  },
+  {
+    "name": "Anhalt-Bitterfeld",
+    "rkiName": "LK Anhalt-Bitterfeld",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 159854,
+    "ags": "15082"
+  },
+  {
+    "name": "Landau in der Pfalz",
+    "rkiName": "SK Landau i.d.Pfalz",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 46677,
+    "ags": "07313"
+  },
+  {
+    "name": "Speyer",
+    "rkiName": "SK Speyer",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 50378,
+    "ags": "07318"
+  },
+  {
+    "name": "Sonneberg",
+    "rkiName": "LK Sonneberg",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 56196,
+    "ags": "16072"
+  },
+  {
+    "name": "Saale-Holzland-Kreis",
+    "rkiName": "LK Saale-Holzland-Kreis",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 83051,
+    "ags": "16074"
+  },
+  {
+    "name": "Memmingen",
+    "rkiName": "SK Memmingen",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 43837,
+    "ags": "09764"
+  },
+  {
+    "name": "Brandenburg an der Havel",
+    "rkiName": "SK Brandenburg a.d.Havel",
+    "type": "Stadt",
+    "state": "Brandenburg",
+    "pop": 72124,
+    "ags": "12051"
+  },
+  {
+    "name": "Neumünster",
+    "rkiName": "SK Neumünster",
+    "type": "Stadt",
+    "state": "Schleswig-Holstein",
+    "pop": 79487,
+    "ags": "01004"
+  },
+  {
+    "name": "Coburg",
+    "rkiName": "SK Coburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 41249,
+    "ags": "09463"
+  },
+  {
+    "name": "Cottbus",
+    "rkiName": "SK Cottbus",
+    "type": "Stadt",
+    "state": "Brandenburg",
+    "pop": 100219,
+    "ags": "12052"
+  },
+  {
+    "name": "Nordhausen",
+    "rkiName": "LK Nordhausen",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 83822,
+    "ags": "16062"
+  },
+  {
+    "name": "Oberspreewald-Lausitz",
+    "rkiName": "LK Oberspreewald-Lausitz",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 110476,
+    "ags": "12066"
+  },
+  {
+    "name": "Altenburger Land",
+    "rkiName": "LK Altenburger Land",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 90118,
+    "ags": "16077"
+  },
+  {
+    "name": "Ostprignitz-Ruppin",
+    "rkiName": "LK Ostprignitz-Ruppin",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 99078,
+    "ags": "12068"
+  },
+  {
+    "name": "Kyffhäuserkreis",
+    "rkiName": "LK Kyffhäuserkreis",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 75009,
+    "ags": "16065"
+  },
+  {
+    "name": "Uelzen",
+    "rkiName": "LK Uelzen",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 92572,
+    "ags": "03360"
+  },
+  {
+    "name": "Mansfeld-Südharz",
+    "rkiName": "LK Mansfeld-Südharz",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 136249,
+    "ags": "15087"
+  },
+  {
+    "name": "Flensburg",
+    "rkiName": "SK Flensburg",
+    "type": "Stadt",
+    "state": "Schleswig-Holstein",
+    "pop": 89504,
+    "ags": "01001"
+  },
+  {
+    "name": "Wartburgkreis",
+    "rkiName": "LK Wartburgkreis",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 123025,
+    "ags": "16063"
+  },
+  {
+    "name": "Zweibrücken",
+    "rkiName": "SK Zweibrücken",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 34209,
+    "ags": "07320"
+  },
+  {
+    "name": "Sömmerda",
+    "rkiName": "LK Sömmerda",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 69655,
+    "ags": "16068"
+  },
+  {
+    "name": "Frankenthal (Pfalz)",
+    "rkiName": "SK Frankenthal",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 48561,
+    "ags": "07311"
+  },
+  {
+    "name": "Delmenhorst",
+    "rkiName": "SK Delmenhorst",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 77607,
+    "ags": "03401"
+  },
+  {
+    "name": "Altmarkkreis Salzwedel",
+    "rkiName": "LK Altmarkkreis Salzwedel",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 83765,
+    "ags": "15081"
+  },
+  {
+    "name": "Jerichower Land",
+    "rkiName": "LK Jerichower Land",
+    "type": "Landkreis",
+    "state": "Sachsen-Anhalt",
+    "pop": 89928,
+    "ags": "15086"
+  },
+  {
+    "name": "Friesland",
+    "rkiName": "LK Friesland",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 98460,
+    "ags": "03455"
+  },
+  {
+    "name": "Pirmasens",
+    "rkiName": "SK Pirmasens",
+    "type": "Stadt",
+    "state": "Rheinland-Pfalz",
+    "pop": 40403,
+    "ags": "07317"
+  },
+  {
+    "name": "Bremerhaven",
+    "rkiName": "SK Bremerhaven",
+    "type": "Stadt",
+    "state": "Bremen",
+    "pop": 113634,
+    "ags": "04012"
+  },
+  {
+    "name": "Frankfurt (Oder)",
+    "rkiName": "SK Frankfurt (Oder)",
+    "type": "Stadt",
+    "state": "Brandenburg",
+    "pop": 57873,
+    "ags": "12053"
+  },
+  {
+    "name": "Uckermark",
+    "rkiName": "LK Uckermark",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 119552,
+    "ags": "12073"
+  },
+  {
+    "name": "Wittmund",
+    "rkiName": "LK Wittmund",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 56882,
+    "ags": "03462"
+  },
+  {
+    "name": "Prignitz",
+    "rkiName": "LK Prignitz",
+    "type": "Landkreis",
+    "state": "Brandenburg",
+    "pop": 76508,
+    "ags": "12070"
+  },
+  {
+    "name": "Wilhelmshaven",
+    "rkiName": "SK Wilhelmshaven",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 76278,
+    "ags": "03405"
+  },
+  {
+    "name": "Lüchow-Dannenberg",
+    "rkiName": "LK Lüchow-Dannenberg",
+    "type": "Landkreis",
+    "state": "Niedersachsen",
+    "pop": 48424,
+    "ags": "03354"
+  },
+  {
+    "name": "Emden",
+    "rkiName": "SK Emden",
+    "type": "Stadt",
+    "state": "Niedersachsen",
+    "pop": 50195,
+    "ags": "03402"
+  },
+  {
+    "name": "Eisenach",
+    "rkiName": "SK Eisenach",
+    "type": "Stadt",
+    "state": "Thüringen",
+    "pop": 42370,
+    "ags": "16056"
+  },
+  {
+    "name": "Hildburghausen",
+    "rkiName": "LK Hildburghausen",
+    "type": "Landkreis",
+    "state": "Thüringen",
+    "pop": 63553,
+    "ags": "16069"
+  },
+  {
+    "name": "Suhl",
+    "rkiName": "SK Suhl",
+    "type": "Stadt",
+    "state": "Thüringen",
+    "pop": 34835,
+    "ags": "16054"
+  }
+]
