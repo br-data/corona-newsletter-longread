@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Oberbayern",
+    "ags": "091",
+    "pop": 4686163
+  },
+  {
+    "name": "Niederbayern",
+    "ags": "092",
+    "pop": 1238528
+  },
+  {
+    "name": "Oberpfalz",
+    "ags": "093",
+    "pop": 1109269
+  },
+  {
+    "name": "Oberfranken",
+    "ags": "094",
+    "pop": 1067482
+  },
+  {
+    "name": "Mittelfranken",
+    "ags": "095",
+    "pop": 1770401
+  },
+  {
+    "name": "Unterfranken",
+    "ags": "096",
+    "pop": 1317124
+  },
+  {
+    "name": "Schwaben",
+    "ags": "097",
+    "pop": 1887754
+  }
+]

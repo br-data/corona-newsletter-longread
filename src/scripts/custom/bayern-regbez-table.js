@@ -1,17 +1,9 @@
+import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
+
 export function init(config) {
   const { selector, data } = config;
 
-  const districts = [
-    { name: 'Oberbayern', pop: '4686163' },
-    { name: 'Niederbayern', pop: '1238528' },
-    { name: 'Oberpfalz', pop: '1109269' },
-    { name: 'Oberfranken', pop: '1067482' },
-    { name: 'Mittelfranken', pop: '1770401' },
-    { name: 'Unterfranken', pop: '1317124' },
-    { name: 'Schwaben', pop: '1887754' }
-  ];
-
-  const analysis = districts.map(district => {
+  const analysis = metaDataDistricts.map(district => {
     const districtData = data.filter(d => d.Regierungsbezirk === district.name);
 
     return {

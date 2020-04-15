@@ -1,14 +1,17 @@
-import metaData from '../data/meta/deutschland-lkr-meta.json';
+import metaDataCounties from '../data/meta/deutschland-lkr-meta.json';
+import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
 
 export function init(config) {
   const { selector, data } = config;
 
   const enrichedData = data.map(d => {
-    const metaInfo = metaData.find(m => m.rkiName === d.Landkreis);
+    const metaInfoCounty = metaDataCounties.find(m => m.rkiName === d.Landkreis);
+    const metaInfoDistrict = metaDataDistricts.find(m => m.ags === metaInfoCounty.ags.slice(0,3));
     return Object.assign(
       d,
-      metaInfo,
-      { casesPerThousand: (d.sumValue * 1000) / metaInfo.pop }
+      metaInfoCounty,
+      { district: metaInfoDistrict.name },
+      { casesPerThousand: (d.sumValue * 1000) / metaInfoCounty.pop }
     );
   });
 
@@ -21,11 +24,11 @@ export function init(config) {
 
   const text = `Die zur Zeit am stärksten betroffenen Landkreise in Bayern sind ${worstCounties[0].name}, ${worstCounties[1].name} und ${worstCounties[2].name}.
 
-  ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} wurden bisher ${pretty(worstCounties[0].casesPerThousand)} Fälle pro 1.000 Einwohner gemeldet.
+  ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} (${worstCounties[0].district}) wurden bisher ${pretty(worstCounties[0].casesPerThousand)} Fälle pro 1.000 Einwohner gemeldet.
 
-  ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} sind es bislang ${pretty(worstCounties[0].casesPerThousand)} Fälle pro 1.000 Einwohner.
+  ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} (${worstCounties[1].district}) sind es ${pretty(worstCounties[1].casesPerThousand)} Fälle pro 1.000 Einwohner.
 
-  Aus ${preposition2(worstCounties[2].type)}  ${worstCounties[2].type} ${worstCounties[2].name} wurden ${pretty(worstCounties[2].casesPerThousand)} Fälle pro 1.000 Einwohner gemeldet.`;
+  Aus ${preposition2(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPerThousand)} Fälle pro 1.000 Einwohner gemeldet.`;
 
   const textElement = document.querySelector(selector);
   textElement.textContent = text;
