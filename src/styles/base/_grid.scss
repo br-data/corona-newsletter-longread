@@ -13,11 +13,6 @@ main {
   width: 100%;
 }
 
-article {
-  margin-top: 8em;
-  width: 100%;
-}
-
 section {
   max-width: 940px;
   margin: 0 auto 4em;
@@ -33,6 +28,7 @@ section {
 
 // Text level indent blocks
 .block {
+  padding: 0 4em;
   margin: $margin-desktop;
 
   @include tablet {
