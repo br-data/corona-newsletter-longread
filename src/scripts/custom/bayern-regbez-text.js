@@ -1,3 +1,5 @@
+import { pretty } from './utils';
+
 export function init(config) {
   const { selector, data } = config;
 

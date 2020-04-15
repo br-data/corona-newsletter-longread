@@ -1,6 +1,8 @@
 import metaDataCounties from '../data/meta/deutschland-lkr-meta.json';
 import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
 
+import { pretty } from './utils';
+
 export function init(config) {
   const { selector, data } = config;
 
@@ -48,9 +50,4 @@ function preposition2(type) {
     case 'Landkreis': return  'dem';
     default: return 'dem';
   }
-}
-
-function pretty(number) {
-  const string = (Math.round(number * 10) / 10).toString().split('.');
-  return string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
 }
