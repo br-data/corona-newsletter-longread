@@ -1,7 +1,7 @@
 export function init(config) {
   const { selector, data } = config;
 
-  const text = `Bislang wurden ${pretty(currentCount(data))} Corona-Fälle in Bayern  gemeldet. Das sind ${pretty(currentIncrease(data))} Fälle (${pretty(currentIncreasePerc(data))} %) mehr als noch am Vortag. Die Zahl der gemeldeten Fälle in Bayern verdoppelt sich damit ungefähr alle ${doublingTime(data)} Tage.
+  const text = `Bislang wurden ${pretty(currentCount(data))} Corona-Fälle in Bayern  gemeldet. Das sind ${pretty(currentIncrease(data))} Fälle (+${pretty(currentIncreasePerc(data))} %) mehr als noch am Vortag. Die Zahl der gemeldeten Fälle in Bayern verdoppelt sich damit ungefähr alle ${doublingTime(data)} Tage.
 
   Alle Angaben und Berechnungen beziehen sich auf die aktuellen Zahlen des Robert Koch-Instituts vom ${germanDate(currentDate(data))}.`;
 
