@@ -6,14 +6,16 @@ import * as lazyload from './components/lazyload';
 import * as marginals from './components/marginals';
 import * as navigation from './components/navigation';
 
-import * as bayernText from './custom/text/bayern';
-import * as bayernRegierungsbezirkeText from './custom/text/bayern-regierungsbezirke';
-import * as bayernLandkreiseText from './custom/text/bayern-landkreise';
+import * as bayernText from './custom/bayern-text';
+import * as bayernRegierungsbezirkeText from './custom/bayern-regbez-text';
+import * as bayernLandkreiseText from './custom/bayern-lkr-text';
+
+import * as bayernRegierungsbezirkeTable from './custom/bayern-regbez-table';
 
 // Mock data for testing
 import bayernData from './data/bayern.json';
-import bayernRegierungsbezirkeData from './data/bayern-regierungsbezirke.json';
-import bayernLandkreiseData from './data/bayern-landkreise.json';
+import bayernRegierungsbezirkeData from './data/bayern-regbez.json';
+import bayernLandkreiseData from './data/bayern-lkr.json';
 
 // import Chart from './custom/chart/chart';
 // import chartData from './custom/chart/chart-data.json';
@@ -26,21 +28,26 @@ async function init() {
   // const bayernData = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland&bundesland=Bayern').then((response) => { return response.json(); });
 
   bayernText.init({
-    selector: '#bayern',
+    selector: '#bayern-text',
     data: bayernData
   });
 
   // const bayernRegierungsbezirkeData = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern').then((response) => { return response.json(); });
 
+  bayernRegierungsbezirkeTable.init({
+    selector: '#bayern-regbez-table',
+    data: bayernRegierungsbezirkeData
+  });
+
   bayernRegierungsbezirkeText.init({
-    selector: '#bayern-regierungsbezirke',
+    selector: '#bayern-regbez-text',
     data: bayernRegierungsbezirkeData
   });
 
   // const bayernLandkreiseData = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?group=Landkreis&bundesland=Bayern').then((response) => { return response.json(); });
 
   bayernLandkreiseText.init({
-    selector: '#bayern-landkreise',
+    selector: '#bayern-lkr-text',
     data: bayernLandkreiseData
   });
 
