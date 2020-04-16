@@ -10,12 +10,20 @@ import * as bayernLkrText from './custom/bayern-lkr-text';
 
 import * as bayernRegbezTable from './custom/bayern-regbez-table';
 
+import * as deutschlandText from './custom/deutschland-text';
+
 // Mock data for testing
 import bayernCases from './data/cases/bayern-cases.json';
 import bayernDeaths from './data/deaths/bayern-deaths.json';
+
 import bayernRegbezCases from './data/cases/bayern-regbez-cases.json';
 import bayernRegbezDeaths from './data/deaths/bayern-regbez-deaths.json';
+
 import bayernLkrCases from './data/cases/bayern-lkr-cases.json';
+import bayernLkrDeaths from './data/deaths/bayer-lkr-deaths.json';
+
+import deutschlandCases from './data/cases/deutschland-cases.json';
+import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
 
 // import Chart from './custom/chart/chart';
 // import chartData from './custom/chart/chart-data.json';
@@ -51,14 +59,25 @@ async function init() {
     deathData: bayernRegbezDeaths
   });
 
-  // const bayernLkrData = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?group=Landkreis&bundesland=Bayern').then((response) => { return response.json(); });
+  // const bayernLkrCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Landkreis&bundesland=Bayern').then((response) => { return response.json(); });
+
+  // const bayernLkrDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall').then((response) => { return response.json(); });
 
   bayernLkrText.init({
     selector: '#bayern-lkr-text',
-    caseData: bayernLkrCases
+    caseData: bayernLkrCases,
+    deathData: bayernLkrDeaths
   });
 
-  // const deutschlandData = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12');
+  // const deutschlandCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12').then((response) => { return response.json(); });
+
+  // const deutschlandDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&sumField=AnzahlTodesfall').then((response) => { return response.json(); });
+
+  deutschlandText.init({
+    selector: '#deutschland-text',
+    caseData: deutschlandCases,
+    deathData: deutschlandDeaths
+  });
 
   lazyload
     .init('.lazyload', {

@@ -1,0 +1,167 @@
+[
+  {
+    "value": 10,
+    "Meldedatum": "2020-03-12",
+    "sumValue": 37
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-03-13",
+    "sumValue": 50
+  },
+  {
+    "value": 16,
+    "Meldedatum": "2020-03-14",
+    "sumValue": 66
+  },
+  {
+    "value": 12,
+    "Meldedatum": "2020-03-15",
+    "sumValue": 78
+  },
+  {
+    "value": 28,
+    "Meldedatum": "2020-03-16",
+    "sumValue": 106
+  },
+  {
+    "value": 37,
+    "Meldedatum": "2020-03-17",
+    "sumValue": 143
+  },
+  {
+    "value": 52,
+    "Meldedatum": "2020-03-18",
+    "sumValue": 195
+  },
+  {
+    "value": 46,
+    "Meldedatum": "2020-03-19",
+    "sumValue": 241
+  },
+  {
+    "value": 88,
+    "Meldedatum": "2020-03-20",
+    "sumValue": 329
+  },
+  {
+    "value": 77,
+    "Meldedatum": "2020-03-21",
+    "sumValue": 406
+  },
+  {
+    "value": 64,
+    "Meldedatum": "2020-03-22",
+    "sumValue": 470
+  },
+  {
+    "value": 95,
+    "Meldedatum": "2020-03-23",
+    "sumValue": 565
+  },
+  {
+    "value": 125,
+    "Meldedatum": "2020-03-24",
+    "sumValue": 690
+  },
+  {
+    "value": 145,
+    "Meldedatum": "2020-03-25",
+    "sumValue": 835
+  },
+  {
+    "value": 193,
+    "Meldedatum": "2020-03-26",
+    "sumValue": 1028
+  },
+  {
+    "value": 215,
+    "Meldedatum": "2020-03-27",
+    "sumValue": 1243
+  },
+  {
+    "value": 194,
+    "Meldedatum": "2020-03-28",
+    "sumValue": 1437
+  },
+  {
+    "value": 112,
+    "Meldedatum": "2020-03-29",
+    "sumValue": 1549
+  },
+  {
+    "value": 178,
+    "Meldedatum": "2020-03-30",
+    "sumValue": 1727
+  },
+  {
+    "value": 246,
+    "Meldedatum": "2020-03-31",
+    "sumValue": 1973
+  },
+  {
+    "value": 251,
+    "Meldedatum": "2020-04-01",
+    "sumValue": 2224
+  },
+  {
+    "value": 245,
+    "Meldedatum": "2020-04-02",
+    "sumValue": 2469
+  },
+  {
+    "value": 200,
+    "Meldedatum": "2020-04-03",
+    "sumValue": 2669
+  },
+  {
+    "value": 107,
+    "Meldedatum": "2020-04-04",
+    "sumValue": 2776
+  },
+  {
+    "value": 89,
+    "Meldedatum": "2020-04-05",
+    "sumValue": 2865
+  },
+  {
+    "value": 141,
+    "Meldedatum": "2020-04-06",
+    "sumValue": 3006
+  },
+  {
+    "value": 132,
+    "Meldedatum": "2020-04-07",
+    "sumValue": 3138
+  },
+  {
+    "value": 122,
+    "Meldedatum": "2020-04-08",
+    "sumValue": 3260
+  },
+  {
+    "value": 104,
+    "Meldedatum": "2020-04-09",
+    "sumValue": 3364
+  },
+  {
+    "value": 52,
+    "Meldedatum": "2020-04-10",
+    "sumValue": 3416
+  },
+  {
+    "value": 33,
+    "Meldedatum": "2020-04-11",
+    "sumValue": 3449
+  },
+  {
+    "value": 36,
+    "Meldedatum": "2020-04-12",
+    "sumValue": 3485
+  },
+  {
+    "value": 37,
+    "Meldedatum": "2020-04-13",
+    "sumValue": 3522
+  }
+]
