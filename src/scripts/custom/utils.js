@@ -23,6 +23,10 @@ export function germanDate(dateString) {
   return date.toLocaleDateString('de-DE', options);
 }
 
+export function casesPerThousand(cases, population) {
+  return (cases * 1000) / population;
+}
+
 export function doublingTime(data) {
   const date1 = new Date(data[data.length-2].Meldedatum);
   const value1 = data[data.length-2].sumValue;
@@ -37,7 +41,6 @@ export function doublingTime(data) {
 
   return `${minDays} bis ${maxDays}`;
 }
-
 
 export function pretty(number) {
   const string = (Math.round(number * 10) / 10).toString().split('.');
