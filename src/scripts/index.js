@@ -21,7 +21,7 @@ import bayernRegbezCases from './data/cases/bayern-regbez-cases.json';
 import bayernRegbezDeaths from './data/deaths/bayern-regbez-deaths.json';
 
 import bayernLkrCases from './data/cases/bayern-lkr-cases.json';
-import bayernLkrDeaths from './data/deaths/bayer-lkr-deaths.json';
+import bayernLkrDeaths from './data/deaths/bayern-lkr-deaths.json';
 
 import deutschlandCases from './data/cases/deutschland-cases.json';
 import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
