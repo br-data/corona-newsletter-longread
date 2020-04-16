@@ -11,6 +11,7 @@ import * as bayernLkrText from './custom/bayern-lkr-text';
 import * as bayernRegbezTable from './custom/bayern-regbez-table';
 
 import * as deutschlandText from './custom/deutschland-text';
+import * as deutschlandBlText from './custom/deutschland-bl-text';
 
 // Mock data for testing
 import bayernCases from './data/cases/bayern-cases.json';
@@ -24,6 +25,9 @@ import bayernLkrDeaths from './data/deaths/bayer-lkr-deaths.json';
 
 import deutschlandCases from './data/cases/deutschland-cases.json';
 import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
+
+import deutschlandBlCases from './data/cases/deutschland-bl-cases.json';
+import deutschlandBlDeaths from './data/deaths/deutschland-bl-deaths.json';
 
 // import Chart from './custom/chart/chart';
 // import chartData from './custom/chart/chart-data.json';
@@ -77,6 +81,16 @@ async function init() {
     selector: '#deutschland-text',
     caseData: deutschlandCases,
     deathData: deutschlandDeaths
+  });
+
+  // const deutschlandBlCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=2020-04-13&group=Bundesland').then((response) => { return response.json(); });
+
+  // const deutschlandBlDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=2020-04-13&group=Bundesland&sumField=AnzahlTodesfall').then((response) => { return response.json(); });
+
+  deutschlandBlText.init({
+    selector: '#deutschland-bl-text',
+    caseData: deutschlandBlCases,
+    deathData: deutschlandBlDeaths
   });
 
   lazyload

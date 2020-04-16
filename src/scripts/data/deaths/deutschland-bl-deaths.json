@@ -1,3170 +1,3170 @@
 [
   {
-    "value": 2,
+    "value": 130,
     "Meldedatum": "2020-03-12",
     "Bundesland": "Bayern",
-    "sumValue": 7
+    "sumValue": 582
   },
   {
-    "value": 3,
+    "value": 245,
     "Meldedatum": "2020-03-13",
     "Bundesland": "Bayern",
-    "sumValue": 10
+    "sumValue": 827
   },
   {
-    "value": 5,
+    "value": 229,
     "Meldedatum": "2020-03-14",
     "Bundesland": "Bayern",
-    "sumValue": 15
+    "sumValue": 1056
   },
   {
-    "value": 3,
+    "value": 156,
     "Meldedatum": "2020-03-15",
     "Bundesland": "Bayern",
-    "sumValue": 18
+    "sumValue": 1212
   },
   {
-    "value": 6,
+    "value": 264,
     "Meldedatum": "2020-03-16",
     "Bundesland": "Bayern",
-    "sumValue": 24
+    "sumValue": 1476
   },
   {
-    "value": 8,
+    "value": 461,
     "Meldedatum": "2020-03-17",
     "Bundesland": "Bayern",
-    "sumValue": 32
+    "sumValue": 1937
   },
   {
-    "value": 10,
+    "value": 699,
     "Meldedatum": "2020-03-18",
     "Bundesland": "Bayern",
-    "sumValue": 42
+    "sumValue": 2636
   },
   {
-    "value": 5,
+    "value": 773,
     "Meldedatum": "2020-03-19",
     "Bundesland": "Bayern",
-    "sumValue": 47
+    "sumValue": 3409
   },
   {
-    "value": 23,
+    "value": 900,
     "Meldedatum": "2020-03-20",
     "Bundesland": "Bayern",
-    "sumValue": 70
+    "sumValue": 4309
   },
   {
-    "value": 36,
+    "value": 1056,
     "Meldedatum": "2020-03-21",
     "Bundesland": "Bayern",
-    "sumValue": 106
+    "sumValue": 5365
   },
   {
-    "value": 20,
+    "value": 602,
     "Meldedatum": "2020-03-22",
     "Bundesland": "Bayern",
-    "sumValue": 126
+    "sumValue": 5967
   },
   {
-    "value": 33,
+    "value": 677,
     "Meldedatum": "2020-03-23",
     "Bundesland": "Bayern",
-    "sumValue": 159
+    "sumValue": 6644
   },
   {
-    "value": 32,
+    "value": 1137,
     "Meldedatum": "2020-03-24",
     "Bundesland": "Bayern",
-    "sumValue": 191
+    "sumValue": 7781
   },
   {
-    "value": 36,
+    "value": 1615,
     "Meldedatum": "2020-03-25",
     "Bundesland": "Bayern",
-    "sumValue": 227
+    "sumValue": 9396
   },
   {
-    "value": 70,
+    "value": 1637,
     "Meldedatum": "2020-03-26",
     "Bundesland": "Bayern",
-    "sumValue": 297
+    "sumValue": 11033
   },
   {
-    "value": 63,
+    "value": 1767,
     "Meldedatum": "2020-03-27",
     "Bundesland": "Bayern",
-    "sumValue": 360
+    "sumValue": 12800
   },
   {
-    "value": 67,
+    "value": 1455,
     "Meldedatum": "2020-03-28",
     "Bundesland": "Bayern",
-    "sumValue": 427
+    "sumValue": 14255
   },
   {
-    "value": 33,
+    "value": 860,
     "Meldedatum": "2020-03-29",
     "Bundesland": "Bayern",
-    "sumValue": 460
+    "sumValue": 15115
   },
   {
-    "value": 49,
+    "value": 1003,
     "Meldedatum": "2020-03-30",
     "Bundesland": "Bayern",
-    "sumValue": 509
+    "sumValue": 16118
   },
   {
-    "value": 77,
+    "value": 1770,
     "Meldedatum": "2020-03-31",
     "Bundesland": "Bayern",
-    "sumValue": 586
+    "sumValue": 17888
+  },
+  {
+    "value": 1949,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Bayern",
+    "sumValue": 19837
+  },
+  {
+    "value": 1957,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Bayern",
+    "sumValue": 21794
+  },
+  {
+    "value": 1976,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Bayern",
+    "sumValue": 23770
+  },
+  {
+    "value": 1430,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Bayern",
+    "sumValue": 25200
+  },
+  {
+    "value": 692,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Bayern",
+    "sumValue": 25892
+  },
+  {
+    "value": 1123,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Bayern",
+    "sumValue": 27015
+  },
+  {
+    "value": 1497,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Bayern",
+    "sumValue": 28512
+  },
+  {
+    "value": 1562,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Bayern",
+    "sumValue": 30074
+  },
+  {
+    "value": 1264,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Bayern",
+    "sumValue": 31338
+  },
+  {
+    "value": 914,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Bayern",
+    "sumValue": 32252
+  },
+  {
+    "value": 788,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Bayern",
+    "sumValue": 33040
+  },
+  {
+    "value": 413,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Bayern",
+    "sumValue": 33453
+  },
+  {
+    "value": 455,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Bayern",
+    "sumValue": 33908
+  },
+  {
+    "value": 181,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 731
+  },
+  {
+    "value": 313,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 1044
+  },
+  {
+    "value": 329,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 1373
+  },
+  {
+    "value": 181,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 1554
+  },
+  {
+    "value": 429,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 1983
+  },
+  {
+    "value": 598,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 2581
+  },
+  {
+    "value": 788,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 3369
+  },
+  {
+    "value": 653,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 4022
+  },
+  {
+    "value": 841,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 4863
+  },
+  {
+    "value": 556,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 5419
+  },
+  {
+    "value": 546,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 5965
+  },
+  {
+    "value": 634,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 6599
+  },
+  {
+    "value": 1176,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 7775
+  },
+  {
+    "value": 1176,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 8951
+  },
+  {
+    "value": 1202,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 10153
+  },
+  {
+    "value": 1231,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 11384
+  },
+  {
+    "value": 1013,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 12397
+  },
+  {
+    "value": 661,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 13058
+  },
+  {
+    "value": 901,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 13959
+  },
+  {
+    "value": 1217,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 15176
+  },
+  {
+    "value": 1228,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 16404
+  },
+  {
+    "value": 1392,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 17796
+  },
+  {
+    "value": 1270,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 19066
+  },
+  {
+    "value": 826,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 19892
+  },
+  {
+    "value": 493,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 20385
+  },
+  {
+    "value": 554,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 20939
+  },
+  {
+    "value": 882,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 21821
+  },
+  {
+    "value": 901,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 22722
+  },
+  {
+    "value": 954,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 23676
+  },
+  {
+    "value": 605,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 24281
+  },
+  {
+    "value": 726,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 25007
+  },
+  {
+    "value": 368,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 25375
+  },
+  {
+    "value": 264,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Baden-Württemberg",
+    "sumValue": 25639
+  },
+  {
+    "value": 25,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Brandenburg",
+    "sumValue": 53
+  },
+  {
+    "value": 22,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Brandenburg",
+    "sumValue": 75
+  },
+  {
+    "value": 14,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Brandenburg",
+    "sumValue": 89
+  },
+  {
+    "value": 22,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Brandenburg",
+    "sumValue": 111
+  },
+  {
+    "value": 26,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Brandenburg",
+    "sumValue": 137
   },
   {
     "value": 66,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Brandenburg",
+    "sumValue": 203
+  },
+  {
+    "value": 56,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Brandenburg",
+    "sumValue": 259
+  },
+  {
+    "value": 56,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Brandenburg",
+    "sumValue": 315
+  },
+  {
+    "value": 64,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Brandenburg",
+    "sumValue": 379
+  },
+  {
+    "value": 25,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Brandenburg",
+    "sumValue": 404
+  },
+  {
+    "value": 21,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Brandenburg",
+    "sumValue": 425
+  },
+  {
+    "value": 51,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Brandenburg",
+    "sumValue": 476
+  },
+  {
+    "value": 55,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Brandenburg",
+    "sumValue": 531
+  },
+  {
+    "value": 91,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Brandenburg",
+    "sumValue": 622
+  },
+  {
+    "value": 73,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Brandenburg",
+    "sumValue": 695
+  },
+  {
+    "value": 78,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Brandenburg",
+    "sumValue": 773
+  },
+  {
+    "value": 45,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Brandenburg",
+    "sumValue": 818
+  },
+  {
+    "value": 28,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Brandenburg",
+    "sumValue": 846
+  },
+  {
+    "value": 93,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Brandenburg",
+    "sumValue": 939
+  },
+  {
+    "value": 124,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1063
+  },
+  {
+    "value": 71,
     "Meldedatum": "2020-04-01",
-    "Bundesland": "Bayern",
-    "sumValue": 652
+    "Bundesland": "Brandenburg",
+    "sumValue": 1134
   },
   {
-    "value": 82,
+    "value": 102,
     "Meldedatum": "2020-04-02",
-    "Bundesland": "Bayern",
-    "sumValue": 734
+    "Bundesland": "Brandenburg",
+    "sumValue": 1236
   },
   {
-    "value": 48,
+    "value": 126,
     "Meldedatum": "2020-04-03",
-    "Bundesland": "Bayern",
-    "sumValue": 782
+    "Bundesland": "Brandenburg",
+    "sumValue": 1362
   },
   {
-    "value": 31,
+    "value": 40,
     "Meldedatum": "2020-04-04",
-    "Bundesland": "Bayern",
-    "sumValue": 813
+    "Bundesland": "Brandenburg",
+    "sumValue": 1402
   },
   {
     "value": 24,
     "Meldedatum": "2020-04-05",
-    "Bundesland": "Bayern",
-    "sumValue": 837
+    "Bundesland": "Brandenburg",
+    "sumValue": 1426
   },
   {
-    "value": 35,
+    "value": 69,
     "Meldedatum": "2020-04-06",
-    "Bundesland": "Bayern",
-    "sumValue": 872
+    "Bundesland": "Brandenburg",
+    "sumValue": 1495
+  },
+  {
+    "value": 104,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1599
+  },
+  {
+    "value": 115,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1714
+  },
+  {
+    "value": 103,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1817
+  },
+  {
+    "value": 71,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1888
+  },
+  {
+    "value": 45,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1933
+  },
+  {
+    "value": 42,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1975
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Brandenburg",
+    "sumValue": 1986
+  },
+  {
+    "value": 68,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 212
+  },
+  {
+    "value": 83,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 295
+  },
+  {
+    "value": 59,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 354
+  },
+  {
+    "value": 57,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 411
+  },
+  {
+    "value": 151,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 562
+  },
+  {
+    "value": 171,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 733
+  },
+  {
+    "value": 264,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 997
+  },
+  {
+    "value": 246,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 1243
+  },
+  {
+    "value": 266,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 1509
+  },
+  {
+    "value": 180,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 1689
+  },
+  {
+    "value": 107,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 1796
+  },
+  {
+    "value": 242,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 2038
+  },
+  {
+    "value": 300,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 2338
+  },
+  {
+    "value": 384,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 2722
+  },
+  {
+    "value": 374,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 3096
+  },
+  {
+    "value": 403,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 3499
+  },
+  {
+    "value": 348,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 3847
+  },
+  {
+    "value": 176,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 4023
+  },
+  {
+    "value": 305,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 4328
+  },
+  {
+    "value": 352,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 4680
+  },
+  {
+    "value": 368,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 5048
+  },
+  {
+    "value": 334,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 5382
+  },
+  {
+    "value": 386,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 5768
+  },
+  {
+    "value": 227,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 5995
+  },
+  {
+    "value": 142,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 6137
+  },
+  {
+    "value": 230,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 6367
+  },
+  {
+    "value": 369,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 6736
+  },
+  {
+    "value": 326,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 7062
+  },
+  {
+    "value": 305,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 7367
+  },
+  {
+    "value": 250,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 7617
+  },
+  {
+    "value": 130,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 7747
+  },
+  {
+    "value": 150,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 7897
+  },
+  {
+    "value": 74,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Niedersachsen",
+    "sumValue": 7971
+  },
+  {
+    "value": 284,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 1216
+  },
+  {
+    "value": 413,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 1629
+  },
+  {
+    "value": 320,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 1949
+  },
+  {
+    "value": 241,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 2190
+  },
+  {
+    "value": 602,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 2792
+  },
+  {
+    "value": 902,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 3694
+  },
+  {
+    "value": 707,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 4401
+  },
+  {
+    "value": 1126,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 5527
+  },
+  {
+    "value": 850,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 6377
+  },
+  {
+    "value": 674,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 7051
+  },
+  {
+    "value": 431,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 7482
+  },
+  {
+    "value": 878,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 8360
+  },
+  {
+    "value": 799,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 9159
+  },
+  {
+    "value": 1037,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 10196
+  },
+  {
+    "value": 1039,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 11235
+  },
+  {
+    "value": 1102,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 12337
+  },
+  {
+    "value": 750,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 13087
+  },
+  {
+    "value": 640,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 13727
+  },
+  {
+    "value": 866,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 14593
+  },
+  {
+    "value": 1097,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 15690
+  },
+  {
+    "value": 1150,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 16840
+  },
+  {
+    "value": 1207,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 18047
+  },
+  {
+    "value": 1035,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 19082
+  },
+  {
+    "value": 678,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 19760
+  },
+  {
+    "value": 495,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 20255
+  },
+  {
+    "value": 867,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 21122
+  },
+  {
+    "value": 901,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 22023
+  },
+  {
+    "value": 1019,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 23042
+  },
+  {
+    "value": 981,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 24023
+  },
+  {
+    "value": 582,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 24605
+  },
+  {
+    "value": 575,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 25180
+  },
+  {
+    "value": 379,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 25559
+  },
+  {
+    "value": 289,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Nordrhein-Westfalen",
+    "sumValue": 25848
+  },
+  {
+    "value": 37,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Hessen",
+    "sumValue": 132
+  },
+  {
+    "value": 77,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Hessen",
+    "sumValue": 209
+  },
+  {
+    "value": 83,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Hessen",
+    "sumValue": 292
+  },
+  {
+    "value": 25,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Hessen",
+    "sumValue": 317
+  },
+  {
+    "value": 127,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Hessen",
+    "sumValue": 444
+  },
+  {
+    "value": 169,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Hessen",
+    "sumValue": 613
+  },
+  {
+    "value": 223,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Hessen",
+    "sumValue": 836
+  },
+  {
+    "value": 201,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Hessen",
+    "sumValue": 1037
+  },
+  {
+    "value": 219,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Hessen",
+    "sumValue": 1256
+  },
+  {
+    "value": 134,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Hessen",
+    "sumValue": 1390
+  },
+  {
+    "value": 60,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Hessen",
+    "sumValue": 1450
+  },
+  {
+    "value": 277,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Hessen",
+    "sumValue": 1727
+  },
+  {
+    "value": 235,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Hessen",
+    "sumValue": 1962
+  },
+  {
+    "value": 246,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Hessen",
+    "sumValue": 2208
+  },
+  {
+    "value": 298,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Hessen",
+    "sumValue": 2506
+  },
+  {
+    "value": 305,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Hessen",
+    "sumValue": 2811
+  },
+  {
+    "value": 187,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Hessen",
+    "sumValue": 2998
+  },
+  {
+    "value": 139,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Hessen",
+    "sumValue": 3137
+  },
+  {
+    "value": 185,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Hessen",
+    "sumValue": 3322
+  },
+  {
+    "value": 255,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Hessen",
+    "sumValue": 3577
+  },
+  {
+    "value": 333,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Hessen",
+    "sumValue": 3910
+  },
+  {
+    "value": 268,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Hessen",
+    "sumValue": 4178
+  },
+  {
+    "value": 247,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Hessen",
+    "sumValue": 4425
+  },
+  {
+    "value": 226,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Hessen",
+    "sumValue": 4651
+  },
+  {
+    "value": 91,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Hessen",
+    "sumValue": 4742
+  },
+  {
+    "value": 137,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Hessen",
+    "sumValue": 4879
+  },
+  {
+    "value": 256,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Hessen",
+    "sumValue": 5135
+  },
+  {
+    "value": 303,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Hessen",
+    "sumValue": 5438
+  },
+  {
+    "value": 292,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Hessen",
+    "sumValue": 5730
+  },
+  {
+    "value": 154,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Hessen",
+    "sumValue": 5884
+  },
+  {
+    "value": 153,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Hessen",
+    "sumValue": 6037
+  },
+  {
+    "value": 97,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Hessen",
+    "sumValue": 6134
+  },
+  {
+    "value": 77,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Hessen",
+    "sumValue": 6211
+  },
+  {
+    "value": 62,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 130
+  },
+  {
+    "value": 58,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 188
+  },
+  {
+    "value": 51,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 239
+  },
+  {
+    "value": 96,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 335
+  },
+  {
+    "value": 118,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 453
+  },
+  {
+    "value": 167,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 620
+  },
+  {
+    "value": 156,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 776
+  },
+  {
+    "value": 134,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 910
+  },
+  {
+    "value": 177,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 1087
+  },
+  {
+    "value": 115,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 1202
+  },
+  {
+    "value": 142,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 1344
+  },
+  {
+    "value": 197,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 1541
+  },
+  {
+    "value": 206,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 1747
+  },
+  {
+    "value": 171,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 1918
+  },
+  {
+    "value": 216,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 2134
+  },
+  {
+    "value": 270,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 2404
+  },
+  {
+    "value": 164,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 2568
+  },
+  {
+    "value": 143,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 2711
+  },
+  {
+    "value": 143,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 2854
+  },
+  {
+    "value": 200,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 3054
+  },
+  {
+    "value": 254,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 3308
+  },
+  {
+    "value": 192,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 3500
+  },
+  {
+    "value": 214,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 3714
+  },
+  {
+    "value": 140,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 3854
+  },
+  {
+    "value": 106,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 3960
+  },
+  {
+    "value": 138,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4098
+  },
+  {
+    "value": 181,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4279
+  },
+  {
+    "value": 174,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4453
+  },
+  {
+    "value": 158,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4611
+  },
+  {
+    "value": 130,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4741
+  },
+  {
+    "value": 75,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4816
+  },
+  {
+    "value": 67,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4883
+  },
+  {
+    "value": 74,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Rheinland-Pfalz",
+    "sumValue": 4957
+  },
+  {
+    "value": 18,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 56
+  },
+  {
+    "value": 27,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 83
+  },
+  {
+    "value": 24,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 107
+  },
+  {
+    "value": 20,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 127
+  },
+  {
+    "value": 28,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 155
+  },
+  {
+    "value": 47,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 202
+  },
+  {
+    "value": 54,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 256
+  },
+  {
+    "value": 60,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 316
+  },
+  {
+    "value": 79,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 395
+  },
+  {
+    "value": 48,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 443
+  },
+  {
+    "value": 34,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 477
+  },
+  {
+    "value": 92,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 569
+  },
+  {
+    "value": 101,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 670
+  },
+  {
+    "value": 88,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 758
+  },
+  {
+    "value": 97,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 855
+  },
+  {
+    "value": 115,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 970
+  },
+  {
+    "value": 84,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1054
+  },
+  {
+    "value": 44,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1098
+  },
+  {
+    "value": 78,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1176
+  },
+  {
+    "value": 105,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1281
+  },
+  {
+    "value": 110,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1391
+  },
+  {
+    "value": 108,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1499
+  },
+  {
+    "value": 113,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1612
+  },
+  {
+    "value": 68,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1680
+  },
+  {
+    "value": 33,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1713
+  },
+  {
+    "value": 60,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1773
+  },
+  {
+    "value": 101,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1874
+  },
+  {
+    "value": 87,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 1961
+  },
+  {
+    "value": 93,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 2054
+  },
+  {
+    "value": 33,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 2087
   },
   {
     "value": 39,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Bayern",
-    "sumValue": 911
-  },
-  {
-    "value": 38,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Bayern",
-    "sumValue": 949
-  },
-  {
-    "value": 32,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Bayern",
-    "sumValue": 981
-  },
-  {
-    "value": 19,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Bayern",
-    "sumValue": 1000
-  },
-  {
-    "value": 19,
     "Meldedatum": "2020-04-11",
-    "Bundesland": "Bayern",
-    "sumValue": 1019
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 2126
+  },
+  {
+    "value": 16,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 2142
+  },
+  {
+    "value": 97,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Schleswig-Holstein",
+    "sumValue": 2239
+  },
+  {
+    "value": 42,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Hamburg",
+    "sumValue": 140
+  },
+  {
+    "value": 33,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Hamburg",
+    "sumValue": 173
+  },
+  {
+    "value": 75,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Hamburg",
+    "sumValue": 248
+  },
+  {
+    "value": 73,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Hamburg",
+    "sumValue": 321
+  },
+  {
+    "value": 72,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Hamburg",
+    "sumValue": 393
+  },
+  {
+    "value": 132,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Hamburg",
+    "sumValue": 525
+  },
+  {
+    "value": 128,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Hamburg",
+    "sumValue": 653
+  },
+  {
+    "value": 194,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Hamburg",
+    "sumValue": 847
+  },
+  {
+    "value": 139,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Hamburg",
+    "sumValue": 986
+  },
+  {
+    "value": 110,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Hamburg",
+    "sumValue": 1096
+  },
+  {
+    "value": 144,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Hamburg",
+    "sumValue": 1240
+  },
+  {
+    "value": 129,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Hamburg",
+    "sumValue": 1369
+  },
+  {
+    "value": 175,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Hamburg",
+    "sumValue": 1544
+  },
+  {
+    "value": 139,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Hamburg",
+    "sumValue": 1683
+  },
+  {
+    "value": 146,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Hamburg",
+    "sumValue": 1829
+  },
+  {
+    "value": 140,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Hamburg",
+    "sumValue": 1969
+  },
+  {
+    "value": 144,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Hamburg",
+    "sumValue": 2113
+  },
+  {
+    "value": 109,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Hamburg",
+    "sumValue": 2222
+  },
+  {
+    "value": 73,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Hamburg",
+    "sumValue": 2295
+  },
+  {
+    "value": 148,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Hamburg",
+    "sumValue": 2443
+  },
+  {
+    "value": 129,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Hamburg",
+    "sumValue": 2572
+  },
+  {
+    "value": 167,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Hamburg",
+    "sumValue": 2739
+  },
+  {
+    "value": 151,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Hamburg",
+    "sumValue": 2890
+  },
+  {
+    "value": 106,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Hamburg",
+    "sumValue": 2996
+  },
+  {
+    "value": 105,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Hamburg",
+    "sumValue": 3101
+  },
+  {
+    "value": 105,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Hamburg",
+    "sumValue": 3206
+  },
+  {
+    "value": 185,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Hamburg",
+    "sumValue": 3391
+  },
+  {
+    "value": 103,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Hamburg",
+    "sumValue": 3494
+  },
+  {
+    "value": 119,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Hamburg",
+    "sumValue": 3613
+  },
+  {
+    "value": 99,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Hamburg",
+    "sumValue": 3712
+  },
+  {
+    "value": 77,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Hamburg",
+    "sumValue": 3789
+  },
+  {
+    "value": 45,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Hamburg",
+    "sumValue": 3834
+  },
+  {
+    "value": 44,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Hamburg",
+    "sumValue": 3878
   },
   {
     "value": 7,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Bayern",
-    "sumValue": 1026
-  },
-  {
-    "value": 12,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Bayern",
-    "sumValue": 1038
-  },
-  {
-    "value": 3,
     "Meldedatum": "2020-03-12",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 13
+    "Bundesland": "Bremen",
+    "sumValue": 40
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Bremen",
+    "sumValue": 49
   },
   {
     "value": 3,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 16
-  },
-  {
-    "value": 6,
     "Meldedatum": "2020-03-14",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 22
+    "Bundesland": "Bremen",
+    "sumValue": 52
   },
   {
     "value": 3,
     "Meldedatum": "2020-03-15",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 25
+    "Bundesland": "Bremen",
+    "sumValue": 55
   },
   {
-    "value": 10,
+    "value": 1,
     "Meldedatum": "2020-03-16",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 35
+    "Bundesland": "Bremen",
+    "sumValue": 56
   },
   {
     "value": 12,
     "Meldedatum": "2020-03-17",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 47
+    "Bundesland": "Bremen",
+    "sumValue": 68
   },
   {
-    "value": 12,
+    "value": 11,
     "Meldedatum": "2020-03-18",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 59
+    "Bundesland": "Bremen",
+    "sumValue": 79
   },
   {
-    "value": 16,
+    "value": 40,
     "Meldedatum": "2020-03-19",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 75
+    "Bundesland": "Bremen",
+    "sumValue": 119
   },
   {
-    "value": 28,
+    "value": 25,
     "Meldedatum": "2020-03-20",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 103
+    "Bundesland": "Bremen",
+    "sumValue": 144
+  },
+  {
+    "value": 22,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Bremen",
+    "sumValue": 166
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Bremen",
+    "sumValue": 170
   },
   {
     "value": 12,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 115
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Bremen",
+    "sumValue": 182
+  },
+  {
+    "value": 19,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Bremen",
+    "sumValue": 201
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Bremen",
+    "sumValue": 212
+  },
+  {
+    "value": 32,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Bremen",
+    "sumValue": 244
+  },
+  {
+    "value": 20,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Bremen",
+    "sumValue": 264
+  },
+  {
+    "value": 25,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Bremen",
+    "sumValue": 289
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Bremen",
+    "sumValue": 290
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Bremen",
+    "sumValue": 299
   },
   {
     "value": 17,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 132
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Bremen",
+    "sumValue": 316
   },
   {
-    "value": 21,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 153
+    "value": 16,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Bremen",
+    "sumValue": 332
   },
   {
-    "value": 38,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 191
+    "value": 11,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Bremen",
+    "sumValue": 343
   },
   {
-    "value": 37,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 228
+    "value": 34,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Bremen",
+    "sumValue": 377
   },
   {
-    "value": 56,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 284
+    "value": 15,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Bremen",
+    "sumValue": 392
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Bremen",
+    "sumValue": 395
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Bremen",
+    "sumValue": 400
+  },
+  {
+    "value": 36,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Bremen",
+    "sumValue": 436
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Bremen",
+    "sumValue": 442
+  },
+  {
+    "value": 18,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Bremen",
+    "sumValue": 460
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Bremen",
+    "sumValue": 469
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Bremen",
+    "sumValue": 482
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Bremen",
+    "sumValue": 486
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Bremen",
+    "sumValue": 492
+  },
+  {
+    "value": 29,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Sachsen",
+    "sumValue": 77
   },
   {
     "value": 33,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 317
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Sachsen",
+    "sumValue": 110
   },
   {
-    "value": 46,
+    "value": 30,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Sachsen",
+    "sumValue": 140
+  },
+  {
+    "value": 26,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Sachsen",
+    "sumValue": 166
+  },
+  {
+    "value": 40,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Sachsen",
+    "sumValue": 206
+  },
+  {
+    "value": 81,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Sachsen",
+    "sumValue": 287
+  },
+  {
+    "value": 123,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Sachsen",
+    "sumValue": 410
+  },
+  {
+    "value": 147,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Sachsen",
+    "sumValue": 557
+  },
+  {
+    "value": 131,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Sachsen",
+    "sumValue": 688
+  },
+  {
+    "value": 108,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Sachsen",
+    "sumValue": 796
+  },
+  {
+    "value": 42,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Sachsen",
+    "sumValue": 838
+  },
+  {
+    "value": 119,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Sachsen",
+    "sumValue": 957
+  },
+  {
+    "value": 155,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Sachsen",
+    "sumValue": 1112
+  },
+  {
+    "value": 180,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Sachsen",
+    "sumValue": 1292
+  },
+  {
+    "value": 171,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Sachsen",
+    "sumValue": 1463
+  },
+  {
+    "value": 185,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Sachsen",
+    "sumValue": 1648
+  },
+  {
+    "value": 153,
     "Meldedatum": "2020-03-28",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 363
+    "Bundesland": "Sachsen",
+    "sumValue": 1801
+  },
+  {
+    "value": 71,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Sachsen",
+    "sumValue": 1872
+  },
+  {
+    "value": 135,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Sachsen",
+    "sumValue": 2007
+  },
+  {
+    "value": 181,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Sachsen",
+    "sumValue": 2188
+  },
+  {
+    "value": 187,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Sachsen",
+    "sumValue": 2375
+  },
+  {
+    "value": 223,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Sachsen",
+    "sumValue": 2598
+  },
+  {
+    "value": 246,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Sachsen",
+    "sumValue": 2844
+  },
+  {
+    "value": 137,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Sachsen",
+    "sumValue": 2981
+  },
+  {
+    "value": 67,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Sachsen",
+    "sumValue": 3048
+  },
+  {
+    "value": 80,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Sachsen",
+    "sumValue": 3128
+  },
+  {
+    "value": 141,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Sachsen",
+    "sumValue": 3269
+  },
+  {
+    "value": 158,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Sachsen",
+    "sumValue": 3427
+  },
+  {
+    "value": 98,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Sachsen",
+    "sumValue": 3525
+  },
+  {
+    "value": 130,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Sachsen",
+    "sumValue": 3655
+  },
+  {
+    "value": 76,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Sachsen",
+    "sumValue": 3731
+  },
+  {
+    "value": 89,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Sachsen",
+    "sumValue": 3820
+  },
+  {
+    "value": 41,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Sachsen",
+    "sumValue": 3861
+  },
+  {
+    "value": 47,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Berlin",
+    "sumValue": 181
+  },
+  {
+    "value": 59,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Berlin",
+    "sumValue": 240
+  },
+  {
+    "value": 29,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Berlin",
+    "sumValue": 269
+  },
+  {
+    "value": 25,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Berlin",
+    "sumValue": 294
+  },
+  {
+    "value": 61,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Berlin",
+    "sumValue": 355
+  },
+  {
+    "value": 95,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Berlin",
+    "sumValue": 450
+  },
+  {
+    "value": 144,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Berlin",
+    "sumValue": 594
+  },
+  {
+    "value": 177,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Berlin",
+    "sumValue": 771
+  },
+  {
+    "value": 167,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Berlin",
+    "sumValue": 938
+  },
+  {
+    "value": 126,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Berlin",
+    "sumValue": 1064
+  },
+  {
+    "value": 66,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Berlin",
+    "sumValue": 1130
+  },
+  {
+    "value": 158,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Berlin",
+    "sumValue": 1288
+  },
+  {
+    "value": 199,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Berlin",
+    "sumValue": 1487
+  },
+  {
+    "value": 247,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Berlin",
+    "sumValue": 1734
+  },
+  {
+    "value": 281,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Berlin",
+    "sumValue": 2015
+  },
+  {
+    "value": 199,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Berlin",
+    "sumValue": 2214
+  },
+  {
+    "value": 186,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Berlin",
+    "sumValue": 2400
+  },
+  {
+    "value": 87,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Berlin",
+    "sumValue": 2487
+  },
+  {
+    "value": 166,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Berlin",
+    "sumValue": 2653
+  },
+  {
+    "value": 213,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Berlin",
+    "sumValue": 2866
+  },
+  {
+    "value": 188,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Berlin",
+    "sumValue": 3054
+  },
+  {
+    "value": 231,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Berlin",
+    "sumValue": 3285
+  },
+  {
+    "value": 238,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Berlin",
+    "sumValue": 3523
+  },
+  {
+    "value": 107,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Berlin",
+    "sumValue": 3630
+  },
+  {
+    "value": 76,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Berlin",
+    "sumValue": 3706
+  },
+  {
+    "value": 148,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Berlin",
+    "sumValue": 3854
+  },
+  {
+    "value": 196,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Berlin",
+    "sumValue": 4050
+  },
+  {
+    "value": 176,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Berlin",
+    "sumValue": 4226
+  },
+  {
+    "value": 176,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Berlin",
+    "sumValue": 4402
+  },
+  {
+    "value": 81,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Berlin",
+    "sumValue": 4483
+  },
+  {
+    "value": 86,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Berlin",
+    "sumValue": 4569
+  },
+  {
+    "value": 52,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Berlin",
+    "sumValue": 4621
+  },
+  {
+    "value": 60,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Berlin",
+    "sumValue": 4681
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 29
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 38
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 39
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 40
+  },
+  {
+    "value": 14,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 54
+  },
+  {
+    "value": 31,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 85
+  },
+  {
+    "value": 43,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 128
+  },
+  {
+    "value": 34,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 162
+  },
+  {
+    "value": 16,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 178
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 189
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 190
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 203
+  },
+  {
+    "value": 37,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 240
+  },
+  {
+    "value": 24,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 264
+  },
+  {
+    "value": 24,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 288
+  },
+  {
+    "value": 42,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 330
+  },
+  {
+    "value": 21,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 351
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 362
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 375
+  },
+  {
+    "value": 50,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 425
   },
   {
     "value": 23,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 386
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 448
   },
   {
-    "value": 46,
+    "value": 29,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 477
+  },
+  {
+    "value": 30,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 507
+  },
+  {
+    "value": 15,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 522
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 524
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 528
+  },
+  {
+    "value": 36,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 564
+  },
+  {
+    "value": 8,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 572
+  },
+  {
+    "value": 16,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 588
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 599
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 612
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 615
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Mecklenburg-Vorpommern",
+    "sumValue": 619
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Thüringen",
+    "sumValue": 23
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Thüringen",
+    "sumValue": 33
+  },
+  {
+    "value": 18,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Thüringen",
+    "sumValue": 51
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Thüringen",
+    "sumValue": 52
+  },
+  {
+    "value": 18,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Thüringen",
+    "sumValue": 70
+  },
+  {
+    "value": 30,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Thüringen",
+    "sumValue": 100
+  },
+  {
+    "value": 37,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Thüringen",
+    "sumValue": 137
+  },
+  {
+    "value": 54,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Thüringen",
+    "sumValue": 191
+  },
+  {
+    "value": 76,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Thüringen",
+    "sumValue": 267
+  },
+  {
+    "value": 38,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Thüringen",
+    "sumValue": 305
+  },
+  {
+    "value": 27,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Thüringen",
+    "sumValue": 332
+  },
+  {
+    "value": 52,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Thüringen",
+    "sumValue": 384
+  },
+  {
+    "value": 72,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Thüringen",
+    "sumValue": 456
+  },
+  {
+    "value": 79,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Thüringen",
+    "sumValue": 535
+  },
+  {
+    "value": 75,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Thüringen",
+    "sumValue": 610
+  },
+  {
+    "value": 73,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Thüringen",
+    "sumValue": 683
+  },
+  {
+    "value": 68,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Thüringen",
+    "sumValue": 751
+  },
+  {
+    "value": 20,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Thüringen",
+    "sumValue": 771
+  },
+  {
+    "value": 35,
     "Meldedatum": "2020-03-30",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 432
+    "Bundesland": "Thüringen",
+    "sumValue": 806
+  },
+  {
+    "value": 79,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Thüringen",
+    "sumValue": 885
+  },
+  {
+    "value": 59,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Thüringen",
+    "sumValue": 944
+  },
+  {
+    "value": 85,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Thüringen",
+    "sumValue": 1029
+  },
+  {
+    "value": 71,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Thüringen",
+    "sumValue": 1100
+  },
+  {
+    "value": 50,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Thüringen",
+    "sumValue": 1150
+  },
+  {
+    "value": 40,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Thüringen",
+    "sumValue": 1190
+  },
+  {
+    "value": 27,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Thüringen",
+    "sumValue": 1217
+  },
+  {
+    "value": 74,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Thüringen",
+    "sumValue": 1291
+  },
+  {
+    "value": 65,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Thüringen",
+    "sumValue": 1356
+  },
+  {
+    "value": 68,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Thüringen",
+    "sumValue": 1424
+  },
+  {
+    "value": 27,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Thüringen",
+    "sumValue": 1451
+  },
+  {
+    "value": 26,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Thüringen",
+    "sumValue": 1477
+  },
+  {
+    "value": 32,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Thüringen",
+    "sumValue": 1509
+  },
+  {
+    "value": 21,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Thüringen",
+    "sumValue": 1530
+  },
+  {
+    "value": 15,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Saarland",
+    "sumValue": 33
+  },
+  {
+    "value": 16,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Saarland",
+    "sumValue": 49
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Saarland",
+    "sumValue": 62
+  },
+  {
+    "value": 17,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Saarland",
+    "sumValue": 79
+  },
+  {
+    "value": 23,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Saarland",
+    "sumValue": 102
+  },
+  {
+    "value": 20,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Saarland",
+    "sumValue": 122
+  },
+  {
+    "value": 39,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Saarland",
+    "sumValue": 161
+  },
+  {
+    "value": 40,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Saarland",
+    "sumValue": 201
+  },
+  {
+    "value": 33,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Saarland",
+    "sumValue": 234
+  },
+  {
+    "value": 39,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Saarland",
+    "sumValue": 273
+  },
+  {
+    "value": 47,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Saarland",
+    "sumValue": 320
+  },
+  {
+    "value": 59,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Saarland",
+    "sumValue": 379
+  },
+  {
+    "value": 31,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Saarland",
+    "sumValue": 410
+  },
+  {
+    "value": 48,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Saarland",
+    "sumValue": 458
+  },
+  {
+    "value": 71,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Saarland",
+    "sumValue": 529
+  },
+  {
+    "value": 61,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Saarland",
+    "sumValue": 590
+  },
+  {
+    "value": 69,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Saarland",
+    "sumValue": 659
+  },
+  {
+    "value": 76,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Saarland",
+    "sumValue": 735
+  },
+  {
+    "value": 69,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Saarland",
+    "sumValue": 804
+  },
+  {
+    "value": 124,
+    "Meldedatum": "2020-03-31",
+    "Bundesland": "Saarland",
+    "sumValue": 928
+  },
+  {
+    "value": 124,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Saarland",
+    "sumValue": 1052
+  },
+  {
+    "value": 177,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Saarland",
+    "sumValue": 1229
+  },
+  {
+    "value": 71,
+    "Meldedatum": "2020-04-03",
+    "Bundesland": "Saarland",
+    "sumValue": 1300
+  },
+  {
+    "value": 141,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Saarland",
+    "sumValue": 1441
+  },
+  {
+    "value": 92,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Saarland",
+    "sumValue": 1533
+  },
+  {
+    "value": 78,
+    "Meldedatum": "2020-04-06",
+    "Bundesland": "Saarland",
+    "sumValue": 1611
+  },
+  {
+    "value": 75,
+    "Meldedatum": "2020-04-07",
+    "Bundesland": "Saarland",
+    "sumValue": 1686
+  },
+  {
+    "value": 150,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Saarland",
+    "sumValue": 1836
+  },
+  {
+    "value": 131,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Saarland",
+    "sumValue": 1967
+  },
+  {
+    "value": 92,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Saarland",
+    "sumValue": 2059
+  },
+  {
+    "value": 22,
+    "Meldedatum": "2020-04-11",
+    "Bundesland": "Saarland",
+    "sumValue": 2081
+  },
+  {
+    "value": 20,
+    "Meldedatum": "2020-04-12",
+    "Bundesland": "Saarland",
+    "sumValue": 2101
+  },
+  {
+    "value": 30,
+    "Meldedatum": "2020-04-13",
+    "Bundesland": "Saarland",
+    "sumValue": 2131
+  },
+  {
+    "value": 14,
+    "Meldedatum": "2020-03-12",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 35
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-03-13",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 46
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-14",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 48
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-15",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 48
+  },
+  {
+    "value": 35,
+    "Meldedatum": "2020-03-16",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 83
+  },
+  {
+    "value": 29,
+    "Meldedatum": "2020-03-17",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 112
+  },
+  {
+    "value": 38,
+    "Meldedatum": "2020-03-18",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 150
+  },
+  {
+    "value": 42,
+    "Meldedatum": "2020-03-19",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 192
+  },
+  {
+    "value": 51,
+    "Meldedatum": "2020-03-20",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 243
+  },
+  {
+    "value": 17,
+    "Meldedatum": "2020-03-21",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 260
+  },
+  {
+    "value": 14,
+    "Meldedatum": "2020-03-22",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 274
+  },
+  {
+    "value": 66,
+    "Meldedatum": "2020-03-23",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 340
+  },
+  {
+    "value": 62,
+    "Meldedatum": "2020-03-24",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 402
+  },
+  {
+    "value": 51,
+    "Meldedatum": "2020-03-25",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 453
+  },
+  {
+    "value": 55,
+    "Meldedatum": "2020-03-26",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 508
+  },
+  {
+    "value": 78,
+    "Meldedatum": "2020-03-27",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 586
+  },
+  {
+    "value": 42,
+    "Meldedatum": "2020-03-28",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 628
+  },
+  {
+    "value": 19,
+    "Meldedatum": "2020-03-29",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 647
+  },
+  {
+    "value": 72,
+    "Meldedatum": "2020-03-30",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 719
   },
   {
     "value": 55,
     "Meldedatum": "2020-03-31",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 487
-  },
-  {
-    "value": 66,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 553
-  },
-  {
-    "value": 53,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 606
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 774
   },
   {
     "value": 36,
+    "Meldedatum": "2020-04-01",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 810
+  },
+  {
+    "value": 45,
+    "Meldedatum": "2020-04-02",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 855
+  },
+  {
+    "value": 44,
     "Meldedatum": "2020-04-03",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 642
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 899
+  },
+  {
+    "value": 34,
+    "Meldedatum": "2020-04-04",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 933
+  },
+  {
+    "value": 41,
+    "Meldedatum": "2020-04-05",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 974
   },
   {
     "value": 26,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 668
-  },
-  {
-    "value": 15,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 683
-  },
-  {
-    "value": 27,
     "Meldedatum": "2020-04-06",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 710
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 1000
   },
   {
-    "value": 19,
+    "value": 45,
     "Meldedatum": "2020-04-07",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 729
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 1045
+  },
+  {
+    "value": 48,
+    "Meldedatum": "2020-04-08",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 1093
+  },
+  {
+    "value": 39,
+    "Meldedatum": "2020-04-09",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 1132
+  },
+  {
+    "value": 31,
+    "Meldedatum": "2020-04-10",
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 1163
   },
   {
     "value": 29,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 758
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 772
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 777
-  },
-  {
-    "value": 3,
     "Meldedatum": "2020-04-11",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 780
-  },
-  {
-    "value": 8,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 788
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Baden-Württemberg",
-    "sumValue": 795
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Brandenburg",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Brandenburg",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Brandenburg",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Brandenburg",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Brandenburg",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Brandenburg",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Brandenburg",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Brandenburg",
-    "sumValue": 2
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Brandenburg",
-    "sumValue": 6
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Brandenburg",
-    "sumValue": 6
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Brandenburg",
-    "sumValue": 6
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Brandenburg",
-    "sumValue": 13
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Brandenburg",
-    "sumValue": 20
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Brandenburg",
-    "sumValue": 21
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Brandenburg",
-    "sumValue": 26
-  },
-  {
-    "value": 10,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Brandenburg",
-    "sumValue": 36
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Brandenburg",
-    "sumValue": 38
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Brandenburg",
-    "sumValue": 39
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Brandenburg",
-    "sumValue": 41
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Brandenburg",
-    "sumValue": 45
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Brandenburg",
-    "sumValue": 46
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Brandenburg",
-    "sumValue": 49
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Brandenburg",
-    "sumValue": 50
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Brandenburg",
-    "sumValue": 52
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Brandenburg",
-    "sumValue": 52
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Brandenburg",
-    "sumValue": 52
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 3
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 8
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 10
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 17
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 20
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 20
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 23
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 27
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 41
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 48
-  },
-  {
-    "value": 34,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 82
-  },
-  {
-    "value": 24,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 106
-  },
-  {
-    "value": 11,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 117
-  },
-  {
-    "value": 15,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 132
-  },
-  {
-    "value": 11,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 143
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 157
-  },
-  {
-    "value": 11,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 168
-  },
-  {
-    "value": 21,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 189
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 195
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 199
-  },
-  {
-    "value": 11,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 210
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 224
-  },
-  {
-    "value": 8,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 232
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 236
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 239
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 240
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 243
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Niedersachsen",
-    "sumValue": 246
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 12
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 17
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 19
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 24
-  },
-  {
-    "value": 9,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 33
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 1192
   },
   {
     "value": 13,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 46
-  },
-  {
-    "value": 16,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 62
-  },
-  {
-    "value": 16,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 78
-  },
-  {
-    "value": 18,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 96
-  },
-  {
-    "value": 13,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 109
-  },
-  {
-    "value": 15,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 124
-  },
-  {
-    "value": 19,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 143
-  },
-  {
-    "value": 19,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 162
-  },
-  {
-    "value": 26,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 188
-  },
-  {
-    "value": 28,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 216
-  },
-  {
-    "value": 35,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 251
-  },
-  {
-    "value": 27,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 278
-  },
-  {
-    "value": 26,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 304
-  },
-  {
-    "value": 27,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 331
-  },
-  {
-    "value": 38,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 369
-  },
-  {
-    "value": 54,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 423
-  },
-  {
-    "value": 34,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 457
-  },
-  {
-    "value": 36,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 493
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 507
-  },
-  {
-    "value": 29,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 536
-  },
-  {
-    "value": 34,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 570
-  },
-  {
-    "value": 26,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 596
-  },
-  {
-    "value": 24,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 620
-  },
-  {
-    "value": 17,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 637
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 640
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 641
-  },
-  {
-    "value": 7,
     "Meldedatum": "2020-04-12",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 648
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Nordrhein-Westfalen",
-    "sumValue": 653
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Hessen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Hessen",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Hessen",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Hessen",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Hessen",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Hessen",
-    "sumValue": 3
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Hessen",
-    "sumValue": 4
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Hessen",
-    "sumValue": 5
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Hessen",
-    "sumValue": 8
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Hessen",
-    "sumValue": 10
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Hessen",
-    "sumValue": 11
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Hessen",
-    "sumValue": 14
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Hessen",
-    "sumValue": 19
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Hessen",
-    "sumValue": 22
-  },
-  {
-    "value": 10,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Hessen",
-    "sumValue": 32
-  },
-  {
-    "value": 12,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Hessen",
-    "sumValue": 44
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Hessen",
-    "sumValue": 51
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Hessen",
-    "sumValue": 56
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Hessen",
-    "sumValue": 63
+    "Bundesland": "Sachsen-Anhalt",
+    "sumValue": 1205
   },
   {
     "value": 11,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Hessen",
-    "sumValue": 74
-  },
-  {
-    "value": 19,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Hessen",
-    "sumValue": 93
-  },
-  {
-    "value": 15,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Hessen",
-    "sumValue": 108
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Hessen",
-    "sumValue": 115
-  },
-  {
-    "value": 9,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Hessen",
-    "sumValue": 124
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Hessen",
-    "sumValue": 127
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Hessen",
-    "sumValue": 141
-  },
-  {
-    "value": 8,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Hessen",
-    "sumValue": 149
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Hessen",
-    "sumValue": 156
-  },
-  {
-    "value": 12,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Hessen",
-    "sumValue": 168
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Hessen",
-    "sumValue": 172
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Hessen",
-    "sumValue": 174
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Hessen",
-    "sumValue": 179
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Hessen",
-    "sumValue": 182
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 3
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 4
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 7
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 8
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 9
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 12
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 12
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 15
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 19
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 21
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 27
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 32
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 35
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 39
-  },
-  {
-    "value": 9,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 48
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 54
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 55
-  },
-  {
-    "value": 9,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 64
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 67
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 68
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 69
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 71
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 77
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 82
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 84
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 85
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 86
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Rheinland-Pfalz",
-    "sumValue": 86
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 1
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 5
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 5
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 6
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 9
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 12
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 14
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 17
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 21
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 23
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 25
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 26
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 27
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 30
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 33
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 38
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 42
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 45
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 45
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 45
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 46
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 50
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 50
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 53
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 53
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 53
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 53
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Schleswig-Holstein",
-    "sumValue": 53
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Hamburg",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Hamburg",
-    "sumValue": 3
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Hamburg",
-    "sumValue": 4
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Hamburg",
-    "sumValue": 4
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Hamburg",
-    "sumValue": 4
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Hamburg",
-    "sumValue": 4
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Hamburg",
-    "sumValue": 5
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Hamburg",
-    "sumValue": 6
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Hamburg",
-    "sumValue": 7
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Hamburg",
-    "sumValue": 8
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Hamburg",
-    "sumValue": 10
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Hamburg",
-    "sumValue": 10
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Hamburg",
-    "sumValue": 12
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Hamburg",
-    "sumValue": 17
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Hamburg",
-    "sumValue": 20
-  },
-  {
-    "value": 8,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Hamburg",
-    "sumValue": 28
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Hamburg",
-    "sumValue": 35
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Hamburg",
-    "sumValue": 35
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Hamburg",
-    "sumValue": 36
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Hamburg",
-    "sumValue": 39
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Hamburg",
-    "sumValue": 42
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Hamburg",
-    "sumValue": 49
-  },
-  {
-    "value": 10,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Hamburg",
-    "sumValue": 59
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Hamburg",
-    "sumValue": 61
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Hamburg",
-    "sumValue": 63
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Hamburg",
-    "sumValue": 65
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Hamburg",
-    "sumValue": 68
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Hamburg",
-    "sumValue": 71
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Hamburg",
-    "sumValue": 73
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Hamburg",
-    "sumValue": 73
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Hamburg",
-    "sumValue": 73
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Hamburg",
-    "sumValue": 76
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Hamburg",
-    "sumValue": 79
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Bremen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Bremen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Bremen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Bremen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Bremen",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Bremen",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Bremen",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Bremen",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Bremen",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Bremen",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Bremen",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Bremen",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Bremen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Bremen",
-    "sumValue": 2
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Bremen",
-    "sumValue": 4
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Bremen",
-    "sumValue": 5
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Bremen",
-    "sumValue": 5
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Bremen",
-    "sumValue": 5
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Bremen",
-    "sumValue": 6
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Bremen",
-    "sumValue": 7
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Bremen",
-    "sumValue": 8
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Bremen",
-    "sumValue": 9
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Bremen",
-    "sumValue": 14
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Bremen",
-    "sumValue": 14
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Bremen",
-    "sumValue": 14
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Bremen",
-    "sumValue": 14
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Bremen",
-    "sumValue": 15
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Bremen",
-    "sumValue": 15
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Bremen",
-    "sumValue": 16
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Bremen",
-    "sumValue": 17
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Bremen",
-    "sumValue": 18
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Bremen",
-    "sumValue": 18
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Bremen",
-    "sumValue": 21
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Sachsen",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Sachsen",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Sachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Sachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Sachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Sachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Sachsen",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Sachsen",
-    "sumValue": 3
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Sachsen",
-    "sumValue": 5
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Sachsen",
-    "sumValue": 5
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Sachsen",
-    "sumValue": 6
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Sachsen",
-    "sumValue": 9
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Sachsen",
-    "sumValue": 15
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Sachsen",
-    "sumValue": 22
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Sachsen",
-    "sumValue": 26
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Sachsen",
-    "sumValue": 32
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Sachsen",
-    "sumValue": 34
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Sachsen",
-    "sumValue": 35
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Sachsen",
-    "sumValue": 41
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Sachsen",
-    "sumValue": 55
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Sachsen",
-    "sumValue": 56
-  },
-  {
-    "value": 14,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Sachsen",
-    "sumValue": 70
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Sachsen",
-    "sumValue": 74
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Sachsen",
-    "sumValue": 78
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Sachsen",
-    "sumValue": 81
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Sachsen",
-    "sumValue": 84
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Sachsen",
-    "sumValue": 86
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Sachsen",
-    "sumValue": 87
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Sachsen",
-    "sumValue": 89
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Sachsen",
-    "sumValue": 92
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Sachsen",
-    "sumValue": 93
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Sachsen",
-    "sumValue": 93
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Sachsen",
-    "sumValue": 93
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Berlin",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Berlin",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Berlin",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Berlin",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Berlin",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Berlin",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Berlin",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Berlin",
-    "sumValue": 2
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Berlin",
-    "sumValue": 4
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Berlin",
-    "sumValue": 6
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Berlin",
-    "sumValue": 6
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Berlin",
-    "sumValue": 10
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Berlin",
-    "sumValue": 14
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Berlin",
-    "sumValue": 15
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Berlin",
-    "sumValue": 19
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Berlin",
-    "sumValue": 22
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Berlin",
-    "sumValue": 25
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Berlin",
-    "sumValue": 28
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Berlin",
-    "sumValue": 30
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Berlin",
-    "sumValue": 33
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Berlin",
-    "sumValue": 40
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Berlin",
-    "sumValue": 43
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Berlin",
-    "sumValue": 49
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Berlin",
-    "sumValue": 50
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Berlin",
-    "sumValue": 52
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Berlin",
-    "sumValue": 58
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Berlin",
-    "sumValue": 62
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Berlin",
-    "sumValue": 64
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Berlin",
-    "sumValue": 68
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Berlin",
-    "sumValue": 71
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Berlin",
-    "sumValue": 71
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Berlin",
-    "sumValue": 71
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Berlin",
-    "sumValue": 72
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 2
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 4
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 4
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 4
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 6
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 9
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 11
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 11
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 11
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 11
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 11
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 12
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 12
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 12
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 13
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 13
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 13
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Mecklenburg-Vorpommern",
-    "sumValue": 13
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Thüringen",
-    "sumValue": 0
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Thüringen",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Thüringen",
-    "sumValue": 3
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Thüringen",
-    "sumValue": 4
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Thüringen",
-    "sumValue": 6
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Thüringen",
-    "sumValue": 9
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Thüringen",
-    "sumValue": 11
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Thüringen",
-    "sumValue": 14
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Thüringen",
-    "sumValue": 15
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Thüringen",
-    "sumValue": 16
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Thüringen",
-    "sumValue": 17
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Thüringen",
-    "sumValue": 19
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Thüringen",
-    "sumValue": 21
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Thüringen",
-    "sumValue": 23
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Thüringen",
-    "sumValue": 26
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Thüringen",
-    "sumValue": 28
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Thüringen",
-    "sumValue": 31
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Thüringen",
-    "sumValue": 32
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Thüringen",
-    "sumValue": 34
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Thüringen",
-    "sumValue": 34
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Thüringen",
-    "sumValue": 38
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Thüringen",
-    "sumValue": 40
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Thüringen",
-    "sumValue": 42
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Thüringen",
-    "sumValue": 44
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Thüringen",
-    "sumValue": 44
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Saarland",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Saarland",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Saarland",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Saarland",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Saarland",
-    "sumValue": 1
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Saarland",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Saarland",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Saarland",
-    "sumValue": 2
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Saarland",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Saarland",
-    "sumValue": 3
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Saarland",
-    "sumValue": 3
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Saarland",
-    "sumValue": 6
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Saarland",
-    "sumValue": 9
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Saarland",
-    "sumValue": 10
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Saarland",
-    "sumValue": 11
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Saarland",
-    "sumValue": 13
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Saarland",
-    "sumValue": 15
-  },
-  {
-    "value": 5,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Saarland",
-    "sumValue": 20
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Saarland",
-    "sumValue": 23
-  },
-  {
-    "value": 10,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Saarland",
-    "sumValue": 33
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Saarland",
-    "sumValue": 36
-  },
-  {
-    "value": 11,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Saarland",
-    "sumValue": 47
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Saarland",
-    "sumValue": 48
-  },
-  {
-    "value": 7,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Saarland",
-    "sumValue": 55
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Saarland",
-    "sumValue": 57
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Saarland",
-    "sumValue": 60
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Saarland",
-    "sumValue": 62
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Saarland",
-    "sumValue": 65
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Saarland",
-    "sumValue": 65
-  },
-  {
-    "value": 4,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Saarland",
-    "sumValue": 69
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Saarland",
-    "sumValue": 69
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Saarland",
-    "sumValue": 69
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-13",
-    "Bundesland": "Saarland",
-    "sumValue": 69
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-12",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-13",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-14",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-15",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-16",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-17",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-18",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-19",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 0
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-20",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 1
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-21",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 2
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-03-22",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 3
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-23",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 6
-  },
-  {
-    "value": 3,
-    "Meldedatum": "2020-03-24",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 9
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-25",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 11
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-26",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 13
-  },
-  {
-    "value": 2,
-    "Meldedatum": "2020-03-27",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 15
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-28",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 15
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-29",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 15
-  },
-  {
-    "value": 6,
-    "Meldedatum": "2020-03-30",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 21
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-03-31",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 21
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-01",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 21
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-02",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 21
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-03",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 22
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-04",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 22
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-05",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 22
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-06",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 23
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-07",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 24
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-08",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 24
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-09",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 25
-  },
-  {
-    "value": 1,
-    "Meldedatum": "2020-04-10",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 26
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-11",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 26
-  },
-  {
-    "value": 0,
-    "Meldedatum": "2020-04-12",
-    "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 26
-  },
-  {
-    "value": 0,
     "Meldedatum": "2020-04-13",
     "Bundesland": "Sachsen-Anhalt",
-    "sumValue": 26
+    "sumValue": 1216
   }
 ]
