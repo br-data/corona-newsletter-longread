@@ -1,0 +1,1388 @@
+[
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-12",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 1
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-13",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 1
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-14",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 2
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-15",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 2
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-16",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 4
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-17",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 6
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-18",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 9
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-19",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 12
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-20",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 15
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-03-21",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 28
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-22",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 32
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-23",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 41
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-03-24",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 51
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-03-25",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 61
+  },
+  {
+    "value": 23,
+    "Meldedatum": "2020-03-26",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 84
+  },
+  {
+    "value": 19,
+    "Meldedatum": "2020-03-27",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 103
+  },
+  {
+    "value": 16,
+    "Meldedatum": "2020-03-28",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 119
+  },
+  {
+    "value": 12,
+    "Meldedatum": "2020-03-29",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 131
+  },
+  {
+    "value": 12,
+    "Meldedatum": "2020-03-30",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 143
+  },
+  {
+    "value": 24,
+    "Meldedatum": "2020-03-31",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 167
+  },
+  {
+    "value": 33,
+    "Meldedatum": "2020-04-01",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 200
+  },
+  {
+    "value": 31,
+    "Meldedatum": "2020-04-02",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 231
+  },
+  {
+    "value": 17,
+    "Meldedatum": "2020-04-03",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 248
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-04-04",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 258
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-04-05",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 267
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-04-06",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 278
+  },
+  {
+    "value": 16,
+    "Meldedatum": "2020-04-07",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 294
+  },
+  {
+    "value": 19,
+    "Meldedatum": "2020-04-08",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 313
+  },
+  {
+    "value": 13,
+    "Meldedatum": "2020-04-09",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 326
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-04-10",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 332
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-04-11",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 339
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-12",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 340
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-13",
+    "Regierungsbezirk": "Oberbayern",
+    "sumValue": 345
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-12",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 1
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-13",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 2
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-14",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 3
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-15",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 4
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-16",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 4
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-17",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 4
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-18",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 5
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-19",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 5
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-20",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 6
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-21",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 8
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-22",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 9
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-23",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 12
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-24",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 16
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-25",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 20
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-26",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 25
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-27",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 30
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-28",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 33
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-29",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 34
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-30",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 39
+  },
+  {
+    "value": 8,
+    "Meldedatum": "2020-03-31",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 47
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-01",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 51
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-04-02",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 60
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-03",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 63
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-04",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 68
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-05",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 71
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-06",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 74
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-04-07",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 80
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-08",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 85
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-09",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 85
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-10",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 88
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-11",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 92
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-12",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 93
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-13",
+    "Regierungsbezirk": "Schwaben",
+    "sumValue": 93
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-12",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-13",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-14",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-15",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-16",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-17",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-18",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 2
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-19",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 2
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-20",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 4
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-21",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 6
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-22",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 7
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-03-23",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 13
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-24",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 14
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-25",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 18
+  },
+  {
+    "value": 8,
+    "Meldedatum": "2020-03-26",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 26
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-03-27",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 33
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-28",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 38
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-29",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 40
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-03-30",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 46
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-31",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 55
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-01",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 59
+  },
+  {
+    "value": 17,
+    "Meldedatum": "2020-04-02",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 76
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-04-03",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 83
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-04",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 85
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-05",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 90
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-06",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 91
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-07",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 96
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-08",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 97
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-04-09",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 103
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-10",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 105
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-11",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 106
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-12",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 108
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-13",
+    "Regierungsbezirk": "Mittelfranken",
+    "sumValue": 110
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-12",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-13",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 0
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-14",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 1
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-15",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 2
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-16",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 2
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-17",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 4
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-18",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 6
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-19",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 6
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-20",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 10
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-21",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 15
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-22",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 19
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-23",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 20
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-24",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 22
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-03-25",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 32
+  },
+  {
+    "value": 8,
+    "Meldedatum": "2020-03-26",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 40
+  },
+  {
+    "value": 12,
+    "Meldedatum": "2020-03-27",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 52
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-03-28",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 59
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-03-29",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 65
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-03-30",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 72
+  },
+  {
+    "value": 12,
+    "Meldedatum": "2020-03-31",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 84
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-04-01",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 94
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-04-02",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 103
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-04-03",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 113
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-04",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 118
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-05",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 120
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-04-06",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 127
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-07",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 131
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-08",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 134
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-09",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 138
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-10",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 141
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-11",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 144
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-12",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 146
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-13",
+    "Regierungsbezirk": "Niederbayern",
+    "sumValue": 149
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-12",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 1
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-13",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 1
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-14",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 2
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-15",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 2
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-16",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 3
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-17",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 4
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-18",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 5
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-19",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 5
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-03-20",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 11
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-21",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 20
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-22",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 25
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-03-23",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 35
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-03-24",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 42
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-03-25",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 48
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-03-26",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 54
+  },
+  {
+    "value": 10,
+    "Meldedatum": "2020-03-27",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 64
+  },
+  {
+    "value": 14,
+    "Meldedatum": "2020-03-28",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 78
+  },
+  {
+    "value": 6,
+    "Meldedatum": "2020-03-29",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 84
+  },
+  {
+    "value": 15,
+    "Meldedatum": "2020-03-30",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 99
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-03-31",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 108
+  },
+  {
+    "value": 9,
+    "Meldedatum": "2020-04-01",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 117
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-02",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 122
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-03",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 125
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-04",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 126
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-05",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 129
+  },
+  {
+    "value": 8,
+    "Meldedatum": "2020-04-06",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 137
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-07",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 140
+  },
+  {
+    "value": 7,
+    "Meldedatum": "2020-04-08",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 147
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-09",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 148
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-10",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 150
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-11",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 152
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-12",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 152
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-13",
+    "Regierungsbezirk": "Oberpfalz",
+    "sumValue": 152
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-12",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 4
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-13",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 6
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-14",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 7
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-15",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 7
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-16",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 8
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-17",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 11
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-18",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 12
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-19",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 12
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-20",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 17
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-21",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 20
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-22",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 22
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-23",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 24
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-03-24",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 29
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-25",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 29
+  },
+  {
+    "value": 8,
+    "Meldedatum": "2020-03-26",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 37
+  },
+  {
+    "value": 8,
+    "Meldedatum": "2020-03-27",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 45
+  },
+  {
+    "value": 18,
+    "Meldedatum": "2020-03-28",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 63
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-29",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 67
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-30",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 68
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-03-31",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 79
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-01",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 82
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-02",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 82
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-03",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 86
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-04",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 89
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-05",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 89
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-06",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 89
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-07",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 92
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-08",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 94
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-09",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 98
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-10",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 99
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-11",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 100
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-12",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 101
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-13",
+    "Regierungsbezirk": "Unterfranken",
+    "sumValue": 102
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-12",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-13",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-14",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 0
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-03-15",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 1
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-16",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 3
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-17",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 3
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-03-18",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 3
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-19",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 5
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-20",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 7
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-21",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 9
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-22",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 12
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-23",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 14
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-24",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 17
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-25",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 19
+  },
+  {
+    "value": 12,
+    "Meldedatum": "2020-03-26",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 31
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-27",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 33
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-28",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 37
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-03-29",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 39
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-03-30",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 42
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-03-31",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 46
+  },
+  {
+    "value": 3,
+    "Meldedatum": "2020-04-01",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 49
+  },
+  {
+    "value": 11,
+    "Meldedatum": "2020-04-02",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 60
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-03",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 64
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-04",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 69
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-05",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 71
+  },
+  {
+    "value": 5,
+    "Meldedatum": "2020-04-06",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 76
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-07",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 78
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-08",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 79
+  },
+  {
+    "value": 4,
+    "Meldedatum": "2020-04-09",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 83
+  },
+  {
+    "value": 2,
+    "Meldedatum": "2020-04-10",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 85
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-11",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 86
+  },
+  {
+    "value": 0,
+    "Meldedatum": "2020-04-12",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 86
+  },
+  {
+    "value": 1,
+    "Meldedatum": "2020-04-13",
+    "Regierungsbezirk": "Oberfranken",
+    "sumValue": 87
+  }
+]

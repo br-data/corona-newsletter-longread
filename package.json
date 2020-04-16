@@ -22,8 +22,6 @@
     "d3-axis": "^1.0.12",
     "d3-scale": "^3.2.1",
     "d3-selection": "^1.4.1",
-    "detect-browser": "^5.0.0",
-    "intersection-observer": "^0.7.0",
     "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {

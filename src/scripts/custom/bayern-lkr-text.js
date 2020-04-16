@@ -26,11 +26,11 @@ export function init(config) {
 
   const text = `Die zur Zeit am stärksten betroffenen Landkreise in Bayern sind ${worstCounties[0].name}, ${worstCounties[1].name} und ${worstCounties[2].name}.
 
-  ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} (${worstCounties[0].district}) wurden bisher ${pretty(worstCounties[0].casesPerThousand)} Fälle pro 1.000 Einwohner gemeldet.
+  ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} (${worstCounties[0].district}) wurden bisher ${pretty(worstCounties[0].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.
 
-  ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} (${worstCounties[1].district}) sind es ${pretty(worstCounties[1].casesPerThousand)} Fälle pro 1.000 Einwohner.
+  ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} (${worstCounties[1].district}) sind es ${pretty(worstCounties[1].casesPerThousand)} Fälle pro tausend Einwohner.
 
-  Aus ${preposition2(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPerThousand)} Fälle pro 1.000 Einwohner gemeldet.`;
+  Aus ${preposition2(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.`;
 
   const textElement = document.querySelector(selector);
   textElement.textContent = text;

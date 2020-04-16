@@ -7,7 +7,7 @@ export function init(config) {
 
   const text = `Bislang wurden ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle (+${pretty(currentIncreasePerc(caseData))} %) mehr als noch am Vortag.
 
-  Damit kommt Bayern auf ${pretty(casesPerThousand(currentCount(caseData), metaBayern.pop))} gemeldete Fälle pro 1.000 Einwohner.
+  Damit kommt Bayern auf ${pretty(casesPerThousand(currentCount(caseData), metaBayern.pop))} gemeldete Fälle pro tausend Einwohner.
 
   Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 

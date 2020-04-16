@@ -1,18 +1,20 @@
 import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
 
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, doublingTime, json2table } from './utils';
+import { pretty, currentCount, currentIncrease, doublingTime, json2table } from './utils';
 
 export function init(config) {
-  const { selector, caseData } = config;
+  const { selector, caseData, deathData } = config;
 
   const analysis = metaDataDistricts.map(district => {
-    const districtData = caseData.filter(d => d.Regierungsbezirk === district.name);
+    const districtCases = caseData
+      .filter(d => d.Regierungsbezirk === district.name);
+    const districtDeaths = deathData.filter(d => d.Regierungsbezirk === district.name);
 
     return {
       'Regierungsbezirk': district.name,
-      'bisher bestätigte Fälle': `${pretty(currentCount(districtData))}`,
-      'neue Fälle': `${pretty(currentIncrease(districtData))} (+${pretty(currentIncreasePerc(districtData))} %)`,
-      'Verdopplungszeit': `${doublingTime(districtData)} Tage`
+      'Fälle': `${pretty(currentCount(districtCases))} (+${pretty(currentIncrease(districtCases))})`,
+      'Todesfälle': `${pretty(currentCount(districtDeaths))} (+${pretty(currentIncrease(districtDeaths))})`,
+      'Verdopplungszeit': `${doublingTime(districtCases)} Tage`
     };
   });
 

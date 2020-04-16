@@ -15,16 +15,16 @@ td, th {
 
 th {
   font-weight: 600;
-  border-bottom: 2px solid $dark-grey;
+  background-color: $blue-grey;
+  border-color: $white;
+  color: $white;
 }
 
 @include tablet {
 
-  table {
-    margin-left: $margin-tablet;
-    margin-right: $margin-tablet;
-    width: inherit;
-  }
+  // table {
+  //   width: inherit;
+  // }
 
   table, thead, tbody, th, td, tr {
     display: block;
@@ -50,8 +50,9 @@ th {
     }
 
     &:first-child {
-      background: $light-grey;
-      border-bottom: 2px solid $dark-grey;
+      background-color: $blue-grey;
+      border-color: $white;
+      color: $white;
       font-weight: 600;
     }
 

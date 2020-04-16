@@ -59,7 +59,7 @@ export function json2table(json) {
   json.map(row => {
     bodyRows += '<tr>';
     columns.map(colName => {
-      bodyRows += `<td>${row[colName]}</td>`;
+      bodyRows += `<td data-label=${colName}>${row[colName]}</td>`;
     });
     bodyRows += '</tr>';
   });
