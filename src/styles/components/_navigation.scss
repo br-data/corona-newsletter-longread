@@ -1,7 +1,7 @@
 // Sticky navigation
 .navigation {
   height: 60px;
-  max-width: $desktop-width;
+  max-width: calc(#{$desktop-width} - 1px);
   width: 100%;
   position: absolute;
   top: 0;

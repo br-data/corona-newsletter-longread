@@ -3,10 +3,10 @@ import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
 import { pretty, currentCount, currentIncrease, currentIncreasePerc, doublingTime, json2table } from './utils';
 
 export function init(config) {
-  const { selector, data } = config;
+  const { selector, caseData } = config;
 
   const analysis = metaDataDistricts.map(district => {
-    const districtData = data.filter(d => d.Regierungsbezirk === district.name);
+    const districtData = caseData.filter(d => d.Regierungsbezirk === district.name);
 
     return {
       'Regierungsbezirk': district.name,

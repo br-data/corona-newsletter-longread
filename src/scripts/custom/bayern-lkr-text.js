@@ -4,9 +4,9 @@ import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
 import { pretty } from './utils';
 
 export function init(config) {
-  const { selector, data } = config;
+  const { selector, caseData } = config;
 
-  const enrichedData = data.map(d => {
+  const enrichedData = caseData.map(d => {
     const metaInfoCounty = metaDataCounties.find(m => m.rkiName === d.Landkreis);
     const metaInfoDistrict = metaDataDistricts.find(m => m.ags === metaInfoCounty.ags.slice(0,3));
     return Object.assign(
