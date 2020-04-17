@@ -13,6 +13,8 @@ import * as bayernRegbezTable from './custom/bayern-regbez-table';
 import * as deutschlandText from './custom/deutschland-text';
 import * as deutschlandBlText from './custom/deutschland-bl-text';
 
+import * as deutschlandBlTable from './custom/deutschland-bl-table';
+
 // Mock data for testing
 import bayernCases from './data/cases/bayern-cases.json';
 import bayernDeaths from './data/deaths/bayern-deaths.json';
@@ -89,6 +91,12 @@ async function init() {
 
   deutschlandBlText.init({
     selector: '#deutschland-bl-text',
+    caseData: deutschlandBlCases,
+    deathData: deutschlandBlDeaths
+  });
+
+  deutschlandBlTable.init({
+    selector: '#deutschland-bl-table',
     caseData: deutschlandBlCases,
     deathData: deutschlandBlDeaths
   });
