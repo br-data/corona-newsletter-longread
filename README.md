@@ -7,7 +7,11 @@
 - Daten vorsichtshalber nach Meldedatum sortieren oder filtern
 - Farbklassifizierung für die Tabellen
 - Liniendiagramme für Bayern und Deutschland
+- Kurzzusammenfassung für BR24-Newsletter
+- Trend statt Vortagesvergleich
 - Reproduktionszahl statt Verdopplungszeit
+- Relativen Anstieg (+7 %) rauswerfen?
+- Gesundungen mit reinnehmen?
 - Hinweise zu den Daten schreiben
 - Ladeindikator und Error-Handling
 - Daten-Management (von API oder statischen JSON-Dateien)
