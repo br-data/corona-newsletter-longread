@@ -1,11 +1,9 @@
-import metaDataStates from '../data/meta/deutschland-bl-meta.json';
-
-import { pretty, currentCount, casesPerThousand } from './utils';
+import { pretty, currentCount, casesPerThousand } from '../utils';
 
 export function init(config) {
-  const { selector, caseData, deathData } = config;
+  const { selector, caseData, deathData, metaData } = config;
 
-  const enrichedData = metaDataStates.map(stateMeta => {
+  const enrichedData = metaData.map(stateMeta => {
     const districtCases = caseData.filter(d => d.Bundesland === stateMeta.name);
     const districtDeaths = deathData.filter(d => d.Bundesland === stateMeta.name);
 

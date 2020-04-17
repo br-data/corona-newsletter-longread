@@ -1,8 +1,16 @@
-# Webpack Longread Template
+# Corona-Newsletter
 
-HTML-Template für preiswürdige Longread- und Storytelling-Projekte im Design von [BR24](https://www.br.de/nachrichten/).
+- **Demo:** <https://ddj.br.de/corona-newsletter>
 
-- **Demo:** <https://web.br.de/interaktiv/longread-webpack/>
+## To Do
+
+- Daten vorsichtshalber nach Meldedatum sortieren oder filtern
+- Farbklassifizierung für die Tabellen
+- Liniendiagramme für Bayern und Deutschland
+- Reproduktionszahl statt Verdopplungszeit
+- Hinweise zu den Daten schreiben
+- Ladeindikator und Error-Handling
+- Daten-Management (von API oder statischen JSON-Dateien)
 
 ## Verwendung
 

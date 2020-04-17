@@ -1,11 +1,9 @@
-import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
-
-import { pretty, currentCount, casesPerThousand } from './utils';
+import { pretty, currentCount, casesPerThousand } from '../utils';
 
 export function init(config) {
-  const { selector, caseData, deathData } = config;
+  const { selector, caseData, deathData, metaData } = config;
 
-  const enrichedData = metaDataDistricts.map(districtMeta => {
+  const enrichedData = metaData.map(districtMeta => {
     const districtCases = caseData.filter(d => d.Regierungsbezirk === districtMeta.name);
     const districtDeaths = deathData.filter(d => d.Regierungsbezirk === districtMeta.name);
 

@@ -1,13 +1,10 @@
-import metaDataCounties from '../data/meta/deutschland-lkr-meta.json';
-import metaDataDistricts from '../data/meta/bayern-regbez-meta.json';
-
-import { pretty } from './utils';
+import { pretty } from '../utils';
 
 export function init(config) {
-  const { selector, caseData } = config;
+  const { selector, caseData, metaData, metaDataDistricts } = config;
 
   const enrichedData = caseData.map(d => {
-    const metaInfoCounty = metaDataCounties.find(m => m.rkiName === d.Landkreis);
+    const metaInfoCounty = metaData.find(m => m.rkiName === d.Landkreis);
     const metaInfoDistrict = metaDataDistricts.find(m => m.ags === metaInfoCounty.ags.slice(0,3));
     return Object.assign(
       d,

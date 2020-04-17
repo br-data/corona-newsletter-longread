@@ -22,10 +22,6 @@ th {
 
 @include tablet {
 
-  // table {
-  //   width: inherit;
-  // }
-
   table, thead, tbody, th, td, tr {
     display: block;
   }
@@ -69,14 +65,5 @@ th {
   .block > table {
     margin-left: 0;
     margin-right: 0;
-  }
-}
-
-@include mobile {
-
-  table {
-    margin-left: $margin-mobile;
-    margin-right: $margin-mobile;
-    width: inherit;
   }
 }

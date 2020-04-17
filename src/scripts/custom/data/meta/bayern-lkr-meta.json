@@ -1,0 +1,770 @@
+[
+  {
+    "name": "Ingolstadt",
+    "rkiName": "SK Ingolstadt",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 136981,
+    "ags": "09161"
+  },
+  {
+    "name": "München",
+    "rkiName": "SK München",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 1471508,
+    "ags": "09162"
+  },
+  {
+    "name": "Rosenheim",
+    "rkiName": "SK Rosenheim",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 63324,
+    "ags": "09163"
+  },
+  {
+    "name": "Altötting",
+    "rkiName": "LK Altötting",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 111210,
+    "ags": "09171"
+  },
+  {
+    "name": "Berchtesgadener Land",
+    "rkiName": "LK Berchtesgadener Land",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 105722,
+    "ags": "09172"
+  },
+  {
+    "name": "Bad Tölz-Wolfratshausen",
+    "rkiName": "LK Bad Tölz-Wolfratshausen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 127227,
+    "ags": "09173"
+  },
+  {
+    "name": "Dachau",
+    "rkiName": "LK Dachau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 153884,
+    "ags": "09174"
+  },
+  {
+    "name": "Ebersberg",
+    "rkiName": "LK Ebersberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 142142,
+    "ags": "09175"
+  },
+  {
+    "name": "Eichstätt",
+    "rkiName": "LK Eichstätt",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 132341,
+    "ags": "09176"
+  },
+  {
+    "name": "Erding",
+    "rkiName": "LK Erding",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 137660,
+    "ags": "09177"
+  },
+  {
+    "name": "Freising",
+    "rkiName": "LK Freising",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 179116,
+    "ags": "09178"
+  },
+  {
+    "name": "Fürstenfeldbruck",
+    "rkiName": "LK Fürstenfeldbruck",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 219320,
+    "ags": "09179"
+  },
+  {
+    "name": "Garmisch-Partenkirchen",
+    "rkiName": "LK Garmisch-Partenkirchen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 88467,
+    "ags": "09180"
+  },
+  {
+    "name": "Landsberg am Lech",
+    "rkiName": "LK Landsberg a.Lech",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 120071,
+    "ags": "09181"
+  },
+  {
+    "name": "Miesbach",
+    "rkiName": "LK Miesbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 99726,
+    "ags": "09182"
+  },
+  {
+    "name": "Mühldorf a. Inn",
+    "rkiName": "LK Mühldorf a.Inn",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 115250,
+    "ags": "09183"
+  },
+  {
+    "name": "München",
+    "rkiName": "LK München",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 348871,
+    "ags": "09184"
+  },
+  {
+    "name": "Neuburg-Schrobenhausen",
+    "rkiName": "LK Neuburg-Schrobenhausen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 96680,
+    "ags": "09185"
+  },
+  {
+    "name": "Pfaffenhofen a.d. Ilm",
+    "rkiName": "LK Pfaffenhofen a.d.Ilm",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 127151,
+    "ags": "09186"
+  },
+  {
+    "name": "Rosenheim",
+    "rkiName": "LK Rosenheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 260983,
+    "ags": "09187"
+  },
+  {
+    "name": "Starnberg",
+    "rkiName": "LK Starnberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 136092,
+    "ags": "09188"
+  },
+  {
+    "name": "Traunstein",
+    "rkiName": "LK Traunstein",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 177089,
+    "ags": "09189"
+  },
+  {
+    "name": "Weilheim-Schongau",
+    "rkiName": "LK Weilheim-Schongau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 135348,
+    "ags": "09190"
+  },
+  {
+    "name": "Landshut",
+    "rkiName": "SK Landshut",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 72404,
+    "ags": "09261"
+  },
+  {
+    "name": "Passau",
+    "rkiName": "SK Passau",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 52469,
+    "ags": "09262"
+  },
+  {
+    "name": "Straubing",
+    "rkiName": "SK Straubing",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 47794,
+    "ags": "09263"
+  },
+  {
+    "name": "Deggendorf",
+    "rkiName": "LK Deggendorf",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 119326,
+    "ags": "09271"
+  },
+  {
+    "name": "Freyung-Grafenau",
+    "rkiName": "LK Freyung-Grafenau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 78355,
+    "ags": "09272"
+  },
+  {
+    "name": "Kelheim",
+    "rkiName": "LK Kelheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 122258,
+    "ags": "09273"
+  },
+  {
+    "name": "Landshut",
+    "rkiName": "LK Landshut",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 158698,
+    "ags": "09274"
+  },
+  {
+    "name": "Passau",
+    "rkiName": "LK Passau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 192043,
+    "ags": "09275"
+  },
+  {
+    "name": "Regen",
+    "rkiName": "LK Regen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 77656,
+    "ags": "09276"
+  },
+  {
+    "name": "Rottal-Inn",
+    "rkiName": "LK Rottal-Inn",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 120659,
+    "ags": "09277"
+  },
+  {
+    "name": "Straubing-Bogen",
+    "rkiName": "LK Straubing-Bogen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 100649,
+    "ags": "09278"
+  },
+  {
+    "name": "Dingolfing-Landau",
+    "rkiName": "LK Dingolfing-Landau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 96217,
+    "ags": "09279"
+  },
+  {
+    "name": "Amberg",
+    "rkiName": "SK Amberg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 41970,
+    "ags": "09361"
+  },
+  {
+    "name": "Regensburg",
+    "rkiName": "SK Regensburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 152610,
+    "ags": "09362"
+  },
+  {
+    "name": "Weiden i.d. OPf.",
+    "rkiName": "SK Weiden i.d.OPf.",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 42520,
+    "ags": "09363"
+  },
+  {
+    "name": "Amberg-Sulzbach",
+    "rkiName": "LK Amberg-Sulzbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 103109,
+    "ags": "09371"
+  },
+  {
+    "name": "Cham",
+    "rkiName": "LK Cham",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 127882,
+    "ags": "09372"
+  },
+  {
+    "name": "Neumarkt i.d. OPf.",
+    "rkiName": "LK Neumarkt i.d.OPf.",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 133561,
+    "ags": "09373"
+  },
+  {
+    "name": "Neustadt a.d. Waldnaab",
+    "rkiName": "LK Neustadt a.d.Waldnaab",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 94352,
+    "ags": "09374"
+  },
+  {
+    "name": "Regensburg",
+    "rkiName": "LK Regensburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 193572,
+    "ags": "09375"
+  },
+  {
+    "name": "Schwandorf",
+    "rkiName": "LK Schwandorf",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 147189,
+    "ags": "09376"
+  },
+  {
+    "name": "Tirschenreuth",
+    "rkiName": "LK Tirschenreuth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 72504,
+    "ags": "09377"
+  },
+  {
+    "name": "Bamberg",
+    "rkiName": "SK Bamberg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 77592,
+    "ags": "09461"
+  },
+  {
+    "name": "Bayreuth",
+    "rkiName": "SK Bayreuth",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 74657,
+    "ags": "09462"
+  },
+  {
+    "name": "Coburg",
+    "rkiName": "SK Coburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 41249,
+    "ags": "09463"
+  },
+  {
+    "name": "Hof",
+    "rkiName": "SK Hof",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 45930,
+    "ags": "09464"
+  },
+  {
+    "name": "Bamberg",
+    "rkiName": "LK Bamberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 147086,
+    "ags": "09471"
+  },
+  {
+    "name": "Bayreuth",
+    "rkiName": "LK Bayreuth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 103656,
+    "ags": "09472"
+  },
+  {
+    "name": "Coburg",
+    "rkiName": "LK Coburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 86906,
+    "ags": "09473"
+  },
+  {
+    "name": "Forchheim",
+    "rkiName": "LK Forchheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 116099,
+    "ags": "09474"
+  },
+  {
+    "name": "Hof",
+    "rkiName": "LK Hof",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 95311,
+    "ags": "09475"
+  },
+  {
+    "name": "Kronach",
+    "rkiName": "LK Kronach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 67135,
+    "ags": "09476"
+  },
+  {
+    "name": "Kulmbach",
+    "rkiName": "LK Kulmbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 71845,
+    "ags": "09477"
+  },
+  {
+    "name": "Lichtenfels",
+    "rkiName": "LK Lichtenfels",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 66838,
+    "ags": "09478"
+  },
+  {
+    "name": "Wunsiedel i. Fichtelgebirge",
+    "rkiName": "LK Wunsiedel i.Fichtelgebirge",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 73178,
+    "ags": "09479"
+  },
+  {
+    "name": "Ansbach",
+    "rkiName": "SK Ansbach",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 41847,
+    "ags": "09561"
+  },
+  {
+    "name": "Erlangen",
+    "rkiName": "SK Erlangen",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 111962,
+    "ags": "09562"
+  },
+  {
+    "name": "Fürth",
+    "rkiName": "SK Fürth",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 127748,
+    "ags": "09563"
+  },
+  {
+    "name": "Nürnberg",
+    "rkiName": "SK Nürnberg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 518365,
+    "ags": "09564"
+  },
+  {
+    "name": "Schwabach",
+    "rkiName": "SK Schwabach",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 40792,
+    "ags": "09565"
+  },
+  {
+    "name": "Ansbach",
+    "rkiName": "LK Ansbach",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 183949,
+    "ags": "09571"
+  },
+  {
+    "name": "Erlangen-Höchstadt",
+    "rkiName": "LK Erlangen-Höchstadt",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 136271,
+    "ags": "09572"
+  },
+  {
+    "name": "Fürth",
+    "rkiName": "LK Fürth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 117387,
+    "ags": "09573"
+  },
+  {
+    "name": "Nürnberger Land",
+    "rkiName": "LK Nürnberger Land",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 170365,
+    "ags": "09574"
+  },
+  {
+    "name": "Neustadt a.d. Aisch-Bad Windsheim",
+    "rkiName": "LK Neustadt a.d.Aisch-Bad Windsheim",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 100364,
+    "ags": "09575"
+  },
+  {
+    "name": "Roth",
+    "rkiName": "LK Roth",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 126958,
+    "ags": "09576"
+  },
+  {
+    "name": "Weißenburg-Gunzenhausen",
+    "rkiName": "LK Weißenburg-Gunzenhausen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 94393,
+    "ags": "09577"
+  },
+  {
+    "name": "Aschaffenburg",
+    "rkiName": "SK Aschaffenburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 70527,
+    "ags": "09661"
+  },
+  {
+    "name": "Schweinfurt",
+    "rkiName": "SK Schweinfurt",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 54032,
+    "ags": "09662"
+  },
+  {
+    "name": "Würzburg",
+    "rkiName": "SK Würzburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 127880,
+    "ags": "09663"
+  },
+  {
+    "name": "Aschaffenburg",
+    "rkiName": "LK Aschaffenburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 174208,
+    "ags": "09671"
+  },
+  {
+    "name": "Bad Kissingen",
+    "rkiName": "LK Bad Kissingen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 103218,
+    "ags": "09672"
+  },
+  {
+    "name": "Rhön-Grabfeld",
+    "rkiName": "LK Rhön-Grabfeld",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 79690,
+    "ags": "09673"
+  },
+  {
+    "name": "Haßberge",
+    "rkiName": "LK Haßberge",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 84599,
+    "ags": "09674"
+  },
+  {
+    "name": "Kitzingen",
+    "rkiName": "LK Kitzingen",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 90909,
+    "ags": "09675"
+  },
+  {
+    "name": "Miltenberg",
+    "rkiName": "LK Miltenberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 128756,
+    "ags": "09676"
+  },
+  {
+    "name": "Main-Spessart",
+    "rkiName": "LK Main-Spessart",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 126365,
+    "ags": "09677"
+  },
+  {
+    "name": "Schweinfurt",
+    "rkiName": "LK Schweinfurt",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 115106,
+    "ags": "09678"
+  },
+  {
+    "name": "Würzburg",
+    "rkiName": "LK Würzburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 161834,
+    "ags": "09679"
+  },
+  {
+    "name": "Augsburg",
+    "rkiName": "SK Augsburg",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 295135,
+    "ags": "09761"
+  },
+  {
+    "name": "Kaufbeuren",
+    "rkiName": "SK Kaufbeuren",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 43893,
+    "ags": "09762"
+  },
+  {
+    "name": "Kempten (Allgäu)",
+    "rkiName": "SK Kempten",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 68907,
+    "ags": "09763"
+  },
+  {
+    "name": "Memmingen",
+    "rkiName": "SK Memmingen",
+    "type": "Stadt",
+    "state": "Bayern",
+    "pop": 43837,
+    "ags": "09764"
+  },
+  {
+    "name": "Aichach-Friedberg",
+    "rkiName": "LK Aichach-Friedberg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 133596,
+    "ags": "09771"
+  },
+  {
+    "name": "Augsburg",
+    "rkiName": "LK Augsburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 251534,
+    "ags": "09772"
+  },
+  {
+    "name": "Dillingen a.d. Donau",
+    "rkiName": "LK Dillingen a.d.Donau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 96021,
+    "ags": "09773"
+  },
+  {
+    "name": "Günzburg",
+    "rkiName": "LK Günzburg",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 125747,
+    "ags": "09774"
+  },
+  {
+    "name": "Neu-Ulm",
+    "rkiName": "LK Neu-Ulm",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 174200,
+    "ags": "09775"
+  },
+  {
+    "name": "Lindau (Bodensee)",
+    "rkiName": "LK Lindau",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 81669,
+    "ags": "09776"
+  },
+  {
+    "name": "Ostallgäu",
+    "rkiName": "LK Ostallgäu",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 140316,
+    "ags": "09777"
+  },
+  {
+    "name": "Unterallgäu",
+    "rkiName": "LK Unterallgäu",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 144041,
+    "ags": "09778"
+  },
+  {
+    "name": "Donau-Ries",
+    "rkiName": "LK Donau-Ries",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 133496,
+    "ags": "09779"
+  },
+  {
+    "name": "Oberallgäu",
+    "rkiName": "LK Oberallgäu",
+    "type": "Landkreis",
+    "state": "Bayern",
+    "pop": 155362,
+    "ags": "09780"
+  }
+]

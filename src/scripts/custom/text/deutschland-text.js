@@ -1,13 +1,11 @@
-import metaDeutschland from '../data/meta/deutschland-meta.json';
-
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, doublingTime } from './utils';
+import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, doublingTime } from '../utils';
 
 export function init(config) {
-  const { selector, caseData, deathData } = config;
+  const { selector, caseData, deathData, metaData } = config;
 
   const text = `In ganz Deutschland wurden bislang ${pretty(currentCount(caseData))} Corona-Fälle gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle (+${pretty(currentIncreasePerc(caseData))} %) mehr als noch am Vortag.
 
-  Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaDeutschland.pop))} Fällen pro tausend Einwohner.
+  Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
 
   Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 

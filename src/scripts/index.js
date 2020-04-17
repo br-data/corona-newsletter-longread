@@ -4,32 +4,37 @@ import * as lazyload from './components/lazyload';
 import * as marginals from './components/marginals';
 import * as navigation from './components/navigation';
 
-import * as bayernText from './custom/bayern-text';
-import * as bayernRegbezText from './custom/bayern-regbez-text';
-import * as bayernLkrText from './custom/bayern-lkr-text';
+import * as bayernText from './custom/text/bayern-text';
+import * as bayernRegbezText from './custom/text/bayern-regbez-text';
+import * as bayernLkrText from './custom/text/bayern-lkr-text';
 
-import * as bayernRegbezTable from './custom/bayern-regbez-table';
+import * as bayernRegbezTable from './custom/table/bayern-regbez-table';
 
-import * as deutschlandText from './custom/deutschland-text';
-import * as deutschlandBlText from './custom/deutschland-bl-text';
+import * as deutschlandText from './custom/text/deutschland-text';
+import * as deutschlandBlText from './custom/text/deutschland-bl-text';
 
-import * as deutschlandBlTable from './custom/deutschland-bl-table';
+import * as deutschlandBlTable from './custom/table/deutschland-bl-table';
 
 // Mock data for testing
-import bayernCases from './data/cases/bayern-cases.json';
-import bayernDeaths from './data/deaths/bayern-deaths.json';
+import bayernCases from './custom/data/cases/bayern-cases.json';
+import bayernDeaths from './custom/data/deaths/bayern-deaths.json';
+import bayernMeta from './custom/data/meta/bayern-meta.json';
 
-import bayernRegbezCases from './data/cases/bayern-regbez-cases.json';
-import bayernRegbezDeaths from './data/deaths/bayern-regbez-deaths.json';
+import bayernRegbezCases from './custom/data/cases/bayern-regbez-cases.json';
+import bayernRegbezDeaths from './custom/data/deaths/bayern-regbez-deaths.json';
+import bayernRegbezMeta from './custom/data/meta/bayern-regbez-meta.json';
 
-import bayernLkrCases from './data/cases/bayern-lkr-cases.json';
-import bayernLkrDeaths from './data/deaths/bayern-lkr-deaths.json';
+import bayernLkrCases from './custom/data/cases/bayern-lkr-cases.json';
+import bayernLkrDeaths from './custom/data/deaths/bayern-lkr-deaths.json';
+import bayernLkrMeta from './custom/data/meta/bayern-lkr-meta.json';
 
-import deutschlandCases from './data/cases/deutschland-cases.json';
-import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
+import deutschlandCases from './custom/data/cases/deutschland-cases.json';
+import deutschlandDeaths from './custom/data/deaths/deutschland-deaths.json';
+import deutschlandMeta from './custom/data/meta/deutschland-meta.json';
 
-import deutschlandBlCases from './data/cases/deutschland-bl-cases.json';
-import deutschlandBlDeaths from './data/deaths/deutschland-bl-deaths.json';
+import deutschlandBlCases from './custom/data/cases/deutschland-bl-cases.json';
+import deutschlandBlDeaths from './custom/data/deaths/deutschland-bl-deaths.json';
+import deutschlandBlMeta from './custom/data/meta/deutschland-bl-meta.json';
 
 // import Chart from './custom/chart/chart';
 // import chartData from './custom/chart/chart-data.json';
@@ -46,7 +51,8 @@ async function init() {
   bayernText.init({
     selector: '#bayern-text',
     caseData: bayernCases,
-    deathData: bayernDeaths
+    deathData: bayernDeaths,
+    metaData: bayernMeta
   });
 
   // const bayernRegbezCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern').then((response) => { return response.json(); });
@@ -56,13 +62,15 @@ async function init() {
   bayernRegbezTable.init({
     selector: '#bayern-regbez-table',
     caseData: bayernRegbezCases,
-    deathData: bayernRegbezDeaths
+    deathData: bayernRegbezDeaths,
+    metaData: bayernRegbezMeta
   });
 
   bayernRegbezText.init({
     selector: '#bayern-regbez-text',
     caseData: bayernRegbezCases,
-    deathData: bayernRegbezDeaths
+    deathData: bayernRegbezDeaths,
+    metaData: bayernRegbezMeta
   });
 
   // const bayernLkrCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Landkreis&bundesland=Bayern').then((response) => { return response.json(); });
@@ -72,7 +80,9 @@ async function init() {
   bayernLkrText.init({
     selector: '#bayern-lkr-text',
     caseData: bayernLkrCases,
-    deathData: bayernLkrDeaths
+    deathData: bayernLkrDeaths,
+    metaData: bayernLkrMeta,
+    metaDataDistricts: bayernRegbezMeta
   });
 
   // const deutschlandCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12').then((response) => { return response.json(); });
@@ -82,7 +92,8 @@ async function init() {
   deutschlandText.init({
     selector: '#deutschland-text',
     caseData: deutschlandCases,
-    deathData: deutschlandDeaths
+    deathData: deutschlandDeaths,
+    metaData: deutschlandMeta
   });
 
   // const deutschlandBlCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=2020-04-13&group=Bundesland').then((response) => { return response.json(); });
@@ -92,13 +103,15 @@ async function init() {
   deutschlandBlText.init({
     selector: '#deutschland-bl-text',
     caseData: deutschlandBlCases,
-    deathData: deutschlandBlDeaths
+    deathData: deutschlandBlDeaths,
+    metaData: deutschlandBlMeta
   });
 
   deutschlandBlTable.init({
     selector: '#deutschland-bl-table',
     caseData: deutschlandBlCases,
-    deathData: deutschlandBlDeaths
+    deathData: deutschlandBlDeaths,
+    metaData: deutschlandBlMeta
   });
 
   lazyload

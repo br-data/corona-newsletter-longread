@@ -1,13 +1,11 @@
-import metaBayern from '../data/meta/bayern-meta.json';
-
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, doublingTime } from './utils';
+import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, doublingTime } from '../utils';
 
 export function init(config) {
-  const { selector, caseData, deathData } = config;
+  const { selector, caseData, deathData, metaData } = config;
 
   const text = `Bislang wurden ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle (+${pretty(currentIncreasePerc(caseData))} %) mehr als noch am Vortag.
 
-  Damit kommt Bayern auf ${pretty(casesPerThousand(currentCount(caseData), metaBayern.pop))} gemeldete Fälle pro tausend Einwohner.
+  Damit kommt Bayern auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.
 
   Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 
