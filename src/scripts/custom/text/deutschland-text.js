@@ -9,7 +9,7 @@ export function init(config) {
 
   Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 
-  Die Zahl der gemeldeten Todesfälle in Deutschland ${increaseClassifier(currentIncrease(deathData))} ${pretty(currentCount(deathData))}. ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' (+' + pretty(currentIncreasePerc(deathData)) + ' %) mehr als noch am Vortag.' : '' }`;
+  Bisher wurden insgesamt ${pretty(currentCount(deathData))} Todesfälle in Deutschland gemeldet. ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' (+' + pretty(currentIncreasePerc(deathData)) + ' %) mehr als noch am Vortag.' : '' }`;
 
   const textElement = document.querySelector(selector);
   textElement.textContent = text;
@@ -22,17 +22,5 @@ function deathCasesPlural(value) {
     return `sind ${pretty(value)} Todesfälle`;
   } else {
     return `sind ${pretty(value)} Todesfälle`;
-  }
-}
-
-function increaseClassifier(value) {
-  if (value < 0) {
-    return 'sinkt auf';
-  } else if (value === 0) {
-    return 'bleibt unverändert bei';
-  } else if (value > 0) {
-    return 'steigt auf';
-  } else {
-    return 'ist';
   }
 }

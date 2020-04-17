@@ -96,7 +96,7 @@ async function init() {
     metaData: deutschlandMeta
   });
 
-  // const deutschlandBlCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=2020-04-13&group=Bundesland').then((response) => { return response.json(); });
+  // const deutschlandBlCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland').then((response) => { return response.json(); });
 
   // const deutschlandBlDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=2020-04-13&group=Bundesland&sumField=AnzahlTodesfall').then((response) => { return response.json(); });
 

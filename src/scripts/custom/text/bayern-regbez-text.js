@@ -17,9 +17,9 @@ export function init(config) {
 
   const worstDistrics = enrichedData.sort((a, b) => b.casesPerThousand - a.casesPerThousand);
 
-  const text = `Am stärksten betroffen ist der Regierungsbezirk ${worstDistrics[0].name}. Pro tausend Einwohner wurden hier bisher ${pretty(worstDistrics[0].casesPerThousand)} Fälle gemeldet.
+  const text = `Am stärksten betroffen ist der Regierungsbezirk ${worstDistrics[0].name}. Pro tausend Einwohner wurden hier bislang ${pretty(worstDistrics[0].casesPerThousand)} Fälle gemeldet.
 
-  Vergleichsweise am besten steht der Regierungsbezirk ${worstDistrics[worstDistrics.length-1].name} da. Dort wurden bislang nur ${pretty(worstDistrics[worstDistrics.length-1].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.`;
+  Vergleichsweise am besten steht der Regierungsbezirk ${worstDistrics[worstDistrics.length-1].name} da. Dort wurden ${pretty(worstDistrics[worstDistrics.length-1].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.`;
 
   const textElement = document.querySelector(selector);
   textElement.textContent = text;
