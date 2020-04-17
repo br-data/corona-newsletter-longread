@@ -10,7 +10,9 @@ export function currentIncreasePerc(data) {
   const currentDay = data[data.length-1].sumValue;
   const previousDay = data[data.length-2].sumValue;
 
-  return (currentDay - previousDay) / currentDay * 100;
+  const percentChange = ((currentDay - previousDay) / previousDay) * 100;
+
+  return percentChange;
 }
 
 export function currentDate(data) {
@@ -20,11 +22,25 @@ export function currentDate(data) {
 export function germanDate(dateString) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   const date = new Date(dateString);
+
   return date.toLocaleDateString('de-DE', options);
 }
 
 export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
+}
+
+
+export function weekTrend(data) {
+  const currentWeek = data.slice(data.length-9, data.length-2);
+  const previousWeek = data.slice(data.length-16, data.length-9);
+
+  const currentWeekSum = currentWeek.reduce((sum, curr) => { return sum + curr.value; }, 0);
+  const previousWeekSum = previousWeek.reduce((sum, curr) => { return sum + curr.value; }, 0);
+
+  const percentChange = ((currentWeekSum - previousWeekSum) / previousWeekSum) * 100;
+
+  return percentChange;
 }
 
 export function doublingTime(data) {
@@ -44,6 +60,7 @@ export function doublingTime(data) {
 
 export function pretty(number) {
   const string = (Math.round(number * 10) / 10).toString().split('.');
+
   return string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
 }
 
