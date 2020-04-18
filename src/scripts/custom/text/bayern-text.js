@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, weekTrend, doublingTime } from '../utils';
+import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, classifyTrend, weekTrend, doublingTime } from '../utils';
 
 export function init(config) {
   const { selector, caseData, deathData, metaData } = config;
@@ -7,9 +7,9 @@ export function init(config) {
 
   Das sind ${pretty(currentIncrease(caseData))} Fälle (+${pretty(currentIncreasePerc(caseData))} %) mehr als noch am Vortag.
 
-  Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${classifyTrend(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
-
   Damit kommt Bayern auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.
+
+  Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${classifyTrend(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
 
   Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 
@@ -17,30 +17,12 @@ export function init(config) {
 
   ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' (+' + pretty(currentIncreasePerc(deathData)) + ' %) mehr als noch am Vortag.' : '.' }
 
-  Langfristig gibt es einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der Todesfälle ist im Vergleich zur Vorwoche ${classifyTrend(weekTrend(deathData))} (${pretty(weekTrend(deathData))} %).
+  Damit ist Bayern weiterhin das Bundesland mit den meisten gemeldeten Corona-Todesfällen.
 
-  Damit ist Bayern weiterhin das Bundesland mit den meisten gemeldeten Corona-Todesfällen.`;
+  Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${classifyTrend(weekTrend(deathData))} (${pretty(weekTrend(deathData))} %).`;
 
   const textElement = document.querySelector(selector);
   textElement.textContent = text;
-}
-
-function classifyTrend(value) {
-  if (value <= -50) {
-    return 'stark zurückgegangen';
-  } else if (value <= -25) {
-    return 'zurückgegangen';
-  } else if (value < 0) {
-    return 'leicht zurückgegangen';
-  } else if (value === 0) {
-    return 'gleich geblieben';
-  } else if (value > 0 && value < 25) {
-    return 'leicht angestiegen';
-  } else if (value >= 25 && value < 50) {
-    return 'angestiegen';
-  } else if (value >= 50) {
-    return 'stark angestiegen';
-  }
 }
 
 function positiveNegative(value) {

@@ -30,6 +30,23 @@ export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
 
+export function classifyTrend(value) {
+  if (value <= -50) {
+    return 'stark zurückgegangen';
+  } else if (value <= -25) {
+    return 'zurückgegangen';
+  } else if (value < 0) {
+    return 'leicht zurückgegangen';
+  } else if (value === 0) {
+    return 'gleich geblieben';
+  } else if (value > 0 && value < 25) {
+    return 'leicht angestiegen';
+  } else if (value >= 25 && value < 50) {
+    return 'angestiegen';
+  } else if (value >= 50) {
+    return 'stark angestiegen';
+  }
+}
 
 export function weekTrend(data) {
   const currentWeek = data.slice(data.length-9, data.length-2);

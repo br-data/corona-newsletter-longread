@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, doublingTime } from '../utils';
+import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, classifyTrend, weekTrend, doublingTime } from '../utils';
 
 export function init(config) {
   const { selector, caseData, deathData, metaData } = config;
@@ -7,12 +7,28 @@ export function init(config) {
 
   Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
 
+  Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${classifyTrend(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
+
   Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 
-  Bisher wurden insgesamt ${pretty(currentCount(deathData))} Todesfälle in Deutschland gemeldet. ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' (+' + pretty(currentIncreasePerc(deathData)) + ' %) mehr als noch am Vortag.' : '' }`;
+  Bisher wurden insgesamt ${pretty(currentCount(deathData))} Todesfälle in Deutschland gemeldet.
+
+  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' (+' + pretty(currentIncreasePerc(deathData)) + ' %) mehr als noch am Vortag.' : '.' }
+
+  Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${classifyTrend(weekTrend(deathData))} (${pretty(weekTrend(deathData))} %).`;
 
   const textElement = document.querySelector(selector);
   textElement.textContent = text;
+}
+
+function positiveNegative(value) {
+  if (value < 0) {
+    return 'positiven';
+  } else if (value === 0) {
+    return 'neutralen';
+  } else if (value > 0) {
+    return 'negativen';
+  }
 }
 
 function deathCasesPlural(value) {
