@@ -8,6 +8,8 @@ import * as bayernText from './custom/text/bayern-text';
 import * as bayernRegbezText from './custom/text/bayern-regbez-text';
 import * as bayernLkrText from './custom/text/bayern-lkr-text';
 
+import LineChart from './custom/chart/line-chart';
+
 import * as bayernRegbezTable from './custom/table/bayern-regbez-table';
 
 import * as deutschlandText from './custom/text/deutschland-text';
@@ -55,9 +57,15 @@ async function init() {
     metaData: bayernMeta
   });
 
+  new LineChart({
+    selector: '#bayern-chart',
+    data: bayernCases
+  });
+
   // const bayernRegbezCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern').then(response => response.json());
 
   // const bayernRegbezDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall').then(response => response.json());
+
 
   bayernRegbezTable.init({
     selector: '#bayern-regbez-table',
