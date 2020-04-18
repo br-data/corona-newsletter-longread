@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, classifyTrend, weekTrend, doublingTime } from '../utils';
+import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, trendClassifier, weekTrend, doublingTime } from '../utils';
 
 export function init(config) {
   const { selector, caseData, deathData, metaData } = config;
@@ -9,7 +9,7 @@ export function init(config) {
 
   Damit kommt Bayern auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.
 
-  Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${classifyTrend(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
+  Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${trendClassifier(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
 
   Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 
@@ -19,7 +19,7 @@ export function init(config) {
 
   Damit ist Bayern weiterhin das Bundesland mit den meisten gemeldeten Corona-Todesfällen.
 
-  Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${classifyTrend(weekTrend(deathData))} (${pretty(weekTrend(deathData))} %).`;
+  Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (${pretty(weekTrend(deathData))} %).`;
 
   const textElement = document.querySelector(selector);
   textElement.textContent = text;

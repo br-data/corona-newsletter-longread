@@ -10,7 +10,7 @@
 - Kurzzusammenfassung für BR24-Newsletter
 - Trend statt Vortagesvergleich
 - Reproduktionszahl statt Verdopplungszeit
-- Relativen Anstieg (+7 %) rauswerfen?
+- Relativen Anstieg (+7 %) rauswerfen?  
 - Gesundungen mit reinnehmen?
 - Hinweise zu den Daten schreiben
 - Ladeindikator und Error-Handling

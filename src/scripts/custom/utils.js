@@ -30,16 +30,16 @@ export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
 
-export function classifyTrend(value) {
+export function trendClassifier(value) {
   if (value <= -50) {
     return 'stark zurückgegangen';
   } else if (value <= -25) {
     return 'zurückgegangen';
-  } else if (value < 0) {
+  } else if (value <= -5) {
     return 'leicht zurückgegangen';
-  } else if (value === 0) {
-    return 'gleich geblieben';
-  } else if (value > 0 && value < 25) {
+  } else if (value > -5 && value < 5) {
+    return 'nahezu gleich geblieben';
+  } else if (value >= 5 && value < 25) {
     return 'leicht angestiegen';
   } else if (value >= 25 && value < 50) {
     return 'angestiegen';
@@ -47,6 +47,42 @@ export function classifyTrend(value) {
     return 'stark angestiegen';
   }
 }
+
+export function trendArrow(value) {
+  if (value <= -50) {
+    return 'icono-arrow-down';
+  } else if (value <= -25) {
+    return 'icono-arrow-right-down';
+  } else if (value <= -5) {
+    return 'icono-arrow-right-down';
+  } else if (value > -5 && value < 5) {
+    return 'icono-arrow-right';
+  } else if (value >= 5 && value < 25) {
+    return 'icono-arrow-right-up';
+  } else if (value >= 25 && value < 50) {
+    return 'icono-arrow-right-up';
+  } else if (value >= 50) {
+    return 'icono-arrow-up';
+  }
+}
+
+// export function trendArrow(value) {
+//   if (value <= -50) {
+//     return '↓';
+//   } else if (value <= -25) {
+//     return '↘';
+//   } else if (value < 0) {
+//     return '↘';
+//   } else if (value === 0) {
+//     return '→';
+//   } else if (value > 0 && value < 25) {
+//     return '↗';
+//   } else if (value >= 25 && value < 50) {
+//     return '↗';
+//   } else if (value >= 50) {
+//     return '↑';
+//   }
+// }
 
 export function weekTrend(data) {
   const currentWeek = data.slice(data.length-9, data.length-2);

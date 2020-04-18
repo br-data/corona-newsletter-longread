@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPerThousand, json2table } from '../utils';
+import { pretty, currentCount, currentIncrease, casesPerThousand, trendArrow, weekTrend, json2table } from '../utils';
 
 export function init(config) {
   const { selector, caseData, deathData, metaData } = config;
@@ -9,9 +9,9 @@ export function init(config) {
 
     return {
       'Regierungsbezirk': districtMeta.name,
-      'Fälle pro 1.000 Ew.': `${pretty(casesPerThousand(currentCount(districtCases), districtMeta.pop))}`,
-      'Fälle': `${pretty(currentCount(districtCases))} (+${pretty(currentIncrease(districtCases))})`,
-      'Todesfälle': `${pretty(currentCount(districtDeaths))} (+${pretty(currentIncrease(districtDeaths))})`
+      'Fälle (1.000 Ew.)': `${pretty(casesPerThousand(currentCount(districtCases), districtMeta.pop))}`,
+      'Fälle': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty(weekTrend(districtCases))} %"></span> ${pretty(currentCount(districtCases))} (+${pretty(currentIncrease(districtCases))})`,
+      'Todesfälle': `<span class="${trendArrow(weekTrend(districtDeaths))}" title="${pretty(weekTrend(districtDeaths))} %"></span> ${pretty(currentCount(districtDeaths))} (+${pretty(currentIncrease(districtDeaths))})`
     };
   });
 
