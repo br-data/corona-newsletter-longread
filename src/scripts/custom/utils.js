@@ -66,24 +66,6 @@ export function trendArrow(value) {
   }
 }
 
-// export function trendArrow(value) {
-//   if (value <= -50) {
-//     return '↓';
-//   } else if (value <= -25) {
-//     return '↘';
-//   } else if (value < 0) {
-//     return '↘';
-//   } else if (value === 0) {
-//     return '→';
-//   } else if (value > 0 && value < 25) {
-//     return '↗';
-//   } else if (value >= 25 && value < 50) {
-//     return '↗';
-//   } else if (value >= 50) {
-//     return '↑';
-//   }
-// }
-
 export function weekTrend(data) {
   const currentWeek = data.slice(data.length-9, data.length-2);
   const previousWeek = data.slice(data.length-16, data.length-9);
