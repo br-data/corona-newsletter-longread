@@ -38,10 +38,6 @@ import deutschlandBlCases from './custom/data/cases/deutschland-bl-cases.json';
 import deutschlandBlDeaths from './custom/data/deaths/deutschland-bl-deaths.json';
 import deutschlandBlMeta from './custom/data/meta/deutschland-bl-meta.json';
 
-// import Chart from './custom/chart/chart';
-// import chartData from './custom/chart/chart-data.json';
-// let chart;
-
 window.addEventListener('load', init);
 
 async function init() {
