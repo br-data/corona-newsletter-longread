@@ -1,42 +1,38 @@
 import '../styles/index.scss';
 
-import * as lazyload from './components/lazyload';
-import * as marginals from './components/marginals';
-import * as navigation from './components/navigation';
+import * as bayernText from './text/bayern-text';
+import * as bayernRegbezText from './text/bayern-regbez-text';
+import * as bayernLkrText from './text/bayern-lkr-text';
 
-import * as bayernText from './custom/text/bayern-text';
-import * as bayernRegbezText from './custom/text/bayern-regbez-text';
-import * as bayernLkrText from './custom/text/bayern-lkr-text';
+import LineChart from './chart/line-chart';
 
-import LineChart from './custom/chart/line-chart';
+import * as bayernRegbezTable from './table/bayern-regbez-table';
 
-import * as bayernRegbezTable from './custom/table/bayern-regbez-table';
+import * as deutschlandText from './text/deutschland-text';
+import * as deutschlandBlText from './text/deutschland-bl-text';
 
-import * as deutschlandText from './custom/text/deutschland-text';
-import * as deutschlandBlText from './custom/text/deutschland-bl-text';
-
-import * as deutschlandBlTable from './custom/table/deutschland-bl-table';
+import * as deutschlandBlTable from './table/deutschland-bl-table';
 
 // Mock data for testing
-import bayernCases from './custom/data/cases/bayern-cases.json';
-import bayernDeaths from './custom/data/deaths/bayern-deaths.json';
-import bayernMeta from './custom/data/meta/bayern-meta.json';
+import bayernCases from './data/cases/bayern-cases.json';
+import bayernDeaths from './data/deaths/bayern-deaths.json';
+import bayernMeta from './data/meta/bayern-meta.json';
 
-import bayernRegbezCases from './custom/data/cases/bayern-regbez-cases.json';
-import bayernRegbezDeaths from './custom/data/deaths/bayern-regbez-deaths.json';
-import bayernRegbezMeta from './custom/data/meta/bayern-regbez-meta.json';
+import bayernRegbezCases from './data/cases/bayern-regbez-cases.json';
+import bayernRegbezDeaths from './data/deaths/bayern-regbez-deaths.json';
+import bayernRegbezMeta from './data/meta/bayern-regbez-meta.json';
 
-import bayernLkrCases from './custom/data/cases/bayern-lkr-cases.json';
-import bayernLkrDeaths from './custom/data/deaths/bayern-lkr-deaths.json';
-import bayernLkrMeta from './custom/data/meta/bayern-lkr-meta.json';
+import bayernLkrCases from './data/cases/bayern-lkr-cases.json';
+import bayernLkrDeaths from './data/deaths/bayern-lkr-deaths.json';
+import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
 
-import deutschlandCases from './custom/data/cases/deutschland-cases.json';
-import deutschlandDeaths from './custom/data/deaths/deutschland-deaths.json';
-import deutschlandMeta from './custom/data/meta/deutschland-meta.json';
+import deutschlandCases from './data/cases/deutschland-cases.json';
+import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
+import deutschlandMeta from './data/meta/deutschland-meta.json';
 
-import deutschlandBlCases from './custom/data/cases/deutschland-bl-cases.json';
-import deutschlandBlDeaths from './custom/data/deaths/deutschland-bl-deaths.json';
-import deutschlandBlMeta from './custom/data/meta/deutschland-bl-meta.json';
+import deutschlandBlCases from './data/cases/deutschland-bl-cases.json';
+import deutschlandBlDeaths from './data/deaths/deutschland-bl-deaths.json';
+import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
 
 window.addEventListener('load', init);
 
@@ -142,16 +138,6 @@ async function init() {
     metaData: deutschlandBlMeta
   });
 
-  lazyload
-    .init('.lazyload', {
-      rootMargin: '300px 0px 300px 0px',
-      threshold: 0
-    })
-    .observe();
-
-  navigation.init();
-  marginals.init();
-
   resize(charts);
 }
 
@@ -161,7 +147,6 @@ function resize(charts) {
   window.onresize = () => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
-      marginals.update();
       charts.forEach(chart => chart.update());
     }, 200);
   };

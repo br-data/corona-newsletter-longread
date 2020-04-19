@@ -22,6 +22,7 @@
   }
 
   .image {
+    overflow: hidden;
     // width: calc(100% / 3);
     flex: calc(100% / 3) 0 0;
     margin-bottom: .5em;
@@ -37,6 +38,7 @@
     }
 
     img {
+      display: block;
       transition: all 300ms ease;
     }
   }
