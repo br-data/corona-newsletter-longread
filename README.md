@@ -5,11 +5,8 @@
 ## To Do
 
 - Daten vorsichtshalber nach Meldedatum sortieren oder filtern
-- Farbklassifizierung für die Tabellen
-- Liniendiagramme für Bayern und Deutschland
+- HTML für E-Mail exportieren
 - Kurzzusammenfassung für BR24-Newsletter
-- Trend statt Vortagesvergleich
-- Reproduktionszahl statt Verdopplungszeit
 - Relativen Anstieg (+7 %) rauswerfen?  
 - Gesundungen mit reinnehmen?
 - Hinweise zu den Daten schreiben
