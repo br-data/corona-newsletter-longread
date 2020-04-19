@@ -1,5 +1,5 @@
 import { select } from 'd3-selection';
-import { max } from 'd3-array';
+import { max, min } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import { line, curveMonotoneX } from 'd3-shape';
 
@@ -7,8 +7,8 @@ import { pretty } from '../utils';
 
 const defaults = {
   selector: '#chart',
-  height: 400,
-  margin: { top: 80, right: 25, bottom: 80, left: 25 }
+  height: 420,
+  margin: { top: 110, right: 25, bottom: 75, left: 25 }
 };
 
 export default class LineChart {
@@ -59,7 +59,7 @@ export default class LineChart {
     context.fillRect(0, 0, width, height);
 
     // Set canvas default font
-    context.font = '300 15px "Open Sans", OpenSans, Arial';
+    context.font = '300 14px "Open Sans", OpenSans, Arial';
 
     // Adjust for margins
     context.translate(margin.left, margin.top);
@@ -69,25 +69,27 @@ export default class LineChart {
     const innerHeight = height - margin.top - margin.bottom;
 
     const xMax = max(data, d => new Date(d.Meldedatum));
+    const xMin = min(data, d => new Date(d.Meldedatum));
+    xMin.setDate(xMin.getDate() - 2);
     const yMax = max(data, d => d.sumValue);
 
     const x = scaleTime()
-      .domain([new Date('2020-03-11'), xMax])
+      .domain([xMin, xMax])
       .range([0, innerWidth]);
 
     const y = scaleLinear()
-      .domain([0, yMax * 1.25])
+      .domain([0, yMax * 1.2])
       .range([innerHeight, 0]);
 
+    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 5));
 
     // Draw x axis
     context.textAlign = 'center';
     context.textBaseline = 'top';
-    x.ticks(5).forEach(d => {
-      const options = {  month: 'numeric', day: 'numeric' };
-      const tickValue = d.toLocaleDateString('de-DE', options);
-      context.fillStyle = '#FFFFFF';
-      context.fillText(tickValue, x(d), innerHeight + 5);
+    xTicks.forEach(d => {
+      context.fillStyle = '#ffffff';
+      context.textAlign = 'right';
+      context.fillText(germanDate(d), x(d), innerHeight + 5);
     });
 
     // Draw y axis
@@ -101,10 +103,10 @@ export default class LineChart {
     context.stroke();
 
     context.textAlign = 'left';
-    context.textBaseline = 'top';
+    context.textBaseline = 'bottom';
     y.ticks(5).forEach(d => {
-      context.fillStyle = '#FFFFFF';
-      context.fillText(pretty(d), 0, y(d) + 5);
+      context.fillStyle = '#ffffff';
+      context.fillText(pretty(d), 0, y(d) - 2);
     });
 
     // Draw line
@@ -115,6 +117,7 @@ export default class LineChart {
       .context(context);
 
     context.beginPath();
+    context.lineCap = 'round';
     lineConstructor(data);
     context.lineWidth = 4;
     context.strokeStyle = '#0b9fd8' ;
@@ -132,15 +135,15 @@ export default class LineChart {
 
     context.font = 'bold 15px "Open Sans", OpenSans, Arial';
     context.textAlign = 'right';
-    context.textBaseline = 'middle';
-    context.fillStyle = '#FFFFFF';
-    context.fillText(pretty(lastValue.sumValue), lastX + 5, lastY - 15);
+    context.textBaseline = 'bottom';
+    context.fillStyle = '#ffffff';
+    context.fillText(pretty(lastValue.sumValue), lastX + 5, lastY - 7);
 
     // Add title
-    context.font = '300 22px "Open Sans", OpenSans, Arial';
+    context.font = '300 24px "Open Sans", OpenSans, Arial';
     context.textAlign = 'left';
     context.textBaseline = 'top';
-    context.fillStyle = '#FFFFFF';
+    context.fillStyle = '#ffffff';
     context.fillText(meta.title, 0, -margin.top + 20);
 
     // Add description
@@ -151,11 +154,11 @@ export default class LineChart {
     context.fillText(meta.description, 0, -margin.top + 50);
 
     // Add author and source
-    context.font = '300 15px "Open Sans", OpenSans, Arial';
+    context.font = '300 14px "Open Sans", OpenSans, Arial';
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
-    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source}`, 0, innerHeight + 45);
+    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source}`, 0, innerHeight + 40);
 
     // Scale canvas by pixel density
     context.scale(1, 1);
@@ -165,6 +168,23 @@ export default class LineChart {
     select('#bayern-chart').html('');
     this.draw();
   }
+}
+
+function dateRange(startDate, endDate, steps) {
+  const dateArray = [];
+  const currentDate = new Date(endDate);
+
+  while (currentDate >= new Date(startDate)) {
+    dateArray.push(new Date(+currentDate));
+    currentDate.setDate(currentDate.getDate() - steps);
+  }
+
+  return dateArray;
+}
+
+function germanDate(value) {
+  const options = {  month: 'numeric', day: 'numeric' };
+  return value.toLocaleDateString('de-DE', options);
 }
 
 // http://bl.ocks.org/devgru/a9428ebd6e11353785f2
