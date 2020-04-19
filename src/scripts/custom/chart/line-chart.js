@@ -165,7 +165,8 @@ export default class LineChart {
 
     // Create image from canvas and append it to the DOM
     container.append('img')
-      .attr('src', canvas.toDataURL());
+      .attr('src', canvas.toDataURL())
+      .attr('alt', `${meta.title}: ${meta.description}`);
   }
 
   update() {
