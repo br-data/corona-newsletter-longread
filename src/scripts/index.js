@@ -48,7 +48,8 @@ async function init() {
   // const bayernDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall').then(response => response.json());
 
   bayernText.init({
-    selector: '#bayern-text',
+    caseTarget: '#bayern-cases-text',
+    deathTarget: '#bayern-deaths-text',
     caseData: bayernCases,
     deathData: bayernDeaths,
     metaData: bayernMeta
@@ -103,11 +104,25 @@ async function init() {
   // const deutschlandDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&sumField=AnzahlTodesfall').then(response => response.json());
 
   deutschlandText.init({
-    selector: '#deutschland-text',
+    caseTarget: '#deutschland-cases-text',
+    deathTarget: '#deutschland-deaths-text',
     caseData: deutschlandCases,
     deathData: deutschlandDeaths,
     metaData: deutschlandMeta
   });
+
+  const deutschlandChart = new LineChart({
+    selector: '#deutschland-chart',
+    data: deutschlandCases,
+    meta: {
+      title: 'Corona in Deutschland',
+      description: 'Enwicklung der gemeldeten Fallzahlen',
+      author: 'BR',
+      source: 'Robert Koch-Institut'
+    }
+  });
+
+  charts.push(deutschlandChart);
 
   // const deutschlandBlCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland').then(response => response.json());
 
