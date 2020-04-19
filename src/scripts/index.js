@@ -59,7 +59,13 @@ async function init() {
 
   new LineChart({
     selector: '#bayern-chart',
-    data: bayernCases
+    data: bayernCases,
+    meta: {
+      title: 'Corona in Bayern',
+      description: 'Enwicklung der gemeldeten Fallzahlen',
+      author: 'BR',
+      source: 'Robert Koch-Institut'
+    }
   });
 
   // const bayernRegbezCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern').then(response => response.json());

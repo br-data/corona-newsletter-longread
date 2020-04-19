@@ -7,8 +7,8 @@ import { pretty } from '../utils';
 
 const defaults = {
   selector: '#chart',
-  height: 350,
-  margin: { top: 5, right: 20, bottom: 30, left: 20 }
+  height: 400,
+  margin: { top: 80, right: 25, bottom: 80, left: 25 }
 };
 
 export default class LineChart {
@@ -23,7 +23,7 @@ export default class LineChart {
   }
 
   draw() {
-    const { selector, data, height, margin } = this;
+    const { selector, data, meta, height, margin } = this;
     const container = select(selector);
     const ratio = getRetinaRatio();
 
@@ -135,6 +135,27 @@ export default class LineChart {
     context.textBaseline = 'middle';
     context.fillStyle = '#FFFFFF';
     context.fillText(pretty(lastValue.sumValue), lastX + 5, lastY - 15);
+
+    // Add title
+    context.font = '300 22px "Open Sans", OpenSans, Arial';
+    context.textAlign = 'left';
+    context.textBaseline = 'top';
+    context.fillStyle = '#FFFFFF';
+    context.fillText(meta.title, 0, -margin.top + 20);
+
+    // Add description
+    context.font = '300 15px "Open Sans", OpenSans, Arial';
+    context.textAlign = 'left';
+    context.textBaseline = 'top';
+    context.fillStyle = '#9fa3b3';
+    context.fillText(meta.description, 0, -margin.top + 50);
+
+    // Add author and source
+    context.font = '300 15px "Open Sans", OpenSans, Arial';
+    context.textAlign = 'left';
+    context.textBaseline = 'top';
+    context.fillStyle = '#9fa3b3';
+    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source}`, 0, innerHeight + 45);
 
     // Scale canvas by pixel density
     context.scale(1, 1);
