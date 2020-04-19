@@ -1,4 +1,4 @@
-import { select } from 'd3-selection';
+import { select, create } from 'd3-selection';
 import { max, min } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import { line, curveMonotoneX } from 'd3-shape';
@@ -30,15 +30,15 @@ export default class LineChart {
     // Set initial dimensions
     let width = container.node().getBoundingClientRect().width;
 
-    // Create canvas context
-    const context = container
-      .append('canvas')
+    // Create canvas and context
+    const canvas = create('canvas')
       .attr('width', width * ratio)
       .attr('height', height * ratio)
       .style('width', `${width}px`)
       .style('height', `${height}px`)
-      .node()
-      .getContext('2d');
+      .node();
+
+    const context = canvas.getContext('2d');
 
     // Scale canvas by retina ratio
     context.scale(ratio, ratio);
@@ -162,10 +162,14 @@ export default class LineChart {
 
     // Scale canvas by pixel density
     context.scale(1, 1);
+
+    // Create image from canvas and append it to the DOM
+    container.append('img')
+      .attr('src', canvas.toDataURL());
   }
 
   update() {
-    select('#bayern-chart').html('');
+    select(this.selector).html('');
     this.draw();
   }
 }

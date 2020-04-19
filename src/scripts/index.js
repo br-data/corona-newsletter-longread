@@ -41,6 +41,7 @@ import deutschlandBlMeta from './custom/data/meta/deutschland-bl-meta.json';
 window.addEventListener('load', init);
 
 async function init() {
+  const charts = [];
 
   // const bayernCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland&bundesland=Bayern').then(response => response.json());
 
@@ -53,7 +54,7 @@ async function init() {
     metaData: bayernMeta
   });
 
-  new LineChart({
+  const bayernChart = new LineChart({
     selector: '#bayern-chart',
     data: bayernCases,
     meta: {
@@ -63,6 +64,8 @@ async function init() {
       source: 'Robert Koch-Institut'
     }
   });
+
+  charts.push(bayernChart);
 
   // const bayernRegbezCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern').then(response => response.json());
 
@@ -134,22 +137,17 @@ async function init() {
   navigation.init();
   marginals.init();
 
-  // chart = new Chart({
-  //   target: '#chart',
-  //   data: chartData
-  // });
-
-  // resize();
+  resize(charts);
 }
 
-// function resize() {
-//   let timeout;
+function resize(charts) {
+  let timeout;
 
-//   window.onresize = () => {
-//     clearTimeout(timeout);
-//     timeout = setTimeout(() => {
-//       marginals.update();
-//       chart.update();
-//     }, 200);
-//   };
-// }
+  window.onresize = () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      marginals.update();
+      charts.forEach(chart => chart.update());
+    }, 200);
+  };
+}
