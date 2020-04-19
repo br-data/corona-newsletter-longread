@@ -1,7 +1,7 @@
 import { pretty, currentCount, currentIncrease, casesPerThousand, trendArrow, weekTrend, json2table } from '../utils';
 
 export function init(config) {
-  const { selector, caseData, deathData, metaData } = config;
+  const { target, caseData, deathData, metaData } = config;
 
   const analysis = metaData.map(districtMeta => {
     const districtCases = caseData.filter(d => d.Regierungsbezirk === districtMeta.name);
@@ -16,6 +16,6 @@ export function init(config) {
   });
 
   const tableHtml = json2table(analysis);
-  const parentElement = document.querySelector(selector);
+  const parentElement = document.querySelector(target);
   parentElement.innerHTML = tableHtml;
 }

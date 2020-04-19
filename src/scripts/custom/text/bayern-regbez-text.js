@@ -1,7 +1,7 @@
 import { pretty, currentCount, casesPerThousand } from '../utils';
 
 export function init(config) {
-  const { selector, caseData, deathData, metaData } = config;
+  const { target, caseData, deathData, metaData } = config;
 
   const enrichedData = metaData.map(districtMeta => {
     const districtCases = caseData.filter(d => d.Regierungsbezirk === districtMeta.name);
@@ -21,6 +21,6 @@ export function init(config) {
 
   Vergleichsweise am besten steht der Regierungsbezirk ${worstDistrics[worstDistrics.length-1].name} da. Dort wurden ${pretty(worstDistrics[worstDistrics.length-1].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.`;
 
-  const textElement = document.querySelector(selector);
+  const textElement = document.querySelector(target);
   textElement.textContent = text;
 }

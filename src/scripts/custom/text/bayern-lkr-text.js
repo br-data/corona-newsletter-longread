@@ -1,7 +1,7 @@
 import { pretty } from '../utils';
 
 export function init(config) {
-  const { selector, caseData, metaData, metaDataDistricts } = config;
+  const { target, caseData, metaData, metaDataDistricts } = config;
 
   const enrichedData = caseData.map(d => {
     const metaInfoCounty = metaData.find(m => m.rkiName === d.Landkreis);
@@ -29,7 +29,7 @@ export function init(config) {
 
   Aus ${preposition2(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.`;
 
-  const textElement = document.querySelector(selector);
+  const textElement = document.querySelector(target);
   textElement.textContent = text;
 }
 

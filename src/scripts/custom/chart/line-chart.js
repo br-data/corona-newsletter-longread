@@ -6,7 +6,7 @@ import { line, curveMonotoneX } from 'd3-shape';
 import { pretty } from '../utils';
 
 const defaults = {
-  selector: '#chart',
+  target: '#chart',
   height: 420,
   margin: { top: 110, right: 25, bottom: 75, left: 25 }
 };
@@ -23,8 +23,8 @@ export default class LineChart {
   }
 
   draw() {
-    const { selector, data, meta, height, margin } = this;
-    const container = select(selector);
+    const { target, data, meta, height, margin } = this;
+    const container = select(target);
     const ratio = getRetinaRatio();
 
     // Set initial dimensions
@@ -169,7 +169,7 @@ export default class LineChart {
   }
 
   update() {
-    select(this.selector).html('');
+    select(this.target).html('');
     this.draw();
   }
 }

@@ -56,7 +56,7 @@ async function init() {
   });
 
   const bayernChart = new LineChart({
-    selector: '#bayern-chart',
+    target: '#bayern-chart',
     data: bayernCases,
     meta: {
       title: 'Corona in Bayern',
@@ -74,14 +74,14 @@ async function init() {
 
 
   bayernRegbezTable.init({
-    selector: '#bayern-regbez-table',
+    target: '#bayern-regbez-table',
     caseData: bayernRegbezCases,
     deathData: bayernRegbezDeaths,
     metaData: bayernRegbezMeta
   });
 
   bayernRegbezText.init({
-    selector: '#bayern-regbez-text',
+    target: '#bayern-regbez-text',
     caseData: bayernRegbezCases,
     deathData: bayernRegbezDeaths,
     metaData: bayernRegbezMeta
@@ -92,7 +92,7 @@ async function init() {
   // const bayernLkrDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall').then(response => response.json());
 
   bayernLkrText.init({
-    selector: '#bayern-lkr-text',
+    target: '#bayern-lkr-text',
     caseData: bayernLkrCases,
     deathData: bayernLkrDeaths,
     metaData: bayernLkrMeta,
@@ -112,7 +112,7 @@ async function init() {
   });
 
   const deutschlandChart = new LineChart({
-    selector: '#deutschland-chart',
+    target: '#deutschland-chart',
     data: deutschlandCases,
     meta: {
       title: 'Corona in Deutschland',
@@ -129,14 +129,14 @@ async function init() {
   // const deutschlandBlDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=2020-04-13&group=Bundesland&sumField=AnzahlTodesfall').then(response => response.json());
 
   deutschlandBlText.init({
-    selector: '#deutschland-bl-text',
+    target: '#deutschland-bl-text',
     caseData: deutschlandBlCases,
     deathData: deutschlandBlDeaths,
     metaData: deutschlandBlMeta
   });
 
   deutschlandBlTable.init({
-    selector: '#deutschland-bl-table',
+    target: '#deutschland-bl-table',
     caseData: deutschlandBlCases,
     deathData: deutschlandBlDeaths,
     metaData: deutschlandBlMeta
