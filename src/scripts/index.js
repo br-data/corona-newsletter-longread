@@ -30,6 +30,8 @@ import deutschlandBlCases from './data/cases/deutschland-bl-cases.json';
 import deutschlandBlDeaths from './data/deaths/deutschland-bl-deaths.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
 
+import { germanDate } from './utils';
+
 window.addEventListener('load', init);
 
 async function init() {
@@ -37,6 +39,9 @@ async function init() {
   const date = new Date(urlParams.get('date') || new Date());
   const dateString = date.toISOString().split('T')[0];
   const logError = error => console.warn(error);
+
+  const dateElements = document.querySelectorAll('span.date');
+  dateElements.forEach(el => el.textContent = germanDate(dateString));
 
   const charts = [];
 

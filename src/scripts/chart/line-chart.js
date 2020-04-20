@@ -3,7 +3,7 @@ import { max, min } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import { line, curveMonotoneX } from 'd3-shape';
 
-import { pretty } from '../utils';
+import { pretty, germanDate, germanDateShort } from '../utils';
 
 const defaults = {
   target: '#chart',
@@ -89,7 +89,7 @@ export default class LineChart {
     xTicks.forEach(d => {
       context.fillStyle = '#ffffff';
       context.textAlign = 'right';
-      context.fillText(germanDate(d), x(d), innerHeight + 5);
+      context.fillText(germanDateShort(d), x(d), innerHeight + 5);
     });
 
     // Draw y axis
@@ -158,7 +158,7 @@ export default class LineChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
-    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source} (Stand: ${germanDateLong(meta.date)})`, 0, innerHeight + 40);
+    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
 
     // Scale canvas by pixel density
     context.scale(1, 1);
@@ -185,18 +185,6 @@ function dateRange(startDate, endDate, steps) {
   }
 
   return dateArray;
-}
-
-function germanDate(value) {
-  const date = new Date(value);
-  const options = { month: 'numeric', day: 'numeric' };
-  return date.toLocaleDateString('de-DE', options);
-}
-
-function germanDateLong(value) {
-  const date = new Date(value);
-  const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
-  return date.toLocaleDateString('de-DE', options);
 }
 
 // http://bl.ocks.org/devgru/a9428ebd6e11353785f2

@@ -26,6 +26,14 @@ export function germanDate(dateString) {
   return date.toLocaleDateString('de-DE', options);
 }
 
+export function germanDateShort(dateString) {
+  const options = { month: 'numeric', day: 'numeric' };
+  const date = new Date(dateString);
+
+  return date.toLocaleDateString('de-DE', options);
+}
+
+
 export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
