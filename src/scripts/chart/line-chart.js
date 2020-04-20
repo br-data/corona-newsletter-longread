@@ -158,7 +158,7 @@ export default class LineChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
-    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source}`, 0, innerHeight + 40);
+    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source} (Stand: ${germanDateLong(meta.date)})`, 0, innerHeight + 40);
 
     // Scale canvas by pixel density
     context.scale(1, 1);
@@ -188,8 +188,15 @@ function dateRange(startDate, endDate, steps) {
 }
 
 function germanDate(value) {
-  const options = {  month: 'numeric', day: 'numeric' };
-  return value.toLocaleDateString('de-DE', options);
+  const date = new Date(value);
+  const options = { month: 'numeric', day: 'numeric' };
+  return date.toLocaleDateString('de-DE', options);
+}
+
+function germanDateLong(value) {
+  const date = new Date(value);
+  const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+  return date.toLocaleDateString('de-DE', options);
 }
 
 // http://bl.ocks.org/devgru/a9428ebd6e11353785f2

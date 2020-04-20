@@ -3,17 +3,13 @@ import '../styles/index.scss';
 import * as bayernText from './text/bayern-text';
 import * as bayernRegbezText from './text/bayern-regbez-text';
 import * as bayernLkrText from './text/bayern-lkr-text';
+import * as bayernRegbezTable from './table/bayern-regbez-table';
+import * as deutschlandText from './text/deutschland-text';
+import * as deutschlandBlText from './text/deutschland-bl-text';
+import * as deutschlandBlTable from './table/deutschland-bl-table';
 
 import LineChart from './chart/line-chart';
 
-import * as bayernRegbezTable from './table/bayern-regbez-table';
-
-import * as deutschlandText from './text/deutschland-text';
-import * as deutschlandBlText from './text/deutschland-bl-text';
-
-import * as deutschlandBlTable from './table/deutschland-bl-table';
-
-// Mock data for testing
 import bayernCases from './data/cases/bayern-cases.json';
 import bayernDeaths from './data/deaths/bayern-deaths.json';
 import bayernMeta from './data/meta/bayern-meta.json';
@@ -37,11 +33,20 @@ import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
 window.addEventListener('load', init);
 
 async function init() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const date = new Date(urlParams.get('date') || new Date());
+  const dateString = date.toISOString().split('T')[0];
+  const logError = error => console.warn(error);
+
   const charts = [];
 
-  // const bayernCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland&bundesland=Bayern').then(response => response.json());
+  // const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&bundesland=Bayern`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
-  // const bayernDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall').then(response => response.json());
+  // const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
   bayernText.init({
     caseTarget: '#bayern-cases-text',
@@ -58,16 +63,20 @@ async function init() {
       title: 'Corona in Bayern',
       description: 'Enwicklung der gemeldeten Fallzahlen',
       author: 'BR',
-      source: 'Robert Koch-Institut'
+      source: 'Robert Koch-Institut',
+      date: dateString
     }
   });
 
   charts.push(bayernChart);
 
-  // const bayernRegbezCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern').then(response => response.json());
+  // const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Regierungsbezirk&bundesland=Bayern`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
-  // const bayernRegbezDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall').then(response => response.json());
-
+  // const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
   bayernRegbezTable.init({
     target: '#bayern-regbez-table',
@@ -83,9 +92,13 @@ async function init() {
     metaData: bayernRegbezMeta
   });
 
-  // const bayernLkrCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Landkreis&bundesland=Bayern').then(response => response.json());
+  // const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Landkreis&bundesland=Bayern`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
-  // const bayernLkrDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall').then(response => response.json());
+  // const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
   bayernLkrText.init({
     target: '#bayern-lkr-text',
@@ -95,9 +108,13 @@ async function init() {
     metaDataDistricts: bayernRegbezMeta
   });
 
-  // const deutschlandCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12').then(response => response.json());
+  // const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
-  // const deutschlandDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&sumField=AnzahlTodesfall').then(response => response.json());
+  // const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&sumField=AnzahlTodesfall`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
   deutschlandText.init({
     caseTarget: '#deutschland-cases-text',
@@ -114,15 +131,20 @@ async function init() {
       title: 'Corona in Deutschland',
       description: 'Enwicklung der gemeldeten Fallzahlen',
       author: 'BR',
-      source: 'Robert Koch-Institut'
+      source: 'Robert Koch-Institut',
+      date: dateString
     }
   });
 
   charts.push(deutschlandChart);
 
-  // const deutschlandBlCases = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&group=Bundesland').then(response => response.json());
+  // const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
-  // const deutschlandBlDeaths = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=2020-04-13&group=Bundesland&sumField=AnzahlTodesfall').then(response => response.json());
+  // const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&sumField=AnzahlTodesfall`)
+  //   .then(response => response.json())
+  //   .catch(logError);
 
   deutschlandBlText.init({
     target: '#deutschland-bl-text',
