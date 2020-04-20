@@ -81,7 +81,7 @@ export default class LineChart {
       .domain([0, yMax * 1.2])
       .range([innerHeight, 0]);
 
-    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 5));
+    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
 
     // Draw x axis
     context.textAlign = 'center';
