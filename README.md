@@ -4,14 +4,14 @@
 
 ## To Do
 
+- Build: CSS-Styles als Style-Attribute einbinden
+- Build: Bilder als Base64-Strings einbinden
+- Build: gerenderten DOM exportieren und speichern (Puppeteer)
 - Daten vorsichtshalber nach Meldedatum sortieren oder filtern
-- HTML für E-Mail exportieren
 - Kurzzusammenfassung für BR24-Newsletter
+- Verdopplungszeiten rauswerfen?
 - Relativen Anstieg (+7 %) rauswerfen?  
 - Gesundungen mit reinnehmen?
-- Hinweise zu den Daten schreiben
-- Ladeindikator und Error-Handling
-- Daten-Management (von API oder statischen JSON-Dateien)
 
 ## Verwendung
 
