@@ -1,13 +1,15 @@
 import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, trendClassifier, trendArrow, weekTrend } from '../utils';
 
 // Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
+// (+${pretty(currentIncreasePerc(caseData))} %)
+// '(+' + pretty(currentIncreasePerc(deathData)) + ' %)'
 
 export function init(config) {
   const { caseTarget, deathTarget, caseData, deathData, metaData } = config;
 
   const caseText = `Bislang wurden nach Informationen des Robert Koch-Instituts ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet.
 
-  Das sind ${pretty(currentIncrease(caseData))} Fälle (+${pretty(currentIncreasePerc(caseData))} %) mehr als noch am Vortag.
+  Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
 
   Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${trendClassifier(weekTrend(caseData))} (<span class="${trendArrow(weekTrend(caseData))}"></span>${pretty(weekTrend(caseData))} %).
 
@@ -15,7 +17,7 @@ export function init(config) {
 
   const deathText = `Insgesamt wurden ${pretty(currentCount(deathData))} Todesfälle in Bayern gemeldet.
 
-  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' (+' + pretty(currentIncreasePerc(deathData)) + ' %) mehr als noch am Vortag.' : '.' }
+  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : '.' }
 
   Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (<span class="${trendArrow(weekTrend(deathData))}"></span>${pretty(weekTrend(deathData))} %).
 
