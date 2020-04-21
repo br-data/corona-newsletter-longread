@@ -1,4 +1,6 @@
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, trendClassifier, weekTrend, doublingTime } from '../utils';
+import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, trendClassifier, weekTrend } from '../utils';
+
+// Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 
 export function init(config) {
   const { caseTarget, deathTarget, caseData, deathData, metaData } = config;
@@ -7,11 +9,9 @@ export function init(config) {
 
   Das sind ${pretty(currentIncrease(caseData))} Fälle (+${pretty(currentIncreasePerc(caseData))} %) mehr als noch am Vortag.
 
-  Damit kommt Bayern auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.
-
   Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${trendClassifier(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
 
-  Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.`;
+  Damit kommt Bayern zur Zeit auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.`
 
   const deathText = `Insgesamt wurden ${pretty(currentCount(deathData))} Todesfälle in Bayern gemeldet.
 

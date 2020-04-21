@@ -1,15 +1,14 @@
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, trendClassifier, weekTrend, doublingTime } from '../utils';
+import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, trendClassifier, weekTrend } from '../utils';
 
+// Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 export function init(config) {
   const { caseTarget, deathTarget, caseData, deathData, metaData } = config;
 
   const caseText = `In ganz Deutschland wurden bislang ${pretty(currentCount(caseData))} Corona-Fälle gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle (+${pretty(currentIncreasePerc(caseData))} %) mehr als noch am Vortag.
 
-  Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
+  Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen ${trendClassifier(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
 
-  Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${trendClassifier(weekTrend(caseData))} (${pretty(weekTrend(caseData))} %).
-
-  Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.`;
+  Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.`;
 
   const deathText = `Bisher wurden insgesamt ${pretty(currentCount(deathData))} Todesfälle in Deutschland gemeldet.
 
