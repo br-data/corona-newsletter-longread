@@ -13,7 +13,7 @@ export function init(config) {
 
   Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
 
-  Die berechnete Reproduktionszahl liegt bei unegfähr ${pretty(reproRate(caseData))}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproRate(caseData))} ansteckt.
+  Die berechnete Reproduktionszahl liegt bei ungefähr ${pretty(reproRate(caseData))}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproRate(caseData))} ansteckt.
   `;
 
   const deathText = `Bisher wurden insgesamt ${pretty(currentCount(deathData))} Todesfälle in Deutschland gemeldet.

@@ -4,14 +4,14 @@
 
 ## To Do
 
-- Build: CSS-Styles als Style-Attribute einbinden
-- Build: Bilder als Base64-Strings einbinden
-- Build: gerenderten DOM exportieren und speichern (Puppeteer)
+- Build-Schritt 1: CSS als Style-Attribute einbinden (Webpack)
+- Build-Schritt 1: Bilder als Base64-Strings einbinden (Webpack)
+- Build-Schritt 2: gerenderten DOM exportieren und speichern (Puppeteer, Google Cloud Run, Functions)
+- Build-Schritt 3: statisches HTML per E-Mail verschicken (Sendgrid, Clever Reach)
 - Daten vorsichtshalber nach Meldedatum sortieren oder filtern
-- Kurzzusammenfassung für BR24-Newsletter
-- Verdopplungszeiten rauswerfen?
-- Relativen Anstieg (+7 %) rauswerfen?  
+- Kurzzusammenfassung für BR24-Newsletter?
 - Gesundungen mit reinnehmen?
+- Situation in den bayerischen Großstädten
 
 ## Verwendung
 
