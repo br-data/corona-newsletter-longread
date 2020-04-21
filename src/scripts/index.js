@@ -36,9 +36,9 @@ window.addEventListener('load', init);
 
 async function init() {
   const urlParams = new URLSearchParams(window.location.search);
-  const date = new Date(urlParams.get('date') || new Date());
+  const date = new Date(urlParams.get('date') || new Date('2020-04-14'));
   const dateString = date.toISOString().split('T')[0];
-  const logError = error => console.warn(error);
+  // const logError = error => console.warn(error);
 
   const dateElements = document.querySelectorAll('span.date');
   dateElements.forEach(el => el.textContent = germanDate(dateString));
