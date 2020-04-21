@@ -86,6 +86,18 @@ export function weekTrend(data) {
   return percentChange;
 }
 
+export function reproRate(data) {
+  const currentDays = data.slice(data.length-6, data.length-2);
+  const previousDays = data.slice(data.length-10, data.length-6);
+
+  const currentDaysSum = currentDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
+  const previousDaysSum = previousDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
+
+  const rate = previousDaysSum / currentDaysSum;
+
+  return rate;
+}
+
 export function doublingTime(data) {
   const date1 = new Date(data[data.length-2].Meldedatum);
   const value1 = data[data.length-2].sumValue;

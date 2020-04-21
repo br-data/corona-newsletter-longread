@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, currentIncreasePerc, casesPerThousand, trendClassifier, trendArrow, weekTrend } from '../utils';
+import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifier, trendArrow, weekTrend, reproRate } from '../utils';
 
 // Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 // (+${pretty(currentIncreasePerc(caseData))} %)
@@ -11,7 +11,10 @@ export function init(config) {
 
   Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen ${trendClassifier(weekTrend(caseData))} (<span class="${trendArrow(weekTrend(caseData))}"></span>${pretty(weekTrend(caseData))} %).
 
-  Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.`;
+  Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
+
+  Die berechnete Reproduktionszahl liegt bei unegfähr ${pretty(reproRate(caseData))}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproRate(caseData))} ansteckt.
+  `;
 
   const deathText = `Bisher wurden insgesamt ${pretty(currentCount(deathData))} Todesfälle in Deutschland gemeldet.
 
@@ -36,12 +39,22 @@ function positiveNegative(value) {
   }
 }
 
+function oneManyPersons(value) {
+  if (value === 0) {
+    return 'keine weitere Personen';
+  } else if (value === 1) {
+    return 'ein weitere Person';
+  } else if (value > 1) {
+    return `${pretty(value)} weitere Personen`;
+  }
+}
+
 function deathCasesPlural(value) {
-  if (value === 1) {
+  if (value === 0) {
+    return 'kein Todesfall';
+  } else if (value === 1) {
     return 'ist ein Todesfall';
-  } else if (value > 0) {
-    return `sind ${pretty(value)} Todesfälle`;
-  } else {
+  } else if (value > 1) {
     return `sind ${pretty(value)} Todesfälle`;
   }
 }
