@@ -49,6 +49,10 @@ async function init() {
   //   .then(response => response.json())
   //   .catch(logError);
 
+  // const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+  //   .then(response => response.json())
+  //   .catch(logError);
+
   // const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
   //   .then(response => response.json())
   //   .catch(logError);
@@ -118,6 +122,10 @@ async function init() {
   //   .catch(logError);
 
   // const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&sumField=AnzahlTodesfall`)
+  //   .then(response => response.json())
+  //   .catch(logError);
+
+  // const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&sumField=AnzahlGenesen`)
   //   .then(response => response.json())
   //   .catch(logError);
 
