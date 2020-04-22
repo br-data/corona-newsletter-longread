@@ -5,7 +5,7 @@ import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifie
 // '(+' + pretty(currentIncreasePerc(deathData)) + ' %)'
 
 export function init(config) {
-  const { caseTarget, deathTarget, caseData, deathData, metaData } = config;
+  const { caseTarget, deathTarget, caseData, recoveredData, deathData, metaData } = config;
 
   const caseText = `Bislang wurden nach Informationen des Robert Koch-Instituts ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet.
 
@@ -16,7 +16,8 @@ export function init(config) {
   Damit kommt Bayern zur Zeit auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.
 
   Die berechnete Reproduktionszahl liegt bei etwa ${pretty(reproRate(caseData))}. Das bedeutet, dass im Durchschnitt jede infizierte Person ${oneManyPersons(reproRate(caseData))} ansteckt.
-  `;
+
+  Nach Berechnungen des RKI sind mittlerweile wieder mindestens ${pretty(currentCount(recoveredData))} Menschen in Bayern genesen.`;
 
   const deathText = `Insgesamt wurden ${pretty(currentCount(deathData))} Todesfälle in Bayern gemeldet.
 

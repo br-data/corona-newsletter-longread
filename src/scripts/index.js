@@ -11,6 +11,7 @@ import * as deutschlandBlTable from './table/deutschland-bl-table';
 import LineChart from './chart/line-chart';
 
 import bayernCases from './data/cases/bayern-cases.json';
+import bayernRecoveries from './data/recoveries/bayern-recoveries.json';
 import bayernDeaths from './data/deaths/bayern-deaths.json';
 import bayernMeta from './data/meta/bayern-meta.json';
 
@@ -23,6 +24,7 @@ import bayernLkrDeaths from './data/deaths/bayern-lkr-deaths.json';
 import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
 
 import deutschlandCases from './data/cases/deutschland-cases.json';
+import deutschlandRecoveries from './data/recoveries/deutschland-recoveries.json';
 import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
 import deutschlandMeta from './data/meta/deutschland-meta.json';
 
@@ -61,6 +63,7 @@ async function init() {
     caseTarget: '#bayern-cases-text',
     deathTarget: '#bayern-deaths-text',
     caseData: bayernCases,
+    recoveredData: bayernRecoveries,
     deathData: bayernDeaths,
     metaData: bayernMeta
   });
@@ -133,6 +136,7 @@ async function init() {
     caseTarget: '#deutschland-cases-text',
     deathTarget: '#deutschland-deaths-text',
     caseData: deutschlandCases,
+    recoveredData: deutschlandRecoveries,
     deathData: deutschlandDeaths,
     metaData: deutschlandMeta
   });

@@ -5,7 +5,7 @@ import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifie
 // '(+' + pretty(currentIncreasePerc(deathData)) + ' %)'
 
 export function init(config) {
-  const { caseTarget, deathTarget, caseData, deathData, metaData } = config;
+  const { caseTarget, deathTarget, caseData, recoveredData, deathData, metaData } = config;
 
   const caseText = `In ganz Deutschland wurden bislang ${pretty(currentCount(caseData))} Corona-Fälle gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
 
@@ -14,7 +14,8 @@ export function init(config) {
   Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
 
   Die berechnete Reproduktionszahl liegt bei ungefähr ${pretty(reproRate(caseData))}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproRate(caseData))} ansteckt.
-  `;
+
+  Das Robert Koch-Institut berechnet, dass mittlerweile ${pretty(currentCount(recoveredData))} Menschen wieder gesund sind.`;
 
   const deathText = `Bisher wurden insgesamt ${pretty(currentCount(deathData))} Todesfälle in Deutschland gemeldet.
 
