@@ -113,6 +113,21 @@ export function doublingTime(data) {
   return `${minDays} bis ${maxDays}`;
 }
 
+// Simple moving average
+export function sma(data, gap = 7, key = 'value') {
+  const result = [];
+
+  data.forEach((obj, i) => {
+    let group = data.slice(i, gap + i);
+    if (group.length < gap) return;
+    result.push(group.reduce((sum, curr) => {
+      return curr[key] ? sum + curr[key] : null;
+    }, 0) / gap);
+  });
+
+  return result;
+}
+
 export function pretty(number) {
   const string = (Math.round(number * 10) / 10).toString().split('.');
 
