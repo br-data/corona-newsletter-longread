@@ -87,8 +87,9 @@ export function weekTrend(data) {
 }
 
 export function reproRate(data) {
-  const currentDays = data.slice(data.length-6, data.length-2);
-  const previousDays = data.slice(data.length-10, data.length-6);
+  const smoothData = sma(data, 7, 'value');
+  const currentDays = smoothData.slice(smoothData.length-4, smoothData.length);
+  const previousDays = smoothData.slice(smoothData.length-8, smoothData.length-4);
 
   const currentDaysSum = currentDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
   const previousDaysSum = previousDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
@@ -115,17 +116,19 @@ export function doublingTime(data) {
 
 // Simple moving average
 export function sma(data, gap = 7, key = 'value') {
-  const result = [];
+  const averages = [];
 
   data.forEach((obj, i) => {
     let group = data.slice(i, gap + i);
     if (group.length < gap) return;
-    result.push(group.reduce((sum, curr) => {
-      return curr[key] ? sum + curr[key] : null;
-    }, 0) / gap);
+    averages.push(Object.assign(obj, {
+      value: group.reduce((sum, curr) => {
+        return curr[key] ? sum + curr[key] : null;
+      }, 0) / gap
+    }));
   });
 
-  return result;
+  return averages;
 }
 
 export function pretty(number) {
