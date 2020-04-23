@@ -88,8 +88,8 @@ export function weekTrend(data) {
 
 export function reproRate(data) {
   const smoothData = sma(data, 7, 'value');
-  const currentDays = smoothData.slice(smoothData.length-4, smoothData.length);
-  const previousDays = smoothData.slice(smoothData.length-8, smoothData.length-4);
+  const currentDays = smoothData.slice(smoothData.length-6, smoothData.length-2);
+  const previousDays = smoothData.slice(smoothData.length-10, smoothData.length-6);
 
   const currentDaysSum = currentDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
   const previousDaysSum = previousDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
@@ -97,6 +97,19 @@ export function reproRate(data) {
   const rate = previousDaysSum / currentDaysSum;
 
   return rate;
+}
+
+// Simple moving average
+export function sma(data, step = 7, key = 'value') {
+  return data.map((obj, i) => {
+    const window = data.slice(i - step, i + step + 1);
+    const average = window.reduce((sum, curr) => {
+      return curr[key] ? sum + curr[key] : null;
+    }, 0) / window.length;
+    return Object.assign(obj, {
+      average: Math.round(average)
+    });
+  });
 }
 
 export function doublingTime(data) {
@@ -112,23 +125,6 @@ export function doublingTime(data) {
   const maxDays = Math.ceil(days);
 
   return `${minDays} bis ${maxDays}`;
-}
-
-// Simple moving average
-export function sma(data, gap = 7, key = 'value') {
-  const averages = [];
-
-  data.forEach((obj, i) => {
-    let group = data.slice(i, gap + i);
-    if (group.length < gap) return;
-    averages.push(Object.assign(obj, {
-      value: group.reduce((sum, curr) => {
-        return curr[key] ? sum + curr[key] : null;
-      }, 0) / gap
-    }));
-  });
-
-  return averages;
 }
 
 export function pretty(number) {
