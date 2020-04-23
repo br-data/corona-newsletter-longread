@@ -13,7 +13,7 @@ export function init(config) {
       'Fälle': `<span class="${trendArrow(weekTrend(stateCases))}" title="${pretty(weekTrend(stateCases))} %"></span> ${pretty(currentCount(stateCases))} (+${pretty(currentIncrease(stateCases))})`,
       'Todesfälle': `<span class="${trendArrow(weekTrend(stateDeaths))}" title="${pretty(weekTrend(stateDeaths))} %"></span> ${pretty(currentCount(stateDeaths))} (+${pretty(currentIncrease(stateDeaths))})`
     };
-  });
+  }).sort((a, b) => a.Bundesland.localeCompare(b.Bundesland));
 
   const tableHtml = json2table(analysis);
   const parentElement = document.querySelector(target);
