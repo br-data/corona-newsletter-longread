@@ -47,15 +47,15 @@ async function init() {
 
   const charts = [];
 
-  // const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&bundesland=Bayern`)
+  // const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Bundesland&bundesland=Bayern`)
   //   .then(response => response.json())
   //   .catch(logError);
 
-  // const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+  // const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
   //   .then(response => response.json())
   //   .catch(logError);
 
-  // const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  // const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
   //   .then(response => response.json())
   //   .catch(logError);
 
@@ -82,11 +82,11 @@ async function init() {
 
   charts.push(bayernChart);
 
-  // const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Regierungsbezirk&bundesland=Bayern`)
+  // const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Regierungsbezirk&bundesland=Bayern`)
   //   .then(response => response.json())
   //   .catch(logError);
 
-  // const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  // const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
   //   .then(response => response.json())
   //   .catch(logError);
 
@@ -104,11 +104,11 @@ async function init() {
     metaData: bayernRegbezMeta
   });
 
-  // const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Landkreis&bundesland=Bayern`)
+  // const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Landkreis&bundesland=Bayern`)
   //   .then(response => response.json())
   //   .catch(logError);
 
-  // const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  // const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
   //   .then(response => response.json())
   //   .catch(logError);
 
@@ -120,15 +120,15 @@ async function init() {
     metaDataDistricts: bayernRegbezMeta
   });
 
-  // const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}`)
+  // const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum`)
   //   .then(response => response.json())
   //   .catch(logError);
 
-  // const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&sumField=AnzahlTodesfall`)
+  // const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&sumField=AnzahlTodesfall`)
   //   .then(response => response.json())
   //   .catch(logError);
 
-  // const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&sumField=AnzahlGenesen`)
+  // const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&sumField=AnzahlGenesen`)
   //   .then(response => response.json())
   //   .catch(logError);
 
@@ -155,11 +155,11 @@ async function init() {
 
   charts.push(deutschlandChart);
 
-  // const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland`)
+  // const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Bundesland`)
   //   .then(response => response.json())
   //   .catch(logError);
 
-  // const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&group=Bundesland&sumField=AnzahlTodesfall`)
+  // const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=2020-03-12&endDate=${dateString}&dateField=Refdatum&group=Bundesland&sumField=AnzahlTodesfall`)
   //   .then(response => response.json())
   //   .catch(logError);
 
