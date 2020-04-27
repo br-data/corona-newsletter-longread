@@ -16,7 +16,7 @@ export function currentIncreasePerc(data) {
 }
 
 export function currentDate(data) {
-  return data[data.length-1].Meldedatum;
+  return data[data.length-1].date;
 }
 
 export function germanDate(dateString) {
@@ -86,36 +86,10 @@ export function weekTrend(data) {
   return percentChange;
 }
 
-export function reproRate(data) {
-  const smoothData = sma(data, 7, 'value');
-  const currentDays = smoothData.slice(smoothData.length-6, smoothData.length-2);
-  const previousDays = smoothData.slice(smoothData.length-10, smoothData.length-6);
-
-  const currentDaysSum = currentDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
-  const previousDaysSum = previousDays.reduce((sum, curr) => { return sum + curr.value; }, 0);
-
-  const rate = previousDaysSum / currentDaysSum;
-
-  return rate;
-}
-
-// Simple moving average
-export function sma(data, step = 7, key = 'value') {
-  return data.map((obj, i) => {
-    const window = data.slice(i - step, i + step + 1);
-    const average = window.reduce((sum, curr) => {
-      return curr[key] ? sum + curr[key] : null;
-    }, 0) / window.length;
-    return Object.assign(obj, {
-      average: Math.round(average)
-    });
-  });
-}
-
 export function doublingTime(data) {
-  const date1 = new Date(data[data.length-2].Meldedatum);
+  const date1 = new Date(data[data.length-2].date);
   const value1 = data[data.length-2].sumValue;
-  const date2 = new Date(data[data.length-9].Meldedatum);
+  const date2 = new Date(data[data.length-9].date);
   const value2 = data[data.length-9].sumValue;
 
   const diff = Math.ceil(date2.getTime() - date1.getTime()) / 86400000;
@@ -125,6 +99,36 @@ export function doublingTime(data) {
   const maxDays = Math.ceil(days);
 
   return `${minDays} bis ${maxDays}`;
+}
+
+// Reproduction number
+export function reproNumber(data, steps = 4, key = 'value') {
+  const smoothData = sma(data);
+
+  return smoothData.map((obj, i) => {
+    const currentDays = smoothData.slice(i - steps, i);
+    const previousDays = smoothData.slice(i - steps * 2, i - steps);
+    const currentDaysSum = currentDays.reduce((sum, curr) => sum + curr[key], 0);
+    const previousDaysSum = previousDays.reduce((sum, curr) => sum + curr[key], 0);
+
+    return Object.assign(obj, {
+      r: currentDaysSum / previousDaysSum
+    });
+  }).filter(d => isFinite(d.r || undefined));
+}
+
+// Simple moving average
+export function sma(data, steps = 7, key = 'value') {
+  return data.map((obj, index) => {
+    const offset = index - Math.floor(steps / 2);
+    const window = data.slice(offset, steps + offset);
+
+    return Object.assign(obj, {
+      value: window.reduce((sum, curr) => {
+        return curr[key] ? sum + curr[key] : null;
+      }, 0) / steps
+    });
+  }).filter(d => d.value);
 }
 
 export function pretty(number) {
