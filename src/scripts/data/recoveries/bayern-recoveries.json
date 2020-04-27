@@ -1,199 +1,199 @@
 [
   {
     "value": 127,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Bundesland": "Bayern",
     "sumValue": 573
   },
   {
     "value": 243,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Bundesland": "Bayern",
     "sumValue": 816
   },
   {
     "value": 226,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Bundesland": "Bayern",
     "sumValue": 1042
   },
   {
     "value": 152,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Bundesland": "Bayern",
     "sumValue": 1194
   },
   {
     "value": 257,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Bundesland": "Bayern",
     "sumValue": 1451
   },
   {
     "value": 451,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Bundesland": "Bayern",
     "sumValue": 1902
   },
   {
     "value": 689,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Bundesland": "Bayern",
     "sumValue": 2591
   },
   {
     "value": 767,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Bundesland": "Bayern",
     "sumValue": 3358
   },
   {
     "value": 870,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Bundesland": "Bayern",
     "sumValue": 4228
   },
   {
     "value": 1019,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Bundesland": "Bayern",
     "sumValue": 5247
   },
   {
     "value": 579,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Bundesland": "Bayern",
     "sumValue": 5826
   },
   {
     "value": 638,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Bundesland": "Bayern",
     "sumValue": 6464
   },
   {
     "value": 1096,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Bundesland": "Bayern",
     "sumValue": 7560
   },
   {
     "value": 1576,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Bundesland": "Bayern",
     "sumValue": 9136
   },
   {
     "value": 1207,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Bundesland": "Bayern",
     "sumValue": 10343
   },
   {
     "value": 1182,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Bundesland": "Bayern",
     "sumValue": 11525
   },
   {
     "value": 1065,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Bundesland": "Bayern",
     "sumValue": 12590
   },
   {
     "value": 559,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Bundesland": "Bayern",
     "sumValue": 13149
   },
   {
     "value": 711,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Bundesland": "Bayern",
     "sumValue": 13860
   },
   {
     "value": 1120,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Bundesland": "Bayern",
     "sumValue": 14980
   },
   {
     "value": 1300,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Bundesland": "Bayern",
     "sumValue": 16280
   },
   {
     "value": 1269,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Bundesland": "Bayern",
     "sumValue": 17549
   },
   {
     "value": 1175,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Bundesland": "Bayern",
     "sumValue": 18724
   },
   {
     "value": 920,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Bundesland": "Bayern",
     "sumValue": 19644
   },
   {
     "value": 428,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Bundesland": "Bayern",
     "sumValue": 20072
   },
   {
     "value": 693,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Bundesland": "Bayern",
     "sumValue": 20765
   },
   {
     "value": 943,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Bundesland": "Bayern",
     "sumValue": 21708
   },
   {
     "value": 967,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Bundesland": "Bayern",
     "sumValue": 22675
   },
   {
     "value": 418,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Bundesland": "Bayern",
     "sumValue": 23093
   },
   {
     "value": 306,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Bundesland": "Bayern",
     "sumValue": 23399
   },
   {
     "value": 201,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Bundesland": "Bayern",
     "sumValue": 23600
   },
   {
     "value": 99,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Bundesland": "Bayern",
     "sumValue": 23699
   },
   {
     "value": 103,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Bundesland": "Bayern",
     "sumValue": 23802
   }

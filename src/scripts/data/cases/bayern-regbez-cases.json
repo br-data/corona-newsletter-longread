@@ -1,1387 +1,1387 @@
 [
   {
     "value": 50,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 305
   },
   {
     "value": 121,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 426
   },
   {
     "value": 131,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 557
   },
   {
     "value": 69,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 626
   },
   {
     "value": 123,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 749
   },
   {
     "value": 243,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 992
   },
   {
     "value": 401,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 1393
   },
   {
     "value": 380,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 1773
   },
   {
     "value": 549,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 2322
   },
   {
     "value": 486,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 2808
   },
   {
     "value": 315,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 3123
   },
   {
     "value": 312,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 3435
   },
   {
     "value": 532,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 3967
   },
   {
     "value": 846,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 4813
   },
   {
     "value": 752,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 5565
   },
   {
     "value": 937,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 6502
   },
   {
     "value": 629,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 7131
   },
   {
     "value": 425,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 7556
   },
   {
     "value": 405,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 7961
   },
   {
     "value": 791,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 8752
   },
   {
     "value": 819,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 9571
   },
   {
     "value": 798,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 10369
   },
   {
     "value": 896,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 11265
   },
   {
     "value": 553,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 11818
   },
   {
     "value": 216,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 12034
   },
   {
     "value": 471,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 12505
   },
   {
     "value": 616,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 13121
   },
   {
     "value": 581,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 13702
   },
   {
     "value": 551,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 14253
   },
   {
     "value": 422,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 14675
   },
   {
     "value": 323,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 14998
   },
   {
     "value": 140,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 15138
   },
   {
     "value": 62,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Regierungsbezirk": "Oberbayern",
     "sumValue": 15200
   },
   {
     "value": 20,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 73
   },
   {
     "value": 32,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 105
   },
   {
     "value": 17,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 122
   },
   {
     "value": 18,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 140
   },
   {
     "value": 29,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 169
   },
   {
     "value": 31,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 200
   },
   {
     "value": 36,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 236
   },
   {
     "value": 73,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 309
   },
   {
     "value": 38,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 347
   },
   {
     "value": 90,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 437
   },
   {
     "value": 48,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 485
   },
   {
     "value": 66,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 551
   },
   {
     "value": 118,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 669
   },
   {
     "value": 157,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 826
   },
   {
     "value": 137,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 963
   },
   {
     "value": 117,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 1080
   },
   {
     "value": 144,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 1224
   },
   {
     "value": 106,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 1330
   },
   {
     "value": 78,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 1408
   },
   {
     "value": 139,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 1547
   },
   {
     "value": 154,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 1701
   },
   {
     "value": 211,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 1912
   },
   {
     "value": 149,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2061
   },
   {
     "value": 135,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2196
   },
   {
     "value": 78,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2274
   },
   {
     "value": 116,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2390
   },
   {
     "value": 145,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2535
   },
   {
     "value": 124,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2659
   },
   {
     "value": 92,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2751
   },
   {
     "value": 78,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2829
   },
   {
     "value": 101,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2930
   },
   {
     "value": 44,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 2974
   },
   {
     "value": 28,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Regierungsbezirk": "Schwaben",
     "sumValue": 3002
   },
   {
     "value": 12,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 58
   },
   {
     "value": 5,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 63
   },
   {
     "value": 8,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 71
   },
   {
     "value": 11,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 82
   },
   {
     "value": 10,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 92
   },
   {
     "value": 28,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 120
   },
   {
     "value": 65,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 185
   },
   {
     "value": 41,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 226
   },
   {
     "value": 58,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 284
   },
   {
     "value": 87,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 371
   },
   {
     "value": 49,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 420
   },
   {
     "value": 60,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 480
   },
   {
     "value": 117,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 597
   },
   {
     "value": 167,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 764
   },
   {
     "value": 156,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 920
   },
   {
     "value": 146,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 1066
   },
   {
     "value": 108,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 1174
   },
   {
     "value": 51,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 1225
   },
   {
     "value": 118,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 1343
   },
   {
     "value": 166,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 1509
   },
   {
     "value": 223,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 1732
   },
   {
     "value": 221,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 1953
   },
   {
     "value": 211,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 2164
   },
   {
     "value": 152,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 2316
   },
   {
     "value": 91,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 2407
   },
   {
     "value": 106,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 2513
   },
   {
     "value": 160,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 2673
   },
   {
     "value": 143,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 2816
   },
   {
     "value": 190,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 3006
   },
   {
     "value": 90,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 3096
   },
   {
     "value": 81,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 3177
   },
   {
     "value": 23,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 3200
   },
   {
     "value": 17,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Regierungsbezirk": "Mittelfranken",
     "sumValue": 3217
   },
   {
     "value": 16,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 34
   },
   {
     "value": 17,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 51
   },
   {
     "value": 26,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 77
   },
   {
     "value": 22,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 99
   },
   {
     "value": 9,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 108
   },
   {
     "value": 55,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 163
   },
   {
     "value": 60,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 223
   },
   {
     "value": 87,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 310
   },
   {
     "value": 78,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 388
   },
   {
     "value": 103,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 491
   },
   {
     "value": 67,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 558
   },
   {
     "value": 27,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 585
   },
   {
     "value": 90,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 675
   },
   {
     "value": 140,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 815
   },
   {
     "value": 192,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 1007
   },
   {
     "value": 133,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 1140
   },
   {
     "value": 127,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 1267
   },
   {
     "value": 90,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 1357
   },
   {
     "value": 95,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 1452
   },
   {
     "value": 224,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 1676
   },
   {
     "value": 218,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 1894
   },
   {
     "value": 201,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 2095
   },
   {
     "value": 194,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 2289
   },
   {
     "value": 143,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 2432
   },
   {
     "value": 111,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 2543
   },
   {
     "value": 91,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 2634
   },
   {
     "value": 173,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 2807
   },
   {
     "value": 183,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 2990
   },
   {
     "value": 147,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 3137
   },
   {
     "value": 73,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 3210
   },
   {
     "value": 87,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 3297
   },
   {
     "value": 36,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 3333
   },
   {
     "value": 24,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Regierungsbezirk": "Niederbayern",
     "sumValue": 3357
   },
   {
     "value": 9,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 54
   },
   {
     "value": 21,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 75
   },
   {
     "value": 21,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 96
   },
   {
     "value": 8,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 104
   },
   {
     "value": 41,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 145
   },
   {
     "value": 39,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 184
   },
   {
     "value": 58,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 242
   },
   {
     "value": 70,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 312
   },
   {
     "value": 57,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 369
   },
   {
     "value": 136,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 505
   },
   {
     "value": 54,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 559
   },
   {
     "value": 69,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 628
   },
   {
     "value": 113,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 741
   },
   {
     "value": 115,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 856
   },
   {
     "value": 110,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 966
   },
   {
     "value": 202,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 1168
   },
   {
     "value": 195,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 1363
   },
   {
     "value": 67,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 1430
   },
   {
     "value": 152,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 1582
   },
   {
     "value": 180,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 1762
   },
   {
     "value": 299,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 2061
   },
   {
     "value": 239,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 2300
   },
   {
     "value": 221,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 2521
   },
   {
     "value": 146,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 2667
   },
   {
     "value": 89,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 2756
   },
   {
     "value": 166,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 2922
   },
   {
     "value": 217,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 3139
   },
   {
     "value": 259,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 3398
   },
   {
     "value": 91,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 3489
   },
   {
     "value": 104,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 3593
   },
   {
     "value": 53,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 3646
   },
   {
     "value": 37,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 3683
   },
   {
     "value": 35,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Regierungsbezirk": "Oberpfalz",
     "sumValue": 3718
   },
   {
     "value": 16,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 42
   },
   {
     "value": 40,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 82
   },
   {
     "value": 20,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 102
   },
   {
     "value": 19,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 121
   },
   {
     "value": 30,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 151
   },
   {
     "value": 35,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 186
   },
   {
     "value": 47,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 233
   },
   {
     "value": 52,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 285
   },
   {
     "value": 74,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 359
   },
   {
     "value": 80,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 439
   },
   {
     "value": 41,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 480
   },
   {
     "value": 71,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 551
   },
   {
     "value": 76,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 627
   },
   {
     "value": 83,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 710
   },
   {
     "value": 103,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 813
   },
   {
     "value": 118,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 931
   },
   {
     "value": 154,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1085
   },
   {
     "value": 53,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1138
   },
   {
     "value": 81,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1219
   },
   {
     "value": 167,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1386
   },
   {
     "value": 104,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1490
   },
   {
     "value": 115,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1605
   },
   {
     "value": 122,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1727
   },
   {
     "value": 147,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1874
   },
   {
     "value": 59,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 1933
   },
   {
     "value": 80,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2013
   },
   {
     "value": 70,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2083
   },
   {
     "value": 114,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2197
   },
   {
     "value": 112,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2309
   },
   {
     "value": 95,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2404
   },
   {
     "value": 75,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2479
   },
   {
     "value": 37,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2516
   },
   {
     "value": 18,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Regierungsbezirk": "Unterfranken",
     "sumValue": 2534
   },
   {
     "value": 5,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 14
   },
   {
     "value": 8,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 22
   },
   {
     "value": 8,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 30
   },
   {
     "value": 8,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 38
   },
   {
     "value": 22,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 60
   },
   {
     "value": 30,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 90
   },
   {
     "value": 30,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 120
   },
   {
     "value": 72,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 192
   },
   {
     "value": 45,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 237
   },
   {
     "value": 71,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 308
   },
   {
     "value": 28,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 336
   },
   {
     "value": 70,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 406
   },
   {
     "value": 92,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 498
   },
   {
     "value": 106,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 604
   },
   {
     "value": 187,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 791
   },
   {
     "value": 114,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 905
   },
   {
     "value": 99,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1004
   },
   {
     "value": 68,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1072
   },
   {
     "value": 69,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1141
   },
   {
     "value": 104,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1245
   },
   {
     "value": 122,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1367
   },
   {
     "value": 169,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1536
   },
   {
     "value": 178,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1714
   },
   {
     "value": 153,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1867
   },
   {
     "value": 47,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 1914
   },
   {
     "value": 93,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2007
   },
   {
     "value": 106,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2113
   },
   {
     "value": 141,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2254
   },
   {
     "value": 70,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2324
   },
   {
     "value": 38,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2362
   },
   {
     "value": 45,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2407
   },
   {
     "value": 59,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2466
   },
   {
     "value": 68,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "Regierungsbezirk": "Oberfranken",
     "sumValue": 2534
   }

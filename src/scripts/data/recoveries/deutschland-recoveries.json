@@ -1,167 +1,167 @@
 [
   {
     "value": 962,
-    "Meldedatum": "2020-03-12",
+    "date": "2020-03-12",
     "sumValue": 3634
   },
   {
     "value": 1406,
-    "Meldedatum": "2020-03-13",
+    "date": "2020-03-13",
     "sumValue": 5040
   },
   {
     "value": 1264,
-    "Meldedatum": "2020-03-14",
+    "date": "2020-03-14",
     "sumValue": 6304
   },
   {
     "value": 929,
-    "Meldedatum": "2020-03-15",
+    "date": "2020-03-15",
     "sumValue": 7233
   },
   {
     "value": 1990,
-    "Meldedatum": "2020-03-16",
+    "date": "2020-03-16",
     "sumValue": 9223
   },
   {
     "value": 2972,
-    "Meldedatum": "2020-03-17",
+    "date": "2020-03-17",
     "sumValue": 12195
   },
   {
     "value": 3467,
-    "Meldedatum": "2020-03-18",
+    "date": "2020-03-18",
     "sumValue": 15662
   },
   {
     "value": 3928,
-    "Meldedatum": "2020-03-19",
+    "date": "2020-03-19",
     "sumValue": 19590
   },
   {
     "value": 3944,
-    "Meldedatum": "2020-03-20",
+    "date": "2020-03-20",
     "sumValue": 23534
   },
   {
     "value": 3190,
-    "Meldedatum": "2020-03-21",
+    "date": "2020-03-21",
     "sumValue": 26724
   },
   {
     "value": 2219,
-    "Meldedatum": "2020-03-22",
+    "date": "2020-03-22",
     "sumValue": 28943
   },
   {
     "value": 3544,
-    "Meldedatum": "2020-03-23",
+    "date": "2020-03-23",
     "sumValue": 32487
   },
   {
     "value": 4611,
-    "Meldedatum": "2020-03-24",
+    "date": "2020-03-24",
     "sumValue": 37098
   },
   {
     "value": 5416,
-    "Meldedatum": "2020-03-25",
+    "date": "2020-03-25",
     "sumValue": 42514
   },
   {
     "value": 4764,
-    "Meldedatum": "2020-03-26",
+    "date": "2020-03-26",
     "sumValue": 47278
   },
   {
     "value": 4741,
-    "Meldedatum": "2020-03-27",
+    "date": "2020-03-27",
     "sumValue": 52019
   },
   {
     "value": 3743,
-    "Meldedatum": "2020-03-28",
+    "date": "2020-03-28",
     "sumValue": 55762
   },
   {
     "value": 2338,
-    "Meldedatum": "2020-03-29",
+    "date": "2020-03-29",
     "sumValue": 58100
   },
   {
     "value": 3025,
-    "Meldedatum": "2020-03-30",
+    "date": "2020-03-30",
     "sumValue": 61125
   },
   {
     "value": 4266,
-    "Meldedatum": "2020-03-31",
+    "date": "2020-03-31",
     "sumValue": 65391
   },
   {
     "value": 4426,
-    "Meldedatum": "2020-04-01",
+    "date": "2020-04-01",
     "sumValue": 69817
   },
   {
     "value": 4510,
-    "Meldedatum": "2020-04-02",
+    "date": "2020-04-02",
     "sumValue": 74327
   },
   {
     "value": 4139,
-    "Meldedatum": "2020-04-03",
+    "date": "2020-04-03",
     "sumValue": 78466
   },
   {
     "value": 2797,
-    "Meldedatum": "2020-04-04",
+    "date": "2020-04-04",
     "sumValue": 81263
   },
   {
     "value": 1621,
-    "Meldedatum": "2020-04-05",
+    "date": "2020-04-05",
     "sumValue": 82884
   },
   {
     "value": 2299,
-    "Meldedatum": "2020-04-06",
+    "date": "2020-04-06",
     "sumValue": 85183
   },
   {
     "value": 3317,
-    "Meldedatum": "2020-04-07",
+    "date": "2020-04-07",
     "sumValue": 88500
   },
   {
     "value": 3342,
-    "Meldedatum": "2020-04-08",
+    "date": "2020-04-08",
     "sumValue": 91842
   },
   {
     "value": 2112,
-    "Meldedatum": "2020-04-09",
+    "date": "2020-04-09",
     "sumValue": 93954
   },
   {
     "value": 1285,
-    "Meldedatum": "2020-04-10",
+    "date": "2020-04-10",
     "sumValue": 95239
   },
   {
     "value": 870,
-    "Meldedatum": "2020-04-11",
+    "date": "2020-04-11",
     "sumValue": 96109
   },
   {
     "value": 464,
-    "Meldedatum": "2020-04-12",
+    "date": "2020-04-12",
     "sumValue": 96573
   },
   {
     "value": 364,
-    "Meldedatum": "2020-04-13",
+    "date": "2020-04-13",
     "sumValue": 96937
   }
 ]
