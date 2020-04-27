@@ -68,8 +68,8 @@ export default class LineChart {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
-    const xMax = max(data, d => new Date(d.Meldedatum));
-    const xMin = min(data, d => new Date(d.Meldedatum));
+    const xMax = max(data, d => new Date(d.date));
+    const xMin = min(data, d => new Date(d.date));
     xMin.setDate(xMin.getDate() - 2);
     const yMax = max(data, d => d.sumValue);
 
@@ -111,7 +111,7 @@ export default class LineChart {
 
     // Draw line
     const lineConstructor = line()
-      .x(d => x(new Date(d.Meldedatum)))
+      .x(d => x(new Date(d.date)))
       .y(d => y(d.sumValue))
       .curve(curveMonotoneX)
       .context(context);
@@ -125,7 +125,7 @@ export default class LineChart {
 
     // Draw dot for last value
     const lastValue = data[data.length - 1];
-    const lastX = x(new Date(lastValue.Meldedatum));
+    const lastX = x(new Date(lastValue.date));
     const lastY = y(lastValue.sumValue);
 
     context.beginPath();

@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifier, trendArrow, weekTrend, reproRate } from '../utils';
+import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifier, trendArrow, weekTrend, reproNumber } from '../utils';
 
 // Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 // (+${pretty(currentIncreasePerc(caseData))} %)
@@ -6,6 +6,8 @@ import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifie
 
 export function init(config) {
   const { caseTarget, deathTarget, caseData, recoveredData, deathData, metaData } = config;
+  const reproData = reproNumber(caseData);
+  const lastReproNumber = reproData[reproData.length - 2].r;
 
   const caseText = `In ganz Deutschland wurden bislang ${pretty(currentCount(caseData))} Corona-Fälle gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
 
@@ -13,7 +15,7 @@ export function init(config) {
 
   Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
 
-  Die berechnete Reproduktionszahl liegt bei ungefähr ${pretty(reproRate(caseData))}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproRate(caseData))} ansteckt.
+  Die berechnete Reproduktionszahl liegt bei ungefähr ${pretty(lastReproNumber)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(lastReproNumber)} ansteckt.
 
   Das Robert Koch-Institut berechnet, dass mittlerweile ${pretty(currentCount(recoveredData))} Menschen wieder gesund sind.`;
 
