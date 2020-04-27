@@ -33,7 +33,6 @@ export function germanDateShort(dateString) {
   return date.toLocaleDateString('de-DE', options);
 }
 
-
 export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
@@ -129,6 +128,22 @@ export function sma(data, steps = 7, key = 'value') {
       }, 0) / steps
     });
   }).filter(d => d.value);
+}
+
+export function confidence(data, level = '95', key = 'value') {
+  const zValues = { '80': 1.28, '90': 1.645, '95': 1.96, '98': 2.33, '99': 2.58 };
+  const zValue = zValues[level];
+  const stdDevValue = stdDev(data, key);
+
+  return zValue * (stdDevValue / Math.sqrt(data.length));
+}
+
+export function stdDev(data, key = 'value') {
+  const avg = data.reduce((sum, curr) => sum + curr[key], 0) / data.length;
+  const squareDiffs = data.map(obj => Math.pow(obj[key] - avg, 2));
+  const squareDiffsAvg = squareDiffs.reduce((sum, curr) => sum + curr, 0) / squareDiffs.length;
+
+  return Math.sqrt(squareDiffsAvg);
 }
 
 export function pretty(number) {

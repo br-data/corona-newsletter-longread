@@ -1,15 +1,14 @@
-import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifier, trendArrow, weekTrend, reproNumber } from '../utils';
+import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifier, trendArrow, weekTrend, reproNumber, confidence } from '../utils';
 
 // Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 // (+${pretty(currentIncreasePerc(caseData))} %)
 // '(+' + pretty(currentIncreasePerc(deathData)) + ' %)'
 
-
-
 export function init(config) {
   const { caseTarget, deathTarget, caseData, recoveredData, deathData, metaData } = config;
   const reproData = reproNumber(caseData);
-  const lastReproNumber = reproData[reproData.length - 2].r;
+  const lastReproNumber = reproData[reproData.length - 3].r;
+  const confidenceInterval = confidence(reproData, '95', 'r');
 
   const caseText = `Bislang wurden nach Informationen des Robert Koch-Instituts ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet.
 
@@ -19,7 +18,7 @@ export function init(config) {
 
   Damit kommt Bayern zur Zeit auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.
 
-  Die berechnete Reproduktionszahl liegt bei etwa ${pretty(lastReproNumber)}. Das bedeutet, dass im Durchschnitt jede infizierte Person ${oneManyPersons(lastReproNumber)} ansteckt.
+  Die berechnete Reproduktionszahl liegt bei etwa ${pretty(lastReproNumber)} (± ${pretty(confidenceInterval)}). Das bedeutet, dass im Durchschnitt jede infizierte Person ${oneManyPersons(lastReproNumber)} ansteckt.
 
   Nach Berechnungen des RKI sind mittlerweile wieder mindestens ${pretty(currentCount(recoveredData))} Menschen in Bayern genesen.`;
 
