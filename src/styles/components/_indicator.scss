@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   strong {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   .box {
@@ -17,12 +17,13 @@
   };
 
   [class*="icono-arrow"] {
-    border-width: 12px;
+    border-width: 8px;
+    margin: 2px 4px;
 
     &:before{
-      top: -7px;
-      height: 10px;
-      width: 20px;
+      top: -5px;
+      height: 7px;
+      width: 18px;
     }
   }
 }
