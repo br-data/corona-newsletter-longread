@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifier, trendArrow, weekTrend, reproNumber, confidence } from '../utils';
+import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifier, trendArrow, weekTrend, reproNumber, confidence, sma } from '../utils';
 
 // Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 // (+${pretty(currentIncreasePerc(caseData))} %)
@@ -6,9 +6,12 @@ import { pretty, currentCount, currentIncrease, casesPerThousand, trendClassifie
 
 export function init(config) {
   const { caseTarget, deathTarget, caseData, recoveredData, deathData, metaData } = config;
-  const reproData = reproNumber(caseData);
-  const lastReproNumber = reproData[reproData.length - 3].r;
-  const confidenceInterval = confidence(reproData, '95', 'r');
+
+  const reproData = reproNumber(sma(caseData));
+  const confidenceInterval = confidence(reproData, '95');
+  const reproValue = reproData[reproData.length - 3].value;
+  const lowerReproValue = reproValue - confidenceInterval;
+  const upperReproValue = reproValue + confidenceInterval;
 
   const caseText = `In ganz Deutschland wurden bislang ${pretty(currentCount(caseData))} Corona-Fälle gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
 
@@ -16,7 +19,7 @@ export function init(config) {
 
   Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
 
-  Die berechnete Reproduktionszahl liegt bei ungefähr ${pretty(lastReproNumber)} (± ${pretty(confidenceInterval)}). Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(lastReproNumber)} ansteckt.
+  Die berechnete Reproduktionszahl liegt zwischen ${pretty(lowerReproValue)} und ${pretty(upperReproValue)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt.
 
   Das Robert Koch-Institut berechnet, dass mittlerweile ${pretty(currentCount(recoveredData))} Menschen wieder gesund sind.`;
 
@@ -48,7 +51,7 @@ function oneManyPersons(value) {
     return 'keine weitere Personen';
   } else if (value === 1) {
     return 'ein weitere Person';
-  } else if (value > 1) {
+  } else {
     return `${pretty(value)} weitere Personen`;
   }
 }
