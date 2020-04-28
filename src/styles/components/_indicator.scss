@@ -1,0 +1,28 @@
+.indicator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  strong {
+    font-size: 2em;
+  }
+
+  .box {
+    flex: 0 calc(50% - .5em);
+    padding: .75em 1em 1em;
+    margin-bottom: 1em;
+    background: $blue-grey;
+    color: $white;
+    line-height: 1.4;
+  };
+
+  [class*="icono-arrow"] {
+    border-width: 12px;
+
+    &:before{
+      top: -7px;
+      height: 10px;
+      width: 20px;
+    }
+  }
+}
