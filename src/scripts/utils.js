@@ -102,18 +102,16 @@ export function doublingTime(data) {
 
 // Reproduction number
 export function reproNumber(data, steps = 4, key = 'value') {
-  const smoothData = sma(data);
-
-  return smoothData.map((obj, i) => {
-    const currentDays = smoothData.slice(i - steps, i);
-    const previousDays = smoothData.slice(i - steps * 2, i - steps);
+  return data.map((obj, i) => {
+    const currentDays = data.slice(i - steps, i);
+    const previousDays = data.slice(i - steps * 2, i - steps);
     const currentDaysSum = currentDays.reduce((sum, curr) => sum + curr[key], 0);
     const previousDaysSum = previousDays.reduce((sum, curr) => sum + curr[key], 0);
 
-    return Object.assign(obj, {
-      r: currentDaysSum / previousDaysSum
+    return Object.assign({}, obj, {
+      value: currentDaysSum / previousDaysSum
     });
-  }).filter(d => isFinite(d.r || undefined));
+  }).filter(d => isFinite(d.value || undefined));
 }
 
 // Simple moving average
@@ -122,7 +120,7 @@ export function sma(data, steps = 7, key = 'value') {
     const offset = index - Math.floor(steps / 2);
     const window = data.slice(offset, steps + offset);
 
-    return Object.assign(obj, {
+    return Object.assign({}, obj, {
       value: window.reduce((sum, curr) => {
         return curr[key] ? sum + curr[key] : null;
       }, 0) / steps
