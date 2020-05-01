@@ -140,7 +140,7 @@ export default class LineChart {
     context.fillText(pretty(lastValue.sumValue), lastX + 5, lastY - 7);
 
     // Add title
-    context.font = '300 24px "Open Sans", OpenSans, Arial';
+    context.font = '600 24px "Open Sans", OpenSans, Arial';
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#ffffff';
