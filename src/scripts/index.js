@@ -11,6 +11,7 @@ import * as deutschlandText from './text/deutschland-text';
 import * as deutschlandBlText from './text/deutschland-bl-text';
 import * as deutschlandBlTable from './table/deutschland-bl-table';
 
+import BarChart from './chart/bar-chart';
 import LineChart from './chart/line-chart';
 
 import bayernCases from './data/cases/bayern-cases.json';
@@ -80,8 +81,8 @@ async function init() {
     metaData: bayernMeta
   });
 
-  const bayernChart = new LineChart({
-    target: '#bayern-chart',
+  const bayernLineChart = new LineChart({
+    target: '#bayern-line-chart',
     data: bayernCases,
     meta: {
       title: 'Corona in Bayern',
@@ -92,7 +93,21 @@ async function init() {
     }
   });
 
-  charts.push(bayernChart);
+  charts.push(bayernLineChart);
+
+  const bayernBarChart = new BarChart({
+    target: '#bayern-bar-chart',
+    data: bayernCases,
+    meta: {
+      title: 'Corona in Bayern',
+      description: 'Enwicklung der gemeldeten Neuinfektionen',
+      author: 'BR',
+      source: 'Robert Koch-Institut',
+      date: endDate
+    }
+  });
+
+  charts.push(bayernBarChart);
 
   // const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Regierungsbezirk&bundesland=Bayern`)
   //   .then(response => response.json())
@@ -160,8 +175,8 @@ async function init() {
     metaData: deutschlandMeta
   });
 
-  const deutschlandChart = new LineChart({
-    target: '#deutschland-chart',
+  const deutschlandLineChart = new LineChart({
+    target: '#deutschland-line-chart',
     data: deutschlandCases,
     meta: {
       title: 'Corona in Deutschland',
@@ -172,7 +187,21 @@ async function init() {
     }
   });
 
-  charts.push(deutschlandChart);
+  charts.push(deutschlandLineChart);
+
+  const deutschlandBarChart = new BarChart({
+    target: '#deutschland-bar-chart',
+    data: deutschlandCases,
+    meta: {
+      title: 'Corona in Deutschland',
+      description: 'Enwicklung der gemeldeten Neuinfektionen',
+      author: 'BR',
+      source: 'Robert Koch-Institut',
+      date: endDate
+    }
+  });
+
+  charts.push(deutschlandBarChart);
 
   // const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland`)
   //   .then(response => response.json())

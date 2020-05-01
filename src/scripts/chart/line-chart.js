@@ -6,9 +6,9 @@ import { line, curveMonotoneX } from 'd3-shape';
 import { pretty, germanDate, germanDateShort } from '../utils';
 
 const defaults = {
-  target: '#chart',
+  target: '#line-chart',
   height: 420,
-  margin: { top: 110, right: 25, bottom: 75, left: 25 }
+  margin: { top: 100, right: 25, bottom: 75, left: 25 }
 };
 
 export default class LineChart {
