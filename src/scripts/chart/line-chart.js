@@ -7,7 +7,7 @@ import { pretty, germanDate, germanDateShort } from '../utils';
 
 const defaults = {
   target: '#line-chart',
-  height: 420,
+  height: 380,
   margin: { top: 100, right: 25, bottom: 75, left: 25 }
 };
 
@@ -78,7 +78,7 @@ export default class LineChart {
       .range([0, innerWidth]);
 
     const y = scaleLinear()
-      .domain([0, yMax * 1.2])
+      .domain([0, yMax * 1.1])
       .range([innerHeight, 0]);
 
     const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
@@ -95,7 +95,7 @@ export default class LineChart {
     // Draw y axis
     context.beginPath();
     context.lineWidth = 1;
-    y.ticks(5).forEach(d => {
+    y.ticks(3).forEach(d => {
       context.moveTo(0, y(d));
       context.lineTo(innerWidth, y(d));
     });
@@ -104,7 +104,7 @@ export default class LineChart {
 
     context.textAlign = 'left';
     context.textBaseline = 'bottom';
-    y.ticks(5).forEach(d => {
+    y.ticks(3).forEach(d => {
       context.fillStyle = '#ffffff';
       context.fillText(pretty(d), 0, y(d) - 2);
     });

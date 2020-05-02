@@ -85,7 +85,7 @@ async function init() {
     target: '#bayern-line-chart',
     data: bayernCases,
     meta: {
-      title: 'Corona in Bayern',
+      title: 'Coronafälle in Bayern',
       description: 'Enwicklung der gemeldeten Fallzahlen',
       author: 'BR',
       source: 'Robert Koch-Institut',
@@ -99,8 +99,8 @@ async function init() {
     target: '#bayern-bar-chart',
     data: bayernCases,
     meta: {
-      title: 'Corona in Bayern',
-      description: 'Enwicklung der gemeldeten Neuinfektionen',
+      title: 'Neue Coronafälle in Bayern',
+      description: 'Gemeldeten Neuinfektionen pro Tag',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
@@ -179,7 +179,7 @@ async function init() {
     target: '#deutschland-line-chart',
     data: deutschlandCases,
     meta: {
-      title: 'Corona in Deutschland',
+      title: 'Coronafälle in Deutschland',
       description: 'Enwicklung der gemeldeten Fallzahlen',
       author: 'BR',
       source: 'Robert Koch-Institut',
@@ -193,8 +193,8 @@ async function init() {
     target: '#deutschland-bar-chart',
     data: deutschlandCases,
     meta: {
-      title: 'Corona in Deutschland',
-      description: 'Enwicklung der gemeldeten Neuinfektionen',
+      title: 'Neue Coronafälle in Deutschland',
+      description: 'Gemeldeten Neuinfektionen pro Tag',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
