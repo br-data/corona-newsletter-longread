@@ -15,26 +15,26 @@ import * as deutschlandBlTable from './table/deutschland-bl-table';
 import BarChart from './chart/bar-chart';
 import LineChart from './chart/line-chart';
 
-import bayernCases from './data/cases/bayern-cases.json';
-import bayernRecoveries from './data/recoveries/bayern-recoveries.json';
-import bayernDeaths from './data/deaths/bayern-deaths.json';
+// import bayernCases from './data/cases/bayern-cases.json';
+// import bayernRecoveries from './data/recoveries/bayern-recoveries.json';
+// import bayernDeaths from './data/deaths/bayern-deaths.json';
 import bayernMeta from './data/meta/bayern-meta.json';
 
-import bayernRegbezCases from './data/cases/bayern-regbez-cases.json';
-import bayernRegbezDeaths from './data/deaths/bayern-regbez-deaths.json';
+// import bayernRegbezCases from './data/cases/bayern-regbez-cases.json';
+// import bayernRegbezDeaths from './data/deaths/bayern-regbez-deaths.json';
 import bayernRegbezMeta from './data/meta/bayern-regbez-meta.json';
 
-import bayernLkrCases from './data/cases/bayern-lkr-cases.json';
-import bayernLkrDeaths from './data/deaths/bayern-lkr-deaths.json';
+// import bayernLkrCases from './data/cases/bayern-lkr-cases.json';
+// import bayernLkrDeaths from './data/deaths/bayern-lkr-deaths.json';
 import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
 
-import deutschlandCases from './data/cases/deutschland-cases.json';
-import deutschlandRecoveries from './data/recoveries/deutschland-recoveries.json';
-import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
+// import deutschlandCases from './data/cases/deutschland-cases.json';
+// import deutschlandRecoveries from './data/recoveries/deutschland-recoveries.json';
+// import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
 import deutschlandMeta from './data/meta/deutschland-meta.json';
 
-import deutschlandBlCases from './data/cases/deutschland-bl-cases.json';
-import deutschlandBlDeaths from './data/deaths/deutschland-bl-deaths.json';
+// import deutschlandBlCases from './data/cases/deutschland-bl-cases.json';
+// import deutschlandBlDeaths from './data/deaths/deutschland-bl-deaths.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
 
 import { germanDate } from './utils';
@@ -43,28 +43,28 @@ window.addEventListener('load', init);
 
 async function init() {
   const urlParams = new URLSearchParams(window.location.search);
-  // const date = new Date(urlParams.get('date') || new Date());
-  const date = new Date(urlParams.get('date') || new Date('2020-04-14'));
+  const date = new Date(urlParams.get('date') || new Date());
+  // const date = new Date(urlParams.get('date') || new Date('2020-04-14'));
   const endDate = date.toISOString().split('T')[0];
-  // const startDate = '2020-03-01';
-  // const logError = error => console.warn(error);
+  const startDate = '2020-02-25';
+  const logError = error => console.error(error);
 
   const dateElements = document.querySelectorAll('span.date');
   dateElements.forEach(el => el.textContent = germanDate(endDate));
 
   const charts = [];
 
-  // const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&bundesland=Bayern`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&bundesland=Bayern`)
+    .then(response => response.json())
+    .catch(logError);
 
-  // const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+    .then(response => response.json())
+    .catch(logError);
 
-  // const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
+    .then(response => response.json())
+    .catch(logError);
 
   bayernIndicator.init({
     target: '#bayern-indicator',
@@ -110,13 +110,13 @@ async function init() {
 
   charts.push(bayernBarChart);
 
-  // const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Regierungsbezirk&bundesland=Bayern`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Regierungsbezirk&bundesland=Bayern`)
+    .then(response => response.json())
+    .catch(logError);
 
-  // const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
+    .then(response => response.json())
+    .catch(logError);
 
   bayernRegbezTable.init({
     target: '#bayern-regbez-table',
@@ -132,13 +132,13 @@ async function init() {
     metaData: bayernRegbezMeta
   });
 
-  // const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Landkreis&bundesland=Bayern`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Landkreis&bundesland=Bayern`)
+    .then(response => response.json())
+    .catch(logError);
 
-  // const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+    .then(response => response.json())
+    .catch(logError);
 
   bayernLkrText.init({
     target: '#bayern-lkr-text',
@@ -148,17 +148,17 @@ async function init() {
     metaDataDistricts: bayernRegbezMeta
   });
 
-  // const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum`)
+    .then(response => response.json())
+    .catch(logError);
 
-  // const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&sumField=AnzahlTodesfall`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&sumField=AnzahlTodesfall`)
+    .then(response => response.json())
+    .catch(logError);
 
-  // const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&sumField=AnzahlGenesen`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&sumField=AnzahlGenesen`)
+    .then(response => response.json())
+    .catch(logError);
 
   deutschlandIndicator.init({
     target: '#deutschland-indicator',
@@ -204,13 +204,13 @@ async function init() {
 
   charts.push(deutschlandBarChart);
 
-  // const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland`)
+    .then(response => response.json())
+    .catch(logError);
 
-  // const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&sumField=AnzahlTodesfall`)
-  //   .then(response => response.json())
-  //   .catch(logError);
+  const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&group=Bundesland&sumField=AnzahlTodesfall`)
+    .then(response => response.json())
+    .catch(logError);
 
   deutschlandBlText.init({
     target: '#deutschland-bl-text',
