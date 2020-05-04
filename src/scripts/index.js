@@ -1,3 +1,4 @@
+import '../index.html';
 import '../styles/index.scss';
 
 import * as bayernIndicator from './indicator/bayern-indicator';

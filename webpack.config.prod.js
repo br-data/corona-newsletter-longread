@@ -1,27 +1,23 @@
 const Webpack = require('webpack');
 const WebpackMerge = require('webpack-merge');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const common = require('./webpack.common.js');
 
 module.exports = WebpackMerge(common, {
   mode: 'production',
-  devtool: 'source-map',
   stats: 'errors-warnings',
   bail: true,
+  devtool: false,
   output: {
-    filename: 'js/[name].js',
-    chunkFilename: 'js/[name].chunk.js'
+    filename: '[name].js',
+    chunkFilename: '[name].chunk.js'
   },
   plugins: [
     new CleanWebpackPlugin(),
     new Webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    new Webpack.optimize.ModuleConcatenationPlugin(),
-    new MiniCssExtractPlugin({
-      filename: 'css/bundle.css'
-    })
+    new Webpack.optimize.ModuleConcatenationPlugin()
   ],
   module: {
     rules: [
@@ -31,13 +27,21 @@ module.exports = WebpackMerge(common, {
         use: 'babel-loader'
       },
       {
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1000000
+            }
+          }
+        ]
+      },
+      {
         test: /\.s?css/i,
         use : [
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../'
-            }
+            loader: 'style-loader'
           },
           {
             loader: 'css-loader',

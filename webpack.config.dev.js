@@ -5,8 +5,8 @@ const common = require('./webpack.common.js');
 
 module.exports = WebpackMerge(common, {
   mode: 'development',
-  devtool: 'cheap-eval-source-map',
   stats: 'errors-warnings',
+  devtool: 'cheap-eval-source-map',
   output: {
     chunkFilename: 'js/[name].chunk.js'
   },
@@ -35,16 +35,27 @@ module.exports = WebpackMerge(common, {
         loader: 'babel-loader'
       },
       {
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]'
+          }
+        }
+      },
+      {
         test: /\.s?css$/i,
         use: [
           {
             loader: 'style-loader'
-          }, {
+          },
+          {
             loader: 'css-loader',
             options: {
               sourceMap: true
             }
-          }, {
+          },
+          {
             loader: 'sass-loader',
             options: {
               implementation: require('sass'),

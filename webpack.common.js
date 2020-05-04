@@ -1,5 +1,4 @@
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -11,11 +10,11 @@ module.exports = {
     filename: 'js/[name].js'
   },
   plugins: [
-    new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, './assets'), to: './assets' }
-    ]),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/index.html')
+      template: path.resolve(__dirname, './src/index.html'),
+      favicon: './assets/images/favicon.ico',
+      inject: true,
+      minify: false
     })
   ],
   module: {
@@ -26,12 +25,11 @@ module.exports = {
         type: 'javascript/auto'
       },
       {
-        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[path][name].[ext]'
-          }
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          minimize: false,
+          attributes: true
         }
       }
     ]
