@@ -15,11 +15,13 @@ export function init(config) {
 
   const caseText = `In ganz Deutschland wurden bislang ${pretty(currentCount(caseData))} Corona-Fälle gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
 
+  Durch die Meldeverzögerung bei den Behörden, vor allem am Wochenende und an Feiertagen, kann dieser Wert von Tag zu Tag unterschiedlich hoch ausfallen.
+
   Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen ${trendClassifier(weekTrend(caseData))} (<span class="${trendArrow(weekTrend(caseData))}"></span>${pretty(weekTrend(caseData))} %).
 
   Bundesweit entspricht das ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} Fällen pro tausend Einwohner.
 
-  Die berechnete Reproduktionszahl liegt zwischen ${pretty(lowerReproValue)} und ${pretty(upperReproValue)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt.
+  Die Reproduktionszahl für Deutschland liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, welche bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl jedoch in einem Bereich von ${pretty(lowerReproValue)} bis ${pretty(upperReproValue)}.
 
   Das Robert Koch-Institut berechnet, dass mittlerweile ${pretty(currentCount(recoveredData))} Menschen wieder gesund sind.`;
 

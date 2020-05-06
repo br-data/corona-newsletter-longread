@@ -12,19 +12,19 @@ export function init(config) {
   const lowerReproValue = reproValue - confidenceInterval;
   const upperReproValue = reproValue + confidenceInterval;
 
-  const caseText = `Bislang wurden nach Informationen des Robert Koch-Instituts ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet.
+  const caseText = `Bislang wurden nach Informationen des Robert Koch-Instituts ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
 
-  Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
+  Durch die Meldeverzögerung bei den Behörden, vor allem am Wochenende und an Feiertagen, kann dieser Wert von Tag zu Tag unterschiedlich hoch ausfallen.
 
   Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${trendClassifier(weekTrend(caseData))} (<span class="${trendArrow(weekTrend(caseData))}"></span>${pretty(weekTrend(caseData))} %).
 
   Damit kommt Bayern zur Zeit auf ${pretty(casesPerThousand(currentCount(caseData), metaData.pop))} gemeldete Fälle pro tausend Einwohner.
 
-  Die berechnete Reproduktionszahl liegt zwischen ${pretty(lowerReproValue)} und ${pretty(upperReproValue)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt.
+  Die Reproduktionszahl für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, welche bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl jedoch in einem Bereich von ${pretty(lowerReproValue)} bis ${pretty(upperReproValue)}.
 
   Nach Berechnungen des RKI sind mittlerweile wieder mindestens ${pretty(currentCount(recoveredData))} Menschen in Bayern genesen.`;
 
-  const deathText = `Insgesamt wurden ${pretty(currentCount(deathData))} Todesfälle in Bayern gemeldet.
+  const deathText = `Insgesamt wurden ${pretty(currentCount(deathData))} Todesfälle im Freistaat gemeldet.
 
   ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : '.' }
 
