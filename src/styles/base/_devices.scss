@@ -5,8 +5,8 @@ $mobile-width: 560px;
 $legacy-width: 380px;
 
 $margin-desktop: 0 15% 0 5%;
-$margin-tablet: 10%;
-$margin-mobile: 20px;
+$margin-tablet: 0;
+$margin-mobile: 0;
 
 @mixin future {
 

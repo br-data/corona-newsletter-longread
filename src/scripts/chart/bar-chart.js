@@ -6,7 +6,6 @@ import { pretty, germanDate, germanDateShort } from '../utils';
 
 const defaults = {
   target: '#bar-chart',
-  height: 380,
   margin: { top: 100, right: 25, bottom: 75, left: 25 }
 };
 
@@ -22,12 +21,13 @@ export default class BarChart {
   }
 
   draw() {
-    const { target, data, meta, height, margin } = this;
+    const { target, data, meta, margin } = this;
     const container = select(target);
     const ratio = getRetinaRatio();
 
     // Set initial dimensions
-    let width = container.node().getBoundingClientRect().width;
+    const width = container.node().getBoundingClientRect().width;
+    const height = (width * 9) / 16;
 
     // Create canvas and context
     const canvas = create('canvas')
@@ -142,6 +142,7 @@ export default class BarChart {
     // Create image from canvas and append it to the DOM
     container.append('img')
       .attr('src', canvas.toDataURL())
+      .attr('title', meta.title)
       .attr('alt', `${meta.title}: ${meta.description}`);
   }
 
