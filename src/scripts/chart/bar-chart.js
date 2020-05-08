@@ -75,7 +75,7 @@ export default class BarChart {
     const yMax = max(data, d => d.value);
 
     const x = scaleBand()
-      .padding(0.25)
+      .padding(0.2)
       .domain(data.map(d => d.date))
       .rangeRound([0, innerWidth]);
 

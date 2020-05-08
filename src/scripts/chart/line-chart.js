@@ -1,6 +1,6 @@
 import { select, create } from 'd3-selection';
 import { max, min } from 'd3-array';
-import { scaleLinear, scaleTime } from 'd3-scale';
+import { scaleLinear, scaleBand } from 'd3-scale';
 import { line, curveMonotoneX } from 'd3-shape';
 
 import { pretty, germanDate, germanDateShort } from '../utils';
@@ -73,9 +73,10 @@ export default class LineChart {
     xMin.setDate(xMin.getDate() - 2);
     const yMax = max(data, d => d.sumValue);
 
-    const x = scaleTime()
-      .domain([xMin, xMax])
-      .range([0, innerWidth]);
+    const x = scaleBand()
+      .padding(0.2)
+      .domain(data.map(d => d.date))
+      .rangeRound([0, innerWidth]);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
@@ -88,8 +89,8 @@ export default class LineChart {
     context.textBaseline = 'top';
     xTicks.forEach(d => {
       context.fillStyle = '#ffffff';
-      context.textAlign = 'right';
-      context.fillText(germanDateShort(d), x(d), innerHeight + 5);
+      context.textAlign = 'center';
+      context.fillText(germanDateShort(d), x(d) + x.bandwidth() / 2, innerHeight + 5);
     });
 
     // Draw y axis
@@ -111,7 +112,7 @@ export default class LineChart {
 
     // Draw line
     const lineConstructor = line()
-      .x(d => x(new Date(d.date)))
+      .x(d => x(d.date))
       .y(d => y(d.sumValue))
       .curve(curveMonotoneX)
       .context(context);
@@ -125,7 +126,7 @@ export default class LineChart {
 
     // Draw dot for last value
     const lastValue = data[data.length - 1];
-    const lastX = x(new Date(lastValue.date));
+    const lastX = x(lastValue.date);
     const lastY = y(lastValue.sumValue);
 
     context.beginPath();
@@ -134,10 +135,10 @@ export default class LineChart {
     context.fill();
 
     context.font = 'bold 15px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'right';
+    context.textAlign = 'center';
     context.textBaseline = 'bottom';
     context.fillStyle = '#ffffff';
-    context.fillText(pretty(lastValue.sumValue), lastX + 5, lastY - 7);
+    context.fillText(pretty(lastValue.sumValue), lastX, lastY - 7);
 
     // Add title
     context.font = '600 24px "Open Sans", OpenSans, Arial';
@@ -181,7 +182,7 @@ function dateRange(startDate, endDate, steps) {
   const currentDate = new Date(endDate);
 
   while (currentDate >= new Date(startDate)) {
-    dateArray.push(new Date(+currentDate));
+    dateArray.push(currentDate.toISOString().split('T')[0]);
     currentDate.setDate(currentDate.getDate() - steps);
   }
 
