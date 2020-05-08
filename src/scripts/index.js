@@ -13,7 +13,7 @@ import * as deutschlandBlText from './text/deutschland-bl-text';
 import * as deutschlandBlTable from './table/deutschland-bl-table';
 
 import BarChart from './chart/bar-chart';
-import LineChart from './chart/line-chart';
+import AreaChart from './chart/area-chart';
 
 // import bayernCases from './data/cases/bayern-cases.json';
 // import bayernRecoveries from './data/recoveries/bayern-recoveries.json';
@@ -82,19 +82,21 @@ async function init() {
     metaData: bayernMeta
   });
 
-  const bayernLineChart = new LineChart({
+  const bayernAreaChart = new AreaChart({
     target: '#bayern-line-chart',
-    data: bayernCases,
+    caseData: bayernCases,
+    recoveredData: bayernRecoveries,
+    deathData: bayernDeaths,
     meta: {
-      title: 'Coronafälle in Bayern',
-      description: 'Enwicklung der gemeldeten Fallzahlen',
+      title: 'Corona in Bayern',
+      description: 'Enwicklung der wichtigsten Indikatoren',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
     }
   });
 
-  charts.push(bayernLineChart);
+  charts.push(bayernAreaChart);
 
   const bayernBarChart = new BarChart({
     target: '#bayern-bar-chart',
@@ -176,19 +178,21 @@ async function init() {
     metaData: deutschlandMeta
   });
 
-  const deutschlandLineChart = new LineChart({
+  const deutschlandAreaChart = new AreaChart({
     target: '#deutschland-line-chart',
-    data: deutschlandCases,
+    caseData: deutschlandCases,
+    recoveredData: deutschlandRecoveries,
+    deathData: deutschlandDeaths,
     meta: {
-      title: 'Coronafälle in Deutschland',
-      description: 'Enwicklung der gemeldeten Fallzahlen',
+      title: 'Corona in Deutschland',
+      description: 'Enwicklung der wichtigsten Indikatoren',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
     }
   });
 
-  charts.push(deutschlandLineChart);
+  charts.push(deutschlandAreaChart);
 
   const deutschlandBarChart = new BarChart({
     target: '#deutschland-bar-chart',
