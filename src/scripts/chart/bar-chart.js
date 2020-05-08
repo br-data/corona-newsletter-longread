@@ -1,6 +1,8 @@
 import { select, create } from 'd3-selection';
 import { max, min } from 'd3-array';
 import { scaleLinear, scaleBand } from 'd3-scale';
+import { line, curveMonotoneX } from 'd3-shape';
+import { sma } from '../utils';
 
 import { pretty, germanDate, germanDateShort } from '../utils';
 
@@ -115,6 +117,21 @@ export default class BarChart {
       context.fillRect(x(d.date), y(d.value), x.bandwidth(), innerHeight - y(d.value));
     });
 
+    // Draw line
+    const lineConstructor = line()
+      .x(d => x(d.date) + (x.bandwidth() / 2))
+      .y(d => y(d.value))
+      .curve(curveMonotoneX)
+      .context(context);
+
+    context.setLineDash([10, 10]);
+    context.beginPath();
+    context.lineCap = 'round';
+    lineConstructor(sma(data, 7, 'value'));
+    context.lineWidth = 3;
+    context.strokeStyle = '#ffffff';
+    context.stroke();
+
     // Add title
     context.font = '600 24px "Open Sans", OpenSans, Arial';
     context.textAlign = 'left';
@@ -128,6 +145,21 @@ export default class BarChart {
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
     context.fillText(meta.description, 0, -margin.top + 50);
+
+    // Add key
+    context.setLineDash([5, 5]);
+    context.beginPath();
+    context.moveTo(innerWidth - 80, -margin.top + 56);
+    context.lineTo(innerWidth - 110, -margin.top + 56);
+    context.lineCap = 'round';
+    context.lineWidth = 3;
+    context.stroke();
+
+    context.font = '300 15px "Open Sans", OpenSans, Arial';
+    context.textAlign = 'right';
+    context.textBaseline = 'top';
+    context.fillStyle = '#ffffff';
+    context.fillText('Mittelwert', innerWidth, -margin.top + 50);
 
     // Add author and source
     context.font = '300 14px "Open Sans", OpenSans, Arial';
