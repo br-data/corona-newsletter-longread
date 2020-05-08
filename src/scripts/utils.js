@@ -191,3 +191,19 @@ export function json2table(json) {
 
   return tableHtml;
 }
+
+// http://bl.ocks.org/devgru/a9428ebd6e11353785f2
+export function getRetinaRatio() {
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  const c = document.createElement('canvas').getContext('2d');
+  const backingStoreRatio = [
+    c.webkitBackingStorePixelRatio,
+    c.mozBackingStorePixelRatio,
+    c.msBackingStorePixelRatio,
+    c.oBackingStorePixelRatio,
+    c.backingStorePixelRatio,
+    1
+  ].reduce((a, b) => a || b);
+
+  return devicePixelRatio / backingStoreRatio;
+}
