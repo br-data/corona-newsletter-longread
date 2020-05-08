@@ -82,7 +82,7 @@ export function weekTrend(data) {
 
   const percentChange = ((currentWeekSum - previousWeekSum) / previousWeekSum) * 100;
 
-  return percentChange;
+  return percentChange || 0;
 }
 
 export function doublingTime(data) {
