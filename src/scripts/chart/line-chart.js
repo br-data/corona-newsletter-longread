@@ -3,7 +3,7 @@ import { max, min } from 'd3-array';
 import { scaleLinear, scaleBand } from 'd3-scale';
 import { line, curveMonotoneX } from 'd3-shape';
 
-import { pretty, germanDate, germanDateShort } from '../utils';
+import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
 
 const defaults = {
   target: '#line-chart',
@@ -175,18 +175,6 @@ export default class LineChart {
     select(this.target).html('');
     this.draw();
   }
-}
-
-function dateRange(startDate, endDate, steps) {
-  const dateArray = [];
-  const currentDate = new Date(endDate);
-
-  while (currentDate >= new Date(startDate)) {
-    dateArray.push(currentDate.toISOString().split('T')[0]);
-    currentDate.setDate(currentDate.getDate() - steps);
-  }
-
-  return dateArray;
 }
 
 // http://bl.ocks.org/devgru/a9428ebd6e11353785f2

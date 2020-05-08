@@ -33,6 +33,18 @@ export function germanDateShort(dateString) {
   return date.toLocaleDateString('de-DE', options);
 }
 
+export function dateRange(startDate, endDate, steps) {
+  const dateArray = [];
+  const currentDate = new Date(endDate);
+
+  while (currentDate >= new Date(startDate)) {
+    dateArray.push(currentDate.toISOString().split('T')[0]);
+    currentDate.setDate(currentDate.getDate() - steps);
+  }
+
+  return dateArray;
+}
+
 export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
