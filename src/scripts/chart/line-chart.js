@@ -3,11 +3,11 @@ import { max, min } from 'd3-array';
 import { scaleLinear, scaleBand } from 'd3-scale';
 import { line, curveMonotoneX } from 'd3-shape';
 
-import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
+import { pretty, germanDate, germanDateShort, dateRange, getRetinaRatio } from '../utils';
 
 const defaults = {
   target: '#line-chart',
-  margin: { top: 100, right: 25, bottom: 75, left: 25 }
+  margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 
 export default class LineChart {
@@ -75,6 +75,7 @@ export default class LineChart {
 
     const x = scaleBand()
       .padding(0.2)
+      .align(0.9)
       .domain(data.map(d => d.date))
       .rangeRound([0, innerWidth]);
 
@@ -89,7 +90,7 @@ export default class LineChart {
     context.textBaseline = 'top';
     xTicks.forEach(d => {
       context.fillStyle = '#ffffff';
-      context.textAlign = 'center';
+      context.textAlign = 'right';
       context.fillText(germanDateShort(d), x(d) + x.bandwidth() / 2, innerHeight + 5);
     });
 
@@ -135,10 +136,10 @@ export default class LineChart {
     context.fill();
 
     context.font = 'bold 15px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'center';
+    context.textAlign = 'right';
     context.textBaseline = 'bottom';
     context.fillStyle = '#ffffff';
-    context.fillText(pretty(lastValue.sumValue), lastX, lastY - 7);
+    context.fillText(pretty(lastValue.sumValue), lastX + 5, lastY - 7);
 
     // Add title
     context.font = '600 24px "Open Sans", OpenSans, Arial';
@@ -153,6 +154,18 @@ export default class LineChart {
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
     context.fillText(meta.description, 0, -margin.top + 50);
+
+    // Add key
+    context.beginPath();
+    context.rect(0, -margin.top + 85, 11, 11);
+    context.fillStyle = '#0b9fd8';
+    context.fill();
+
+    context.font = '300 15px "Open Sans", OpenSans, Arial';
+    context.textAlign = 'left';
+    context.textBaseline = 'top';
+    context.fillStyle = '#ffffff';
+    context.fillText('Infektionen', 18, -margin.top + 85);
 
     // Add author and source
     context.font = '300 14px "Open Sans", OpenSans, Arial';
@@ -175,20 +188,4 @@ export default class LineChart {
     select(this.target).html('');
     this.draw();
   }
-}
-
-// http://bl.ocks.org/devgru/a9428ebd6e11353785f2
-function getRetinaRatio() {
-  const devicePixelRatio = window.devicePixelRatio || 1;
-  const c = document.createElement('canvas').getContext('2d');
-  const backingStoreRatio = [
-    c.webkitBackingStorePixelRatio,
-    c.mozBackingStorePixelRatio,
-    c.msBackingStorePixelRatio,
-    c.oBackingStorePixelRatio,
-    c.backingStorePixelRatio,
-    1
-  ].reduce((a, b) => a || b);
-
-  return devicePixelRatio / backingStoreRatio;
 }

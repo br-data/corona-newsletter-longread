@@ -4,11 +4,11 @@ import { scaleLinear, scaleBand } from 'd3-scale';
 import { line, curveMonotoneX } from 'd3-shape';
 import { sma } from '../utils';
 
-import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
+import { pretty, germanDate, germanDateShort, dateRange, getRetinaRatio } from '../utils';
 
 const defaults = {
   target: '#bar-chart',
-  margin: { top: 100, right: 25, bottom: 75, left: 25 }
+  margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 
 export default class BarChart {
@@ -75,7 +75,8 @@ export default class BarChart {
     const yMax = max(data, d => d.value);
 
     const x = scaleBand()
-      .padding(0.2)
+      .padding(0.3)
+      .align(0.75)
       .domain(data.map(d => d.date))
       .rangeRound([0, innerWidth]);
 
@@ -147,19 +148,30 @@ export default class BarChart {
     context.fillText(meta.description, 0, -margin.top + 50);
 
     // Add key
+    context.beginPath();
+    context.rect(0, -margin.top + 85, 11, 11);
+    context.fillStyle = '#0b9fd8';
+    context.fill();
+
+    context.font = '300 15px "Open Sans", OpenSans, Arial';
+    context.textAlign = 'left';
+    context.textBaseline = 'top';
+    context.fillStyle = '#ffffff';
+    context.fillText('Infektionen', 18, -margin.top + 85);
+
     context.setLineDash([5, 5]);
     context.beginPath();
-    context.moveTo(innerWidth - 80, -margin.top + 56);
-    context.lineTo(innerWidth - 110, -margin.top + 56);
+    context.moveTo(120, -margin.top + 91);
+    context.lineTo(150, -margin.top + 91);
     context.lineCap = 'round';
     context.lineWidth = 3;
     context.stroke();
 
     context.font = '300 15px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'right';
+    context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#ffffff';
-    context.fillText('Mittelwert', innerWidth, -margin.top + 50);
+    context.fillText('Mittelwert', 155, -margin.top + 85);
 
     // Add author and source
     context.font = '300 14px "Open Sans", OpenSans, Arial';
@@ -182,20 +194,4 @@ export default class BarChart {
     select(this.target).html('');
     this.draw();
   }
-}
-
-// http://bl.ocks.org/devgru/a9428ebd6e11353785f2
-function getRetinaRatio() {
-  const devicePixelRatio = window.devicePixelRatio || 1;
-  const c = document.createElement('canvas').getContext('2d');
-  const backingStoreRatio = [
-    c.webkitBackingStorePixelRatio,
-    c.mozBackingStorePixelRatio,
-    c.msBackingStorePixelRatio,
-    c.oBackingStorePixelRatio,
-    c.backingStorePixelRatio,
-    1
-  ].reduce((a, b) => a || b);
-
-  return devicePixelRatio / backingStoreRatio;
 }
