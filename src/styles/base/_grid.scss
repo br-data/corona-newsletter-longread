@@ -36,6 +36,7 @@ section {
   }
 
   @include mobile {
+    padding: 0 2em;
     margin: 0 $margin-mobile;
   }
 }
