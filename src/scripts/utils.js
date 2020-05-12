@@ -3,16 +3,7 @@ export function currentCount(data) {
 }
 
 export function currentIncrease(data) {
-  return data[data.length-1].value;
-}
-
-export function currentIncreasePerc(data) {
-  const currentDay = data[data.length-1].sumValue;
-  const previousDay = data[data.length-2].sumValue;
-
-  const percentChange = ((currentDay - previousDay) / previousDay) * 100;
-
-  return percentChange;
+  return data[data.length-1].sumNewCases;
 }
 
 export function currentDate(data) {
