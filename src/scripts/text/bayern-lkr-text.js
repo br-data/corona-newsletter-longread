@@ -1,33 +1,27 @@
-import { pretty } from '../utils';
+import { pretty, casesPer100Tsd7Days } from '../utils';
 
 export function init(config) {
   const { target, caseData, metaData, metaDataDistricts } = config;
+  const uniqueCounties = [...new Set(caseData.map(d => d.Landkreis))];
 
-  const enrichedData = caseData.map(d => {
-    const metaInfoCounty = metaData.find(m => m.rkiName === d.Landkreis);
+  const worstCounties = uniqueCounties.map(name => {
+    const caseDataDistrict = caseData.filter(c => c.Landkreis === name);
+    const metaInfoCounty = metaData.find(m => m.rkiName === name);
     const metaInfoDistrict = metaDataDistricts.find(m => m.ags === metaInfoCounty.ags.slice(0,3));
     return Object.assign(
-      d,
       metaInfoCounty,
       { district: metaInfoDistrict.name },
-      { casesPerThousand: (d.sumValue * 1000) / metaInfoCounty.pop }
+      { casesPer100Tsd7Days: casesPer100Tsd7Days(caseDataDistrict, metaInfoCounty.pop) }
     );
-  });
+  }).sort((a, b) => b.casesPer100Tsd7Days - a.casesPer100Tsd7Days);
 
-  const uniqueCounties = [...new Set(enrichedData.map(d => d.Landkreis))];
+  const text = `Die zur Zeit am stärksten betroffenen Regionen in Bayern sind ${worstCounties[0].name} (${worstCounties[0].type}), ${worstCounties[1].name} (${worstCounties[1].type}) und ${worstCounties[2].name} (${worstCounties[2].type}), zumindest wenn man nach den gemeldeten Fällen pro 100.000 Einwohnern in den letzten sieben Tagen geht.
 
-  const worstCounties = uniqueCounties.map(county => {
-    const countyData = enrichedData.filter(d => d.Landkreis === county);
-    return countyData[countyData.length-1];
-  }).sort((a, b) => b.casesPerThousand - a.casesPerThousand);
+  ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} (${worstCounties[0].district}) wurden bisher ${pretty(worstCounties[0].casesPer100Tsd7Days)} Fälle gemeldet.
 
-  const text = `Die zur Zeit am stärksten betroffenen Landkreise in Bayern sind ${worstCounties[0].name}, ${worstCounties[1].name} und ${worstCounties[2].name}.
+  ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} (${worstCounties[1].district}) sind es zur Zeit ${pretty(worstCounties[1].casesPer100Tsd7Days)} Fälle.
 
-  ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} (${worstCounties[0].district}) wurden bisher ${pretty(worstCounties[0].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.
-
-  ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} (${worstCounties[1].district}) sind es ${pretty(worstCounties[1].casesPerThousand)} Fälle pro tausend Einwohner.
-
-  Aus ${preposition2(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.`;
+  Aus ${preposition2(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPer100Tsd7Days)} Fälle pro 100.000 Einwohner in den letzten sieben Tagen gemeldet.`;
 
   const textElement = document.querySelector(target);
   textElement.textContent = text;
