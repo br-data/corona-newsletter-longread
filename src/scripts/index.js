@@ -15,26 +15,11 @@ import * as deutschlandBlTable from './table/deutschland-bl-table';
 import BarChart from './chart/bar-chart';
 import AreaChart from './chart/area-chart';
 
-// import bayernCases from './data/cases/bayern-cases.json';
-// import bayernRecoveries from './data/recoveries/bayern-recoveries.json';
-// import bayernDeaths from './data/deaths/bayern-deaths.json';
 import bayernMeta from './data/meta/bayern-meta.json';
-
-// import bayernRegbezCases from './data/cases/bayern-regbez-cases.json';
-// import bayernRegbezDeaths from './data/deaths/bayern-regbez-deaths.json';
 import bayernRegbezMeta from './data/meta/bayern-regbez-meta.json';
-
-// import bayernLkrCases from './data/cases/bayern-lkr-cases.json';
-// import bayernLkrDeaths from './data/deaths/bayern-lkr-deaths.json';
 import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
 
-// import deutschlandCases from './data/cases/deutschland-cases.json';
-// import deutschlandRecoveries from './data/recoveries/deutschland-recoveries.json';
-// import deutschlandDeaths from './data/deaths/deutschland-deaths.json';
 import deutschlandMeta from './data/meta/deutschland-meta.json';
-
-// import deutschlandBlCases from './data/cases/deutschland-bl-cases.json';
-// import deutschlandBlDeaths from './data/deaths/deutschland-bl-deaths.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
 
 import { germanDate } from './utils';
@@ -47,7 +32,7 @@ async function init() {
   // const date = new Date(urlParams.get('date') || new Date('2020-04-14'));
   const endDate = date.toISOString().split('T')[0];
   const startDate = '2020-02-25';
-  const logError = error => console.error(error);
+  const logError = error => console.warn(error);
 
   const dateElements = document.querySelectorAll('span.date');
   dateElements.forEach(el => el.textContent = germanDate(endDate));
