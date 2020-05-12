@@ -19,7 +19,7 @@ export function init(config) {
 
   Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen ${trendClassifier(weekTrend(caseData))} (<span class="${trendArrow(weekTrend(caseData))}"></span>${pretty(weekTrend(caseData))} %).
 
-  Bundesweit entspricht das ${pretty(casesPer100Tsd7Days(caseData, metaData.pop))} gemeldeten Fällen pro 100.000 Einwohnern in den letzten sieben Tagen.
+  Bundesweit entspricht das ${pretty(casesPer100Tsd7Days(caseData, metaData.pop))} gemeldeten Fällen pro 100.000 Einwohnern in den letzten sieben Tagen.<br><br>
 
   Die Reproduktionszahl für Deutschland liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, welche bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl jedoch in einem Bereich von ${pretty(lowerReproValue)} bis ${pretty(upperReproValue)}.
 
