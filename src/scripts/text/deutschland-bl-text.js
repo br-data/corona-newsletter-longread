@@ -1,4 +1,4 @@
-import { pretty, currentCount, casesPerThousand } from '../utils';
+import { pretty, currentCount, casesPer100Tsd7Days } from '../utils';
 
 export function init(config) {
   const { target, caseData, deathData, metaData } = config;
@@ -10,16 +10,16 @@ export function init(config) {
     return {
       name: stateMeta.name,
       cases: currentCount(districtCases),
-      casesPerThousand: casesPerThousand(currentCount(districtCases), stateMeta.pop),
+      casesPer100Tsd7Days: casesPer100Tsd7Days(districtCases, stateMeta.pop),
       deaths: currentCount(districtDeaths)
     };
   });
 
-  const worstStates = enrichedData.sort((a, b) => b.casesPerThousand - a.casesPerThousand);
+  const worstStates = enrichedData.sort((a, b) => b.casesPer100Tsd7Days - a.casesPer100Tsd7Days);
 
-  const text = `Am stärksten betroffen ist das Bundesland ${worstStates[0].name}. Pro tausend Einwohner wurden hier bisher ${pretty(worstStates[0].casesPerThousand)} Fälle gemeldet.
+  const text = `Am stärksten betroffen ist das Bundesland ${worstStates[0].name}. Pro 100.000 Einwohner wurden in der letzten Wochen ${pretty(worstStates[0].casesPer100Tsd7Days)} Fälle gemeldet.
 
-  Vergleichsweise am besten steht das Bundesland ${worstStates[worstStates.length-1].name} da. Dort wurden bislang nur ${pretty(worstStates[worstStates.length-1].casesPerThousand)} Fälle pro tausend Einwohner gemeldet.`;
+  Vergleichsweise am besten steht ${worstStates[worstStates.length-1].name} da. Dort wurden bislang nur ${pretty(worstStates[worstStates.length-1].casesPer100Tsd7Days)} Fälle pro 100.000 Einwohner in den letzten sieben Tagen gemeldet.`;
 
   const textElement = document.querySelector(target);
   textElement.textContent = text;
