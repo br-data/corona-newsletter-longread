@@ -40,6 +40,13 @@ export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
 
+export function casesPer100Tsd7Days(data, population) {
+  const currentWeek = data.slice(data.length-7, data.length);
+  const cases = currentWeek.reduce((sum, curr) => (sum += curr.value), 0);
+
+  return (cases * 100000) / population;
+}
+
 export function trendClassifier(value) {
   if (value <= -50) {
     return 'stark zurückgegangen';
@@ -85,7 +92,7 @@ export function weekTrend(data) {
 
   const percentChange = ((currentWeekSum - previousWeekSum) / previousWeekSum) * 100;
 
-  return percentChange || 0;
+  return isFinite(percentChange || 0) ? (percentChange || 0) : 0;
 }
 
 export function doublingTime(data) {
@@ -165,7 +172,7 @@ export function json2table(json) {
   json.map(row => {
     bodyRows += '<tr>';
     columns.map(colName => {
-      bodyRows += `<td data-label="${colName}">${row[colName]}</td>`;
+      bodyRows += `<td data-label="${colName.replace(/<br>/gi, '')}">${row[colName]}</td>`;
     });
     bodyRows += '</tr>';
   });

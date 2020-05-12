@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPerThousand, trendArrow, weekTrend, json2table } from '../utils';
+import { pretty, currentCount, currentIncrease, casesPer100Tsd7Days, trendArrow, weekTrend, json2table } from '../utils';
 
 export function init(config) {
   const { target, caseData, deathData, metaData } = config;
@@ -9,7 +9,7 @@ export function init(config) {
 
     return {
       'Bundesland': stateMeta.name,
-      'Fälle (1.000 Ew.)': `${pretty(casesPerThousand(currentCount(stateCases), stateMeta.pop))}`,
+      'Fälle pro 100.000 <br>Einwohner, <br>letzte 7 Tage': `${pretty(casesPer100Tsd7Days(stateCases, stateMeta.pop))}`,
       'Fälle': `<span class="${trendArrow(weekTrend(stateCases))}" title="${pretty(weekTrend(stateCases))} %"></span> ${pretty(currentCount(stateCases))} (+${pretty(currentIncrease(stateCases))})`,
       'Todesfälle': `<span class="${trendArrow(weekTrend(stateDeaths))}" title="${pretty(weekTrend(stateDeaths))} %"></span> ${pretty(currentCount(stateDeaths))} (+${pretty(currentIncrease(stateDeaths))})`
     };
