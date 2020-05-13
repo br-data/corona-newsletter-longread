@@ -2,6 +2,10 @@ header {
   section {
     position: relative;
     margin-top: -6em;
+
+    @include tablet {
+      margin-top: 0;
+    }
   }
 
   .block {
