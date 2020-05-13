@@ -9,7 +9,7 @@ export function init(config) {
 
     return {
       'Regierungsbezirk': districtMeta.name,
-      'Fälle pro 100.000 <br>Einwohner, <br>letzte 7 Tage': `${pretty(casesPer100Tsd7Days(districtCases, districtMeta.pop))}`,
+      'Fälle pro 100.000 <br>Einwohner, <br>letzte 7 Tage': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty(weekTrend(districtCases))} %"></span>${pretty(casesPer100Tsd7Days(districtCases, districtMeta.pop))}`,
       'Fälle': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty(weekTrend(districtCases))} %"></span> ${pretty(currentCount(districtCases))} (+${pretty(currentIncrease(districtCases))})`,
       'Todesfälle': `<span class="${trendArrow(weekTrend(districtDeaths))}" title="${pretty(weekTrend(districtDeaths))} %"></span> ${pretty(currentCount(districtDeaths))} (+${pretty(currentIncrease(districtDeaths))})`
     };
