@@ -6,19 +6,19 @@ export function init(config) {
   const elements = `
     <div class="box">
       <strong>😷 ${pretty(currentCount(caseData))}</strong> (+${pretty(currentIncrease(caseData))})<br>
-      Bestä­tigte Fälle
+      bestä­tigte Fälle
     </div>
     <div class="box">
       <strong><span class="${trendArrow(weekTrend(caseData))}"></span> ${pretty(weekTrend(caseData))} %</strong><br>
-      Wochentrend
+      Neue Fälle im Vergleich zur Vorwoche
     </div>
     <div class="box">
       <strong>😊 ${pretty(currentCount(recoveredData))}</strong> (+${pretty(currentIncrease(recoveredData))})<br>
-      Genesungen
+      geschätzte Genesungen
     </div>
     <div class="box">
       <strong>💀 ${pretty(currentCount(deathData))}</strong> (+${pretty(currentIncrease(deathData))})<br>
-      Todesfälle
+      gemeldete Todesfälle
     </div>
   `;
 
