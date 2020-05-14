@@ -8,9 +8,9 @@ export function init(config) {
   const { caseTarget, deathTarget, caseData, recoveredData, deathData, metaData } = config;
   const reproData = reproNumber(sma(caseData));
   const confidenceInterval = confidence(reproData, '95');
-  const reproValue = reproData[reproData.length - 3].value;
-  const lowerReproValue = reproValue - confidenceInterval;
-  const upperReproValue = reproValue + confidenceInterval;
+  const reproValue = reproData[reproData.length - 2].value;
+  const lowerReproValue = reproValue - (confidenceInterval / 2);
+  const upperReproValue = reproValue + (confidenceInterval / 2);
 
   const caseText = `Bislang wurden nach Informationen des Robert Koch-Instituts ${pretty(currentCount(caseData))} Corona-Fälle in Bayern gemeldet. Das sind ${pretty(currentIncrease(caseData))} Fälle mehr als noch am Vortag.
 
@@ -20,7 +20,7 @@ export function init(config) {
 
   Damit kommt Bayern auf ${pretty(casesPer100Tsd7Days(caseData, metaData.pop))} gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen. In der Woche zuvor waren es noch ${pretty(casesPer100Tsd7Days(caseData.slice(0, caseData.length-7), metaData.pop))} Fälle pro 100.000 Einwohner.<br><br>
 
-  Die Reproduktionszahl für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, welche bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl jedoch in einem Bereich von ${pretty(lowerReproValue)} bis ${pretty(upperReproValue)}.<br><br>
+  Die Reproduktionszahl für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, welche bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl jedoch in einem Bereich von ${pretty(lowerReproValue, 'floor', 100)} bis ${pretty(upperReproValue, 'ceil', 100)}.<br><br>
 
   Nach Berechnungen des RKI sind mittlerweile wieder mindestens ${pretty(currentCount(recoveredData))} Menschen in Bayern genesen.`;
 

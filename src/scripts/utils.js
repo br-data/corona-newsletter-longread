@@ -154,8 +154,8 @@ export function stdDev(data, key = 'value') {
   return Math.sqrt(squareDiffsAvg);
 }
 
-export function pretty(number) {
-  const string = (Math.round(number * 10) / 10).toString().split('.');
+export function pretty(number, method = 'round', factor = 10) {
+  const string = (Math[method](number * factor) / factor).toString().split('.');
 
   return string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
 }
