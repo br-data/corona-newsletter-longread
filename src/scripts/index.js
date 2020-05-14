@@ -27,27 +27,30 @@ import { germanDate } from './utils';
 window.addEventListener('load', init);
 
 async function init() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const date = new Date(urlParams.get('date') || new Date());
-  // const date = new Date(urlParams.get('date') || new Date('2020-04-14'));
-  const endDate = date.toISOString().split('T')[0];
-  const startDate = '2020-02-25';
   const logError = error => console.warn(error);
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
+  const startDateString = startDate.toISOString().split('T')[0];
+  const endDate = new Date(urlParams.get('endDate') || new Date());
+  const endDateString = endDate.toISOString().split('T')[0];
+
   const dateElements = document.querySelectorAll('span.date');
-  dateElements.forEach(el => el.textContent = germanDate(endDate));
+  dateElements.forEach(el => el.textContent = germanDate(endDateString));
+  const timeElements = document.querySelectorAll('span.time');
+  timeElements.forEach(el => el.textContent = `${endDate.getHours()}:00 Uhr`);
 
   const charts = [];
 
-  const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Bundesland&bundesland=Bayern`)
+  const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern`)
     .then(response => response.json())
     .catch(logError);
 
-  const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+  const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
     .then(response => response.json())
     .catch(logError);
 
-  const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
     .then(response => response.json())
     .catch(logError);
 
@@ -67,15 +70,15 @@ async function init() {
     metaData: bayernMeta
   });
 
-  const bayernCasesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern`)
+  const bayernCasesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern`)
     .then(response => response.json())
     .catch(logError);
 
-  const bayernRecoveriesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+  const bayernRecoveriesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
     .then(response => response.json())
     .catch(logError);
 
-  const bayernDeathsRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  const bayernDeathsRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
     .then(response => response.json())
     .catch(logError);
 
@@ -109,11 +112,11 @@ async function init() {
 
   charts.push(bayernBarChart);
 
-  const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Regierungsbezirk&bundesland=Bayern`)
+  const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern`)
     .then(response => response.json())
     .catch(logError);
 
-  const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
     .then(response => response.json())
     .catch(logError);
 
@@ -131,11 +134,11 @@ async function init() {
     metaData: bayernRegbezMeta
   });
 
-  const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Landkreis&bundesland=Bayern`)
+  const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
     .then(response => response.json())
     .catch(logError);
 
-  const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+  const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
     .then(response => response.json())
     .catch(logError);
 
@@ -147,15 +150,15 @@ async function init() {
     metaDataDistricts: bayernRegbezMeta
   });
 
-  const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true`)
+  const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true`)
     .then(response => response.json())
     .catch(logError);
 
-  const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&sumField=AnzahlTodesfall`)
+  const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlTodesfall`)
     .then(response => response.json())
     .catch(logError);
 
-  const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&sumField=AnzahlGenesen`)
+  const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlGenesen`)
     .then(response => response.json())
     .catch(logError);
 
@@ -175,15 +178,15 @@ async function init() {
     metaData: deutschlandMeta
   });
 
-  const deutschlandCasesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&newCases=true`)
+  const deutschlandCasesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
     .then(response => response.json())
     .catch(logError);
 
-  const deutschlandDeathsRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&newCases=true&sumField=AnzahlTodesfall`)
+  const deutschlandDeathsRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlTodesfall`)
     .then(response => response.json())
     .catch(logError);
 
-  const deutschlandRecoveriesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&dateField=Refdatum&newCases=true&sumField=AnzahlGenesen`)
+  const deutschlandRecoveriesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlGenesen`)
     .then(response => response.json())
     .catch(logError);
 
@@ -217,11 +220,11 @@ async function init() {
 
   charts.push(deutschlandBarChart);
 
-  const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Bundesland`)
+  const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland`)
     .then(response => response.json())
     .catch(logError);
 
-  const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDate}&endDate=${endDate}&newCases=true&group=Bundesland&sumField=AnzahlTodesfall`)
+  const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&sumField=AnzahlTodesfall`)
     .then(response => response.json())
     .catch(logError);
 
