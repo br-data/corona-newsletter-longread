@@ -38,7 +38,7 @@ async function init() {
   const dateElements = document.querySelectorAll('span.date');
   dateElements.forEach(el => el.textContent = germanDate(endDateString));
   const timeElements = document.querySelectorAll('span.time');
-  timeElements.forEach(el => el.textContent = `${endDate.getHours()}:00 Uhr`);
+  timeElements.forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
 
   const charts = [];
 
