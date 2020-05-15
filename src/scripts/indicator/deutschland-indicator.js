@@ -5,7 +5,7 @@ export function init(config) {
 
   const elements = `
     <div class="box">
-      <strong>😷 ${pretty(currentCount(caseData))}</strong> (+${pretty(currentIncrease(caseData))})<br>
+      <span class="blue"><strong>${pretty(currentCount(caseData))}</strong> (+${pretty(currentIncrease(caseData))})</span><br>
       bestä­tigte Fälle
     </div>
     <div class="box">
@@ -13,11 +13,11 @@ export function init(config) {
       Neue Fälle im Vergleich zur Vorwoche
     </div>
     <div class="box">
-      <strong>😊 ${pretty(currentCount(recoveredData))}</strong> (+${pretty(currentIncrease(recoveredData))})<br>
+      <span class="green"><strong>${pretty(currentCount(recoveredData))}</strong> (+${pretty(currentIncrease(recoveredData))})</span><br>
       geschätzte Genesungen
     </div>
     <div class="box">
-      <strong>💀 ${pretty(currentCount(deathData))}</strong> (+${pretty(currentIncrease(deathData))})<br>
+      <span class="yellow"><strong>${pretty(currentCount(deathData))}</strong> (+${pretty(currentIncrease(deathData))})</span><br>
       gemeldete Todesfälle
     </div>
   `;
