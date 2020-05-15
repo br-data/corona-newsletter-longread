@@ -15,6 +15,10 @@
     background: $blue-grey;
     color: $white;
     line-height: 1.4;
+
+    @include mobile {
+      flex: 0 calc(100% - .5em);
+    }
   };
 
   [class*="icono-arrow"] {
