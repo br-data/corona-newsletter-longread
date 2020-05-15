@@ -13,6 +13,12 @@ const defaults = {
 export default class AreaChart {
 
   constructor(config) {
+    config.recoveredData = config.recoveredData.map((d, i) => {
+      return Object.assign({}, d, {
+        sumValue: d.sumValue + config.deathData[i].sumValue
+      });
+    });
+
     this.set(config);
     this.draw();
   }
