@@ -20,7 +20,7 @@ export function init(config) {
 
   Damit kommt Bayern auf ${pretty(casesPer100Tsd7Days(caseData, metaData.pop))} gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen. In der Woche zuvor waren es noch ${pretty(casesPer100Tsd7Days(caseData.slice(0, caseData.length-7), metaData.pop))} Fälle pro 100.000 Einwohner.<br><br>
 
-  Die Reproduktionszahl für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, welche bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl jedoch in einem Bereich von ${pretty(lowerReproValue, 'floor', 100)} bis ${pretty(upperReproValue, 'ceil', 100)}.<br><br>
+  Die Reproduktionszahl für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, die bestimmten Abweichungen unterliegt. Deshalb ist es sinnvoll, das sogenannte Konfidenzintervall zu betrachten: Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl in einem Bereich von ${pretty(lowerReproValue, 'floor', 100)} bis ${pretty(upperReproValue, 'ceil', 100)}.<br><br>
 
   Nach Berechnungen des RKI sind mittlerweile wieder mindestens ${pretty(currentCount(recoveredData))} Menschen in Bayern genesen.`;
 

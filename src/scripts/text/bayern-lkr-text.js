@@ -15,7 +15,7 @@ export function init(config) {
     );
   }).sort((a, b) => b.casesPer100Tsd7Days - a.casesPer100Tsd7Days);
 
-  const text = `Die zur Zeit am stärksten betroffenen Regionen in Bayern sind ${worstCounties[0].name} (${worstCounties[0].type}), ${worstCounties[1].name} (${worstCounties[1].type}) und ${worstCounties[2].name} (${worstCounties[2].type}), zumindest wenn man nach den gemeldeten Fällen pro 100.000 Einwohnern in den letzten sieben Tagen geht.
+  const text = `Die zur Zeit am stärksten betroffenen Regionen in Bayern sind ${worstCounties[0].name} (${worstCounties[0].type}), ${worstCounties[1].name} (${worstCounties[1].type}) und ${worstCounties[2].name} (${worstCounties[2].type}), wenn man die Zahl der gemeldeten Fällen pro 100.000 Einwohnern in den letzten sieben Tagen vergleicht.
 
   ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} (${worstCounties[0].district}) wurden bisher ${pretty(worstCounties[0].casesPer100Tsd7Days)} Fälle gemeldet.
 

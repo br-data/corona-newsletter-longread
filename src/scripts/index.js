@@ -89,7 +89,7 @@ async function init() {
     deathData: bayernDeathsRef,
     meta: {
       title: 'Corona in Bayern',
-      description: 'Enwicklung der wichtigsten Indikatoren',
+      description: 'Entwicklung der wichtigsten Indikatoren',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
@@ -103,7 +103,7 @@ async function init() {
     data: bayernCasesRef,
     meta: {
       title: 'Neue Coronafälle in Bayern',
-      description: 'Gemeldeten Neuinfektionen pro Tag',
+      description: 'Gemeldete Neuinfektionen pro Tag',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
@@ -197,7 +197,7 @@ async function init() {
     deathData: deutschlandDeathsRef,
     meta: {
       title: 'Corona in Deutschland',
-      description: 'Enwicklung der wichtigsten Indikatoren',
+      description: 'Entwicklung der wichtigsten Indikatoren',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
@@ -211,7 +211,7 @@ async function init() {
     data: deutschlandCasesRef,
     meta: {
       title: 'Neue Coronafälle in Deutschland',
-      description: 'Gemeldeten Neuinfektionen pro Tag',
+      description: 'Gemeldete Neuinfektionen pro Tag',
       author: 'BR',
       source: 'Robert Koch-Institut',
       date: endDate
