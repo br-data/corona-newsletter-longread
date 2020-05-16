@@ -99,10 +99,6 @@ export function weekTrend(data, threshold = 10) {
   const isDifferent = (currentWeekSum !== previousWeekSum);
   const isBigEnough = (currentWeekSum > threshold && previousWeekSum > threshold);
 
-  if (!isDifferent) {
-    console.log(data, currentWeekSum, previousWeekSum);
-  }
-
   let trend = isDifferent ? percentChange : 0;
   trend = isBigEnough ? trend : undefined;
 
