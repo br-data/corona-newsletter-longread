@@ -6,19 +6,22 @@ table {
   border-style: hidden;
 }
 
-td, th {
-  border: 1px solid $dark-grey;
-  text-align: left;
+td {
   padding: 0 .5em;
+  text-align: left;
   vertical-align: top;
+  border: 1px solid $dark-grey;
 }
 
 th {
-  font-weight: 600;
-  background-color: $blue-grey;
-  border-color: $white;
-  color: $white;
+  padding: .5em;
+  text-align: left;
   vertical-align: bottom;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $white;
+  background-color: $blue-grey;
+  border: 1px solid $white;
 }
 
 @include tablet {
