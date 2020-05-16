@@ -42,205 +42,233 @@ async function init() {
 
   const charts = [];
 
-  const bayernCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern`)
-    .then(response => response.json())
-    .catch(logError);
+  // Text for Bavaria
+  (async function () {
+    const bayernCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const bayernRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
-    .then(response => response.json())
-    .catch(logError);
+    const bayernRecoveriesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const bayernDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
-    .then(response => response.json())
-    .catch(logError);
+    const bayernDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
 
-  bayernIndicator.init({
-    target: '#bayern-indicator',
-    caseData: bayernCases,
-    recoveredData: bayernRecoveries,
-    deathData: bayernDeaths
-  });
+    const [bayernCases, bayernRecoveries, bayernDeaths] = await Promise.all([bayernCasesRequest, bayernRecoveriesRequest, bayernDeathsRequest]);
 
-  bayernText.init({
-    caseTarget: '#bayern-cases-text',
-    deathTarget: '#bayern-deaths-text',
-    caseData: bayernCases,
-    recoveredData: bayernRecoveries,
-    deathData: bayernDeaths,
-    metaData: bayernMeta
-  });
+    bayernIndicator.init({
+      target: '#bayern-indicator',
+      caseData: bayernCases,
+      recoveredData: bayernRecoveries,
+      deathData: bayernDeaths
+    });
 
-  const bayernCasesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern`)
-    .then(response => response.json())
-    .catch(logError);
+    bayernText.init({
+      caseTarget: '#bayern-cases-text',
+      deathTarget: '#bayern-deaths-text',
+      caseData: bayernCases,
+      recoveredData: bayernRecoveries,
+      deathData: bayernDeaths,
+      metaData: bayernMeta
+    });
+  })();
 
-  const bayernRecoveriesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
-    .then(response => response.json())
-    .catch(logError);
+  // Charts for Bavaria
+  (async function () {
+    const bayernCasesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const bayernDeathsRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
-    .then(response => response.json())
-    .catch(logError);
+    const bayernRecoveriesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const bayernAreaChart = new AreaChart({
-    target: '#bayern-line-chart',
-    caseData: bayernCasesRef,
-    recoveredData: bayernRecoveriesRef,
-    deathData: bayernDeathsRef,
-    meta: {
-      title: 'Corona in Bayern',
-      description: 'Entwicklung der wichtigsten Indikatoren',
-      author: 'BR',
-      source: 'Robert Koch-Institut',
-      date: endDate
-    }
-  });
+    const bayernDeathsRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
 
-  charts.push(bayernAreaChart);
+    const [bayernCasesRef, bayernRecoveriesRef, bayernDeathsRef] = await Promise.all([bayernCasesRefRequest, bayernRecoveriesRefRequest, bayernDeathsRefRequest]);
 
-  const bayernBarChart = new BarChart({
-    target: '#bayern-bar-chart',
-    data: bayernCasesRef,
-    meta: {
-      title: 'Neue Coronafälle in Bayern',
-      description: 'Gemeldete Neuinfektionen pro Tag',
-      author: 'BR',
-      source: 'Robert Koch-Institut',
-      date: endDate
-    }
-  });
+    const bayernAreaChart = new AreaChart({
+      target: '#bayern-line-chart',
+      caseData: bayernCasesRef,
+      recoveredData: bayernRecoveriesRef,
+      deathData: bayernDeathsRef,
+      meta: {
+        title: 'Corona in Bayern',
+        description: 'Entwicklung der wichtigsten Indikatoren',
+        author: 'BR',
+        source: 'Robert Koch-Institut',
+        date: endDate
+      }
+    });
 
-  charts.push(bayernBarChart);
+    charts.push(bayernAreaChart);
 
-  const bayernRegbezCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern`)
-    .then(response => response.json())
-    .catch(logError);
+    const bayernBarChart = new BarChart({
+      target: '#bayern-bar-chart',
+      data: bayernCasesRef,
+      meta: {
+        title: 'Neue Coronafälle in Bayern',
+        description: 'Gemeldete Neuinfektionen pro Tag',
+        author: 'BR',
+        source: 'Robert Koch-Institut',
+        date: endDate
+      }
+    });
 
-  const bayernRegbezDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
-    .then(response => response.json())
-    .catch(logError);
+    charts.push(bayernBarChart);
+  })();
 
-  bayernRegbezTable.init({
-    target: '#bayern-regbez-table',
-    caseData: bayernRegbezCases,
-    deathData: bayernRegbezDeaths,
-    metaData: bayernRegbezMeta
-  });
+  // Text for Bavarian administrative districts
+  (async function () {
+    const bayernRegbezCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern`)
+      .then(response => response.json())
+      .catch(logError);
 
-  bayernRegbezText.init({
-    target: '#bayern-regbez-text',
-    caseData: bayernRegbezCases,
-    deathData: bayernRegbezDeaths,
-    metaData: bayernRegbezMeta
-  });
+    const bayernRegbezDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
-    .then(response => response.json())
-    .catch(logError);
+    const [bayernRegbezCases, bayernRegbezDeaths] = await Promise.all([bayernRegbezCasesRequest, bayernRegbezDeathsRequest]);
 
-  const bayernLkrDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
-    .then(response => response.json())
-    .catch(logError);
+    bayernRegbezTable.init({
+      target: '#bayern-regbez-table',
+      caseData: bayernRegbezCases,
+      deathData: bayernRegbezDeaths,
+      metaData: bayernRegbezMeta
+    });
 
-  bayernLkrText.init({
-    target: '#bayern-lkr-text',
-    caseData: bayernLkrCases,
-    deathData: bayernLkrDeaths,
-    metaData: bayernLkrMeta,
-    metaDataDistricts: bayernRegbezMeta
-  });
+    bayernRegbezText.init({
+      target: '#bayern-regbez-text',
+      caseData: bayernRegbezCases,
+      deathData: bayernRegbezDeaths,
+      metaData: bayernRegbezMeta
+    });
+  })();
 
-  const deutschlandCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true`)
-    .then(response => response.json())
-    .catch(logError);
+  // Text for Bavarian counties
+  (async function () {
+    const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const deutschlandDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlTodesfall`)
-    .then(response => response.json())
-    .catch(logError);
+    bayernLkrText.init({
+      target: '#bayern-lkr-text',
+      caseData: bayernLkrCases,
+      metaData: bayernLkrMeta,
+      metaDataDistricts: bayernRegbezMeta
+    });
+  })();
 
-  const deutschlandRecoveries = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlGenesen`)
-    .then(response => response.json())
-    .catch(logError);
+  // Text for Germany
+  (async function () {
+    const deutschlandCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true`)
+      .then(response => response.json())
+      .catch(logError);
 
-  deutschlandIndicator.init({
-    target: '#deutschland-indicator',
-    caseData: deutschlandCases,
-    recoveredData: deutschlandRecoveries,
-    deathData: deutschlandDeaths
-  });
+    const deutschlandDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
 
-  deutschlandText.init({
-    caseTarget: '#deutschland-cases-text',
-    deathTarget: '#deutschland-deaths-text',
-    caseData: deutschlandCases,
-    recoveredData: deutschlandRecoveries,
-    deathData: deutschlandDeaths,
-    metaData: deutschlandMeta
-  });
+    const deutschlandRecoveriesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlGenesen`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const deutschlandCasesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
-    .then(response => response.json())
-    .catch(logError);
+    const [deutschlandCases, deutschlandDeaths, deutschlandRecoveries] = await Promise.all([deutschlandCasesRequest, deutschlandDeathsRequest, deutschlandRecoveriesRequest]);
 
-  const deutschlandDeathsRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlTodesfall`)
-    .then(response => response.json())
-    .catch(logError);
+    deutschlandIndicator.init({
+      target: '#deutschland-indicator',
+      caseData: deutschlandCases,
+      recoveredData: deutschlandRecoveries,
+      deathData: deutschlandDeaths
+    });
 
-  const deutschlandRecoveriesRef = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlGenesen`)
-    .then(response => response.json())
-    .catch(logError);
+    deutschlandText.init({
+      caseTarget: '#deutschland-cases-text',
+      deathTarget: '#deutschland-deaths-text',
+      caseData: deutschlandCases,
+      recoveredData: deutschlandRecoveries,
+      deathData: deutschlandDeaths,
+      metaData: deutschlandMeta
+    });
+  })();
 
-  const deutschlandAreaChart = new AreaChart({
-    target: '#deutschland-line-chart',
-    caseData: deutschlandCasesRef,
-    recoveredData: deutschlandRecoveriesRef,
-    deathData: deutschlandDeathsRef,
-    meta: {
-      title: 'Corona in Deutschland',
-      description: 'Entwicklung der wichtigsten Indikatoren',
-      author: 'BR',
-      source: 'Robert Koch-Institut',
-      date: endDate
-    }
-  });
+  // Charts for Germany
+  (async function () {
+    const deutschlandCasesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
+      .then(response => response.json())
+      .catch(logError);
 
-  charts.push(deutschlandAreaChart);
+    const deutschlandDeathsRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
 
-  const deutschlandBarChart = new BarChart({
-    target: '#deutschland-bar-chart',
-    data: deutschlandCasesRef,
-    meta: {
-      title: 'Neue Coronafälle in Deutschland',
-      description: 'Gemeldete Neuinfektionen pro Tag',
-      author: 'BR',
-      source: 'Robert Koch-Institut',
-      date: endDate
-    }
-  });
+    const deutschlandRecoveriesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlGenesen`)
+      .then(response => response.json())
+      .catch(logError);
 
-  charts.push(deutschlandBarChart);
+    const [deutschlandCasesRef, deutschlandDeathsRef, deutschlandRecoveriesRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandDeathsRefRequest, deutschlandRecoveriesRefRequest]);
 
-  const deutschlandBlCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland`)
-    .then(response => response.json())
-    .catch(logError);
+    const deutschlandAreaChart = new AreaChart({
+      target: '#deutschland-line-chart',
+      caseData: deutschlandCasesRef,
+      recoveredData: deutschlandRecoveriesRef,
+      deathData: deutschlandDeathsRef,
+      meta: {
+        title: 'Corona in Deutschland',
+        description: 'Entwicklung der wichtigsten Indikatoren',
+        author: 'BR',
+        source: 'Robert Koch-Institut',
+        date: endDate
+      }
+    });
 
-  const deutschlandBlDeaths = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&sumField=AnzahlTodesfall`)
-    .then(response => response.json())
-    .catch(logError);
+    charts.push(deutschlandAreaChart);
 
-  deutschlandBlText.init({
-    target: '#deutschland-bl-text',
-    caseData: deutschlandBlCases,
-    deathData: deutschlandBlDeaths,
-    metaData: deutschlandBlMeta
-  });
+    const deutschlandBarChart = new BarChart({
+      target: '#deutschland-bar-chart',
+      data: deutschlandCasesRef,
+      meta: {
+        title: 'Neue Coronafälle in Deutschland',
+        description: 'Gemeldete Neuinfektionen pro Tag',
+        author: 'BR',
+        source: 'Robert Koch-Institut',
+        date: endDate
+      }
+    });
 
-  deutschlandBlTable.init({
-    target: '#deutschland-bl-table',
-    caseData: deutschlandBlCases,
-    deathData: deutschlandBlDeaths,
-    metaData: deutschlandBlMeta
-  });
+    charts.push(deutschlandBarChart);
+  })();
+
+  // Text for German federal states
+  (async function () {
+    const deutschlandBlCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland`)
+      .then(response => response.json())
+      .catch(logError);
+
+    const deutschlandBlDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
+
+    const [deutschlandBlCases, deutschlandBlDeaths] = await Promise.all([deutschlandBlCasesRequest,deutschlandBlDeathsRequest]);
+
+    deutschlandBlText.init({
+      target: '#deutschland-bl-text',
+      caseData: deutschlandBlCases,
+      deathData: deutschlandBlDeaths,
+      metaData: deutschlandBlMeta
+    });
+
+    deutschlandBlTable.init({
+      target: '#deutschland-bl-table',
+      caseData: deutschlandBlCases,
+      deathData: deutschlandBlDeaths,
+      metaData: deutschlandBlMeta
+    });
+  })();
 
   resize(charts);
 }
