@@ -62,6 +62,8 @@ export function trendClassifier(value) {
     return 'angestiegen';
   } else if (value >= 50) {
     return 'stark angestiegen';
+  } else {
+    return 'nahezu gleich geblieben';
   }
 }
 
@@ -80,10 +82,12 @@ export function trendArrow(value) {
     return 'icono-arrow-right-up';
   } else if (value >= 50) {
     return 'icono-arrow-up';
+  } else {
+    return 'icono-arrow-undefined';
   }
 }
 
-export function weekTrend(data) {
+export function weekTrend(data, threshold = 10) {
   const currentWeek = data.slice(data.length-9, data.length-2);
   const previousWeek = data.slice(data.length-16, data.length-9);
 
@@ -92,7 +96,17 @@ export function weekTrend(data) {
 
   const percentChange = ((currentWeekSum - previousWeekSum) / previousWeekSum) * 100;
 
-  return isFinite(percentChange || 0) ? (percentChange || 0) : 0;
+  const isDifferent = (currentWeekSum !== previousWeekSum);
+  const isBigEnough = (currentWeekSum > threshold && previousWeekSum > threshold);
+
+  if (!isDifferent) {
+    console.log(data, currentWeekSum, previousWeekSum);
+  }
+
+  let trend = isDifferent ? percentChange : 0;
+  trend = isBigEnough ? trend : undefined;
+
+  return trend;
 }
 
 export function doublingTime(data) {

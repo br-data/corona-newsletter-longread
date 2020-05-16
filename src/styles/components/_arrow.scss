@@ -20,7 +20,7 @@
   border-left-color: transparent;
   margin: 8px 8px 8px 4px;
 
-  &:before{
+  &:before {
     right: 0;
     top: -2px;
     position: absolute;
@@ -29,6 +29,16 @@
     transform: rotate(-45deg);
     width: 8px;
     transform-origin: right top;
+  }
+
+  &[class*="-undefined"] {
+    transform: rotate(45deg);
+    color: transparent;
+    margin: 8px 6px 8px 6px;
+
+    &:before {
+      color: $medium-grey;
+    }
   }
 
   &[class*="-right"] {
