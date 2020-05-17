@@ -1,3 +1,5 @@
 .chart {
-  margin-bottom: 1.5em;
+  > img, > svg {
+    display: block;
+  }
 }
