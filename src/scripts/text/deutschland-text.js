@@ -23,7 +23,7 @@ export function init(config) {
 
   Die <a href="#reproduktionszahl">Reproduktionszahl</a> für Deutschland liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, die bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl in einem Bereich von ${pretty(lowerReproValue, 'floor', 100)} bis ${pretty(upperReproValue, 'ceil', 100)}.<br><br>
 
-  Das Robert Koch-Institut schätzt, dass mittlerweile mindestens ${pretty(currentCount(recoveredData))} Menschen wieder gesund sind.`;
+  Das Robert Koch-Institut schätzt, dass mittlerweile mindestens ${pretty(currentCount(recoveredData))} Menschen wieder <a href="#genesungen">gesund</a> sind.`;
 
   const deathText = `Bisher wurden insgesamt ${pretty(currentCount(deathData))} <a href="#todesfaelle">Todesfälle</a> in Deutschland gemeldet.
 

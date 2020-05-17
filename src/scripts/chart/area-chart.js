@@ -80,8 +80,8 @@ export default class AreaChart {
     const yMax = max(caseData, d => d.sumValue);
 
     const x = scaleBand()
-      .padding(0.2)
-      .align(0.9)
+      .padding(0.3)
+      .align(0.5)
       .domain(caseData.map(d => d.date))
       .rangeRound([0, innerWidth]);
 
@@ -96,7 +96,6 @@ export default class AreaChart {
     context.textBaseline = 'top';
     xTicks.forEach(d => {
       context.fillStyle = '#ffffff';
-      context.textAlign = 'right';
       context.fillText(germanDateShort(d), x(d) + x.bandwidth() / 2, innerHeight + 5);
     });
 

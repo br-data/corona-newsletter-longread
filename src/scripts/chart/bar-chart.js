@@ -76,7 +76,7 @@ export default class BarChart {
 
     const x = scaleBand()
       .padding(0.3)
-      .align(0.75)
+      .align(0.5)
       .domain(data.map(d => d.date))
       .rangeRound([0, innerWidth]);
 
@@ -91,7 +91,6 @@ export default class BarChart {
     context.textBaseline = 'top';
     xTicks.forEach(d => {
       context.fillStyle = '#ffffff';
-      context.textAlign = 'center';
       context.fillText(germanDateShort(d), x(d) + x.bandwidth() / 2, innerHeight + 5);
     });
 
