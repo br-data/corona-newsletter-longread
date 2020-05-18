@@ -17,7 +17,7 @@ export function init(config) {
 
   const over50Counties = worstCounties.filter(d => d.casesPer100Tsd7Days >= 50);
 
-  const text = `In Bayern gibt es momentan ${numeral(over50Counties.length)} ${plural1(over50Counties.length)} ${plural2(over50Counties.length)} auf über 50 gemeldete Fälle pro 100.000 Einwohnern in den letzten sieben Tagen ${plural3(over50Counties.length)}.
+  const text = `In Bayern gibt es momentan ${numeral(over50Counties.length)} ${plural1(over50Counties.length)}, ${plural2(over50Counties.length)} auf über 50 gemeldete Fälle pro 100.000 Einwohnern in den letzten sieben Tagen ${plural3(over50Counties.length)}.
 
   Die drei am stärksten betroffenen Kreise sind ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name}, ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} und ${preposition1(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name}.
 
