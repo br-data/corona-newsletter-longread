@@ -1,6 +1,13 @@
 # Corona-Newsletter
 
-- **Demo:** <https://ddj.br.de/corona-newsletter>
+Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als tagesaktueller, automatisch generierter Newsletter. Alle Texte, Grafiken und Tabellen werden aus den tagesaktuellen Daten des Robert Koch-Instituts erzeugt.
+
+- **Webseite:** <https://ddj.br.de/corona-newsletter>
+- **Newsletter:** <https://storage.googleapis.com/corona-newsletter/index.html>
+
+Die Daten werden von unserem eigenen [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Die Webseite wird über [Jenkins](https://github.com/br-data/corona-newsletter-longread/blob/master/Jenkinsfile) automatisch gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
+
+<img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="600px">
 
 ## Verwendung
 
@@ -11,15 +18,135 @@
 
 Um die Module installieren und die Entwicklerwerkzeuge nutzen zu können, muss vorher die JavaScript-Runtime [Node.js](https://nodejs.org/en/download/) installiert werden. Informationen für Entwickler finden sich weiter [unten](#user-content-entwickeln).
 
-## Daten
-
 ## Spezielle Elemente
 
-### Text (Custom)
+Die Webseite baut auf einer vereinfachten Version des [Webpack-Longread-Templates](https://github.com/br-data/webpack-longread-template) auf und erweitert dieses um einige projektspezifische Komponenten.
 
-### Tabellen (Custom)
+### Hilfsfunktionen
 
-### Diagramme (Custom)
+Die wichtigsten Funktionen, um zum Beispiel den Zwei-Wochen-Trend oder die Reproduktionszahl zu berechnen, befinden sich `src/scripts/utils.js`. Die Funktionen können an beliebiger stell importiert und verwendet werden.
+
+Hier ein Beispiel zur Berechnung der Reproduktionszahl und des dazugehörigen Konfidenzintervals:
+
+```javascript
+import { reproNumber, confidence, sma } from '../utils';
+
+const { caseData } = config;
+const reproData = reproNumber(sma(caseData));
+const reproValue = reproData[reproData.length - 2].value;
+const confidenceInterval = confidence(reproData, '95');
+
+console.log(reproValue, confidenceInterval);
+```
+
+### Text-Generator
+
+Die Text-Generatoren in `src/scripts/text/` erzeugen Text für einen oder mehrere Bereiche der Webseite, welche über ihre jeweilige ID ausgewählt werden. Ein Textgerator bekommt einen oder mehrere Datensätze, aus denen der Text erzeugt wird.
+
+Hier ein Beispiel für einen einfachen Text-Generator:
+
+```javascript
+export function init(config) {
+  import { pretty, currentCount } from '../utils';
+  const { target, caseData } = config;
+
+  const text = `Zuletzt wurden ${pretty(currentCount(caseData))} Fälle in Deutschland gemeldet`;
+
+  const textElement = document.querySelector(target);
+  textElement.textContent = text;
+}
+```
+
+Die Funktion würde in der `src/index.js` dann folgendermaßen importiert und verwendet werden:
+
+```javascript
+import * as textGenerator from './text/text-generator';
+
+textGenerator.init({
+  target: '#my-text-element',
+  caseData: [{ value: 10 }, { value: 20 }, { value: 30 }]
+});
+```
+
+### Tabellen-Generator
+
+Die Tabellen-Generatoren in `src/scripts/table/` erzeugen HTML-Tabellen aus den übergeben Daten.
+
+Im einfachsten Fall wir dafür einfach ein Objekt-Array mit der Funktion `json2table` in HTML umgewandelt. Natürlich können vorher noch verschiedene Aggregationen und Berechnungen durchgeführt werden.
+
+```javascript
+import { json2table } from '../utils';
+
+export function init(config) {
+  const { target, caseData } = config;
+
+  const tableHtml = json2table(caseData);
+  const parentElement = document.querySelector(target);
+  parentElement.innerHTML = tableHtml;
+}
+```
+
+Die Funktion würde in der `src/index.js` dann folgendermaßen importiert und verwendet werden:
+
+```javascript
+import * as tableGenerator from './table/table-generator';
+
+tableGenerator.init({
+  target: '#my-table-element',
+  caseData: [{ name: 'A', value: 10 }, { name: 'B', value: 20 }, { name: 'C', value: 30 }],
+});
+```
+
+Der Tabellen-Generator verwenden das responsive Design des Standardelements „Tabelle“ (siehe unten). Das Design der Kacheln kann in `src/styles/components/_table.scss` angepasst werden.
+
+### Diagramme (Canvas)
+
+Es stehen drei verschieden Diagrammtypen in `src/scripts/table/` zur Verfügung:
+
+- Liniendiagramm: `line-chart.js`
+- Säulendiagramm: `bar-chart.js`
+- Flächendiagramm: `area-chart.js`
+
+Die Initialisierung funktioniert für alle Diagramme gleich:
+
+```javascript
+import AreaChart from './chart/area-chart';
+
+const bayernAreaChart = new AreaChart({
+  target: '#my-chart-element',
+  caseData: caseData,
+  recoveredData: recoveredData,
+  deathData: deathData,
+  meta: {
+    title: 'Title des Diagramms',
+    description: 'Beschreibung des Diagramms',
+    author: 'Author',
+    source: 'Quelle',
+    date: 'Datenstand'
+  }
+});
+```
+
+Alle Diagramme verwenden [D3.js](https://d3js.org/), um ein [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)-Element zu zeichnen. Das Canvas-Element wird, wenn es fertig gezeichnet wurde, mit `canvas.toDataURL()` in einen Base64-String (PNG) umgewandelt. Das ermöglicht später, die dynamisch erzeugten Grafiken in statisches HTML umzuwandeln.
+
+### Indikatoren
+
+Die Indikatoren-Kacheln in `src/scripts/indicator/` bieten einen einfachen, dashboardartigen Überblick der wichtigsten Zahlen. Dazu erzeugt werden vier responsive `<div class="box">` Elemente erzeugt.
+
+Verwendung:
+
+```javascript
+import * as indicator from './indicator/indicator';
+
+indicator.init({
+  target: '#my-indicator-element',
+  caseData: caseData,
+  recoveredData: recoveredData,
+  deathData: deathData
+});
+```
+
+Das Design der Kacheln kann in `src/styles/components/_indicator.scss` angepasst werden.
 
 ## Standardelemente
 
