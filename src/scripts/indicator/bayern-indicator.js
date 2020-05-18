@@ -10,7 +10,7 @@ export function init(config) {
     </div>
     <div class="box">
       <strong><span class="${trendArrow(weekTrend(caseData))}"></span> ${pretty(weekTrend(caseData))} %</strong><br>
-      neue Fälle seit vorletzter Woche
+      neue Fälle im Vergleich zur Vorwoche
     </div>
     <div class="box">
       <span class="green"><strong>${pretty(currentCount(recoveredData))}</strong> (+${pretty(currentIncrease(recoveredData))})</span><br>
