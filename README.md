@@ -1,13 +1,9 @@
 # Corona-Newsletter
 
-Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als tagesaktueller, automatisch generierter Newsletter. Alle Texte, Grafiken und Tabellen werden aus den tagesaktuellen Daten des Robert Koch-Instituts erzeugt.
+Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als täglicher, automatisch generierter Newsletter. Alle Texte, Grafiken und Tabellen werden aus den jeweils aktuellsten Daten des [Robert Koch-Instituts](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/) erzeugt.
 
-- **Webseite:** <https://ddj.br.de/corona-newsletter>
+- **Webseite:** <https://ddj.br.de/corona-newsletter> (passwortgeschützt)
 - **Newsletter:** <https://storage.googleapis.com/corona-newsletter/index.html>
-
-Die Daten werden von unserem eigenen [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Das dynamische Newsletter-HTML wird über [Jenkins](https://github.com/br-data/corona-newsletter-longread/blob/master/Jenkinsfile) gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
-
-<img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="600px">
 
 ## Verwendung
 
@@ -17,6 +13,12 @@ Die Daten werden von unserem eigenen [RKI-API-Wrapper](https://github.com/br-dat
 4. Projekt bauen mit `npm run build`
 
 Um die Module installieren und die Entwicklerwerkzeuge nutzen zu können, muss vorher die JavaScript-Runtime [Node.js](https://nodejs.org/en/download/) installiert werden. Informationen für Entwickler finden sich weiter [unten](#user-content-entwickeln).
+
+## Architektur
+
+Die Daten werden vom [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Der [Newsletter](https://github.com/br-data/corona-newsletter-longread) wird über [Jenkins](https://github.com/br-data/corona-newsletter-longread/blob/master/Jenkinsfile) gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
+
+<img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="600px">
 
 ## Spezielle Elemente
 
