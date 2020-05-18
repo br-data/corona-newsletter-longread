@@ -5,7 +5,7 @@ Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als tagesak
 - **Webseite:** <https://ddj.br.de/corona-newsletter>
 - **Newsletter:** <https://storage.googleapis.com/corona-newsletter/index.html>
 
-Die Daten werden von unserem eigenen [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Die Webseite wird über [Jenkins](https://github.com/br-data/corona-newsletter-longread/blob/master/Jenkinsfile) automatisch gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
+Die Daten werden von unserem eigenen [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Das dynamische Newsletter-HTML wird über [Jenkins](https://github.com/br-data/corona-newsletter-longread/blob/master/Jenkinsfile) gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
 
 <img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="600px">
 
