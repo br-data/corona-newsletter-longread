@@ -259,45 +259,49 @@
   <!-- AT Internet -->
   <script id="ati" src="https://tag.aticdn.net/596277/smarttag.js"></script>
   <script>
-    var referrer = (function () {
-      return typeof window != 'undefined' ? window.document.referrer : null;
-    })();
-    var tag = new ATInternet.Tracker.Tag({
-      secure: true,
-      cookieSecure: true,
-      ignoreEmptyChapterValue: true
-    });
-    tag.page.set({
-      name: 'corona-newsletter',
-      chapter1: null,
-      chapter2: null,
-      level2: 19
-    });
-    tag.customVars.set({
-      site: {
-        1: '[BR24]',
-        2: '[ohne Wellenbezug]',
-        5: '[keine Sendereihe]',
-        6: '[Artikel]',
-        7: '[corona-newsletter]',
-        8: '[Corona-Newsletter]',
-        10: 20200525,
-        11: '[https://web.br.de/interaktiv/longread-webpack/]',
-        12: '[corona-newsletter]',
-        13: referrer ? ('[' + referrer + ']') : null,
-        14: '[Web]'
-      }
-    });
-    tag.dispatch();
+    if (ATInternet) {
+      var referrer = (function () {
+        return typeof window != 'undefined' ? window.document.referrer : null;
+      })();
+      var tag = new ATInternet.Tracker.Tag({
+        secure: true,
+        cookieSecure: true,
+        ignoreEmptyChapterValue: true
+      });
+      tag.page.set({
+        name: 'corona-newsletter',
+        chapter1: null,
+        chapter2: null,
+        level2: 19
+      });
+      tag.customVars.set({
+        site: {
+          1: '[BR24]',
+          2: '[ohne Wellenbezug]',
+          5: '[keine Sendereihe]',
+          6: '[Artikel]',
+          7: '[corona-newsletter]',
+          8: '[Corona-Newsletter]',
+          10: 20200525,
+          11: '[https://web.br.de/interaktiv/longread-webpack/]',
+          12: '[corona-newsletter]',
+          13: referrer ? ('[' + referrer + ']') : null,
+          14: '[Web]'
+        }
+      });
+      tag.dispatch();
+    }
   </script>
 
   <!-- IVW -->
   <script id="iam" src="https://script.ioam.de/iam.js"></script>
   <script type="text/javascript">
-    iom.c({
-      'st': 'bronline',
-      'cp': 'br_online\/nachrichten\/'
-    }, 1);
+    if (iom) {
+      iom.c({
+        'st': 'bronline',
+        'cp': 'br_online\/nachrichten\/'
+      }, 1);
+    }
   </script>
 </body>
 </html>
