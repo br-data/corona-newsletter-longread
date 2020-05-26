@@ -18,7 +18,7 @@ Um die Module installieren und die Entwicklerwerkzeuge nutzen zu können, muss v
 
 Die Daten werden vom [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Der [Newsletter](https://github.com/br-data/corona-newsletter-longread) wird über [Jenkins](https://github.com/br-data/corona-newsletter-longread/blob/master/Jenkinsfile) gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
 
-<img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="600px">
+<img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="700px">
 
 ## Spezielle Elemente
 
