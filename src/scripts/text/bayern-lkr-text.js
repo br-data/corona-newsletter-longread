@@ -18,7 +18,7 @@ export function init(config) {
   const over50Counties = worstCounties.filter(d => d.casesPer100Tsd7Days >= 50);
   const over35Counties = worstCounties.filter(d => d.casesPer100Tsd7Days >= 35);
 
-  const text = `In Bayern gibt es momentan ${numeral(over35Counties.length)} ${plural1(over35Counties.length)}, ${plural2(over35Counties.length)} auf über 35 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over35Counties.length)}. ${ over50Counties.length ? 'Davon wiederum kommen ' + numeral(over50Counties.length) + ' ' + plural1(over50Counties.length) + ' auf mehr als 50 Fälle pro 100.000 Einwohner.' : ''}
+  const text = `In Bayern gibt es momentan ${numeral(over35Counties.length)} ${plural1(over35Counties.length)}, ${plural2(over35Counties.length)} auf über 35 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over35Counties.length)}. ${ over50Counties.length ? 'Davon wiederum ' + plural3(over50Counties.length) + ' ' + numeral(over50Counties.length) + ' ' + plural1(over50Counties.length) + ' auf mehr als 50 Fälle pro 100.000 Einwohner.' : ''}
 
   Die drei am stärksten betroffenen Kreise sind zur Zeit ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name}, ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} und ${preposition1(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name}.
 
