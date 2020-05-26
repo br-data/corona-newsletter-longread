@@ -1,6 +1,12 @@
 // Related articles
 .related {
 
+  .uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.25em;
+  }
+
   a {
     display: flex;
     flex-wrap: nowrap;
