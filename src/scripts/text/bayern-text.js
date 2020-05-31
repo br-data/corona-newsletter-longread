@@ -26,11 +26,11 @@ export function init(config) {
 
   const deathText = `Insgesamt wurden ${pretty(currentCount(deathData))} <a href="#todesfaelle">Todesfälle</a> im Freistaat gemeldet.
 
-  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : '.' }
+  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : 'Im Vergleich zum Vortag gab es keine neuen Todesfälle.' }
 
-  Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (<span class="${trendArrow(weekTrend(deathData))}"></span>${pretty(weekTrend(deathData))} %).
+  Langfristig gibt es einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (<span class="${trendArrow(weekTrend(deathData))}"></span>${pretty(weekTrend(deathData) || 0)} %).
 
-  Trotzdem ist Bayern weiterhin das Bundesland mit den meisten gemeldeten Corona-Todesfällen.`;
+  Trotzdem ist Bayern weiterhin das Bundesland mit den meisten gemeldeten Corona-Todesfällen insgesamt.`;
 
   const caseElement = document.querySelector(caseTarget);
   caseElement.innerHTML = caseText;
@@ -46,6 +46,8 @@ function positiveNegative(value) {
     return 'neutralen';
   } else if (value > 0) {
     return 'negativen';
+  } else if (value === undefined) {
+    return 'positiven';
   }
 }
 

@@ -27,7 +27,7 @@ export function init(config) {
 
   const deathText = `Bisher wurden insgesamt ${pretty(currentCount(deathData))} <a href="#todesfaelle">Todesfälle</a> in Deutschland gemeldet.
 
-  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : '.' }
+  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : 'Im Vergleich zum Vortag gab es keine neuen Todesfälle.' }
 
   Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (<span class="${trendArrow(weekTrend(deathData))}"></span>${pretty(weekTrend(deathData))} %).`;
 
@@ -45,6 +45,8 @@ function positiveNegative(value) {
     return 'neutralen';
   } else if (value > 0) {
     return 'negativen';
+  } else if (value === undefined) {
+    return 'positiven';
   }
 }
 
