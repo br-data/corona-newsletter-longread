@@ -3,7 +3,7 @@ export function currentCount(data) {
 }
 
 export function currentIncrease(data) {
-  return data[data.length-1].sumNewCases;
+  return data[data.length-1].sumNewCases || 0;
 }
 
 export function currentDate(data) {
