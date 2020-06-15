@@ -75,7 +75,7 @@ function plural2(number) {
 function plural3(number) {
   switch (number) {
     case 0: return 'kommt';
-    case 1: return  'kommen';
+    case 1: return  'kommt';
     default: return 'kommen';
   }
 }
