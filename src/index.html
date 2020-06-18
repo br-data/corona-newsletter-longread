@@ -261,7 +261,7 @@
   <!-- AT Internet -->
   <script id="ati" src="https://tag.aticdn.net/596277/smarttag.js"></script>
   <script>
-    if (ATInternet) {
+    if (typeof ATInternet !== 'undefined') {
       var referrer = (function () {
         return typeof window != 'undefined' ? window.document.referrer : null;
       })();
@@ -298,7 +298,7 @@
   <!-- IVW -->
   <script id="iam" src="https://script.ioam.de/iam.js"></script>
   <script type="text/javascript">
-    if (iom) {
+    if (typeof iom !== 'undefined') {
       iom.c({
         'st': 'bronline',
         'cp': 'br_online\/nachrichten\/'
