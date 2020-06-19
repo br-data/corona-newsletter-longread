@@ -14,7 +14,7 @@ export function init(config) {
     </div>
     <div class="box">
       <span class="green"><strong>${pretty(currentCount(recoveredData))}</strong> (+${pretty(currentIncrease(recoveredData))})</span><br>
-      geschätze Genesungen
+      geschätzte Genesungen
     </div>
     <div class="box">
       <span class="yellow"><strong>${pretty(currentCount(deathData))}</strong> (+${pretty(currentIncrease(deathData))})</span><br>
