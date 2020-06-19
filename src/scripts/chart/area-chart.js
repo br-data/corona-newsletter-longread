@@ -13,12 +13,6 @@ const defaults = {
 export default class AreaChart {
 
   constructor(config) {
-    config.recoveredData = config.recoveredData.map((d, i) => {
-      return Object.assign({}, d, {
-        sumValue: d.sumValue + config.deathData[i].sumValue
-      });
-    });
-
     this.set(config);
     this.draw();
   }
@@ -28,7 +22,7 @@ export default class AreaChart {
   }
 
   draw() {
-    const { target, caseData, recoveredData, deathData, meta, margin } = this;
+    const { target, data, meta, margin } = this;
     const container = select(target);
     const ratio = getRetinaRatio();
 
@@ -74,22 +68,22 @@ export default class AreaChart {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
-    const xMax = max(caseData, d => new Date(d.date));
-    const xMin = min(caseData, d => new Date(d.date));
+    const xMax = max(data, d => new Date(d.date));
+    const xMin = min(data, d => new Date(d.date));
     xMin.setDate(xMin.getDate() - 2);
-    const yMax = max(caseData, d => d.sumValue);
+    const yMax = max(data, d => d.sumValue);
 
     const x = scaleBand()
       .padding(0.3)
       .align(0.5)
-      .domain(caseData.map(d => d.date))
+      .domain(data.map(d => d.date))
       .rangeRound([0, innerWidth]);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
       .range([innerHeight, 0]);
 
-    const xTicks = dateRange(xMin, xMax, Math.floor(caseData.length / 6));
+    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
 
     // Draw x axis
     context.textAlign = 'center';
@@ -115,27 +109,40 @@ export default class AreaChart {
       context.fillStyle = '#ffffff';
       context.fillText(pretty(d), 0, y(d) - 2);
     });
-
-    // Draw areas
-    const areaConstructor = area()
+    
+    const recoveredCasesArea = area()
       .x(d => x(d.date))
-      .y0(y(0))
-      .y1(d => y(d.sumValue))
+      .y0(d => y(d.currentlyInfected + d.deathSum))
+      .y1(d => y(d.currentlyRecovered + d.currentlyInfected + d.deathSum))
       .curve(curveMonotoneX)
       .context(context);
-
+      
     context.beginPath();
-    areaConstructor(caseData);
-    context.fillStyle = '#0b9fd8';
-    context.fill();
-
-    context.beginPath();
-    areaConstructor(recoveredData);
+    recoveredCasesArea(data);
     context.fillStyle = '#3ad29f';
     context.fill();
 
+    const activeCasesArea = area()
+      .x(d => x(d.date))
+      .y0(d => y(d.deathSum) + 1)
+      .y1(d => y(d.currentlyInfected + d.deathSum) - 1)
+      .curve(curveMonotoneX)
+      .context(context);
+      
     context.beginPath();
-    areaConstructor(deathData);
+    activeCasesArea(data);
+    context.fillStyle = '#0b9fd8';
+    context.fill();
+
+    const deathsArea = area()
+      .x(d => x(d.date))
+      .y0(y(0))
+      .y1(d => y(d.deathSum))
+      .curve(curveMonotoneX)
+      .context(context);
+      
+    context.beginPath();
+    deathsArea(data);
     context.fillStyle = '#fbb800';
     context.fill();
 
@@ -154,7 +161,7 @@ export default class AreaChart {
     context.fillText(meta.description, 0, -margin.top + 50);
 
     // Add key
-    const spacing = 120;
+    const spacing = 105;
 
     context.beginPath();
     context.rect((0 * spacing), -margin.top + 85, 11, 11);
@@ -165,7 +172,7 @@ export default class AreaChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#ffffff';
-    context.fillText('Infektionen', (0 * spacing) + 18, -margin.top + 85);
+    context.fillText('Erkrankte', (0 * spacing) + 18, -margin.top + 85);
 
     context.beginPath();
     context.rect((1 * spacing), -margin.top + 85, 11, 11);
@@ -176,7 +183,7 @@ export default class AreaChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#ffffff';
-    context.fillText('Genesungen', (1 * spacing) + 18, -margin.top + 85);
+    context.fillText('Genesene', (1 * spacing) + 18, -margin.top + 85);
 
     context.beginPath();
     context.rect((2 * spacing), -margin.top + 85, 11, 11);
@@ -194,7 +201,7 @@ export default class AreaChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
-    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
+    context.fillText(`Grafik: ${meta.author}, Daten: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
 
     // Scale canvas by pixel density
     context.scale(1, 1);
