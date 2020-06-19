@@ -172,7 +172,7 @@ export default class LineChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
-    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
+    context.fillText(`Grafik: ${meta.author}, Daten: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
 
     // Scale canvas by pixel density
     context.scale(1, 1);

@@ -156,12 +156,12 @@ export default class BarChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#ffffff';
-    context.fillText('Infektionen', 18, -margin.top + 85);
+    context.fillText('Neuinfektionen', 18, -margin.top + 85);
 
     context.setLineDash([5, 5]);
     context.beginPath();
-    context.moveTo(120, -margin.top + 91);
-    context.lineTo(150, -margin.top + 91);
+    context.moveTo(145, -margin.top + 91);
+    context.lineTo(175, -margin.top + 91);
     context.lineCap = 'round';
     context.lineWidth = 3;
     context.stroke();
@@ -170,14 +170,14 @@ export default class BarChart {
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#ffffff';
-    context.fillText('Mittelwert', 155, -margin.top + 85);
+    context.fillText('7-Tage-Mittelwert', 180, -margin.top + 85);
 
     // Add author and source
     context.font = '300 14px "Open Sans", OpenSans, Arial';
     context.textAlign = 'left';
     context.textBaseline = 'top';
     context.fillStyle = '#9fa3b3';
-    context.fillText(`Grafik: ${meta.author}, Quelle: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
+    context.fillText(`Grafik: ${meta.author}, Daten: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
 
     // Scale canvas by pixel density
     context.scale(1, 1);
