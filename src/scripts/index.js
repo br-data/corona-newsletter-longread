@@ -81,26 +81,20 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const bayernRecoveriesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+    const bayernCurrentRefRequest = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&currentCases=true`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernDeathsRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
-      .then(response => response.json())
-      .catch(logError);
-
-    const [bayernCasesRef, bayernRecoveriesRef, bayernDeathsRef] = await Promise.all([bayernCasesRefRequest, bayernRecoveriesRefRequest, bayernDeathsRefRequest]);
+    const [bayernCasesRef, bayernCurrentRef] = await Promise.all([bayernCasesRefRequest, bayernCurrentRefRequest]);
 
     const bayernAreaChart = new AreaChart({
       target: '#bayern-line-chart',
-      caseData: bayernCasesRef,
-      recoveredData: bayernRecoveriesRef,
-      deathData: bayernDeathsRef,
+      data: bayernCurrentRef,
       meta: {
         title: 'Corona in Bayern',
-        description: 'Entwicklung der wichtigsten Indikatoren',
+        description: 'Entwicklung der wichtigsten Indikatoren pro Tag nach Referenzdatum',
         author: 'BR',
-        source: 'Robert Koch-Institut',
+        source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
       }
     });
@@ -112,9 +106,9 @@ async function init() {
       data: bayernCasesRef,
       meta: {
         title: 'Neue Coronafälle in Bayern',
-        description: 'Gemeldete Neuinfektionen pro Tag',
+        description: 'Entwicklung der Neuinfektionen pro Tag nach Referenzdatum',
         author: 'BR',
-        source: 'Robert Koch-Institut',
+        source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
       }
     });
@@ -201,27 +195,21 @@ async function init() {
     const deutschlandCasesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
       .then(response => response.json())
       .catch(logError);
-
-    const deutschlandDeathsRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlTodesfall`)
+      
+    const deutschlandCurrentRefRequest = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&currentCases=true`)
       .then(response => response.json())
       .catch(logError);
-
-    const deutschlandRecoveriesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&sumField=AnzahlGenesen`)
-      .then(response => response.json())
-      .catch(logError);
-
-    const [deutschlandCasesRef, deutschlandDeathsRef, deutschlandRecoveriesRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandDeathsRefRequest, deutschlandRecoveriesRefRequest]);
+      
+    const [deutschlandCasesRef, deutschlandCurrentRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandCurrentRefRequest]);
 
     const deutschlandAreaChart = new AreaChart({
       target: '#deutschland-line-chart',
-      caseData: deutschlandCasesRef,
-      recoveredData: deutschlandRecoveriesRef,
-      deathData: deutschlandDeathsRef,
+      data: deutschlandCurrentRef,
       meta: {
         title: 'Corona in Deutschland',
-        description: 'Entwicklung der wichtigsten Indikatoren',
+        description: 'Entwicklung der wichtigsten Indikatoren pro Tag nach Referenzdatum',
         author: 'BR',
-        source: 'Robert Koch-Institut',
+        source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
       }
     });
@@ -233,9 +221,9 @@ async function init() {
       data: deutschlandCasesRef,
       meta: {
         title: 'Neue Coronafälle in Deutschland',
-        description: 'Gemeldete Neuinfektionen pro Tag',
+        description: 'Entwicklung der Neuinfektionen pro Tag nach Referenzdatum',
         author: 'BR',
-        source: 'Robert Koch-Institut',
+        source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
       }
     });
