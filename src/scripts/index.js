@@ -92,7 +92,7 @@ async function init() {
       data: bayernCurrentRef,
       meta: {
         title: 'Corona in Bayern',
-        description: 'Entwicklung der wichtigsten Indikatoren pro Tag nach Referenzdatum',
+        description: 'Entwicklung der wichtigsten Indikatoren nach Erkrankungsdatum',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
@@ -106,7 +106,7 @@ async function init() {
       data: bayernCasesRef,
       meta: {
         title: 'Neue Coronafälle in Bayern',
-        description: 'Entwicklung der Neuinfektionen pro Tag nach Referenzdatum',
+        description: 'Entwicklung der Neuinfektionen nach Erkrankungsdatum',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
@@ -195,11 +195,11 @@ async function init() {
     const deutschlandCasesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
       .then(response => response.json())
       .catch(logError);
-      
+
     const deutschlandCurrentRefRequest = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&currentCases=true`)
       .then(response => response.json())
       .catch(logError);
-      
+
     const [deutschlandCasesRef, deutschlandCurrentRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandCurrentRefRequest]);
 
     const deutschlandAreaChart = new AreaChart({
@@ -207,7 +207,7 @@ async function init() {
       data: deutschlandCurrentRef,
       meta: {
         title: 'Corona in Deutschland',
-        description: 'Entwicklung der wichtigsten Indikatoren pro Tag nach Referenzdatum',
+        description: 'Entwicklung der wichtigsten Indikatoren nach Erkrankungsdatum',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
@@ -221,7 +221,7 @@ async function init() {
       data: deutschlandCasesRef,
       meta: {
         title: 'Neue Coronafälle in Deutschland',
-        description: 'Entwicklung der Neuinfektionen pro Tag nach Referenzdatum',
+        description: 'Entwicklung der Neuinfektionen nach Erkrankungsdatum',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate

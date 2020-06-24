@@ -85,8 +85,6 @@ export default class AreaChart {
       .range([innerHeight, 0]);
 
     const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
-    console.log(xTicks);
-    console.log(data.map(d => d.date));
 
     // Draw x axis
     context.textAlign = 'center';
