@@ -74,7 +74,8 @@ export default class AreaChart {
     const yMax = max(data, d => d.sumValue);
 
     const x = scaleBand()
-      .padding(0.3)
+      .paddingOuter(0.1)
+      .paddingInner(0.4)
       .align(0.5)
       .domain(data.map(d => d.date))
       .rangeRound([0, innerWidth]);
@@ -84,6 +85,8 @@ export default class AreaChart {
       .range([innerHeight, 0]);
 
     const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
+    console.log(xTicks);
+    console.log(data.map(d => d.date));
 
     // Draw x axis
     context.textAlign = 'center';
@@ -109,14 +112,14 @@ export default class AreaChart {
       context.fillStyle = '#ffffff';
       context.fillText(pretty(d), 0, y(d) - 2);
     });
-    
+
     const recoveredCasesArea = area()
       .x(d => x(d.date))
       .y0(d => y(d.currentlyInfected + d.deathSum))
       .y1(d => y(d.currentlyRecovered + d.currentlyInfected + d.deathSum))
       .curve(curveMonotoneX)
       .context(context);
-      
+
     context.beginPath();
     recoveredCasesArea(data);
     context.fillStyle = '#3ad29f';
@@ -128,7 +131,7 @@ export default class AreaChart {
       .y1(d => y(d.currentlyInfected + d.deathSum) - 1)
       .curve(curveMonotoneX)
       .context(context);
-      
+
     context.beginPath();
     activeCasesArea(data);
     context.fillStyle = '#0b9fd8';
@@ -140,7 +143,7 @@ export default class AreaChart {
       .y1(d => y(d.deathSum))
       .curve(curveMonotoneX)
       .context(context);
-      
+
     context.beginPath();
     deathsArea(data);
     context.fillStyle = '#fbb800';

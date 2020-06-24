@@ -74,7 +74,8 @@ export default class LineChart {
     const yMax = max(data, d => d.sumValue);
 
     const x = scaleBand()
-      .padding(0.2)
+      .paddingOuter(0.1)
+      .paddingInner(0.4)
       .align(0.9)
       .domain(data.map(d => d.date))
       .rangeRound([0, innerWidth]);
