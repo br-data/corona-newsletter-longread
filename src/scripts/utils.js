@@ -164,10 +164,12 @@ export function stdDev(data, key = 'value') {
   return Math.sqrt(squareDiffsAvg);
 }
 
-export function pretty(number, method = 'round', factor = 10) {
+export function pretty(number, prefix = false, method = 'round', factor = 10) {
   const string = (Math[method](number * factor) / factor).toString().split('.');
+  const prettyString = string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
+  const prefixedString = (prefix && number > 0) ? `+${prettyString}` : prettyString;
 
-  return string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
+  return prefixedString;
 }
 
 export function json2table(json) {

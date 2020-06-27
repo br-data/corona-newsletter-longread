@@ -10,9 +10,9 @@ export function init(config) {
     return {
       'value': casesPer100Tsd7Days(districtCases, districtMeta.pop),
       'Regierungsbezirk': districtMeta.name,
-      'Fälle pro 100.000 <br>Einwohner (7 Tage)': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty(weekTrend(districtCases) || 0)} %"></span>${pretty(casesPer100Tsd7Days(districtCases, districtMeta.pop))}`,
-      'Fälle': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty(weekTrend(districtCases) || 0)} %"></span> ${pretty(currentCount(districtCases))} (+${pretty(currentIncrease(districtCases))})`,
-      'Todesfälle': `<span class="${trendArrow(weekTrend(districtDeaths))}" title="${pretty(weekTrend(districtDeaths) || 0)} %"></span> ${pretty(currentCount(districtDeaths))} (+${pretty(currentIncrease(districtDeaths))})`
+      'Fälle pro 100.000 <br>Einwohner (7 Tage)': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty((weekTrend(districtCases) || 0), true)} %"></span>${pretty(casesPer100Tsd7Days(districtCases, districtMeta.pop))}`,
+      'Fälle': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty((weekTrend(districtCases) || 0), true)} %"></span> ${pretty(currentCount(districtCases))} (${pretty(currentIncrease(districtCases), true)})`,
+      'Todesfälle': `<span class="${trendArrow(weekTrend(districtDeaths))}" title="${pretty((weekTrend(districtDeaths) || 0), true)} %"></span> ${pretty(currentCount(districtDeaths))} (${pretty(currentIncrease(districtDeaths), true)})`
     };
   }).sort((a, b) => b.value - a.value).map(d => { delete d.value; return d;});
 
