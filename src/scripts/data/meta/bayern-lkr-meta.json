@@ -5,7 +5,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 136981,
-    "ags": "09161"
+    "ags": "09161",
+    "district": "Oberbayern",
+    "lat": 48.7562808207919,
+    "long": 11.4088936188915
   },
   {
     "name": "München",
@@ -13,7 +16,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 1471508,
-    "ags": "09162"
+    "ags": "09162",
+    "district": "Oberbayern",
+    "lat": 48.152126,
+    "long": 11.544467
   },
   {
     "name": "Rosenheim",
@@ -21,7 +27,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 63324,
-    "ags": "09163"
+    "ags": "09163",
+    "district": "Oberbayern",
+    "lat": 47.8440398976524,
+    "long": 12.1099878481968
   },
   {
     "name": "Altötting",
@@ -29,7 +38,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 111210,
-    "ags": "09171"
+    "ags": "09171",
+    "district": "Oberbayern",
+    "lat": 48.225938,
+    "long": 12.675712
   },
   {
     "name": "Berchtesgadener Land",
@@ -37,7 +49,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 105722,
-    "ags": "09172"
+    "ags": "09172",
+    "district": "Oberbayern",
+    "lat": 47.6454174066272,
+    "long": 12.9310082384982
   },
   {
     "name": "Bad Tölz-Wolfratshausen",
@@ -45,7 +60,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 127227,
-    "ags": "09173"
+    "ags": "09173",
+    "district": "Oberbayern",
+    "lat": 47.7414335829133,
+    "long": 11.5164123353478
   },
   {
     "name": "Dachau",
@@ -53,7 +71,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 153884,
-    "ags": "09174"
+    "ags": "09174",
+    "district": "Oberbayern",
+    "lat": 48.3226938092016,
+    "long": 11.3626676257505
   },
   {
     "name": "Ebersberg",
@@ -61,7 +82,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 142142,
-    "ags": "09175"
+    "ags": "09175",
+    "district": "Oberbayern",
+    "lat": 48.075524,
+    "long": 11.965774
   },
   {
     "name": "Eichstätt",
@@ -69,7 +93,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 132341,
-    "ags": "09176"
+    "ags": "09176",
+    "district": "Oberbayern",
+    "lat": 48.9134888352785,
+    "long": 11.3780762901309
   },
   {
     "name": "Erding",
@@ -77,7 +104,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 137660,
-    "ags": "09177"
+    "ags": "09177",
+    "district": "Oberbayern",
+    "lat": 48.3124470265105,
+    "long": 12.0175358619147
   },
   {
     "name": "Freising",
@@ -85,7 +115,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 179116,
-    "ags": "09178"
+    "ags": "09178",
+    "district": "Oberbayern",
+    "lat": 48.4454947006442,
+    "long": 11.7478842352589
   },
   {
     "name": "Fürstenfeldbruck",
@@ -93,7 +126,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 219320,
-    "ags": "09179"
+    "ags": "09179",
+    "district": "Oberbayern",
+    "lat": 48.1893250777071,
+    "long": 11.2085809819472
   },
   {
     "name": "Garmisch-Partenkirchen",
@@ -101,7 +137,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 88467,
-    "ags": "09180"
+    "ags": "09180",
+    "district": "Oberbayern",
+    "lat": 47.5772989707073,
+    "long": 11.1181857575702
   },
   {
     "name": "Landsberg am Lech",
@@ -109,7 +148,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 120071,
-    "ags": "09181"
+    "ags": "09181",
+    "district": "Oberbayern",
+    "lat": 48.0247012140085,
+    "long": 10.9389293552914
   },
   {
     "name": "Miesbach",
@@ -117,15 +159,21 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 99726,
-    "ags": "09182"
+    "ags": "09182",
+    "district": "Oberbayern",
+    "lat": 47.7574190922338,
+    "long": 11.8135963486147
   },
   {
-    "name": "Mühldorf a. Inn",
+    "name": "Mühldorf am Inn",
     "rkiName": "LK Mühldorf a.Inn",
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 115250,
-    "ags": "09183"
+    "ags": "09183",
+    "district": "Oberbayern",
+    "lat": 48.2509231071583,
+    "long": 12.4027524714231
   },
   {
     "name": "München",
@@ -133,7 +181,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 348871,
-    "ags": "09184"
+    "ags": "09184",
+    "district": "Oberbayern",
+    "lat": 48.0199880938083,
+    "long": 11.6382667158327
   },
   {
     "name": "Neuburg-Schrobenhausen",
@@ -141,15 +192,21 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 96680,
-    "ags": "09185"
+    "ags": "09185",
+    "district": "Oberbayern",
+    "lat": 48.6596836138332,
+    "long": 11.2162853141374
   },
   {
-    "name": "Pfaffenhofen a.d. Ilm",
+    "name": "Pfaffenhofen an der Ilm",
     "rkiName": "LK Pfaffenhofen a.d.Ilm",
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 127151,
-    "ags": "09186"
+    "ags": "09186",
+    "district": "Oberbayern",
+    "lat": 48.5985792965191,
+    "long": 11.5167542695539
   },
   {
     "name": "Rosenheim",
@@ -157,7 +214,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 260983,
-    "ags": "09187"
+    "ags": "09187",
+    "district": "Oberbayern",
+    "lat": 47.961946,
+    "long": 12.204572
   },
   {
     "name": "Starnberg",
@@ -165,7 +225,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 136092,
-    "ags": "09188"
+    "ags": "09188",
+    "district": "Oberbayern",
+    "lat": 48.0092406890433,
+    "long": 11.2856243038489
   },
   {
     "name": "Traunstein",
@@ -173,7 +236,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 177089,
-    "ags": "09189"
+    "ags": "09189",
+    "district": "Oberbayern",
+    "lat": 47.868936,
+    "long": 12.637012
   },
   {
     "name": "Weilheim-Schongau",
@@ -181,7 +247,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 135348,
-    "ags": "09190"
+    "ags": "09190",
+    "district": "Oberbayern",
+    "lat": 47.8043516216407,
+    "long": 11.0426555740801
   },
   {
     "name": "Landshut",
@@ -189,7 +258,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 72404,
-    "ags": "09261"
+    "ags": "09261",
+    "district": "Niederbayern",
+    "lat": 48.533862,
+    "long": 12.148372
   },
   {
     "name": "Passau",
@@ -197,7 +269,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 52469,
-    "ags": "09262"
+    "ags": "09262",
+    "district": "Niederbayern",
+    "lat": 48.57819474681,
+    "long": 13.4197243205251
   },
   {
     "name": "Straubing",
@@ -205,7 +280,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 47794,
-    "ags": "09263"
+    "ags": "09263",
+    "district": "Niederbayern",
+    "lat": 48.877309,
+    "long": 12.585256
   },
   {
     "name": "Deggendorf",
@@ -213,7 +291,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 119326,
-    "ags": "09271"
+    "ags": "09271",
+    "district": "Niederbayern",
+    "lat": 48.7859588519353,
+    "long": 13.0023324016822
   },
   {
     "name": "Freyung-Grafenau",
@@ -221,7 +302,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 78355,
-    "ags": "09272"
+    "ags": "09272",
+    "district": "Niederbayern",
+    "lat": 48.811368,
+    "long": 13.54415
   },
   {
     "name": "Kelheim",
@@ -229,7 +313,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 122258,
-    "ags": "09273"
+    "ags": "09273",
+    "district": "Niederbayern",
+    "lat": 48.8374820430181,
+    "long": 11.8865622146819
   },
   {
     "name": "Landshut",
@@ -237,7 +324,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 158698,
-    "ags": "09274"
+    "ags": "09274",
+    "district": "Niederbayern",
+    "lat": 48.670456,
+    "long": 12.106601
   },
   {
     "name": "Passau",
@@ -245,7 +335,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 192043,
-    "ags": "09275"
+    "ags": "09275",
+    "district": "Niederbayern",
+    "lat": 48.4965743086636,
+    "long": 13.2425246801513
   },
   {
     "name": "Regen",
@@ -253,7 +346,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 77656,
-    "ags": "09276"
+    "ags": "09276",
+    "district": "Niederbayern",
+    "lat": 49.0203770959452,
+    "long": 13.1271496872543
   },
   {
     "name": "Rottal-Inn",
@@ -261,7 +357,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 120659,
-    "ags": "09277"
+    "ags": "09277",
+    "district": "Niederbayern",
+    "lat": 48.4301607909982,
+    "long": 12.8727167350233
   },
   {
     "name": "Straubing-Bogen",
@@ -269,7 +368,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 100649,
-    "ags": "09278"
+    "ags": "09278",
+    "district": "Niederbayern",
+    "lat": 48.9935130644356,
+    "long": 12.6860206221275
   },
   {
     "name": "Dingolfing-Landau",
@@ -277,7 +379,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 96217,
-    "ags": "09279"
+    "ags": "09279",
+    "district": "Niederbayern",
+    "lat": 48.6393237292882,
+    "long": 12.6338824371281
   },
   {
     "name": "Amberg",
@@ -285,7 +390,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 41970,
-    "ags": "09361"
+    "ags": "09361",
+    "district": "Oberpfalz",
+    "lat": 49.4523238032009,
+    "long": 11.8403362215409
   },
   {
     "name": "Regensburg",
@@ -293,15 +401,21 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 152610,
-    "ags": "09362"
+    "ags": "09362",
+    "district": "Oberpfalz",
+    "lat": 49.0125808663994,
+    "long": 12.1107803618816
   },
   {
-    "name": "Weiden i.d. OPf.",
+    "name": "Weiden in der Oberpfalz",
     "rkiName": "SK Weiden i.d.OPf.",
     "type": "Stadt",
     "state": "Bayern",
     "pop": 42520,
-    "ags": "09363"
+    "ags": "09363",
+    "district": "Oberpfalz",
+    "lat": 49.673149,
+    "long": 12.137639
   },
   {
     "name": "Amberg-Sulzbach",
@@ -309,7 +423,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 103109,
-    "ags": "09371"
+    "ags": "09371",
+    "district": "Oberpfalz",
+    "lat": 49.5623855918672,
+    "long": 11.7093625743081
   },
   {
     "name": "Cham",
@@ -317,23 +434,32 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 127882,
-    "ags": "09372"
+    "ags": "09372",
+    "district": "Oberpfalz",
+    "lat": 49.2304138987159,
+    "long": 12.6694863068233
   },
   {
-    "name": "Neumarkt i.d. OPf.",
+    "name": "Neumarkt in der Oberpfalz",
     "rkiName": "LK Neumarkt i.d.OPf.",
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 133561,
-    "ags": "09373"
+    "ags": "09373",
+    "district": "Oberpfalz",
+    "lat": 49.226532411996,
+    "long": 11.5580180972052
   },
   {
-    "name": "Neustadt a.d. Waldnaab",
+    "name": "Neustadt an der Waldnaab",
     "rkiName": "LK Neustadt a.d.Waldnaab",
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 94352,
-    "ags": "09374"
+    "ags": "09374",
+    "district": "Oberpfalz",
+    "lat": 49.7369738033322,
+    "long": 11.8634492181114
   },
   {
     "name": "Regensburg",
@@ -341,7 +467,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 193572,
-    "ags": "09375"
+    "ags": "09375",
+    "district": "Oberpfalz",
+    "lat": 49.0163286819421,
+    "long": 12.3034382828995
   },
   {
     "name": "Schwandorf",
@@ -349,7 +478,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 147189,
-    "ags": "09376"
+    "ags": "09376",
+    "district": "Oberpfalz",
+    "lat": 49.3660738697256,
+    "long": 12.2474850079843
   },
   {
     "name": "Tirschenreuth",
@@ -357,7 +489,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 72504,
-    "ags": "09377"
+    "ags": "09377",
+    "district": "Oberpfalz",
+    "lat": 49.9158973015891,
+    "long": 12.1716225057181
   },
   {
     "name": "Bamberg",
@@ -365,7 +500,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 77592,
-    "ags": "09461"
+    "ags": "09461",
+    "district": "Oberfranken",
+    "lat": 49.895431,
+    "long": 10.897137
   },
   {
     "name": "Bayreuth",
@@ -373,7 +511,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 74657,
-    "ags": "09462"
+    "ags": "09462",
+    "district": "Oberfranken",
+    "lat": 49.945412,
+    "long": 11.584207
   },
   {
     "name": "Coburg",
@@ -381,7 +522,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 41249,
-    "ags": "09463"
+    "ags": "09463",
+    "district": "Oberfranken",
+    "lat": 50.258998,
+    "long": 10.961291
   },
   {
     "name": "Hof",
@@ -389,7 +533,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 45930,
-    "ags": "09464"
+    "ags": "09464",
+    "district": "Oberfranken",
+    "lat": 50.316424,
+    "long": 11.918817
   },
   {
     "name": "Bamberg",
@@ -397,7 +544,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 147086,
-    "ags": "09471"
+    "ags": "09471",
+    "district": "Oberfranken",
+    "lat": 49.93985,
+    "long": 11.087137
   },
   {
     "name": "Bayreuth",
@@ -405,7 +555,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 103656,
-    "ags": "09472"
+    "ags": "09472",
+    "district": "Oberfranken",
+    "lat": 49.8066338070837,
+    "long": 11.4936412729834
   },
   {
     "name": "Coburg",
@@ -413,7 +566,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 86906,
-    "ags": "09473"
+    "ags": "09473",
+    "district": "Oberfranken",
+    "lat": 50.3455664077374,
+    "long": 10.8387730368192
   },
   {
     "name": "Forchheim",
@@ -421,7 +577,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 116099,
-    "ags": "09474"
+    "ags": "09474",
+    "district": "Oberfranken",
+    "lat": 49.721727,
+    "long": 11.06568
   },
   {
     "name": "Hof",
@@ -429,7 +588,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 95311,
-    "ags": "09475"
+    "ags": "09475",
+    "district": "Oberfranken",
+    "lat": 50.2175636638167,
+    "long": 11.7864058962097
   },
   {
     "name": "Kronach",
@@ -437,7 +599,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 67135,
-    "ags": "09476"
+    "ags": "09476",
+    "district": "Oberfranken",
+    "lat": 50.3308144261184,
+    "long": 11.3934849545112
   },
   {
     "name": "Kulmbach",
@@ -445,7 +610,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 71845,
-    "ags": "09477"
+    "ags": "09477",
+    "district": "Oberfranken",
+    "lat": 50.104806,
+    "long": 11.448023
   },
   {
     "name": "Lichtenfels",
@@ -453,15 +621,21 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 66838,
-    "ags": "09478"
+    "ags": "09478",
+    "district": "Oberfranken",
+    "lat": 50.118865697475,
+    "long": 11.1238333278554
   },
   {
-    "name": "Wunsiedel i. Fichtelgebirge",
+    "name": "Wunsiedel im Fichtelgebirge",
     "rkiName": "LK Wunsiedel i.Fichtelgebirge",
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 73178,
-    "ags": "09479"
+    "ags": "09479",
+    "district": "Oberfranken",
+    "lat": 50.0842732455229,
+    "long": 12.0329445262951
   },
   {
     "name": "Ansbach",
@@ -469,7 +643,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 41847,
-    "ags": "09561"
+    "ags": "09561",
+    "district": "Mittelfranken",
+    "lat": 49.2917917440462,
+    "long": 10.5691214101633
   },
   {
     "name": "Erlangen",
@@ -477,7 +654,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 111962,
-    "ags": "09562"
+    "ags": "09562",
+    "district": "Mittelfranken",
+    "lat": 49.582771,
+    "long": 10.991866
   },
   {
     "name": "Fürth",
@@ -485,7 +665,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 127748,
-    "ags": "09563"
+    "ags": "09563",
+    "district": "Mittelfranken",
+    "lat": 49.4873703225354,
+    "long": 10.969746684052
   },
   {
     "name": "Nürnberg",
@@ -493,7 +676,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 518365,
-    "ags": "09564"
+    "ags": "09564",
+    "district": "Mittelfranken",
+    "lat": 49.446007,
+    "long": 11.07977
   },
   {
     "name": "Schwabach",
@@ -501,7 +687,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 40792,
-    "ags": "09565"
+    "ags": "09565",
+    "district": "Mittelfranken",
+    "lat": 49.327516,
+    "long": 11.029777
   },
   {
     "name": "Ansbach",
@@ -509,7 +698,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 183949,
-    "ags": "09571"
+    "ags": "09571",
+    "district": "Mittelfranken",
+    "lat": 49.1877007720799,
+    "long": 10.3811694046684
   },
   {
     "name": "Erlangen-Höchstadt",
@@ -517,7 +709,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 136271,
-    "ags": "09572"
+    "ags": "09572",
+    "district": "Mittelfranken",
+    "lat": 49.688893,
+    "long": 10.861415
   },
   {
     "name": "Fürth",
@@ -525,7 +720,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 117387,
-    "ags": "09573"
+    "ags": "09573",
+    "district": "Mittelfranken",
+    "lat": 49.4372961904926,
+    "long": 10.8464773690094
   },
   {
     "name": "Nürnberger Land",
@@ -533,15 +731,21 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 170365,
-    "ags": "09574"
+    "ags": "09574",
+    "district": "Mittelfranken",
+    "lat": 49.4973790087697,
+    "long": 11.3780762901309
   },
   {
-    "name": "Neustadt a.d. Aisch-Bad Windsheim",
+    "name": "Neustadt an der Aisch-Bad Windsheim",
     "rkiName": "LK Neustadt a.d.Aisch-Bad Windsheim",
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 100364,
-    "ags": "09575"
+    "ags": "09575",
+    "district": "Mittelfranken",
+    "lat": 49.5623855918672,
+    "long": 10.4689650916912
   },
   {
     "name": "Roth",
@@ -549,7 +753,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 126958,
-    "ags": "09576"
+    "ags": "09576",
+    "district": "Mittelfranken",
+    "lat": 49.2187685237296,
+    "long": 11.1181857575702
   },
   {
     "name": "Weißenburg-Gunzenhausen",
@@ -557,7 +764,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 94393,
-    "ags": "09577"
+    "ags": "09577",
+    "district": "Mittelfranken",
+    "lat": 49.0242747528277,
+    "long": 10.9042132680181
   },
   {
     "name": "Aschaffenburg",
@@ -565,7 +775,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 70527,
-    "ags": "09661"
+    "ags": "09661",
+    "district": "Unterfranken",
+    "lat": 49.9555682275557,
+    "long": 9.15922861936277
   },
   {
     "name": "Schweinfurt",
@@ -573,7 +786,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 54032,
-    "ags": "09662"
+    "ags": "09662",
+    "district": "Unterfranken",
+    "lat": 50.045714,
+    "long": 10.223773
   },
   {
     "name": "Würzburg",
@@ -581,7 +797,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 127880,
-    "ags": "09663"
+    "ags": "09663",
+    "district": "Unterfranken",
+    "lat": 49.784984,
+    "long": 9.941828
   },
   {
     "name": "Aschaffenburg",
@@ -589,7 +808,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 174208,
-    "ags": "09671"
+    "ags": "09671",
+    "district": "Unterfranken",
+    "lat": 50.0298632010399,
+    "long": 9.29020226659561
   },
   {
     "name": "Bad Kissingen",
@@ -597,7 +819,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 103218,
-    "ags": "09672"
+    "ags": "09672",
+    "district": "Unterfranken",
+    "lat": 50.2126336060404,
+    "long": 9.92966183837948
   },
   {
     "name": "Rhön-Grabfeld",
@@ -605,7 +830,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 79690,
-    "ags": "09673"
+    "ags": "09673",
+    "district": "Unterfranken",
+    "lat": 50.3897948687147,
+    "long": 10.2147221294157
   },
   {
     "name": "Haßberge",
@@ -613,7 +841,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 84599,
-    "ags": "09674"
+    "ags": "09674",
+    "district": "Unterfranken",
+    "lat": 50.035764,
+    "long": 10.517154
   },
   {
     "name": "Kitzingen",
@@ -621,7 +852,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 90909,
-    "ags": "09675"
+    "ags": "09675",
+    "district": "Unterfranken",
+    "lat": 49.7618638696856,
+    "long": 10.2609481225567
   },
   {
     "name": "Miltenberg",
@@ -629,7 +863,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 128756,
-    "ags": "09676"
+    "ags": "09676",
+    "district": "Unterfranken",
+    "lat": 49.7618638696856,
+    "long": 9.23627194126444
   },
   {
     "name": "Main-Spessart",
@@ -637,7 +874,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 126365,
-    "ags": "09677"
+    "ags": "09677",
+    "district": "Unterfranken",
+    "lat": 49.9902534991352,
+    "long": 9.6446015473433
   },
   {
     "name": "Schweinfurt",
@@ -645,7 +885,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 115106,
-    "ags": "09678"
+    "ags": "09678",
+    "district": "Unterfranken",
+    "lat": 49.9555682275557,
+    "long": 10.3148784478878
   },
   {
     "name": "Würzburg",
@@ -653,7 +896,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 161834,
-    "ags": "09679"
+    "ags": "09679",
+    "district": "Unterfranken",
+    "lat": 49.6422750456956,
+    "long": 9.97588783152048
   },
   {
     "name": "Augsburg",
@@ -661,7 +907,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 295135,
-    "ags": "09761"
+    "ags": "09761",
+    "district": "Schwaben",
+    "lat": 48.3493839375923,
+    "long": 10.8923259074874
   },
   {
     "name": "Kaufbeuren",
@@ -669,15 +918,21 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 43893,
-    "ags": "09762"
+    "ags": "09762",
+    "district": "Schwaben",
+    "lat": 47.882969,
+    "long": 10.625408
   },
   {
-    "name": "Kempten (Allgäu)",
+    "name": "Kempten",
     "rkiName": "SK Kempten",
     "type": "Stadt",
     "state": "Bayern",
     "pop": 68907,
-    "ags": "09763"
+    "ags": "09763",
+    "district": "Schwaben",
+    "lat": 47.7374364383967,
+    "long": 10.3157889217496
   },
   {
     "name": "Memmingen",
@@ -685,7 +940,10 @@
     "type": "Stadt",
     "state": "Bayern",
     "pop": 43837,
-    "ags": "09764"
+    "ags": "09764",
+    "district": "Schwaben",
+    "lat": 47.9834628447018,
+    "long": 10.1684961362747
   },
   {
     "name": "Aichach-Friedberg",
@@ -693,7 +951,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 133596,
-    "ags": "09771"
+    "ags": "09771",
+    "district": "Schwaben",
+    "lat": 48.453409,
+    "long": 11.082892
   },
   {
     "name": "Augsburg",
@@ -701,15 +962,21 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 251534,
-    "ags": "09772"
+    "ags": "09772",
+    "district": "Schwaben",
+    "lat": 48.379474,
+    "long": 10.687782
   },
   {
-    "name": "Dillingen a.d. Donau",
+    "name": "Dillingen an der Donau",
     "rkiName": "LK Dillingen a.d.Donau",
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 96021,
-    "ags": "09773"
+    "ags": "09773",
+    "district": "Schwaben",
+    "lat": 48.589769967296,
+    "long": 10.5416487718325
   },
   {
     "name": "Günzburg",
@@ -717,7 +984,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 125747,
-    "ags": "09774"
+    "ags": "09774",
+    "district": "Schwaben",
+    "lat": 48.3533338745875,
+    "long": 10.393056765199
   },
   {
     "name": "Neu-Ulm",
@@ -725,7 +995,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 174200,
-    "ags": "09775"
+    "ags": "09775",
+    "district": "Schwaben",
+    "lat": 48.301960809844,
+    "long": 10.1374785137895
   },
   {
     "name": "Lindau (Bodensee)",
@@ -733,7 +1006,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 81669,
-    "ags": "09776"
+    "ags": "09776",
+    "district": "Schwaben",
+    "lat": 47.6108332281354,
+    "long": 9.88343584523848
   },
   {
     "name": "Ostallgäu",
@@ -741,7 +1017,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 140316,
-    "ags": "09777"
+    "ags": "09777",
+    "district": "Schwaben",
+    "lat": 47.7370506161643,
+    "long": 10.6130091490705
   },
   {
     "name": "Unterallgäu",
@@ -749,7 +1028,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 144041,
-    "ags": "09778"
+    "ags": "09778",
+    "district": "Schwaben",
+    "lat": 48.065251,
+    "long": 10.485471
   },
   {
     "name": "Donau-Ries",
@@ -757,7 +1039,10 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 133496,
-    "ags": "09779"
+    "ags": "09779",
+    "district": "Schwaben",
+    "lat": 48.8172781562418,
+    "long": 10.7199591797926
   },
   {
     "name": "Oberallgäu",
@@ -765,6 +1050,9 @@
     "type": "Landkreis",
     "state": "Bayern",
     "pop": 155362,
-    "ags": "09780"
+    "ags": "09780",
+    "district": "Schwaben",
+    "lat": 47.516255,
+    "long": 10.277425
   }
 ]
