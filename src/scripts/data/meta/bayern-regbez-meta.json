@@ -1,36 +1,57 @@
 [
   {
     "name": "Oberbayern",
+    "capital": "München",
+    "lat": 48.152126,
+    "long": 11.544467,
     "ags": "091",
     "pop": 4686163
   },
   {
     "name": "Niederbayern",
+    "capital": "Landshut",
+    "lat": 48.533862,
+    "long": 12.148372,
     "ags": "092",
     "pop": 1238528
   },
   {
     "name": "Oberpfalz",
+    "capital": "Regensburg",
+    "lat": 49.0125808663994,
+    "long": 12.1107803618816,
     "ags": "093",
     "pop": 1109269
   },
   {
     "name": "Oberfranken",
+    "capital": "Bayreuth",
+    "lat": 49.945412,
+    "long": 11.584207,
     "ags": "094",
     "pop": 1067482
   },
   {
     "name": "Mittelfranken",
+    "capital": "Ansbach",
+    "lat": 49.2917917440462,
+    "long": 10.5691214101633,
     "ags": "095",
     "pop": 1770401
   },
   {
     "name": "Unterfranken",
+    "capital": "Würzburg",
+    "lat": 49.784984,
+    "long": 9.941828,
     "ags": "096",
     "pop": 1317124
   },
   {
     "name": "Schwaben",
+    "capital": "Augsburg",
+    "lat": 48.3493839375923,
+    "long": 10.8923259074874,
     "ags": "097",
     "pop": 1887754
   }

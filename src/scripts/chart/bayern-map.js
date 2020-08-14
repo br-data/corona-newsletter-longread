@@ -3,6 +3,7 @@ import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
 
 import { casesPer100Tsd7Days, germanDate } from '../utils';
+import districts from '../data/meta/bayern-regbez-meta.json';
 
 const defaults = {
   target: '#map'
@@ -45,8 +46,8 @@ export default class LineChart {
 
     const projection = geoMercator()
       .translate([width/2, height/2])
-      .scale(6200)
-      .center([11.4, 49.1]);
+      .scale(6300)
+      .center([11.4, 49.15]);
 
     const path = geoPath().projection(projection);
 
@@ -56,8 +57,18 @@ export default class LineChart {
       .attr('height', height)
       .attr('viewBox', `0 0 ${width} ${height}`);
 
-    const radialGradient = svg.append('defs')
-      .append('radialGradient')
+    const defs = svg.append('defs');
+
+    const dropShadow = defs.append('filter')
+      .attr('id', 'drop-shadow')
+      .attr('height', '150%')
+      .attr('width', '150%');
+
+    dropShadow.append('feGaussianBlur')
+      .attr('stdDeviation', '3')
+      .attr('result', 'drop-shadow');
+
+    const radialGradient = defs.append('radialGradient')
       .attr('id', 'radial-gradient');
 
     radialGradient.append('stop')
@@ -88,8 +99,39 @@ export default class LineChart {
       .attr('r', d => d.valuePer100Tsd ? scale(d.valuePer100Tsd) : 0)
       .attr('cx', d => projection([d.long, d.lat])[0])
       .attr('cy', d => projection([d.long, d.lat])[1])
-      .attr('fill-opacity', 0.75)
-      .attr('fill', d => getColor(d.valuePer100Tsd));
+      .attr('fill', 'none')
+      .attr('stroke', d => getColor(d.valuePer100Tsd))
+      .attr('stroke-width', 3);
+
+    const annotations = map.selectAll('text')
+      .data(districts)
+      .enter();
+
+    annotations.append('text')
+      .attr('font-family', '"Open Sans", OpenSans, Arial')
+      .attr('font-size', 15)
+      .attr('font-weight', 600)
+      .attr('fill', '#7A7E8E')
+      .attr('filter', 'url(#drop-shadow)')
+      .attr('x', d => projection([d.long, d.lat])[0])
+      .attr('y', d => projection([d.long, d.lat])[1])
+      .attr('text-anchor', 'middle')
+      .attr('dy', 5)
+      .text(d => d.capital);
+
+    annotations.append('text')
+      .attr('font-family', '"Open Sans", OpenSans, Arial')
+      .attr('font-size', 15)
+      .attr('font-weight', 600)
+      .attr('fill', '#ffffff')
+      .attr('stroke', '#7A7E8E')
+      .attr('stroke-width', 3)
+      .attr('paint-order', 'stroke')
+      .attr('x', d => projection([d.long, d.lat])[0])
+      .attr('y', d => projection([d.long, d.lat])[1])
+      .attr('text-anchor', 'middle')
+      .attr('dy', 5)
+      .text(d => d.capital);
 
     // Add title
     svg.append('text')
