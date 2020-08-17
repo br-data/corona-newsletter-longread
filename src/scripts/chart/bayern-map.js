@@ -24,7 +24,7 @@ export default class LineChart {
     const { target, caseData, metaData, geoData, meta } = this;
 
     const uniqueCounties = [...new Set(caseData.map(d => d.Landkreis))];
-    const mergedData = uniqueCounties.map(name => {
+    const mergedCounties = uniqueCounties.map(name => {
       const caseDataDistrict = caseData.filter(c => c.Landkreis === name);
       const metaInfoCounty = metaData.find(m => m.rkiName === name);
       return Object.assign(
@@ -32,6 +32,7 @@ export default class LineChart {
         { valuePer100Tsd: casesPer100Tsd7Days(caseDataDistrict, metaInfoCounty.pop) }
       );
     });
+    const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 50);
 
     const container = select(target);
     container.select('svg.map').remove();
@@ -55,8 +56,8 @@ export default class LineChart {
       .attr('class', 'map')
       .attr('width', width)
       .attr('height', height)
-      .attr('viewBox', `0 0 ${width} ${height}`)
-      .attr('preserveAspectRatio', 'xMidYMid');
+      // .attr('preserveAspectRatio', 'xMidYMid');
+      .attr('viewBox', `0 0 ${width} ${height}`);
 
     const defs = svg.append('defs');
 
@@ -112,7 +113,7 @@ export default class LineChart {
       .attr('stroke-width', 1.25);
 
     map.selectAll('circle')
-      .data(mergedData, d => d.ags)
+      .data(mergedCounties, d => d.ags)
       .enter()
       .append('circle')
       .attr('r', d => d.valuePer100Tsd ? scale(d.valuePer100Tsd) : 0)
@@ -123,17 +124,19 @@ export default class LineChart {
       .attr('stroke', d => getColor(d.valuePer100Tsd))
       .attr('stroke-width', 3);
 
-    const annotations = map.selectAll('text')
+    const capitalLabels = map.selectAll('.capitals')
       .data(districts)
       .enter();
 
-    annotations.append('text')
+    capitalLabels.append('text')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
+      .attr('font-style', 'italic')
       .attr('fill', '#ffffff')
       .attr('stroke', '#7A7E8E')
-      .attr('stroke-width', 4)
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round')
       .attr('paint-order', 'stroke')
       .attr('filter', 'url(#drop-shadow)')
       .attr('x', d => projection([d.long, d.lat])[0])
@@ -141,6 +144,27 @@ export default class LineChart {
       .attr('text-anchor', 'middle')
       .attr('dy', 5)
       .text(d => d.capital);
+
+    const worstCountyLabels = map.selectAll('.worstCounties')
+      .data(worstCounties)
+      .enter();
+
+    worstCountyLabels.append('text')
+      .attr('font-family', '"Open Sans", OpenSans, Arial')
+      .attr('font-size', 15)
+      .attr('fill', '#ffffff')
+      .attr('stroke', d =>
+        (d.valuePer100Tsd >= 35) ? getColor(d.valuePer100Tsd) : '#7A7E8E'
+      )
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round')
+      .attr('paint-order', 'stroke')
+      .attr('filter', 'url(#drop-shadow)')
+      .attr('x', d => projection([d.long, d.lat])[0])
+      .attr('y', d => projection([d.long, d.lat])[1])
+      .attr('text-anchor', 'middle')
+      .attr('dy', 5)
+      .text(d => d.name);
 
     // Add title
     svg.append('text')
