@@ -55,18 +55,37 @@ export default class LineChart {
       .attr('class', 'map')
       .attr('width', width)
       .attr('height', height)
-      .attr('viewBox', `0 0 ${width} ${height}`);
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('preserveAspectRatio', 'xMidYMid');
 
     const defs = svg.append('defs');
 
     const dropShadow = defs.append('filter')
       .attr('id', 'drop-shadow')
-      .attr('height', '150%')
-      .attr('width', '150%');
+      .attr('height', '200%')
+      .attr('width', '200%');
+
+    dropShadow.append('feFlood')
+      .attr('flood-color', '#7A7E8E')
+      .attr('in', 'SourceAlpha')
+      .attr('result', 'color');
 
     dropShadow.append('feGaussianBlur')
       .attr('stdDeviation', '3')
-      .attr('result', 'drop-shadow');
+      .attr('in', 'SourceAlpha')
+      .attr('result', 'blur');
+
+    dropShadow.append('feComposite')
+      .attr('in', 'color')
+      .attr('in2', 'blur')
+      .attr('result', 'composite')
+      .attr('operator', 'in');
+
+    const merge = dropShadow.append('feMerge');
+
+    merge.append('feMergeNode');
+    merge.append('feMergeNode')
+      .attr('in', 'SourceGraphic');
 
     const radialGradient = defs.append('radialGradient')
       .attr('id', 'radial-gradient');
@@ -100,6 +119,7 @@ export default class LineChart {
       .attr('cx', d => projection([d.long, d.lat])[0])
       .attr('cy', d => projection([d.long, d.lat])[1])
       .attr('fill', 'none')
+      // .attr('fill', d => getColor(d.valuePer100Tsd));
       .attr('stroke', d => getColor(d.valuePer100Tsd))
       .attr('stroke-width', 3);
 
@@ -110,23 +130,12 @@ export default class LineChart {
     annotations.append('text')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
-      .attr('font-weight', 600)
-      .attr('fill', '#7A7E8E')
-      .attr('filter', 'url(#drop-shadow)')
-      .attr('x', d => projection([d.long, d.lat])[0])
-      .attr('y', d => projection([d.long, d.lat])[1])
-      .attr('text-anchor', 'middle')
-      .attr('dy', 5)
-      .text(d => d.capital);
-
-    annotations.append('text')
-      .attr('font-family', '"Open Sans", OpenSans, Arial')
-      .attr('font-size', 15)
-      .attr('font-weight', 600)
+      .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('stroke', '#7A7E8E')
-      .attr('stroke-width', 3)
+      .attr('stroke-width', 4)
       .attr('paint-order', 'stroke')
+      .attr('filter', 'url(#drop-shadow)')
       .attr('x', d => projection([d.long, d.lat])[0])
       .attr('y', d => projection([d.long, d.lat])[1])
       .attr('text-anchor', 'middle')
