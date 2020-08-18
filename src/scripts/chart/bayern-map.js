@@ -32,7 +32,9 @@ export default class LineChart {
         { valuePer100Tsd: casesPer100Tsd7Days(caseDataDistrict, metaInfoCounty.pop) }
       );
     });
-    const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 50);
+    const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 35);
+
+    const capitals = districts.filter(district => worstCounties.find(county => county.district === district.name) === undefined);
 
     const container = select(target);
     container.select('svg.map').remove();
@@ -60,33 +62,6 @@ export default class LineChart {
       .attr('viewBox', `0 0 ${width} ${height}`);
 
     const defs = svg.append('defs');
-
-    const dropShadow = defs.append('filter')
-      .attr('id', 'drop-shadow')
-      .attr('height', '200%')
-      .attr('width', '200%');
-
-    dropShadow.append('feFlood')
-      .attr('flood-color', '#7A7E8E')
-      .attr('in', 'SourceAlpha')
-      .attr('result', 'color');
-
-    dropShadow.append('feGaussianBlur')
-      .attr('stdDeviation', '3')
-      .attr('in', 'SourceAlpha')
-      .attr('result', 'blur');
-
-    dropShadow.append('feComposite')
-      .attr('in', 'color')
-      .attr('in2', 'blur')
-      .attr('result', 'composite')
-      .attr('operator', 'in');
-
-    const merge = dropShadow.append('feMerge');
-
-    merge.append('feMergeNode');
-    merge.append('feMergeNode')
-      .attr('in', 'SourceGraphic');
 
     const radialGradient = defs.append('radialGradient')
       .attr('id', 'radial-gradient');
@@ -119,30 +94,25 @@ export default class LineChart {
       .attr('r', d => d.valuePer100Tsd ? scale(d.valuePer100Tsd) : 0)
       .attr('cx', d => projection([d.long, d.lat])[0])
       .attr('cy', d => projection([d.long, d.lat])[1])
-      .attr('fill', 'none')
-      // .attr('fill', d => getColor(d.valuePer100Tsd));
-      .attr('stroke', d => getColor(d.valuePer100Tsd))
-      .attr('stroke-width', 3);
+      .attr('fill', d => getColor(d.valuePer100Tsd));
 
     const capitalLabels = map.selectAll('.capitals')
-      .data(districts)
+      .data(capitals)
       .enter();
 
     capitalLabels.append('text')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
-      .attr('font-size', 15)
+      .attr('font-size', 12)
       .attr('font-weight', 300)
-      .attr('font-style', 'italic')
       .attr('fill', '#ffffff')
       .attr('stroke', '#7A7E8E')
       .attr('stroke-width', 3)
-      .attr('stroke-linecap', 'round')
+      .attr('stroke-linejoin', 'round')
       .attr('paint-order', 'stroke')
-      .attr('filter', 'url(#drop-shadow)')
       .attr('x', d => projection([d.long, d.lat])[0])
       .attr('y', d => projection([d.long, d.lat])[1])
       .attr('text-anchor', 'middle')
-      .attr('dy', 5)
+      .attr('dy', 13)
       .text(d => d.capital);
 
     const worstCountyLabels = map.selectAll('.worstCounties')
@@ -153,18 +123,15 @@ export default class LineChart {
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('fill', '#ffffff')
-      .attr('stroke', d =>
-        (d.valuePer100Tsd >= 35) ? getColor(d.valuePer100Tsd) : '#7A7E8E'
-      )
+      .attr('stroke', '#31343F')
       .attr('stroke-width', 3)
-      .attr('stroke-linecap', 'round')
+      .attr('stroke-linejoin', 'round')
       .attr('paint-order', 'stroke')
-      .attr('filter', 'url(#drop-shadow)')
       .attr('x', d => projection([d.long, d.lat])[0])
       .attr('y', d => projection([d.long, d.lat])[1])
       .attr('text-anchor', 'middle')
-      .attr('dy', 5)
-      .text(d => d.name);
+      .attr('dy', 15)
+      .text(d => (d.name.length > 12) ? `${d.name.slice(0, 12)}…` : d.name);
 
     // Add title
     svg.append('text')
@@ -192,9 +159,7 @@ export default class LineChart {
       .attr('r', scale(50))
       .attr('cx', scale(50))
       .attr('cy', 10)
-      .attr('fill', 'none')
-      .attr('stroke', '#f03b20')
-      .attr('stroke-width', 3);
+      .attr('fill', getColor(50));
 
     svg.append('text')
       .attr('transform', 'translate(58, 85)')
@@ -211,9 +176,7 @@ export default class LineChart {
       .attr('r', scale(30))
       .attr('cx', scale(30))
       .attr('cy', 10)
-      .attr('fill', 'none')
-      .attr('stroke', '#feb24c')
-      .attr('stroke-width', 3);
+      .attr('fill', getColor(35));
 
     svg.append('text')
       .attr('transform', 'translate(260, 85)')
@@ -230,9 +193,7 @@ export default class LineChart {
       .attr('r', scale(10))
       .attr('cx', scale(10))
       .attr('cy', 10)
-      .attr('fill', 'none')
-      .attr('stroke', '#ffeda0')
-      .attr('stroke-width', 3);
+      .attr('fill', getColor(10));
 
     svg.append('text')
       .attr('transform', 'translate(457, 85)')
