@@ -13,7 +13,6 @@ const defaults = {
 };
 
 export default class LineChart {
-
   constructor(config) {
     this.set(config);
     this.draw();
@@ -38,12 +37,6 @@ export default class LineChart {
         { valuePer100Tsd: casesPer100Tsd7Days(caseDataDistrict, metaInfoCounty.pop) }
       );
     });
-
-    mergedCounties[0].valuePer100Tsd = 35;
-    mergedCounties[10].valuePer100Tsd = 50;
-    mergedCounties[11].valuePer100Tsd = 70;
-    mergedCounties[12].valuePer100Tsd = 37;
-    mergedCounties[14].valuePer100Tsd = 20000;
 
     // Create labels for all counties over 35 cases
     const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 35);
