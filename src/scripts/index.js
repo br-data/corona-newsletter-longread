@@ -180,106 +180,106 @@ async function init() {
     charts.push(bayernMap);
   })();
 
-  // // Text for Germany
-  // (async function () {
-  //   const deutschlandCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+  // Text for Germany
+  (async function () {
+    const deutschlandCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const deutschlandDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlTodesfall`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+    const deutschlandDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const deutschlandRecoveriesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlGenesen`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+    const deutschlandRecoveriesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlGenesen`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const [deutschlandCases, deutschlandDeaths, deutschlandRecoveries] = await Promise.all([deutschlandCasesRequest, deutschlandDeathsRequest, deutschlandRecoveriesRequest]);
+    const [deutschlandCases, deutschlandDeaths, deutschlandRecoveries] = await Promise.all([deutschlandCasesRequest, deutschlandDeathsRequest, deutschlandRecoveriesRequest]);
 
-  //   deutschlandIndicator.init({
-  //     target: '#deutschland-indicator',
-  //     caseData: deutschlandCases,
-  //     recoveredData: deutschlandRecoveries,
-  //     deathData: deutschlandDeaths
-  //   });
+    deutschlandIndicator.init({
+      target: '#deutschland-indicator',
+      caseData: deutschlandCases,
+      recoveredData: deutschlandRecoveries,
+      deathData: deutschlandDeaths
+    });
 
-  //   deutschlandText.init({
-  //     caseTarget: '#deutschland-cases-text',
-  //     deathTarget: '#deutschland-deaths-text',
-  //     caseData: deutschlandCases,
-  //     recoveredData: deutschlandRecoveries,
-  //     deathData: deutschlandDeaths,
-  //     metaData: deutschlandMeta
-  //   });
-  // })();
+    deutschlandText.init({
+      caseTarget: '#deutschland-cases-text',
+      deathTarget: '#deutschland-deaths-text',
+      caseData: deutschlandCases,
+      recoveredData: deutschlandRecoveries,
+      deathData: deutschlandDeaths,
+      metaData: deutschlandMeta
+    });
+  })();
 
-  // // Charts for Germany
-  // (async function () {
-  //   const deutschlandCasesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+  // Charts for Germany
+  (async function () {
+    const deutschlandCasesRefRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const deutschlandCurrentRefRequest = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&currentCases=true`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+    const deutschlandCurrentRefRequest = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&currentCases=true`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const [deutschlandCasesRef, deutschlandCurrentRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandCurrentRefRequest]);
+    const [deutschlandCasesRef, deutschlandCurrentRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandCurrentRefRequest]);
 
-  //   const deutschlandAreaChart = new AreaChart({
-  //     target: '#deutschland-line-chart',
-  //     data: deutschlandCurrentRef,
-  //     meta: {
-  //       title: 'Corona in Deutschland',
-  //       description: 'Entwicklung der wichtigsten Indikatoren nach Erkrankungsdatum',
-  //       author: 'BR',
-  //       source: 'Robert Koch-Institut, BR-Analyse',
-  //       date: endDate
-  //     }
-  //   });
+    const deutschlandAreaChart = new AreaChart({
+      target: '#deutschland-line-chart',
+      data: deutschlandCurrentRef,
+      meta: {
+        title: 'Corona in Deutschland',
+        description: 'Entwicklung der wichtigsten Indikatoren nach Erkrankungsdatum',
+        author: 'BR',
+        source: 'Robert Koch-Institut, BR-Analyse',
+        date: endDate
+      }
+    });
 
-  //   charts.push(deutschlandAreaChart);
+    charts.push(deutschlandAreaChart);
 
-  //   const deutschlandBarChart = new BarChart({
-  //     target: '#deutschland-bar-chart',
-  //     data: deutschlandCasesRef,
-  //     meta: {
-  //       title: 'Neue Coronafälle in Deutschland',
-  //       description: 'Entwicklung der Neuinfektionen nach Erkrankungsdatum',
-  //       author: 'BR',
-  //       source: 'Robert Koch-Institut, BR-Analyse',
-  //       date: endDate
-  //     }
-  //   });
+    const deutschlandBarChart = new BarChart({
+      target: '#deutschland-bar-chart',
+      data: deutschlandCasesRef,
+      meta: {
+        title: 'Neue Coronafälle in Deutschland',
+        description: 'Entwicklung der Neuinfektionen nach Erkrankungsdatum',
+        author: 'BR',
+        source: 'Robert Koch-Institut, BR-Analyse',
+        date: endDate
+      }
+    });
 
-  //   charts.push(deutschlandBarChart);
-  // })();
+    charts.push(deutschlandBarChart);
+  })();
 
-  // // Text for German federal states
-  // (async function () {
-  //   const deutschlandBlCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+  // Text for German federal states
+  (async function () {
+    const deutschlandBlCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const deutschlandBlDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&sumField=AnzahlTodesfall`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+    const deutschlandBlDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const [deutschlandBlCases, deutschlandBlDeaths] = await Promise.all([deutschlandBlCasesRequest,deutschlandBlDeathsRequest]);
+    const [deutschlandBlCases, deutschlandBlDeaths] = await Promise.all([deutschlandBlCasesRequest,deutschlandBlDeathsRequest]);
 
-  //   deutschlandBlText.init({
-  //     target: '#deutschland-bl-text',
-  //     caseData: deutschlandBlCases,
-  //     deathData: deutschlandBlDeaths,
-  //     metaData: deutschlandBlMeta
-  //   });
+    deutschlandBlText.init({
+      target: '#deutschland-bl-text',
+      caseData: deutschlandBlCases,
+      deathData: deutschlandBlDeaths,
+      metaData: deutschlandBlMeta
+    });
 
-  //   deutschlandBlTable.init({
-  //     target: '#deutschland-bl-table',
-  //     caseData: deutschlandBlCases,
-  //     deathData: deutschlandBlDeaths,
-  //     metaData: deutschlandBlMeta
-  //   });
-  // })();
+    deutschlandBlTable.init({
+      target: '#deutschland-bl-table',
+      caseData: deutschlandBlCases,
+      deathData: deutschlandBlDeaths,
+      metaData: deutschlandBlMeta
+    });
+  })();
 
   resize(charts);
 }
