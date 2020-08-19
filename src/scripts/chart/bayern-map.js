@@ -3,10 +3,13 @@ import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
 
 import { casesPer100Tsd7Days, germanDate } from '../utils';
-import districts from '../data/meta/bayern-regbez-meta.json';
 
 const defaults = {
-  target: '#map'
+  target: '#map',
+  minValue: 0,
+  maxValue: 150,
+  minRadius: 3,
+  maxRadius: 18
 };
 
 export default class LineChart {
@@ -21,7 +24,8 @@ export default class LineChart {
   }
 
   draw() {
-    const { target, caseData, metaData, geoData, meta } = this;
+    const { target, caseData, metaData, geoData, labelData,
+      meta, minValue, maxValue, minRadius, maxRadius } = this;
 
     const uniqueCounties = [...new Set(caseData.map(d => d.Landkreis))];
 
@@ -35,13 +39,19 @@ export default class LineChart {
       );
     });
 
+    mergedCounties[0].valuePer100Tsd = 35;
+    mergedCounties[10].valuePer100Tsd = 50;
+    mergedCounties[11].valuePer100Tsd = 70;
+    mergedCounties[12].valuePer100Tsd = 37;
+    mergedCounties[14].valuePer100Tsd = 20000;
+
     // Create labels for all counties over 35 cases
     const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 35);
 
-    // Create labels for all district capitals which don't have cases
-    const capitals = districts.filter(district =>
+    // Create city labels for all districts which don't have cases
+    const cities = labelData.filter(city =>
       worstCounties.find(county =>
-        county.district === district.name
+        county.district === city.district
       ) === undefined
     );
 
@@ -54,8 +64,8 @@ export default class LineChart {
 
     // Set scale for circle radiuses or radii, if you are a Latin nerd
     const radius = scaleSqrt()
-      .domain([0, 150])
-      .range([3, 20]);
+      .domain([minValue, maxValue])
+      .range([minRadius, maxRadius]);
 
     // Set map center and dimensions
     const projection = geoMercator()
@@ -106,20 +116,26 @@ export default class LineChart {
       .data(mergedCounties, d => d.ags)
       .enter()
       .append('circle')
-      .attr('r', d => d.valuePer100Tsd ? radius(d.valuePer100Tsd) : 0)
+      .attr('r', d => {
+        if (d.valuePer100Tsd) {
+          return (radius(d.valuePer100Tsd) > maxRadius) ?
+            maxRadius : radius(d.valuePer100Tsd);
+        } else {
+          return 0;
+        }
+      })
       .attr('cx', d => projection([d.long, d.lat])[0])
       .attr('cy', d => projection([d.long, d.lat])[1])
       .attr('fill', d => getColor(d.valuePer100Tsd))
       .style('mix-blend-mode', 'hard-light');
 
     // Add labels for bigger cities
-
-    const capitalLabels = map.append('g')
-      .selectAll('.capitals')
-      .data(capitals)
+    const cityLabels = map.append('g')
+      .selectAll('.cities')
+      .data(cities)
       .enter();
 
-    capitalLabels.append('text')
+    cityLabels.append('text')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 12)
       .attr('font-weight', 300)
@@ -132,7 +148,7 @@ export default class LineChart {
       .attr('y', d => projection([d.long, d.lat])[1])
       .attr('text-anchor', 'middle')
       .attr('dy', 13)
-      .text(d => d.capital);
+      .text(d => d.name);
 
     // Add labels for the most affected counties
     const worstCountyLabels = map.append('g')

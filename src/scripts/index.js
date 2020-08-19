@@ -20,6 +20,7 @@ import bayernMeta from './data/meta/bayern-meta.json';
 import bayernRegbezMeta from './data/meta/bayern-regbez-meta.json';
 import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
 import bayernLkrGeo from './data/geo/bayern-lkr.geo.json';
+import bayernBigCities from './data/meta/bayern-big-cities.json';
 
 import deutschlandMeta from './data/meta/deutschland-meta.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
@@ -166,6 +167,7 @@ async function init() {
       caseData: bayernLkrCases,
       metaData: bayernLkrMeta,
       geoData: bayernLkrGeo,
+      labelData: bayernBigCities,
       meta: {
         title: 'Neue Coronafälle in Bayern pro Landkreis',
         description: 'Neuinfektionen pro 100.000 Einwohner in den letzten sieben Tagen',
