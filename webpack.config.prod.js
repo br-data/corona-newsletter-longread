@@ -1,9 +1,9 @@
 const Webpack = require('webpack');
-const WebpackMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const common = require('./webpack.common.js');
 
-module.exports = WebpackMerge(common, {
+module.exports = merge(common, {
   mode: 'production',
   stats: 'errors-warnings',
   bail: true,
@@ -52,12 +52,14 @@ module.exports = WebpackMerge(common, {
           {
             loader: 'postcss-loader',
             options: {
-              ident: 'postcss',
-              plugins: () => [
-                require('postcss-preset-env')(),
-                require('cssnano')(),
-                require('autoprefixer')()
-              ]
+              postcssOptions: {
+                ident: 'postcss',
+                plugins: [
+                  'postcss-preset-env',
+                  'cssnano',
+                  'autoprefixer'
+                ]
+              }
             }
           },
           {
