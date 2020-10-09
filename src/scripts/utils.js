@@ -143,7 +143,7 @@ export function sma(data, steps = 7, key = 'value') {
     return Object.assign({}, obj, {
       value: window.reduce((sum, curr) => {
         return curr[key] ? sum + curr[key] : null;
-      }, 0) / steps
+      }, 0) / window.length
     });
   }).filter(d => d.value);
 }
