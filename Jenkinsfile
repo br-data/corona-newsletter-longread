@@ -27,12 +27,16 @@ pipeline {
           env.PROJECT_NAME = repo.replaceFirst(/-longread$/, "")
         }
         echo "Using project name ${env.PROJECT_NAME}"
-        sh 'npm install'
+        nodejs(nodeJSInstallationName: 'node12') {
+          sh 'npm install'
+        }
       }
     }
     stage('Run') {
       steps {
-        sh 'npm run-script build'
+        nodejs(nodeJSInstallationName: 'node12') {
+          sh 'npm run-script build'
+        }
       }
     }
     stage('Package') {
