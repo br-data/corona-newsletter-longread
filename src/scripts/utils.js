@@ -51,7 +51,7 @@ export function trendClassifier(value) {
   if (value <= -50) {
     return 'stark zurückgegangen';
   } else if (value <= -25) {
-    return 'zurückgegangen';
+    return 'deutlich zurückgegangen';
   } else if (value <= -5) {
     return 'leicht zurückgegangen';
   } else if (value > -5 && value < 5) {
@@ -59,7 +59,7 @@ export function trendClassifier(value) {
   } else if (value >= 5 && value < 25) {
     return 'leicht angestiegen';
   } else if (value >= 25 && value < 50) {
-    return 'angestiegen';
+    return 'deutlich angestiegen';
   } else if (value >= 50) {
     return 'stark angestiegen';
   } else {
