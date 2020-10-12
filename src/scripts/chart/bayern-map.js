@@ -203,7 +203,7 @@ export default class LineChart {
       .attr('dy', 15)
       .text('Obergrenze (ab 50 Fällen)');
 
-    // Add key “Warngrenze”
+    // Add key “Warnwert”
     legend.append('circle')
       .attr('transform', 'translate(260, 85)')
       .attr('r', radius(30))
@@ -218,7 +218,7 @@ export default class LineChart {
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('Warngrenze (ab 35 Fällen)');
+      .text('Warnwert (ab 35 Fällen)');
 
     // Add key “Untergrenze”
     legend.append('circle')
