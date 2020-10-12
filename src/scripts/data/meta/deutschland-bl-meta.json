@@ -2,81 +2,81 @@
   {
     "name": "Schleswig-Holstein",
     "ags": "01",
-    "pop": 2859000
+    "pop": 2903773
   },
   {
     "name": "Hamburg",
     "ags": "02",
-    "pop": 1787000
+    "pop": 1847253
   },
   {
     "name": "Niedersachsen",
     "ags": "03",
-    "pop": 7927000
+    "pop": 7993608
   },
   {
     "name": "Bremen",
     "ags": "04",
-    "pop": 671000
+    "pop": 681202
   },
   {
     "name": "Nordrhein-Westfalen",
     "ags": "05",
-    "pop": 17866000
+    "pop": 17947221
   },
   {
     "name": "Hessen",
     "ags": "06",
-    "pop": 6176000
+    "pop": 6288080
   },
   {
     "name": "Rheinland-Pfalz",
     "ags": "07",
-    "pop": 4053000
+    "pop": 4093903
   },
   {
     "name": "Baden-Württemberg",
     "ags": "08",
-    "pop": 10880000
+    "pop": 11100394
   },
   {
     "name": "Bayern",
     "ags": "09",
-    "pop": 12844000
+    "pop": 13124737
   },
   {
     "name": "Saarland",
     "ags": 10,
-    "pop": 996000
+    "pop": 986887
   },
   {
     "name": "Berlin",
     "ags": 11,
-    "pop": 3520000
+    "pop": 3669491
   },
   {
     "name": "Brandenburg",
     "ags": 12,
-    "pop": 2485000
+    "pop": 2521893
   },
   {
     "name": "Mecklenburg-Vorpommern",
     "ags": 13,
-    "pop": 1612000
+    "pop": 1608138
   },
   {
     "name": "Sachsen",
     "ags": 14,
-    "pop": 4085000
+    "pop": 4071971
   },
   {
     "name": "Sachsen-Anhalt",
     "ags": 15,
-    "pop": 2245000
+    "pop": 2194782
   },
   {
     "name": "Thüringen",
     "ags": 16,
-    "pop": 2171000
+    "pop": 2133378
   }
 ]
