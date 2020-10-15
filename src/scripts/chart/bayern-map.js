@@ -201,35 +201,35 @@ export default class LineChart {
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('Obergrenze (ab 50 Fällen)');
+      .text('mehr als 50 Fälle');
 
     // Add key “Warnwert”
     legend.append('circle')
-      .attr('transform', 'translate(260, 85)')
+      .attr('transform', 'translate(200, 85)')
       .attr('r', radius(30))
       .attr('cx', radius(30))
       .attr('cy', 10)
       .attr('fill', getColor(35));
 
     legend.append('text')
-      .attr('transform', 'translate(290, 85)')
+      .attr('transform', 'translate(230, 85)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('Warnwert (ab 35 Fällen)');
+      .text('mehr als 35 Fälle');
 
     // Add key “Untergrenze”
     legend.append('circle')
-      .attr('transform', 'translate(490, 85)')
+      .attr('transform', 'translate(370, 85)')
       .attr('r', radius(10))
       .attr('cx', radius(10))
       .attr('cy', 10)
       .attr('fill', getColor(10));
 
     legend.append('text')
-      .attr('transform', 'translate(512, 85)')
+      .attr('transform', 'translate(390, 85)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
