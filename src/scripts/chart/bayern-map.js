@@ -120,7 +120,9 @@ export default class LineChart {
       .attr('cx', d => projection([d.long, d.lat])[0])
       .attr('cy', d => projection([d.long, d.lat])[1])
       .attr('fill', d => getColor(d.valuePer100Tsd))
-      .style('mix-blend-mode', 'hard-light');
+      .style('mix-blend-mode', 'hard-light')
+      .append('title')
+      .text(d => `${d.name} (${d.type}): ${Math.round(d.valuePer100Tsd)} Fälle`);
 
     // Add labels for bigger cities
     const cityLabels = map.append('g')
@@ -137,10 +139,11 @@ export default class LineChart {
       .attr('stroke-width', 3)
       .attr('stroke-linejoin', 'round')
       .attr('paint-order', 'stroke')
+      .attr('text-anchor', 'middle')
       .attr('x', d => projection([d.long, d.lat])[0])
       .attr('y', d => projection([d.long, d.lat])[1])
-      .attr('text-anchor', 'middle')
       .attr('dy', 13)
+      .style('pointer-events', 'none')
       .text(d => d.name);
 
     // Add labels for the most affected counties
@@ -157,10 +160,11 @@ export default class LineChart {
     //   .attr('stroke-width', 3)
     //   .attr('stroke-linejoin', 'round')
     //   .attr('paint-order', 'stroke')
+    //   .attr('text-anchor', 'middle')
     //   .attr('x', d => projection([d.long, d.lat])[0])
     //   .attr('y', d => projection([d.long, d.lat])[1])
-    //   .attr('text-anchor', 'middle')
     //   .attr('dy', 15)
+    //   .style('pointer-events', 'none')
     //   .text(d => (d.name.length > 12) ? `${d.name.slice(0, 12)}…` : d.name);
 
     // Add title
