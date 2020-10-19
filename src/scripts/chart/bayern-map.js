@@ -39,14 +39,14 @@ export default class LineChart {
     });
 
     // Create labels for all counties over 35 cases
-    const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 35);
+    // const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 35);
 
     // Create city labels for all districts which don't have cases
-    const cities = labelData.filter(city =>
-      worstCounties.find(county =>
-        county.district === city.district
-      ) === undefined
-    );
+    // const cities = labelData.filter(city =>
+    //   worstCounties.find(county =>
+    //     county.district === city.district
+    //   ) === undefined
+    // );
 
     const container = select(target);
     container.select('svg.map').remove();
@@ -125,12 +125,12 @@ export default class LineChart {
     // Add labels for bigger cities
     const cityLabels = map.append('g')
       .selectAll('.cities')
-      .data(cities)
+      .data(labelData)
       .enter();
 
     cityLabels.append('text')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
-      .attr('font-size', 12)
+      .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('stroke', '#7A7E8E')
@@ -144,24 +144,24 @@ export default class LineChart {
       .text(d => d.name);
 
     // Add labels for the most affected counties
-    const worstCountyLabels = map.append('g')
-      .selectAll('.worstCounties')
-      .data(worstCounties)
-      .enter();
+    // const worstCountyLabels = map.append('g')
+    //   .selectAll('.worstCounties')
+    //   .data(worstCounties)
+    //   .enter();
 
-    worstCountyLabels.append('text')
-      .attr('font-family', '"Open Sans", OpenSans, Arial')
-      .attr('font-size', 15)
-      .attr('fill', '#ffffff')
-      .attr('stroke', '#31343F')
-      .attr('stroke-width', 3)
-      .attr('stroke-linejoin', 'round')
-      .attr('paint-order', 'stroke')
-      .attr('x', d => projection([d.long, d.lat])[0])
-      .attr('y', d => projection([d.long, d.lat])[1])
-      .attr('text-anchor', 'middle')
-      .attr('dy', 15)
-      .text(d => (d.name.length > 12) ? `${d.name.slice(0, 12)}…` : d.name);
+    // worstCountyLabels.append('text')
+    //   .attr('font-family', '"Open Sans", OpenSans, Arial')
+    //   .attr('font-size', 15)
+    //   .attr('fill', '#ffffff')
+    //   .attr('stroke', '#31343F')
+    //   .attr('stroke-width', 3)
+    //   .attr('stroke-linejoin', 'round')
+    //   .attr('paint-order', 'stroke')
+    //   .attr('x', d => projection([d.long, d.lat])[0])
+    //   .attr('y', d => projection([d.long, d.lat])[1])
+    //   .attr('text-anchor', 'middle')
+    //   .attr('dy', 15)
+    //   .text(d => (d.name.length > 12) ? `${d.name.slice(0, 12)}…` : d.name);
 
     // Add title
     svg.append('text')

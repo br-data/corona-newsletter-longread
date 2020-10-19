@@ -82,5 +82,11 @@
     "district": "Oberfranken",
     "lat": 50.258998,
     "long": 10.961291
+  },
+  {
+    "name": "Ansbach",
+    "district": "Mittelfranken",
+    "lat": 49.2917917,
+    "long": 10.5691214
   }
 ]
