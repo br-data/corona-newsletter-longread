@@ -47,6 +47,16 @@ export function casesPer100Tsd7Days(data, population) {
   return (cases * 100000) / population;
 }
 
+export function thresholdIndicator(value) {
+  if (value >= 50) {
+    return 'dot-red';
+  } else if (value >= 35) {
+    return 'dot-orange';
+  } else {
+    return 'dot-yellow';
+  }
+}
+
 export function trendClassifier(value) {
   if (value <= -50) {
     return 'stark zurückgegangen';

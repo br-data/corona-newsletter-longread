@@ -41,6 +41,9 @@ async function init() {
   let previousWeekDate = new Date();
   previousWeekDate.setDate(endDate.getDate()-7);
   const previousWeekDateString = previousWeekDate.toISOString().split('T')[0];
+  let previousTwoWeeksDate = new Date();
+  previousTwoWeeksDate.setDate(endDate.getDate()-16);
+  const previousTwoWeeksDateString = previousTwoWeeksDate.toISOString().split('T')[0];
 
   const dateElements = document.querySelectorAll('span.date');
   dateElements.forEach(el => el.textContent = germanDate(endDateString));
@@ -152,11 +155,11 @@ async function init() {
 
   // Text for Bavarian counties
   (async function () {
-    const bayernLkrCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${previousWeekDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
+    const bayernLkrCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernLkrDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${previousWeekDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+    const bayernLkrDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
       .then(response => response.json())
       .catch(logError);
 

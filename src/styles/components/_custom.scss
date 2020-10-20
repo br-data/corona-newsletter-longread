@@ -1,0 +1,61 @@
+.custom-table {
+  position: relative;
+  height: 300px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3em;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom, 
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.75) 50%,
+      rgba(255, 255, 255, 1) 100%
+      );
+  }
+
+  > div {
+    height: 100%;
+    overflow: auto;
+  }
+
+  table th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  tbody {
+    &:after {
+      content: "\a";
+      white-space: pre;
+      line-height: 1em;
+    }
+  }
+
+  @media (min-width: 941px) {
+    table td[data-label="Landkreis/Stadt"] {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 0;
+    }
+
+    table td[data-label="7-Tage-Inzidenz"] {
+      width: 22%;
+    }
+
+    table td[data-label="Fälle"] {
+      width: 22%;
+    }
+
+    table td[data-label="Todesfälle"] {
+      width: 22%;
+    }
+  }
+}
+
