@@ -4,8 +4,9 @@ import '../styles/index.scss';
 import * as bayernIndicator from './indicator/bayern-indicator';
 import * as bayernText from './text/bayern-text';
 import * as bayernRegbezText from './text/bayern-regbez-text';
-import * as bayernLkrText from './text/bayern-lkr-text';
 import * as bayernRegbezTable from './table/bayern-regbez-table';
+import * as bayernLkrText from './text/bayern-lkr-text';
+import * as bayernLkrTable from './table/bayern-lkr-table';
 
 import * as deutschlandIndicator from './indicator/deutschland-indicator';
 import * as deutschlandText from './text/deutschland-text';
@@ -151,16 +152,15 @@ async function init() {
 
   // Text for Bavarian counties
   (async function () {
-    const bayernLkrCases = await fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${previousWeekDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
+    const bayernLkrCasesRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${previousWeekDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
       .then(response => response.json())
       .catch(logError);
 
-    bayernLkrText.init({
-      target: '#bayern-lkr-text',
-      caseData: bayernLkrCases,
-      metaData: bayernLkrMeta,
-      metaDataDistricts: bayernRegbezMeta
-    });
+    const bayernLkrDeathsRequest = fetch(`https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query?startDate=${previousWeekDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
+
+    const [bayernLkrCases, bayernLkrDeaths] = await Promise.all([bayernLkrCasesRequest, bayernLkrDeathsRequest]);
 
     const bayernMap = new BayernMap({
       target: '#bayern-map',
@@ -178,6 +178,20 @@ async function init() {
     });
 
     charts.push(bayernMap);
+
+    bayernLkrText.init({
+      target: '#bayern-lkr-text',
+      caseData: bayernLkrCases,
+      metaData: bayernLkrMeta,
+      metaDataDistricts: bayernRegbezMeta
+    });
+
+    bayernLkrTable.init({
+      target: '#bayern-lkr-table',
+      caseData: bayernLkrCases,
+      deathData: bayernLkrDeaths,
+      metaData: bayernLkrMeta
+    });
   })();
 
   // Text for Germany
