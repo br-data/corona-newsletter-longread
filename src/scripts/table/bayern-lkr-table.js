@@ -9,10 +9,10 @@ export function init(config) {
 
     return {
       'value': casesPer100Tsd7Days(countyCases, countyMeta.pop),
-      'Landkreis/Stadt': `<span class="${thresholdIndicator(casesPer100Tsd7Days(countyCases, countyMeta.pop))}" title="${pretty(casesPer100Tsd7Days(countyCases, countyMeta.pop))}"></span> ${countyMeta.name} (${countyMeta.type})`,
-      '7-Tage-Inzidenz': `<span class="${trendArrow(weekTrend(countyCases))}" title="${pretty((weekTrend(countyCases) || 0), true)} %"></span>${pretty(casesPer100Tsd7Days(countyCases, countyMeta.pop))}`,
-      'Fälle': `<span class="${trendArrow(weekTrend(countyCases))}" title="${pretty((weekTrend(countyCases) || 0), true)} %"></span> ${pretty(currentCount(countyCases))} (${pretty(currentIncrease(countyCases), true)})`,
-      'Todesfälle': `<span class="${trendArrow(weekTrend(countyDeaths))}" title="${pretty((weekTrend(countyDeaths) || 0), true)} %"></span> ${pretty(currentCount(countyDeaths))} (${pretty(currentIncrease(countyDeaths), true)})`
+      'Landkreis/Stadt': `${countyMeta.name} (${countyMeta.type})`,
+      '7-Tage-Inzidenz': `<span class="${thresholdIndicator(casesPer100Tsd7Days(countyCases, countyMeta.pop))}" title="${pretty(casesPer100Tsd7Days(countyCases, countyMeta.pop))}"></span>${pretty(casesPer100Tsd7Days(countyCases, countyMeta.pop))}`,
+      'Fälle (neu)': `<span class="${trendArrow(weekTrend(countyCases))}" title="${pretty((weekTrend(countyCases) || 0), true)} %"></span> ${pretty(currentCount(countyCases))} (${pretty(currentIncrease(countyCases), true)})`,
+      'Todesfälle (neu)': `<span class="${trendArrow(weekTrend(countyDeaths))}" title="${pretty((weekTrend(countyDeaths) || 0), true)} %"></span> ${pretty(currentCount(countyDeaths))} (${pretty(currentIncrease(countyDeaths), true)})`
     };
   }).sort((a, b) => b.value - a.value).map(d => { delete d.value; return d;});
 
