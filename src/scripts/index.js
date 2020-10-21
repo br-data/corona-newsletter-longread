@@ -38,9 +38,6 @@ async function init() {
   const startDateString = startDate.toISOString().split('T')[0];
   const endDate = new Date(urlParams.get('endDate') || new Date());
   const endDateString = endDate.toISOString().split('T')[0];
-  let previousWeekDate = new Date();
-  previousWeekDate.setDate(endDate.getDate()-7);
-  const previousWeekDateString = previousWeekDate.toISOString().split('T')[0];
   let previousTwoWeeksDate = new Date();
   previousTwoWeeksDate.setDate(endDate.getDate()-16);
   const previousTwoWeeksDateString = previousTwoWeeksDate.toISOString().split('T')[0];
@@ -183,7 +180,8 @@ async function init() {
     charts.push(bayernMap);
 
     bayernLkrText.init({
-      target: '#bayern-lkr-text',
+      summaryTarget: '#bayern-lkr-summary-text',
+      detailTarget: '#bayern-lkr-detail-text',
       caseData: bayernLkrCases,
       metaData: bayernLkrMeta,
       metaDataDistricts: bayernRegbezMeta
