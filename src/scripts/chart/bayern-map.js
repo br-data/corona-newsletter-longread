@@ -190,56 +190,73 @@ export default class LineChart {
     // Add legend
     const legend = svg.append('g');
 
-    // Add key ”Obergrenze“
+    // Add key "more than 100 cases"
     legend.append('circle')
-      .attr('transform', 'translate(25, 85)')
+      .attr('transform', 'translate(25, 90)')
+      .attr('r', radius(100))
+      .attr('cx', radius(100))
+      .attr('cy', 10)
+      .attr('fill', getColor(100));
+
+    legend.append('text')
+      .attr('transform', 'translate(65, 90)')
+      .attr('font-family', '"Open Sans", OpenSans, Arial')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .attr('dy', 15)
+      .text('100 Fälle und mehr');
+
+    // Add key "more than 50 cases"
+    legend.append('circle')
+      .attr('transform', 'translate(225, 90)')
       .attr('r', radius(50))
       .attr('cx', radius(50))
       .attr('cy', 10)
       .attr('fill', getColor(50));
 
     legend.append('text')
-      .attr('transform', 'translate(58, 85)')
+      .attr('transform', 'translate(258, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('mehr als 50 Fälle');
+      .text('50 Fälle und mehr');
 
-    // Add key “Warnwert”
+    // Add key "more than 35 cases"
     legend.append('circle')
-      .attr('transform', 'translate(200, 85)')
+      .attr('transform', 'translate(410, 90)')
       .attr('r', radius(30))
       .attr('cx', radius(30))
       .attr('cy', 10)
       .attr('fill', getColor(35));
 
     legend.append('text')
-      .attr('transform', 'translate(230, 85)')
+      .attr('transform', 'translate(440, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('mehr als 35 Fälle');
+      .text('35 Fälle und mehr');
 
-    // Add key “Untergrenze”
+    // Add key "more than 1 case"
     legend.append('circle')
-      .attr('transform', 'translate(370, 85)')
+      .attr('transform', 'translate(590, 90)')
       .attr('r', radius(10))
       .attr('cx', radius(10))
       .attr('cy', 10)
       .attr('fill', getColor(10));
 
     legend.append('text')
-      .attr('transform', 'translate(390, 85)')
+      .attr('transform', 'translate(610, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('mehr als 1 Fall');
+      .text('mindestens 1 Fall');
 
     // Add author and source
     svg.append('text')
@@ -258,7 +275,10 @@ export default class LineChart {
 }
 
 function getColor(value) {
-  if (value >= 50) {
+  if (value >= 100) {
+    // dark red
+    return '#bd0026';
+  } else if (value >= 50) {
     // red
     return '#f03b20';
   } else if (value >= 35) {

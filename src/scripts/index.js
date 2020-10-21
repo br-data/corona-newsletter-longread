@@ -169,7 +169,7 @@ async function init() {
       geoData: bayernLkrGeo,
       labelData: bayernBigCities,
       meta: {
-        title: 'Neue Coronafälle in Bayern pro Landkreis',
+        title: '7-Tage-Inzidenz in Bayern',
         description: 'Neuinfektionen pro 100.000 Einwohner in den letzten sieben Tagen',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',

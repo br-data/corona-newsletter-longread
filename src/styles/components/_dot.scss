@@ -5,6 +5,10 @@
   width: 10px;
   border-radius: 50%;
 
+  &[class*="-darkred"] {
+    background-color: #bd0026;
+  }
+
   &[class*="-red"] {
     background-color: #f03b20;
   }
