@@ -10,7 +10,7 @@ export function init(config) {
     return {
       'value': casesPer100Tsd7Days(districtCases, districtMeta.pop),
       'Regierungsbezirk': districtMeta.name,
-      '7-Tage-Inzidenz': `${pretty(casesPer100Tsd7Days(districtCases, districtMeta.pop))}`,
+      '7-Tage-Inzidenz ▾': `${pretty(casesPer100Tsd7Days(districtCases, districtMeta.pop))}`,
       'Fälle (neu)': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty((weekTrend(districtCases) || 0), true)} %"></span> ${pretty(currentCount(districtCases))} (${pretty(currentIncrease(districtCases), true)})`,
       'Todesfälle (neu)': `<span class="${trendArrow(weekTrend(districtDeaths))}" title="${pretty((weekTrend(districtDeaths) || 0), true)} %"></span> ${pretty(currentCount(districtDeaths))} (${pretty(currentIncrease(districtDeaths), true)})`
     };

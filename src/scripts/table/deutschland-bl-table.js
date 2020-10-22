@@ -10,7 +10,7 @@ export function init(config) {
     return {
       'value': casesPer100Tsd7Days(stateCases, stateMeta.pop),
       'Bundesland': stateMeta.name,
-      '7-Tage-Inzidenz': `${pretty(casesPer100Tsd7Days(stateCases, stateMeta.pop))}`,
+      '7-Tage-Inzidenz ▾': `${pretty(casesPer100Tsd7Days(stateCases, stateMeta.pop))}`,
       'Fälle (neu)': `<span class="${trendArrow(weekTrend(stateCases))}" title="${pretty((weekTrend(stateCases) || 0), true)} %"></span> ${pretty(currentCount(stateCases))} (${pretty(currentIncrease(stateCases), true)})`,
       'Todesfälle (neu)': `<span class="${trendArrow(weekTrend(stateDeaths))}" title="${pretty((weekTrend(stateDeaths) || 0), true)} %"></span> ${pretty(currentCount(stateDeaths))} (${pretty(currentIncrease(stateDeaths), true)})`
     };
