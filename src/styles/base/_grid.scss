@@ -14,30 +14,19 @@ main {
 }
 
 section {
-  max-width: 940px;
   margin: 0 auto 4em;
-
-  @include future {
-    max-width: 1120px;
-  }
-
-  @include mobile {
-    margin: 0 auto 4em;
-  }
 }
 
 // Text level indent blocks
 .block {
+  width: 60%;
   padding: 0 4em;
   margin: $margin-desktop;
 
   @include tablet {
+    width: 100%;
     margin: 0 $margin-tablet;
-  }
-
-  @include mobile {
     padding: 0 2em;
-    margin: 0 $margin-mobile;
   }
 }
 
