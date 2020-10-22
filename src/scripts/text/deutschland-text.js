@@ -29,7 +29,7 @@ export function init(config) {
 
   ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : 'Im Vergleich zum Vortag gab es keine neuen Todesfälle.' }
 
-  Langfristig gibt es aber einen ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (<span class="${trendArrow(weekTrend(deathData))}"></span>${pretty((weekTrend(deathData) || 0), true)} %).`;
+  Langfristig gibt es ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (<span class="${trendArrow(weekTrend(deathData))}"></span>${pretty((weekTrend(deathData) || 0), true)} %).`;
 
   const caseElement = document.querySelector(caseTarget);
   caseElement.innerHTML = caseText;
@@ -40,13 +40,13 @@ export function init(config) {
 
 function positiveNegative(value) {
   if (value < 0) {
-    return 'positiven';
+    return 'einen positiven';
   } else if (value === 0) {
-    return 'neutralen';
+    return 'keinen eindeutigen';
   } else if (value > 0) {
     return 'negativen';
-  } else if (value === undefined) {
-    return 'positiven';
+  } else {
+    return 'keinen eindeutigen';
   }
 }
 
