@@ -15,10 +15,11 @@ export function init(config) {
     );
   }).sort((a, b) => b.casesPer100Tsd7Days - a.casesPer100Tsd7Days);
 
+  const over100Counties = worstCounties.filter(d => d.casesPer100Tsd7Days >= 100);
   const over50Counties = worstCounties.filter(d => d.casesPer100Tsd7Days >= 50);
   const over35Counties = worstCounties.filter(d => d.casesPer100Tsd7Days >= 35);
 
-  const summaryText = `In Bayern gibt es momentan ${numeral1(over35Counties.length)} ${plural1(over35Counties.length)}, ${plural2(over35Counties.length)} auf über 35 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over35Counties.length)}. ${ over50Counties.length ? 'Davon wiederum ' + plural3(over50Counties.length) + ' ' + numeral2(over50Counties.length) + ' ' + plural1(over50Counties.length) + ' auf mehr als 50 Fälle pro 100.000 Einwohner.' : ''}`;
+  const summaryText = `In Bayern gibt es momentan ${numeral1(over35Counties.length)} ${plural1(over35Counties.length)}, ${plural2(over35Counties.length)} auf mehr als 35 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over35Counties.length)}.${ over50Counties.length ? ' Davon wiederum ' + plural3(over50Counties.length) + ' ' + numeral2(over50Counties.length) + ' ' + plural1(over50Counties.length) + ' auf mehr als 50 Fälle pro 100.000 Einwohner.' : ''} ${ over50Counties.length ? ' ' + capitalize(numeral2(over100Counties.length)) + ' ' + plural1(over100Counties.length)  + ' ' + plural4(over100Counties.length) + ' sogar den Grenzwert von 100 Fällen in der 7-Tage-Inzidenz.' : '' }`;
 
   const detailText = `Die drei am stärksten betroffenen Kreise sind zur Zeit ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name}, ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} und ${preposition1(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name}.
 
@@ -26,13 +27,21 @@ export function init(config) {
 
   ${preposition2(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} (${worstCounties[1].district}) waren es ${pretty(worstCounties[1].casesPer100Tsd7Days)} Fälle.
 
-  Aus ${preposition3(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPer100Tsd7Days)} Fälle gemeldet`;
+  Aus ${preposition3(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].casesPer100Tsd7Days)} Fälle gemeldet.`;
 
   const summaryElement = document.querySelector(summaryTarget);
   summaryElement.textContent = summaryText;
 
   const detailElement = document.querySelector(detailTarget);
   detailElement.textContent = detailText;
+}
+
+function capitalize(str) {
+  if (typeof str === 'string') {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  } else {
+    return str;
+  }
 }
 
 function preposition1(type) {
@@ -80,6 +89,14 @@ function plural3(number) {
     case 0: return 'kommt';
     case 1: return  'kommt';
     default: return 'kommen';
+  }
+}
+
+function plural4(number) {
+  switch (number) {
+    case 0: return 'überschreitet';
+    case 1: return  'überschreitet';
+    default: return 'überschreiten';
   }
 }
 

@@ -55,7 +55,7 @@ function oneManyPersons(value) {
   if (value === 0) {
     return 'keine weitere Personen';
   } else if (value === 1) {
-    return 'ein weitere Person';
+    return 'eine weitere Person';
   } else {
     return `${pretty(value)} weitere Personen`;
   }
