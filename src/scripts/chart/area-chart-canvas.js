@@ -30,6 +30,35 @@ export default class AreaChart {
     const width = container.node().getBoundingClientRect().width;
     const height = (width * 9) / 16;
 
+    // Set drawing dimensions
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    // Calculate horizontal scale
+    const xMin = min(data, d => d.date);
+    const xMinBracket = new Date(xMin);
+    xMinBracket.setDate(xMinBracket.getDate() - 8);
+
+    const xMax = max(data, d => d.date);
+    const xMaxBracket = new Date(xMax);
+    xMaxBracket.setDate(xMaxBracket.getDate() + 8);
+
+    const xValues = dateRange(xMinBracket, xMaxBracket, 1);
+    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
+
+    const x = scaleBand()
+      .paddingOuter(0)
+      .paddingInner(.4)
+      .domain(xValues)
+      .range([0, innerWidth]);
+
+    // Calculate vertical scale
+    const yMax = max(data, d => d.sumValue);
+
+    const y = scaleLinear()
+      .domain([0, yMax * 1.1])
+      .range([innerHeight, 0]);
+
     // Create canvas and context
     const canvas = create('canvas')
       .attr('width', width * ratio)
@@ -63,28 +92,6 @@ export default class AreaChart {
 
     // Adjust for margins
     context.translate(margin.left, margin.top);
-
-    // Set drawing dimensions
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-
-    const xMax = max(data, d => new Date(d.date));
-    const xMin = min(data, d => new Date(d.date));
-    xMin.setDate(xMin.getDate() - 2);
-    const yMax = max(data, d => d.sumValue);
-
-    const x = scaleBand()
-      .paddingOuter(0.1)
-      .paddingInner(0.4)
-      .align(0.5)
-      .domain(data.map(d => d.date))
-      .rangeRound([0, innerWidth]);
-
-    const y = scaleLinear()
-      .domain([0, yMax * 1.1])
-      .range([innerHeight, 0]);
-
-    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
 
     // Draw x axis
     context.textAlign = 'center';
