@@ -195,8 +195,8 @@ export function json2table(json) {
 
   json.map(row => {
     bodyRows += '<tr>';
-    columns.map(colName => {
-      bodyRows += `<td data-label="${colName.replace(/<br>/gi, '')}">${row[colName]}</td>`;
+    columns.map((colName, i) => {
+      bodyRows += `<td class="column-${i}" data-label="${colName.replace(/<br>/gi, '')}">${row[colName]}</td>`;
     });
     bodyRows += '</tr>';
   });

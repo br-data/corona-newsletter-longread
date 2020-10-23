@@ -37,24 +37,24 @@
     }
   }
 
-  @media (min-width: 941px) {
-    table td[data-label="Landkreis/Stadt"] {
+  @media (min-width: #{$tablet-width + 1}) {
+    table td.column-0 {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       max-width: 0;
     }
 
-    table td[data-label="7-Tage-Inzidenz ▾"] {
-      width: 22%;
+    table td.column-1 {
+      width: 19%;
     }
 
-    table td[data-label="Fälle (neu)"] {
-      width: 22%;
+    table td.column-2 {
+      width: 25%;
     }
 
-    table td[data-label="Todesfälle (neu)"] {
-      width: 22%;
+    table td.column-3 {
+      width: 27%;
     }
   }
 }
