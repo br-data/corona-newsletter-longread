@@ -55,15 +55,20 @@ export default class LineChart {
     const width = bounds.width;
     const height = width;
 
+    const isMobile = width <= 640;
+    
+    // Set scaling factor for circles
+    const scalingFactor = width / 800;
+
     // Set scale for circle radiuses or radii, if you are a Latin nerd
     const radius = scaleSqrt()
       .domain([minValue, maxValue])
-      .range([minRadius, maxRadius]);
+      .range([minRadius * scalingFactor, maxRadius * scalingFactor]);
 
     // Set map center and dimensions
     const projection = geoMercator()
       .translate([width/2, height/2])
-      .scale(6300)
+      .scale(width * 8)
       .center([11.4, 49.15]);
 
     const path = geoPath().projection(projection);
@@ -132,7 +137,7 @@ export default class LineChart {
 
     cityLabels.append('text')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
-      .attr('font-size', 15)
+      .attr('font-size', isMobile ? '13' : '15')
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('stroke', '#7A7E8E')
@@ -144,7 +149,10 @@ export default class LineChart {
       .attr('y', d => projection([d.long, d.lat])[1])
       .attr('dy', 13)
       .style('pointer-events', 'none')
-      .text(d => d.name);
+      .text((d, i) =>
+        // Show fewer labels on small maps
+        (isMobile && i > 6) ? '' : d.name
+      );
 
     // Add labels for the most affected counties
     // const worstCountyLabels = map.append('g')
@@ -187,18 +195,19 @@ export default class LineChart {
       .attr('dy', 15)
       .text(meta.description);
 
-    // Add legend
-    const legend = svg.append('g');
+    // Add key
+    const key = svg.append('g')
+      .style('display', isMobile ? 'none' : 'block');
 
     // Add key "more than 100 cases"
-    legend.append('circle')
+    key.append('circle')
       .attr('transform', 'translate(25, 90)')
       .attr('r', radius(100))
       .attr('cx', radius(100))
       .attr('cy', 10)
       .attr('fill', getColor(100));
 
-    legend.append('text')
+    key.append('text')
       .attr('transform', 'translate(65, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
@@ -208,14 +217,14 @@ export default class LineChart {
       .text('100 Fälle und mehr');
 
     // Add key "more than 50 cases"
-    legend.append('circle')
+    key.append('circle')
       .attr('transform', 'translate(225, 90)')
       .attr('r', radius(50))
       .attr('cx', radius(50))
       .attr('cy', 10)
       .attr('fill', getColor(50));
 
-    legend.append('text')
+    key.append('text')
       .attr('transform', 'translate(258, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
@@ -225,14 +234,14 @@ export default class LineChart {
       .text('50 Fälle und mehr');
 
     // Add key "more than 35 cases"
-    legend.append('circle')
+    key.append('circle')
       .attr('transform', 'translate(410, 90)')
       .attr('r', radius(30))
       .attr('cx', radius(30))
       .attr('cy', 10)
       .attr('fill', getColor(35));
 
-    legend.append('text')
+    key.append('text')
       .attr('transform', 'translate(440, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
@@ -242,14 +251,14 @@ export default class LineChart {
       .text('35 Fälle und mehr');
 
     // Add key "more than 1 case"
-    legend.append('circle')
+    key.append('circle')
       .attr('transform', 'translate(590, 90)')
       .attr('r', radius(10))
       .attr('cx', radius(10))
       .attr('cy', 10)
       .attr('fill', getColor(10));
 
-    legend.append('text')
+    key.append('text')
       .attr('transform', 'translate(610, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
