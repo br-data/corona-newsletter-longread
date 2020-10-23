@@ -33,7 +33,7 @@ export function dateRange(startDate, endDate, steps) {
     currentDate.setDate(currentDate.getDate() - steps);
   }
 
-  return dateArray;
+  return dateArray.reverse();
 }
 
 export function casesPerThousand(cases, population) {

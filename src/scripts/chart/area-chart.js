@@ -1,9 +1,10 @@
-import { select, create } from 'd3-selection';
+import { select } from 'd3-selection';
 import { max, min } from 'd3-array';
 import { scaleLinear, scaleBand } from 'd3-scale';
 import { area, curveMonotoneX } from 'd3-shape';
+import { axisRight, axisBottom } from 'd3-axis';
 
-import { pretty, germanDate, germanDateShort, dateRange, getRetinaRatio } from '../utils';
+import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
 
 const defaults = {
   target: '#line-chart',
@@ -24,194 +25,237 @@ export default class AreaChart {
   draw() {
     const { target, data, meta, margin } = this;
     const container = select(target);
-    const ratio = getRetinaRatio();
 
     // Set initial dimensions
     const width = container.node().getBoundingClientRect().width;
     const height = (width * 9) / 16;
 
-    // Create canvas and context
-    const canvas = create('canvas')
-      .attr('width', width * ratio)
-      .attr('height', height * ratio)
-      .style('width', `${width}px`)
-      .style('height', `${height}px`)
-      .node();
-
-    const context = canvas.getContext('2d');
-
-    // Scale canvas by retina ratio
-    context.scale(ratio, ratio);
-
-    // Draw background gradient
-    const gradient = context.createRadialGradient(
-      width / 2,
-      height / 2,
-      height / 4,
-      width / 2,
-      height / 2,
-      height
-    );
-
-    gradient.addColorStop(0, '#484B5A');
-    gradient.addColorStop(1, '#1D2029');
-    context.fillStyle = gradient;
-    context.fillRect(0, 0, width, height);
-
-    // Set canvas default font
-    context.font = '300 14px "Open Sans", OpenSans, Arial';
-
-    // Adjust for margins
-    context.translate(margin.left, margin.top);
-
     // Set drawing dimensions
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
-    const xMax = max(data, d => new Date(d.date));
-    const xMin = min(data, d => new Date(d.date));
-    xMin.setDate(xMin.getDate() - 2);
-    const yMax = max(data, d => d.sumValue);
+    // Calculate horizontal scale and axis
+    const xMin = min(data, d => d.date);
+    const xMinBracket = new Date(xMin);
+    xMinBracket.setDate(xMinBracket.getDate() - 8);
+
+    const xMax = max(data, d => d.date);
+    const xMaxBracket = new Date(xMax);
+    xMaxBracket.setDate(xMaxBracket.getDate() + 8);
+
+    const xValues = dateRange(xMinBracket, xMaxBracket, 1);
+    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
 
     const x = scaleBand()
-      .paddingOuter(0.1)
-      .paddingInner(0.4)
-      .align(0.5)
-      .domain(data.map(d => d.date))
-      .rangeRound([0, innerWidth]);
+      .paddingOuter(0)
+      .paddingInner(.4)
+      .domain(xValues)
+      .range([0, innerWidth]);
+
+    const xAxis = axisBottom(x)
+      .tickValues(xTicks)
+      .tickFormat(d => germanDateShort(d));
+    
+    // Calculate vertical scale and axis
+    const yMax = max(data, d => d.sumValue);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
       .range([innerHeight, 0]);
 
-    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
+    const yAxis = axisRight(y)
+      .tickSize(innerWidth)
+      .tickFormat(d => pretty(d))
+      .ticks(3);
 
-    // Draw x axis
-    context.textAlign = 'center';
-    context.textBaseline = 'top';
-    xTicks.forEach(d => {
-      context.fillStyle = '#ffffff';
-      context.fillText(germanDateShort(d), x(d) + x.bandwidth() / 2, innerHeight + 5);
-    });
+    // Add SVG and set dimensions
+    const svg = container.append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('preserveAspectRatio', 'xMidYMid')
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .style('width', '100%');
 
-    // Draw y axis
-    context.beginPath();
-    context.lineWidth = 1;
-    y.ticks(3).forEach(d => {
-      context.moveTo(0, y(d));
-      context.lineTo(innerWidth, y(d));
-    });
-    context.strokeStyle = '#6d7182';
-    context.stroke();
+    // Add background definition
+    const defs = svg.append('defs');
 
-    context.textAlign = 'left';
-    context.textBaseline = 'bottom';
-    y.ticks(3).forEach(d => {
-      context.fillStyle = '#ffffff';
-      context.fillText(pretty(d), 0, y(d) - 2);
-    });
+    const radialGradient = defs.append('radialGradient')
+      .attr('id', 'radial-gradient');
+
+    radialGradient.append('stop')
+      .attr('offset', '.25')
+      .attr('stop-color', '#484B5A');
+
+    radialGradient.append('stop')
+      .attr('offset', '1')
+      .attr('stop-color', '#1D2029');
+   
+    // Add background element and apply definition
+    svg.append('rect')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('fill', 'url(#radial-gradient)');
+
+    // Add axes
+    const axes = svg.append('g')
+      .classed('axes', true)
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
+    axes.append('g')
+      .call(yAxis)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line')
+        .attr('stroke', '#6d7182')
+      )
+      .call(g => g.selectAll('.tick text')
+        .attr('x', 0)
+        .attr('dy', -5)
+        .attr('font-family', '"Open Sans", sans-serif')
+        .attr('font-size', 14)
+        .attr('font-weight', 300)
+        .attr('fill', '#ffffff')
+      );
+
+    axes.append('g')
+      .attr('transform', `translate(0, ${innerHeight})`)
+      .call(xAxis)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line').remove())
+      .call(g => g.selectAll('.tick text')
+        .attr('dy', 8)
+        .attr('font-family', '"Open Sans", sans-serif')
+        .attr('font-size', 14)
+        .attr('font-weight', 300)
+        .attr('fill', '#ffffff')
+      );
+
+    // Add area plot
+    const areas = svg.append('g')
+      .classed('areas', true)
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
     const recoveredCasesArea = area()
       .x(d => x(d.date))
       .y0(d => y(d.currentlyInfected + d.deathSum))
       .y1(d => y(d.currentlyRecovered + d.currentlyInfected + d.deathSum))
-      .curve(curveMonotoneX)
-      .context(context);
+      .curve(curveMonotoneX);
 
-    context.beginPath();
-    recoveredCasesArea(data);
-    context.fillStyle = '#3ad29f';
-    context.fill();
+    areas.append('path')
+      .datum(data)
+      .attr('d', recoveredCasesArea)
+      .attr('fill', '#3ad29f');
 
     const activeCasesArea = area()
       .x(d => x(d.date))
       .y0(d => y(d.deathSum) + 1)
       .y1(d => y(d.currentlyInfected + d.deathSum) - 1)
-      .curve(curveMonotoneX)
-      .context(context);
+      .curve(curveMonotoneX);
 
-    context.beginPath();
-    activeCasesArea(data);
-    context.fillStyle = '#0b9fd8';
-    context.fill();
+    areas.append('path')
+      .datum(data)
+      .attr('d', activeCasesArea)
+      .attr('fill', '#0b9fd8');
 
     const deathsArea = area()
       .x(d => x(d.date))
       .y0(y(0))
       .y1(d => y(d.deathSum))
-      .curve(curveMonotoneX)
-      .context(context);
+      .curve(curveMonotoneX);
 
-    context.beginPath();
-    deathsArea(data);
-    context.fillStyle = '#fbb800';
-    context.fill();
+    areas.append('path')
+      .datum(data)
+      .attr('d', deathsArea)
+      .attr('fill', '#fbb800');
 
-    // Add title
-    context.font = '600 24px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'left';
-    context.textBaseline = 'top';
-    context.fillStyle = '#ffffff';
-    context.fillText(meta.title, 0, -margin.top + 20);
+    // Add title and description
+    const header = svg.append('g')
+      .classed('header', true)
+      .attr('transform', `translate(${margin.left}, 40)`);
 
-    // Add description
-    context.font = '300 15px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'left';
-    context.textBaseline = 'top';
-    context.fillStyle = '#9fa3b3';
-    context.fillText(meta.description, 0, -margin.top + 50);
+    header.append('text')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('font-family', '"Open Sans", sans-serif')
+      .attr('font-size', 24)
+      .attr('font-weight', 600)
+      .attr('fill', '#ffffff')
+      .text(meta.title);
+
+    header.append('text')
+      .attr('x', 0)
+      .attr('y', 25)
+      .attr('font-family', '"Open Sans", sans-serif')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#9fa3b3')
+      .text(meta.description);
 
     // Add key
     const spacing = 105;
 
-    context.beginPath();
-    context.rect((0 * spacing), -margin.top + 85, 11, 11);
-    context.fillStyle = '#0b9fd8';
-    context.fill();
+    const key = svg.append('g')
+      .classed('key', true)
+      .attr('transform', `translate(${margin.left}, 90)`);
+    
+    key.append('rect')
+      .attr('x', 0 * spacing)
+      .attr('y', 2)
+      .attr('width', 12)
+      .attr('height', 12)
+      .attr('fill', '#0b9fd8');
 
-    context.font = '300 15px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'left';
-    context.textBaseline = 'top';
-    context.fillStyle = '#ffffff';
-    context.fillText('Erkrankte', (0 * spacing) + 18, -margin.top + 85);
+    key.append('text')
+      .attr('x', (0 * spacing) + 20)
+      .attr('dominant-baseline', 'hanging')
+      .attr('font-family', '"Open Sans", sans-serif')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .text('Erkrankte');
 
-    context.beginPath();
-    context.rect((1 * spacing), -margin.top + 85, 11, 11);
-    context.fillStyle = '#3ad29f';
-    context.fill();
+    key.append('rect')
+      .attr('x', 1 * spacing)
+      .attr('y', 2)
+      .attr('width', 12)
+      .attr('height', 12)
+      .attr('fill', '#3ad29f');
 
-    context.font = '300 15px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'left';
-    context.textBaseline = 'top';
-    context.fillStyle = '#ffffff';
-    context.fillText('Genesene', (1 * spacing) + 18, -margin.top + 85);
+    key.append('text')
+      .attr('x', (1 * spacing) + 20)
+      .attr('dominant-baseline', 'hanging')
+      .attr('font-family', '"Open Sans", sans-serif')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .text('Genesene');
 
-    context.beginPath();
-    context.rect((2 * spacing), -margin.top + 85, 11, 11);
-    context.fillStyle = '#fbb800';
-    context.fill();
+    key.append('rect')
+      .attr('x', 2 * spacing)
+      .attr('y', 2)
+      .attr('width', 12)
+      .attr('height', 12)
+      .attr('fill', '#fbb800');
 
-    context.font = '300 15px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'left';
-    context.textBaseline = 'top';
-    context.fillStyle = '#ffffff';
-    context.fillText('Todesfälle', (2 * spacing) + 18, -margin.top + 85);
+    key.append('text')
+      .attr('x', (2 * spacing) + 20)
+      .attr('dominant-baseline', 'hanging')
+      .attr('font-family', '"Open Sans", sans-serif')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .text('Todesfälle');
 
     // Add author and source
-    context.font = '300 14px "Open Sans", OpenSans, Arial';
-    context.textAlign = 'left';
-    context.textBaseline = 'top';
-    context.fillStyle = '#9fa3b3';
-    context.fillText(`Grafik: ${meta.author}, Daten: ${meta.source} (Stand: ${germanDate(meta.date)})`, 0, innerHeight + 40);
+    const footer = svg.append('g')
+      .classed('footer', true)
+      .attr('transform', `translate(${margin.left}, ${height - 25})`);
 
-    // Scale canvas by pixel density
-    context.scale(1, 1);
-
-    // Create image from canvas and append it to the DOM
-    container.append('img')
-      .attr('src', canvas.toDataURL())
-      .attr('title', meta.title)
-      .attr('alt', `${meta.title}: ${meta.description}`);
+    footer.append('text')
+      .attr('font-family', '"Open Sans", sans-serif')
+      .attr('font-size', 14)
+      .attr('font-weight', 300)
+      .attr('fill', '#9fa3b3')
+      .text(`Grafik: ${meta.author}, Daten: ${meta.source} (Stand: ${germanDate(meta.date)})`);
   }
 
   update() {
