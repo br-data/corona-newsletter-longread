@@ -70,8 +70,6 @@ export default class AreaChart {
 
     // Add SVG and set dimensions
     const svg = container.append('svg')
-      .attr('width', width)
-      .attr('height', height)
       .attr('preserveAspectRatio', 'xMidYMid')
       .attr('viewBox', `0 0 ${width} ${height}`)
       .style('width', '100%');
