@@ -145,6 +145,7 @@ export default class BarChart {
       .attr('stroke-width', 3)
       .attr('stroke-dasharray', [10, 10])
       .attr('stroke-linecap', 'round');
+
     // Add title and description
     const header = svg.append('g')
       .classed('header', true)
