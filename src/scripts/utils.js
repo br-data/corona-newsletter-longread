@@ -26,20 +26,12 @@ export function germanDateShort(dateString) {
 
 export function dateRange(startDate, endDate, steps) {
   const dateArray = [];
-  let currentDate = new Date(endDate);
-  let currentTimezone = currentDate.getTimezoneOffset();
+  const currentDate = new Date(endDate);
 
   while (currentDate >= new Date(startDate)) {
     dateArray.push(currentDate.toISOString().split('T')[0]);
-    currentDate.setDate(currentDate.getDate() - steps);
-
-    // Adjust for daylight saving time
-    if (currentTimezone !== currentDate.getTimezoneOffset()) {
-      currentDate.setTime(
-        currentDate.getTime() - (currentDate.getTimezoneOffset() - currentTimezone) * 60 * 1000
-      );
-      currentTimezone = currentDate.getTimezoneOffset();
-    }
+    // Use UTC date to prevent problems with timezones and DST
+    currentDate.setUTCDate(currentDate.getUTCDate() - steps);
   }
 
   return dateArray.reverse();
