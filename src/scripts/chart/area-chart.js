@@ -7,7 +7,7 @@ import { axisRight, axisBottom } from 'd3-axis';
 import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
 
 const defaults = {
-  target: '#line-chart',
+  target: '#area-chart',
   margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 

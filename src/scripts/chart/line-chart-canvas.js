@@ -6,7 +6,7 @@ import { line, curveMonotoneX } from 'd3-shape';
 import { pretty, germanDate, germanDateShort, dateRange, getRetinaRatio } from '../utils';
 
 const defaults = {
-  target: '#line-chart',
+  target: '#line-chart-canvas',
   margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 

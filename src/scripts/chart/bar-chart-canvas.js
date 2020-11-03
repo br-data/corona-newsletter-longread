@@ -7,7 +7,7 @@ import { sma } from '../utils';
 import { pretty, germanDate, germanDateShort, dateRange, getRetinaRatio } from '../utils';
 
 const defaults = {
-  target: '#bar-chart',
+  target: '#bar-chart-canvas',
   margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 
