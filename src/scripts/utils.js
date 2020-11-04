@@ -1,9 +1,9 @@
-export function currentCount(data) {
-  return data[data.length-1].sumValue;
+export function currentCount(data, key = 'sumValue') {
+  return data[data.length-1][key];
 }
 
-export function currentIncrease(data) {
-  return data[data.length-1].sumNewCases || 0;
+export function currentIncrease(data, key = 'sumNewCases') {
+  return data[data.length-1][key] || 0;
 }
 
 export function currentDate(data) {
@@ -41,9 +41,9 @@ export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
 
-export function casesPer100Tsd7Days(data, population) {
+export function casesPer100Tsd7Days(data, population, key = 'value') {
   const currentWeek = data.slice(data.length-7, data.length);
-  const cases = currentWeek.reduce((sum, curr) => (sum += curr.value), 0);
+  const cases = currentWeek.reduce((sum, curr) => (sum += curr[key]), 0);
 
   return (cases * 100000) / population;
 }
@@ -100,12 +100,12 @@ export function trendArrow(value) {
   }
 }
 
-export function weekTrend(data, threshold = 10) {
+export function weekTrend(data, threshold = 10, key = 'value') {
   const currentWeek = data.slice(data.length-9, data.length-2);
   const previousWeek = data.slice(data.length-16, data.length-9);
 
-  const currentWeekSum = currentWeek.reduce((sum, curr) => { return sum + curr.value; }, 0);
-  const previousWeekSum = previousWeek.reduce((sum, curr) => { return sum + curr.value; }, 0);
+  const currentWeekSum = currentWeek.reduce((sum, curr) => sum + curr[key], 0);
+  const previousWeekSum = previousWeek.reduce((sum, curr) => sum + curr[key], 0);
 
   const percentChange = ((currentWeekSum - previousWeekSum) / previousWeekSum) * 100;
 
@@ -118,11 +118,11 @@ export function weekTrend(data, threshold = 10) {
   return trend;
 }
 
-export function doublingTime(data) {
+export function doublingTime(data, key = 'sumValue') {
   const date1 = new Date(data[data.length-2].date);
-  const value1 = data[data.length-2].sumValue;
+  const value1 = data[data.length-2][key];
   const date2 = new Date(data[data.length-9].date);
-  const value2 = data[data.length-9].sumValue;
+  const value2 = data[data.length-9][key];
 
   const diff = Math.ceil(date2.getTime() - date1.getTime()) / 86400000;
   const days = (Math.log(2) * diff) / (Math.log(value2) - Math.log(value1));
