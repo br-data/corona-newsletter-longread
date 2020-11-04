@@ -1,7 +1,7 @@
 import { select } from 'd3-selection';
 import { max, min } from 'd3-array';
 import { scaleLinear, scaleBand } from 'd3-scale';
-import { line, curveMonotoneX } from 'd3-shape';
+import { area, line, curveMonotoneX } from 'd3-shape';
 import { axisRight, axisBottom } from 'd3-axis';
 
 import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
@@ -26,9 +26,6 @@ export default class LineChart {
     const { target, data, meta, margin } = this;
     const container = select(target);
 
-    console.log(data);
-    
-
     // Set initial dimensions
     const width = container.node().getBoundingClientRect().width;
     const height = (width * 9) / 16;
@@ -38,7 +35,7 @@ export default class LineChart {
     const innerHeight = height - margin.top - margin.bottom;
 
     // Calculate horizontal scale and axis
-    const xMin = min(data, d => d.date);
+    const xMin = min(data, d => new Date(d.date));
     const xMinBracket = new Date(xMin);
     xMinBracket.setDate(xMinBracket.getDate() - 8);
 
@@ -60,7 +57,7 @@ export default class LineChart {
       .tickFormat(d => germanDateShort(d));
     
     // Calculate vertical scale and axis
-    const yMax = max(data, d => d.sumValue);
+    const yMax = max(data, d => d.faelleCovidAktuell);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
@@ -130,21 +127,35 @@ export default class LineChart {
         .attr('fill', '#ffffff')
       );
 
-    // Add line
+    // Add line and fill
+    const lines = svg.append('g')
+      .classed('lines', true)
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
     const lineConstructor = line()
       .x(d => x(d.date))
-      .y(d => y(d.value))
+      .y(d => y(d.faelleCovidAktuell))
       .curve(curveMonotoneX);
 
-    svg.append('g')
-      .classed('areas', true)
-      .attr('transform', `translate(${margin.left}, ${margin.top})`)
-      .append('path')
+    lines.append('path')
       .datum(data)
       .attr('d', lineConstructor)
       .attr('stroke', '#e64242')
       .attr('stroke-width', '3')
       .attr('fill', 'none');
+
+    const areaConstructor = area()
+      .x(d => x(d.date))
+      .y0(() => innerHeight)
+      .y1(d => y(d.faelleCovidAktuell))
+      .curve(curveMonotoneX);
+
+    lines.append('path')
+      .datum(data)
+      .attr('d', areaConstructor)
+      .attr('stroke', 'none')
+      .attr('fill', '#e64242')
+      .attr('fill-opacity', '0.5');
 
     // Add title and description
     const header = svg.append('g')

@@ -15,6 +15,7 @@ import * as deutschlandBlTable from './table/deutschland-bl-table';
 
 import BarChart from './chart/bar-chart';
 import AreaChart from './chart/area-chart';
+import LineChart from './chart/line-chart';
 import BayernMap from './chart/bayern-map';
 
 import bayernMeta from './data/meta/bayern-meta.json';
@@ -76,12 +77,33 @@ async function init() {
 
     bayernText.init({
       caseTarget: '#bayern-cases-text',
+      reproTarget: '#bayern-repro-text',
       deathTarget: '#bayern-deaths-text',
       caseData: bayernCases,
       recoveredData: bayernRecoveries,
       deathData: bayernDeaths,
       metaData: bayernMeta
     });
+  })();
+
+  (async function () {
+    const bayernPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
+      .then(response => response.json())
+      .catch(logError);
+
+    const bayernPatientsChart = new LineChart({
+      target: '#bayern-patients-chart',
+      data: bayernPatients,
+      meta: {
+        title: 'Intensivpatienten in Bayern',
+        description: 'Anzahl der gemeldeten Corona-Fälle in intensivmedizinischer Behandlung',
+        author: 'BR',
+        source: 'DIVI-Intensivregister',
+        date: endDate
+      }
+    });
+
+    charts.push(bayernPatientsChart);
   })();
 
   // Charts for Bavaria
@@ -96,8 +118,8 @@ async function init() {
 
     const [bayernCasesRef, bayernCurrentRef] = await Promise.all([bayernCasesRefRequest, bayernCurrentRefRequest]);
 
-    const bayernAreaChart = new AreaChart({
-      target: '#bayern-line-chart',
+    const bayernIndicatorsChart = new AreaChart({
+      target: '#bayern-indicators-chart',
       data: bayernCurrentRef,
       meta: {
         title: 'Corona in Bayern',
@@ -108,10 +130,10 @@ async function init() {
       }
     });
 
-    charts.push(bayernAreaChart);
+    charts.push(bayernIndicatorsChart);
 
-    const bayernBarChart = new BarChart({
-      target: '#bayern-bar-chart',
+    const bayernCasesChart = new BarChart({
+      target: '#bayern-cases-chart',
       data: bayernCasesRef,
       meta: {
         title: 'Neue Coronafälle in Bayern',
@@ -122,7 +144,7 @@ async function init() {
       }
     });
 
-    charts.push(bayernBarChart);
+    charts.push(bayernCasesChart);
   })();
 
   // Text for Bavarian administrative districts (Regierungsbezirke)
@@ -165,7 +187,7 @@ async function init() {
     const [bayernLkrCases, bayernLkrDeaths] = await Promise.all([bayernLkrCasesRequest, bayernLkrDeathsRequest]);
 
     const bayernMap = new BayernMap({
-      target: '#bayern-map',
+      target: '#bayern-cases-map',
       caseData: bayernLkrCases,
       metaData: bayernLkrMeta,
       geoData: bayernLkrGeo,
@@ -222,6 +244,7 @@ async function init() {
 
     deutschlandText.init({
       caseTarget: '#deutschland-cases-text',
+      reproTarget: '#deutschland-repro-text',
       deathTarget: '#deutschland-deaths-text',
       caseData: deutschlandCases,
       recoveredData: deutschlandRecoveries,
@@ -242,8 +265,8 @@ async function init() {
 
     const [deutschlandCasesRef, deutschlandCurrentRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandCurrentRefRequest]);
 
-    const deutschlandAreaChart = new AreaChart({
-      target: '#deutschland-line-chart',
+    const deutschlandIndicatorsChart = new AreaChart({
+      target: '#deutschland-indicators-chart',
       data: deutschlandCurrentRef,
       meta: {
         title: 'Corona in Deutschland',
@@ -254,10 +277,10 @@ async function init() {
       }
     });
 
-    charts.push(deutschlandAreaChart);
+    charts.push(deutschlandIndicatorsChart);
 
-    const deutschlandBarChart = new BarChart({
-      target: '#deutschland-bar-chart',
+    const deutschlandCasesChart = new BarChart({
+      target: '#deutschland-cases-chart',
       data: deutschlandCasesRef,
       meta: {
         title: 'Neue Coronafälle in Deutschland',
@@ -268,7 +291,7 @@ async function init() {
       }
     });
 
-    charts.push(deutschlandBarChart);
+    charts.push(deutschlandCasesChart);
   })();
 
   // Text for German federal states (Bundesländer)
@@ -296,6 +319,26 @@ async function init() {
       deathData: deutschlandBlDeaths,
       metaData: deutschlandBlMeta
     });
+  })();
+
+  (async function () {
+    const deutschlandPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=DE&indicator=Patienten')
+      .then(response => response.json())
+      .catch(logError);
+
+    const deutschlandPatientsChart = new LineChart({
+      target: '#deutschland-patients-chart',
+      data: deutschlandPatients,
+      meta: {
+        title: 'Intensivpatienten in Bayern',
+        description: 'Anzahl der gemeldeten Corona-Fälle in intensivmedizinischer Behandlung',
+        author: 'BR',
+        source: 'DIVI-Intensivregister',
+        date: endDate
+      }
+    });
+
+    charts.push(deutschlandPatientsChart);
   })();
 
   resize(charts);
