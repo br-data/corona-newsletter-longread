@@ -127,7 +127,7 @@ export default class LineChart {
       .attr('fill', d => getColor(d.valuePer100Tsd))
       .style('mix-blend-mode', 'hard-light')
       .append('title')
-      .text(d => `${d.name} (${d.type}): ${Math.round(d.valuePer100Tsd)} Fälle`);
+      .text(d => `${d.name} (${d.type}): ${Math.round(d.valuePer100Tsd)}`);
 
     // Add labels for bigger cities
     const cityLabels = map.append('g')

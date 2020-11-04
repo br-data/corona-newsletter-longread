@@ -7,11 +7,13 @@ import * as bayernRegbezText from './text/bayern-regbez-text';
 import * as bayernRegbezTable from './table/bayern-regbez-table';
 import * as bayernLkrText from './text/bayern-lkr-text';
 import * as bayernLkrTable from './table/bayern-lkr-table';
+import * as bayernPatientsText from './text/bayern-patients-text';
 
 import * as deutschlandIndicator from './indicator/deutschland-indicator';
 import * as deutschlandText from './text/deutschland-text';
 import * as deutschlandBlText from './text/deutschland-bl-text';
 import * as deutschlandBlTable from './table/deutschland-bl-table';
+import * as deutschlandPatientsText from './text/deutschland-patients-text';
 
 import BarChart from './chart/bar-chart';
 import AreaChart from './chart/area-chart';
@@ -90,6 +92,12 @@ async function init() {
     const bayernPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
       .then(response => response.json())
       .catch(logError);
+
+    bayernPatientsText.init({
+      target: '#bayern-patients-text',
+      patientData: bayernPatients,
+      metaData: bayernMeta
+    });
 
     const bayernPatientsChart = new LineChart({
       target: '#bayern-patients-chart',
@@ -326,11 +334,17 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
+    deutschlandPatientsText.init({
+      target: '#deutschland-patients-text',
+      patientData: deutschlandPatients,
+      metaData: deutschlandMeta
+    });
+
     const deutschlandPatientsChart = new LineChart({
       target: '#deutschland-patients-chart',
       data: deutschlandPatients,
       meta: {
-        title: 'Intensivpatienten in Bayern',
+        title: 'Intensivpatienten in Deutschland',
         description: 'Anzahl der gemeldeten Corona-Fälle in intensivmedizinischer Behandlung',
         author: 'BR',
         source: 'DIVI-Intensivregister',
