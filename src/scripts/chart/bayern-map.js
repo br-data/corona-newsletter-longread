@@ -75,6 +75,7 @@ export default class LineChart {
 
     // Add SVG
     const svg = container.append('svg')
+      .attr('id', `${target.replace('#', '')}-${meta.date.toISOString().split('T')[0]}`)
       .attr('class', 'map')
       .style('width', '100%')
       .attr('preserveAspectRatio', 'xMidYMid')
