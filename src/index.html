@@ -344,7 +344,8 @@
             document.body.appendChild(downloadLink);
             downloadLink.click();
             document.body.removeChild(downloadLink);
-            document.removeChild(canvas);
+            canvas.remove();
+            img.remove();
           };
           img.src = url;
         }
