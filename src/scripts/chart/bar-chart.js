@@ -68,6 +68,20 @@ export default class BarChart {
       .attr('id', `${target.replace('#', '')}-${meta.date.toISOString().split('T')[0]}`)
       .style('width', '100%');
 
+    // Add background definition
+    const defs = svg.append('defs');
+
+    const radialGradient = defs.append('radialGradient')
+      .attr('id', 'radial-gradient');
+      
+    radialGradient.append('stop')
+      .attr('offset', '.25')
+      .attr('stop-color', '#484B5A');
+
+    radialGradient.append('stop')
+      .attr('offset', '1')
+      .attr('stop-color', '#1D2029');
+
     // Add background element and apply definition
     svg.append('rect')
       .attr('width', width)
