@@ -62,9 +62,10 @@ export default class BarChart {
 
     // Add SVG and set dimensions
     const svg = container.append('svg')
-      .attr('id', `${target.replace('#', '')}-${meta.date.toISOString().split('T')[0]}`)
+      .attr('xmlns', 'http://www.w3.org/2000/svg')
       .attr('preserveAspectRatio', 'xMidYMid')
       .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('id', `${target.replace('#', '')}-${meta.date.toISOString().split('T')[0]}`)
       .style('width', '100%');
 
     // Add background element and apply definition

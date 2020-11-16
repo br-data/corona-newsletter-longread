@@ -75,11 +75,12 @@ export default class LineChart {
 
     // Add SVG
     const svg = container.append('svg')
+      .attr('xmlns', 'http://www.w3.org/2000/svg')
+      .attr('preserveAspectRatio', 'xMidYMid')
+      .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('id', `${target.replace('#', '')}-${meta.date.toISOString().split('T')[0]}`)
       .attr('class', 'map')
-      .style('width', '100%')
-      .attr('preserveAspectRatio', 'xMidYMid')
-      .attr('viewBox', `0 0 ${width} ${height}`);
+      .style('width', '100%');
 
     // Add dark background gradient
     const defs = svg.append('defs');

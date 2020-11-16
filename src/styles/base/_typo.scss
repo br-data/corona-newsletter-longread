@@ -46,9 +46,10 @@ strong, b {
   font-weight: 600;
 }
 
-.author {
-  margin-top: -1em;
-  font-weight: 400;
+.download {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
 }
 
 .small-margin {
