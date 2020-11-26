@@ -5,6 +5,8 @@
     "type": "Stadt",
     "state": "Schleswig-Holstein",
     "ags": "01001",
+    "lat": 54.785119,
+    "long": 9.4323687,
     "pop": 90164
   },
   {
@@ -13,6 +15,8 @@
     "type": "Stadt",
     "state": "Schleswig-Holstein",
     "ags": "01002",
+    "lat": 54.329759,
+    "long": 10.130283,
     "pop": 246794
   },
   {
@@ -21,6 +25,8 @@
     "type": "Stadt",
     "state": "Schleswig-Holstein",
     "ags": "01003",
+    "lat": 53.875705,
+    "long": 10.723051,
     "pop": 216530
   },
   {
@@ -29,6 +35,8 @@
     "type": "Stadt",
     "state": "Schleswig-Holstein",
     "ags": "01004",
+    "lat": 54.088042,
+    "long": 9.9835962,
     "pop": 80196
   },
   {
@@ -37,6 +45,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01051",
+    "lat": 54.133993,
+    "long": 9.1096773,
     "pop": 133193
   },
   {
@@ -45,6 +55,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01053",
+    "lat": 53.596434,
+    "long": 10.608184,
     "pop": 198019
   },
   {
@@ -53,6 +65,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01054",
+    "lat": 54.611088,
+    "long": 9.0649543,
     "pop": 165951
   },
   {
@@ -61,6 +75,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01055",
+    "lat": 54.211782,
+    "long": 10.86662,
     "pop": 200539
   },
   {
@@ -69,6 +85,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01056",
+    "lat": 53.723182,
+    "long": 9.7371433,
     "pop": 316103
   },
   {
@@ -77,6 +95,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01057",
+    "lat": 54.245729,
+    "long": 10.363199,
     "pop": 128686
   },
   {
@@ -85,6 +105,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01058",
+    "lat": 54.29215,
+    "long": 9.7793856,
     "pop": 274098
   },
   {
@@ -93,6 +115,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01059",
+    "lat": 54.616026,
+    "long": 9.5509886,
     "pop": 201156
   },
   {
@@ -101,6 +125,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01060",
+    "lat": 53.926779,
+    "long": 10.142052,
     "pop": 277175
   },
   {
@@ -109,6 +135,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01061",
+    "lat": 53.930387,
+    "long": 9.5111518,
     "pop": 131013
   },
   {
@@ -117,6 +145,8 @@
     "type": "Kreis",
     "state": "Schleswig-Holstein",
     "ags": "01062",
+    "lat": 53.728387,
+    "long": 10.336683,
     "pop": 244156
   },
   {
@@ -125,6 +155,8 @@
     "type": "Stadt",
     "state": "Hamburg",
     "ags": "02000",
+    "lat": 53.553616,
+    "long": 10.027361,
     "pop": 1847253
   },
   {
@@ -133,6 +165,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03101",
+    "lat": 52.280839,
+    "long": 10.526347,
     "pop": 249406
   },
   {
@@ -141,6 +175,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03102",
+    "lat": 52.129678,
+    "long": 10.370679,
     "pop": 104291
   },
   {
@@ -149,6 +185,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03103",
+    "lat": 52.411138,
+    "long": 10.785036,
     "pop": 124371
   },
   {
@@ -157,6 +195,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03151",
+    "lat": 52.586249,
+    "long": 10.607222,
     "pop": 176523
   },
   {
@@ -165,6 +205,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03153",
+    "lat": 51.876084,
+    "long": 10.401684,
     "pop": 136292
   },
   {
@@ -173,6 +215,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03154",
+    "lat": 52.260419,
+    "long": 10.894027,
     "pop": 91297
   },
   {
@@ -181,6 +225,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03155",
+    "lat": 51.74463,
+    "long": 9.8518887,
     "pop": 132285
   },
   {
@@ -189,6 +235,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03157",
+    "lat": 52.308055,
+    "long": 10.256622,
     "pop": 134801
   },
   {
@@ -197,6 +245,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03158",
+    "lat": 52.137751,
+    "long": 10.648905,
     "pop": 119622
   },
   {
@@ -205,6 +255,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03159",
+    "lat": 51.500939,
+    "long": 9.9321137,
     "pop": 326041
   },
   {
@@ -213,6 +265,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03241",
+    "lat": 52.424603,
+    "long": 9.720613,
     "pop": 1157115
   },
   {
@@ -221,6 +275,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03251",
+    "lat": 52.730353,
+    "long": 8.7019864,
     "pop": 217089
   },
   {
@@ -229,6 +285,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03252",
+    "lat": 52.094196,
+    "long": 9.3932046,
     "pop": 148549
   },
   {
@@ -237,6 +295,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03254",
+    "lat": 52.091993,
+    "long": 9.9453013,
     "pop": 275817
   },
   {
@@ -245,6 +305,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03255",
+    "lat": 51.881129,
+    "long": 9.5553908,
     "pop": 70458
   },
   {
@@ -253,6 +315,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03256",
+    "lat": 52.611395,
+    "long": 9.113799,
     "pop": 121390
   },
   {
@@ -261,6 +325,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03257",
+    "lat": 52.292013,
+    "long": 9.2066986,
     "pop": 157820
   },
   {
@@ -269,6 +335,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03351",
+    "lat": 52.719791,
+    "long": 10.10555,
     "pop": 179011
   },
   {
@@ -277,6 +345,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03352",
+    "lat": 53.618225,
+    "long": 8.8035629,
     "pop": 198038
   },
   {
@@ -285,6 +355,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03353",
+    "lat": 53.325053,
+    "long": 9.9641457,
     "pop": 254431
   },
   {
@@ -293,6 +365,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03354",
+    "lat": 53.017929,
+    "long": 11.129626,
     "pop": 48412
   },
   {
@@ -301,6 +375,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03355",
+    "lat": 53.240413,
+    "long": 10.577257,
     "pop": 184139
   },
   {
@@ -309,6 +385,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03356",
+    "lat": 53.255484,
+    "long": 8.8106144,
     "pop": 113928
   },
   {
@@ -317,6 +395,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03357",
+    "lat": 53.25506,
+    "long": 9.3050983,
     "pop": 163782
   },
   {
@@ -325,6 +405,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03358",
+    "lat": 52.934247,
+    "long": 9.7706982,
     "pop": 140673
   },
   {
@@ -333,6 +415,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03359",
+    "lat": 53.59498,
+    "long": 9.4166249,
     "pop": 204512
   },
   {
@@ -341,6 +425,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03360",
+    "lat": 52.993539,
+    "long": 10.549805,
     "pop": 92389
   },
   {
@@ -349,6 +435,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03361",
+    "lat": 52.976043,
+    "long": 9.173881,
     "pop": 137133
   },
   {
@@ -357,6 +445,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03401",
+    "lat": 53.046392,
+    "long": 8.6438715,
     "pop": 77559
   },
   {
@@ -365,6 +455,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03402",
+    "lat": 53.350019,
+    "long": 7.241668,
     "pop": 49913
   },
   {
@@ -373,6 +465,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03403",
+    "lat": 53.144113,
+    "long": 8.2360934,
     "pop": 169077
   },
   {
@@ -381,6 +475,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03404",
+    "lat": 52.279483,
+    "long": 8.046646,
     "pop": 165251
   },
   {
@@ -389,6 +485,8 @@
     "type": "Stadt",
     "state": "Niedersachsen",
     "ags": "03405",
+    "lat": 53.566003,
+    "long": 8.0892718,
     "pop": 76089
   },
   {
@@ -397,6 +495,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03451",
+    "lat": 53.212532,
+    "long": 8.0321495,
     "pop": 124859
   },
   {
@@ -405,6 +505,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03452",
+    "lat": 53.481904,
+    "long": 7.3903033,
     "pop": 189694
   },
   {
@@ -413,6 +515,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03453",
+    "lat": 52.905073,
+    "long": 7.9209102,
     "pop": 170682
   },
   {
@@ -421,6 +525,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03454",
+    "lat": 52.730863,
+    "long": 7.4190007,
     "pop": 326954
   },
   {
@@ -429,6 +535,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03455",
+    "lat": 53.39451,
+    "long": 8.0467827,
     "pop": 98704
   },
   {
@@ -437,6 +545,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03456",
+    "lat": 52.47913,
+    "long": 7.0249016,
     "pop": 137162
   },
   {
@@ -445,6 +555,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03457",
+    "lat": 53.217026,
+    "long": 7.5350353,
     "pop": 170756
   },
   {
@@ -453,6 +565,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03458",
+    "lat": 52.992398,
+    "long": 8.408599,
     "pop": 130890
   },
   {
@@ -461,6 +575,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03459",
+    "lat": 52.505597,
+    "long": 7.8413453,
     "pop": 358080
   },
   {
@@ -469,6 +585,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03460",
+    "lat": 52.663086,
+    "long": 8.2271335,
     "pop": 142814
   },
   {
@@ -477,6 +595,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03461",
+    "lat": 53.357849,
+    "long": 8.3931147,
     "pop": 88583
   },
   {
@@ -485,6 +605,8 @@
     "type": "Landkreis",
     "state": "Niedersachsen",
     "ags": "03462",
+    "lat": 53.594498,
+    "long": 7.7199505,
     "pop": 56926
   },
   {
@@ -493,6 +615,8 @@
     "type": "Stadt",
     "state": "Bremen",
     "ags": "04011",
+    "lat": 53.11115,
+    "long": 8.7890014,
     "pop": 567559
   },
   {
@@ -501,6 +625,8 @@
     "type": "Stadt",
     "state": "Bremen",
     "ags": "04012",
+    "lat": 53.535877,
+    "long": 8.5847177,
     "pop": 113643
   },
   {
@@ -509,6 +635,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05111",
+    "lat": 51.232947,
+    "long": 6.8174691,
     "pop": 621877
   },
   {
@@ -517,6 +645,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05112",
+    "lat": 51.439338,
+    "long": 6.7426703,
     "pop": 498686
   },
   {
@@ -525,6 +655,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05113",
+    "lat": 51.429552,
+    "long": 7.0247831,
     "pop": 582760
   },
   {
@@ -533,6 +665,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05114",
+    "lat": 51.344702,
+    "long": 6.5885164,
     "pop": 227417
   },
   {
@@ -541,6 +675,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05116",
+    "lat": 51.170067,
+    "long": 6.4214464,
     "pop": 261034
   },
   {
@@ -549,6 +685,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05117",
+    "lat": 51.410975,
+    "long": 6.8861611,
     "pop": 170632
   },
   {
@@ -557,6 +695,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05119",
+    "lat": 51.509803,
+    "long": 6.8562311,
     "pop": 210764
   },
   {
@@ -565,6 +705,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05120",
+    "lat": 51.179955,
+    "long": 7.2230811,
     "pop": 111338
   },
   {
@@ -573,6 +715,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05122",
+    "lat": 51.158614,
+    "long": 7.0692269,
     "pop": 159245
   },
   {
@@ -581,6 +725,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05124",
+    "lat": 51.247065,
+    "long": 7.1677703,
     "pop": 355100
   },
   {
@@ -589,6 +735,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05154",
+    "lat": 51.654129,
+    "long": 6.2676332,
     "pop": 312465
   },
   {
@@ -597,6 +745,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05158",
+    "lat": 51.293695,
+    "long": 7.0111103,
     "pop": 485570
   },
   {
@@ -605,6 +755,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05162",
+    "lat": 51.141915,
+    "long": 6.6543443,
     "pop": 451730
   },
   {
@@ -613,6 +765,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05166",
+    "lat": 51.286061,
+    "long": 6.3305124,
     "pop": 298863
   },
   {
@@ -621,6 +775,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05170",
+    "lat": 51.627207,
+    "long": 6.626953,
     "pop": 459976
   },
   {
@@ -629,6 +785,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05314",
+    "lat": 50.699837,
+    "long": 7.1159508,
     "pop": 329673
   },
   {
@@ -637,6 +795,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05315",
+    "lat": 50.941508,
+    "long": 6.9777146,
     "pop": 1087863
   },
   {
@@ -645,6 +805,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05316",
+    "lat": 51.048871,
+    "long": 7.0177991,
     "pop": 163729
   },
   {
@@ -653,6 +815,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05334",
+    "lat": 50.756428,
+    "long": 6.1032996,
     "pop": 557026
   },
   {
@@ -661,6 +825,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05358",
+    "lat": 50.817006,
+    "long": 6.4476606,
     "pop": 264638
   },
   {
@@ -669,6 +835,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05362",
+    "lat": 50.901271,
+    "long": 6.7226709,
     "pop": 470615
   },
   {
@@ -677,6 +845,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05366",
+    "lat": 50.529011,
+    "long": 6.6453886,
     "pop": 193656
   },
   {
@@ -685,6 +855,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05370",
+    "lat": 51.052035,
+    "long": 6.1709684,
     "pop": 255555
   },
   {
@@ -693,6 +865,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05374",
+    "lat": 51.010967,
+    "long": 7.5172785,
     "pop": 272057
   },
   {
@@ -701,6 +875,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05378",
+    "lat": 51.019601,
+    "long": 7.1958983,
     "pop": 283271
   },
   {
@@ -709,6 +885,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05382",
+    "lat": 50.755877,
+    "long": 7.2402531,
     "pop": 600764
   },
   {
@@ -717,6 +895,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05512",
+    "lat": 51.594362,
+    "long": 6.9159912,
     "pop": 117565
   },
   {
@@ -725,6 +905,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05513",
+    "lat": 51.549491,
+    "long": 7.0817139,
     "pop": 259645
   },
   {
@@ -733,6 +915,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05515",
+    "lat": 51.952438,
+    "long": 7.6264618,
     "pop": 315293
   },
   {
@@ -741,6 +925,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05554",
+    "lat": 51.962198,
+    "long": 6.9097557,
     "pop": 371339
   },
   {
@@ -749,6 +935,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05558",
+    "lat": 51.864443,
+    "long": 7.3713157,
     "pop": 220586
   },
   {
@@ -757,6 +945,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05562",
+    "lat": 51.669264,
+    "long": 7.165792,
     "pop": 614137
   },
   {
@@ -765,6 +955,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05566",
+    "lat": 52.2116,
+    "long": 7.581675,
     "pop": 448220
   },
   {
@@ -773,6 +965,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05570",
+    "lat": 51.86986,
+    "long": 7.9598364,
     "pop": 277840
   },
   {
@@ -781,6 +975,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05711",
+    "lat": 52.011184,
+    "long": 8.543212,
     "pop": 334195
   },
   {
@@ -789,6 +985,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05754",
+    "lat": 51.931784,
+    "long": 8.3548388,
     "pop": 364938
   },
   {
@@ -797,6 +995,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05758",
+    "lat": 52.168789,
+    "long": 8.6427584,
     "pop": 250578
   },
   {
@@ -805,6 +1005,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05762",
+    "lat": 51.685478,
+    "long": 9.1884029,
     "pop": 140251
   },
   {
@@ -813,6 +1015,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05766",
+    "lat": 51.981325,
+    "long": 8.9548684,
     "pop": 347514
   },
   {
@@ -821,6 +1025,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05770",
+    "lat": 52.352474,
+    "long": 8.740944,
     "pop": 310409
   },
   {
@@ -829,6 +1035,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05774",
+    "lat": 51.662547,
+    "long": 8.7303579,
     "pop": 307839
   },
   {
@@ -837,6 +1045,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05911",
+    "lat": 51.465371,
+    "long": 7.2285467,
     "pop": 365587
   },
   {
@@ -845,6 +1055,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05913",
+    "lat": 51.512061,
+    "long": 7.4796919,
     "pop": 588250
   },
   {
@@ -853,6 +1065,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05914",
+    "lat": 51.347057,
+    "long": 7.4970114,
     "pop": 188686
   },
   {
@@ -861,6 +1075,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05915",
+    "lat": 51.66249,
+    "long": 7.8263982,
     "pop": 179916
   },
   {
@@ -869,6 +1085,8 @@
     "type": "Stadt",
     "state": "Nordrhein-Westfalen",
     "ags": "05916",
+    "lat": 51.533785,
+    "long": 7.2159088,
     "pop": 156449
   },
   {
@@ -877,6 +1095,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05954",
+    "lat": 51.34186,
+    "long": 7.3263007,
     "pop": 324106
   },
   {
@@ -885,6 +1105,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05958",
+    "lat": 51.305556,
+    "long": 8.3972543,
     "pop": 259777
   },
   {
@@ -893,6 +1115,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05962",
+    "lat": 51.260696,
+    "long": 7.7139345,
     "pop": 410222
   },
   {
@@ -901,6 +1125,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05966",
+    "lat": 51.087234,
+    "long": 7.9812283,
     "pop": 133955
   },
   {
@@ -909,6 +1135,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05970",
+    "lat": 50.937992,
+    "long": 8.2058809,
     "pop": 276944
   },
   {
@@ -917,6 +1145,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05974",
+    "lat": 51.5647,
+    "long": 8.2236358,
     "pop": 301785
   },
   {
@@ -925,6 +1155,8 @@
     "type": "Kreis",
     "state": "Nordrhein-Westfalen",
     "ags": "05978",
+    "lat": 51.575208,
+    "long": 7.6417082,
     "pop": 394891
   },
   {
@@ -933,6 +1165,8 @@
     "type": "Stadt",
     "state": "Hessen",
     "ags": "06411",
+    "lat": 49.882743,
+    "long": 8.6752367,
     "pop": 159878
   },
   {
@@ -941,6 +1175,8 @@
     "type": "Stadt",
     "state": "Hessen",
     "ags": "06412",
+    "lat": 50.116773,
+    "long": 8.6598981,
     "pop": 763380
   },
   {
@@ -949,6 +1185,8 @@
     "type": "Stadt",
     "state": "Hessen",
     "ags": "06413",
+    "lat": 50.089561,
+    "long": 8.7984841,
     "pop": 130280
   },
   {
@@ -957,6 +1195,8 @@
     "type": "Stadt",
     "state": "Hessen",
     "ags": "06414",
+    "lat": 50.076486,
+    "long": 8.2738994,
     "pop": 278474
   },
   {
@@ -965,6 +1205,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06431",
+    "lat": 49.669855,
+    "long": 8.6318551,
     "pop": 270340
   },
   {
@@ -973,6 +1215,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06432",
+    "lat": 49.855994,
+    "long": 8.8061081,
     "pop": 297844
   },
   {
@@ -981,6 +1225,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06433",
+    "lat": 49.902901,
+    "long": 8.4812779,
     "pop": 275726
   },
   {
@@ -989,6 +1235,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06434",
+    "lat": 50.27895,
+    "long": 8.5206755,
     "pop": 236914
   },
   {
@@ -997,6 +1245,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06435",
+    "lat": 50.243344,
+    "long": 9.2931037,
     "pop": 420552
   },
   {
@@ -1005,6 +1255,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06436",
+    "lat": 50.097876,
+    "long": 8.4478967,
     "pop": 238558
   },
   {
@@ -1013,6 +1265,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06437",
+    "lat": 49.675058,
+    "long": 8.988983,
     "pop": 96703
   },
   {
@@ -1021,6 +1275,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06438",
+    "lat": 50.022103,
+    "long": 8.8260025,
     "pop": 355813
   },
   {
@@ -1029,6 +1285,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06439",
+    "lat": 50.139484,
+    "long": 8.0949772,
     "pop": 187160
   },
   {
@@ -1037,6 +1295,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06440",
+    "lat": 50.352779,
+    "long": 8.9212263,
     "pop": 308339
   },
   {
@@ -1045,6 +1305,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06531",
+    "lat": 50.566243,
+    "long": 8.8206054,
     "pop": 270688
   },
   {
@@ -1053,6 +1315,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06532",
+    "lat": 50.648039,
+    "long": 8.3791535,
     "pop": 253319
   },
   {
@@ -1061,6 +1325,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06533",
+    "lat": 50.427262,
+    "long": 8.2174087,
     "pop": 171912
   },
   {
@@ -1069,6 +1335,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06534",
+    "lat": 50.83295,
+    "long": 8.7522191,
     "pop": 247084
   },
   {
@@ -1077,6 +1345,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06535",
+    "lat": 50.638109,
+    "long": 9.2796685,
     "pop": 105643
   },
   {
@@ -1085,6 +1355,8 @@
     "type": "Stadt",
     "state": "Hessen",
     "ags": "06611",
+    "lat": 51.313095,
+    "long": 9.4655528,
     "pop": 202137
   },
   {
@@ -1093,6 +1365,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06631",
+    "lat": 50.564394,
+    "long": 9.7600374,
     "pop": 223145
   },
   {
@@ -1101,6 +1375,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06632",
+    "lat": 50.909447,
+    "long": 9.755943,
     "pop": 120719
   },
   {
@@ -1109,6 +1385,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06633",
+    "lat": 51.482179,
+    "long": 9.4568303,
     "pop": 236764
   },
   {
@@ -1117,6 +1395,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06634",
+    "lat": 51.023792,
+    "long": 9.3816677,
     "pop": 179673
   },
   {
@@ -1125,6 +1405,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06635",
+    "lat": 51.188851,
+    "long": 8.9051729,
     "pop": 156406
   },
   {
@@ -1133,6 +1415,8 @@
     "type": "Landkreis",
     "state": "Hessen",
     "ags": "06636",
+    "lat": 51.192965,
+    "long": 9.9315409,
     "pop": 100629
   },
   {
@@ -1141,6 +1425,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07111",
+    "lat": 50.34527,
+    "long": 7.5872981,
     "pop": 114052
   },
   {
@@ -1149,6 +1435,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07131",
+    "lat": 50.461821,
+    "long": 7.0515366,
     "pop": 130086
   },
   {
@@ -1157,6 +1445,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07132",
+    "lat": 50.751529,
+    "long": 7.7516687,
     "pop": 128805
   },
   {
@@ -1165,6 +1455,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07133",
+    "lat": 49.825742,
+    "long": 7.6943427,
     "pop": 158345
   },
   {
@@ -1173,6 +1465,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07134",
+    "lat": 49.717299,
+    "long": 7.2890031,
     "pop": 80951
   },
   {
@@ -1181,6 +1475,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07135",
+    "lat": 50.131267,
+    "long": 7.1864285,
     "pop": 61375
   },
   {
@@ -1189,6 +1485,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07137",
+    "lat": 50.32879,
+    "long": 7.3401513,
     "pop": 214434
   },
   {
@@ -1197,6 +1495,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07138",
+    "lat": 50.555697,
+    "long": 7.4755532,
     "pop": 182811
   },
   {
@@ -1205,6 +1505,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07140",
+    "lat": 50.045793,
+    "long": 7.5144261,
     "pop": 103163
   },
   {
@@ -1213,6 +1515,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07141",
+    "lat": 50.263929,
+    "long": 7.8582581,
     "pop": 122297
   },
   {
@@ -1221,6 +1525,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07143",
+    "lat": 50.551418,
+    "long": 7.8785675,
     "pop": 201904
   },
   {
@@ -1229,6 +1535,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07211",
+    "lat": 49.763893,
+    "long": 6.6508604,
     "pop": 111528
   },
   {
@@ -1237,6 +1545,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07231",
+    "lat": 49.925053,
+    "long": 6.9707499,
     "pop": 112483
   },
   {
@@ -1245,6 +1555,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07232",
+    "lat": 50.062123,
+    "long": 6.4072307,
     "pop": 99058
   },
   {
@@ -1253,6 +1565,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07233",
+    "lat": 50.232909,
+    "long": 6.7528997,
     "pop": 60646
   },
   {
@@ -1261,6 +1575,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07235",
+    "lat": 49.685867,
+    "long": 6.83965,
     "pop": 149398
   },
   {
@@ -1269,6 +1585,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07311",
+    "lat": 49.533715,
+    "long": 8.3608617,
     "pop": 48762
   },
   {
@@ -1277,6 +1595,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07312",
+    "lat": 49.434653,
+    "long": 7.768566,
     "pop": 100030
   },
   {
@@ -1285,6 +1605,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07313",
+    "lat": 49.197801,
+    "long": 8.1146145,
     "pop": 46881
   },
   {
@@ -1293,6 +1615,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07314",
+    "lat": 49.482783,
+    "long": 8.4034095,
     "pop": 172253
   },
   {
@@ -1301,6 +1625,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07315",
+    "lat": 49.971827,
+    "long": 8.2525017,
     "pop": 218578
   },
   {
@@ -1309,6 +1635,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07316",
+    "lat": 49.343502,
+    "long": 8.151743,
     "pop": 53264
   },
   {
@@ -1317,6 +1645,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07317",
+    "lat": 49.19548,
+    "long": 7.5914822,
     "pop": 40231
   },
   {
@@ -1325,6 +1655,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07318",
+    "lat": 49.33493,
+    "long": 8.4349693,
     "pop": 50561
   },
   {
@@ -1333,6 +1665,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07319",
+    "lat": 49.649206,
+    "long": 8.3292565,
     "pop": 83542
   },
   {
@@ -1341,6 +1675,8 @@
     "type": "Stadt",
     "state": "Rheinland-Pfalz",
     "ags": "07320",
+    "lat": 49.25695,
+    "long": 7.3706429,
     "pop": 34193
   },
   {
@@ -1349,6 +1685,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07331",
+    "lat": 49.756662,
+    "long": 8.163596,
     "pop": 129687
   },
   {
@@ -1357,6 +1695,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07332",
+    "lat": 49.453295,
+    "long": 8.1148562,
     "pop": 132671
   },
   {
@@ -1365,6 +1705,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07333",
+    "lat": 49.629734,
+    "long": 7.9227696,
     "pop": 75325
   },
   {
@@ -1373,6 +1715,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07334",
+    "lat": 49.118287,
+    "long": 8.2496793,
     "pop": 129013
   },
   {
@@ -1381,6 +1725,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07335",
+    "lat": 49.419772,
+    "long": 7.5305697,
     "pop": 105979
   },
   {
@@ -1389,6 +1735,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07336",
+    "lat": 49.551705,
+    "long": 7.4827308,
     "pop": 70219
   },
   {
@@ -1397,6 +1745,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07337",
+    "lat": 49.118284,
+    "long": 8.0029424,
     "pop": 110521
   },
   {
@@ -1405,6 +1755,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07338",
+    "lat": 49.418276,
+    "long": 8.3627468,
     "pop": 154609
   },
   {
@@ -1413,6 +1765,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07339",
+    "lat": 49.917976,
+    "long": 8.0895077,
     "pop": 211417
   },
   {
@@ -1421,6 +1775,8 @@
     "type": "Landkreis",
     "state": "Rheinland-Pfalz",
     "ags": "07340",
+    "lat": 49.209205,
+    "long": 7.6577925,
     "pop": 94831
   },
   {
@@ -1429,6 +1785,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08111",
+    "lat": 48.776237,
+    "long": 9.1728399,
     "pop": 635911
   },
   {
@@ -1437,6 +1795,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08115",
+    "lat": 48.67877,
+    "long": 8.9426598,
     "pop": 392807
   },
   {
@@ -1445,6 +1805,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08116",
+    "lat": 48.648305,
+    "long": 9.3692627,
     "pop": 535024
   },
   {
@@ -1453,6 +1815,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08117",
+    "lat": 48.664115,
+    "long": 9.7216924,
     "pop": 258145
   },
   {
@@ -1461,6 +1825,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08118",
+    "lat": 48.940047,
+    "long": 9.1232145,
     "pop": 545423
   },
   {
@@ -1469,6 +1835,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08119",
+    "lat": 48.897605,
+    "long": 9.5033594,
     "pop": 427248
   },
   {
@@ -1477,6 +1845,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08121",
+    "lat": 49.152943,
+    "long": 9.1862714,
     "pop": 126592
   },
   {
@@ -1485,6 +1855,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08125",
+    "lat": 49.251142,
+    "long": 9.3064101,
     "pop": 344456
   },
   {
@@ -1493,6 +1865,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08126",
+    "lat": 49.267073,
+    "long": 9.6237602,
     "pop": 112655
   },
   {
@@ -1501,6 +1875,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08127",
+    "lat": 49.142524,
+    "long": 9.9177417,
     "pop": 196761
   },
   {
@@ -1509,6 +1885,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08128",
+    "lat": 49.558019,
+    "long": 9.7317661,
     "pop": 132399
   },
   {
@@ -1517,6 +1895,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08135",
+    "lat": 48.666696,
+    "long": 10.18807,
     "pop": 132777
   },
   {
@@ -1525,6 +1905,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08136",
+    "lat": 48.879565,
+    "long": 10.099291,
     "pop": 314025
   },
   {
@@ -1533,6 +1915,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08211",
+    "lat": 48.748736,
+    "long": 8.2360311,
     "pop": 55185
   },
   {
@@ -1541,6 +1925,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08212",
+    "lat": 49.015061,
+    "long": 8.4138363,
     "pop": 312060
   },
   {
@@ -1549,6 +1935,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08215",
+    "lat": 48.909521,
+    "long": 8.4076825,
     "pop": 445101
   },
   {
@@ -1557,6 +1945,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08216",
+    "lat": 48.882138,
+    "long": 8.2248732,
     "pop": 231420
   },
   {
@@ -1565,6 +1955,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08221",
+    "lat": 49.412503,
+    "long": 8.6951968,
     "pop": 161485
   },
   {
@@ -1573,6 +1965,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08222",
+    "lat": 49.501151,
+    "long": 8.5037233,
     "pop": 310658
   },
   {
@@ -1581,6 +1975,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08225",
+    "lat": 49.46632,
+    "long": 9.2861412,
     "pop": 143633
   },
   {
@@ -1589,6 +1985,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08226",
+    "lat": 49.30138,
+    "long": 8.8351919,
     "pop": 548355
   },
   {
@@ -1597,6 +1995,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08231",
+    "lat": 48.879669,
+    "long": 8.7136825,
     "pop": 125957
   },
   {
@@ -1605,6 +2005,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08235",
+    "lat": 48.678608,
+    "long": 8.6359698,
     "pop": 159201
   },
   {
@@ -1613,6 +2015,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08236",
+    "lat": 48.970536,
+    "long": 8.8293892,
     "pop": 199556
   },
   {
@@ -1621,6 +2025,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08237",
+    "lat": 48.47664,
+    "long": 8.4627154,
     "pop": 118243
   },
   {
@@ -1629,6 +2035,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08311",
+    "lat": 47.995554,
+    "long": 7.8181515,
     "pop": 231195
   },
   {
@@ -1637,6 +2045,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08315",
+    "lat": 47.927627,
+    "long": 8.0907884,
     "pop": 263601
   },
   {
@@ -1645,6 +2055,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08316",
+    "lat": 48.151376,
+    "long": 7.9001308,
     "pop": 166408
   },
   {
@@ -1653,6 +2065,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08317",
+    "lat": 48.423722,
+    "long": 8.0146389,
     "pop": 430953
   },
   {
@@ -1661,6 +2075,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08325",
+    "lat": 48.259118,
+    "long": 8.5273592,
     "pop": 139878
   },
   {
@@ -1669,6 +2085,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08326",
+    "lat": 48.023167,
+    "long": 8.4060389,
     "pop": 212506
   },
   {
@@ -1677,6 +2095,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08327",
+    "lat": 48.015076,
+    "long": 8.7866082,
     "pop": 140766
   },
   {
@@ -1685,6 +2105,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08335",
+    "lat": 47.803101,
+    "long": 8.9125795,
     "pop": 286305
   },
   {
@@ -1693,6 +2115,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08336",
+    "lat": 47.708577,
+    "long": 7.7690697,
     "pop": 228736
   },
   {
@@ -1701,6 +2125,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08337",
+    "lat": 47.700909,
+    "long": 8.2182879,
     "pop": 171003
   },
   {
@@ -1709,6 +2135,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08415",
+    "lat": 48.407201,
+    "long": 9.3681294,
     "pop": 287034
   },
   {
@@ -1717,6 +2145,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08416",
+    "lat": 48.482492,
+    "long": 8.9878408,
     "pop": 228678
   },
   {
@@ -1725,6 +2155,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08417",
+    "lat": 48.268438,
+    "long": 8.9325354,
     "pop": 189363
   },
   {
@@ -1733,6 +2165,8 @@
     "type": "Stadtkreis",
     "state": "Baden-Württemberg",
     "ags": "08421",
+    "lat": 48.393934,
+    "long": 9.9530146,
     "pop": 126790
   },
   {
@@ -1741,6 +2175,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08425",
+    "lat": 48.294959,
+    "long": 9.6984361,
     "pop": 197076
   },
   {
@@ -1749,6 +2185,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08426",
+    "lat": 48.110471,
+    "long": 9.7758573,
     "pop": 201282
   },
   {
@@ -1757,6 +2195,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08435",
+    "lat": 47.736322,
+    "long": 9.4051731,
     "pop": 217470
   },
   {
@@ -1765,6 +2205,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08436",
+    "lat": 47.827299,
+    "long": 9.780134,
     "pop": 285424
   },
   {
@@ -1773,6 +2215,8 @@
     "type": "Landkreis",
     "state": "Baden-Württemberg",
     "ags": "08437",
+    "lat": 48.042245,
+    "long": 9.2369418,
     "pop": 130849
   },
   {
@@ -1781,6 +2225,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09161",
+    "lat": 48.751672,
+    "long": 11.402123,
     "pop": 137392
   },
   {
@@ -1789,6 +2235,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09162",
+    "lat": 48.14924,
+    "long": 11.550583,
     "pop": 1484226
   },
   {
@@ -1797,6 +2245,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09163",
+    "lat": 47.843242,
+    "long": 12.113999,
     "pop": 63551
   },
   {
@@ -1805,6 +2255,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09171",
+    "lat": 48.214904,
+    "long": 12.710466,
     "pop": 111516
   },
   {
@@ -1813,6 +2265,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09172",
+    "lat": 47.689,
+    "long": 12.887468,
     "pop": 105929
   },
   {
@@ -1821,6 +2275,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09173",
+    "lat": 47.724822,
+    "long": 11.488162,
     "pop": 127917
   },
   {
@@ -1829,6 +2285,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09174",
+    "lat": 48.330886,
+    "long": 11.361832,
     "pop": 154899
   },
   {
@@ -1837,6 +2295,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09175",
+    "lat": 48.072971,
+    "long": 11.916733,
     "pop": 143649
   },
   {
@@ -1845,6 +2305,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09176",
+    "lat": 48.894676,
+    "long": 11.377377,
     "pop": 132881
   },
   {
@@ -1853,6 +2315,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09177",
+    "lat": 48.298097,
+    "long": 12.003207,
     "pop": 138182
   },
   {
@@ -1861,6 +2325,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09178",
+    "lat": 48.445509,
+    "long": 11.744176,
     "pop": 180007
   },
   {
@@ -1869,6 +2335,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09179",
+    "lat": 48.184625,
+    "long": 11.20652,
     "pop": 219311
   },
   {
@@ -1877,6 +2345,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09180",
+    "lat": 47.556054,
+    "long": 11.128266,
     "pop": 88424
   },
   {
@@ -1885,6 +2355,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09181",
+    "lat": 48.024573,
+    "long": 10.954265,
     "pop": 120302
   },
   {
@@ -1893,6 +2365,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09182",
+    "lat": 47.74006,
+    "long": 11.815808,
     "pop": 100010
   },
   {
@@ -1901,6 +2375,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09183",
+    "lat": 48.241361,
+    "long": 12.386674,
     "pop": 115872
   },
   {
@@ -1909,6 +2385,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09184",
+    "lat": 48.00965,
+    "long": 11.655151,
     "pop": 350473
   },
   {
@@ -1917,6 +2395,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09185",
+    "lat": 48.660193,
+    "long": 11.202207,
     "pop": 97303
   },
   {
@@ -1925,6 +2405,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09186",
+    "lat": 48.593412,
+    "long": 11.526963,
     "pop": 128227
   },
   {
@@ -1933,6 +2415,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09187",
+    "lat": 47.946992,
+    "long": 12.201827,
     "pop": 261330
   },
   {
@@ -1941,6 +2425,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09188",
+    "lat": 48.002201,
+    "long": 11.287519,
     "pop": 136667
   },
   {
@@ -1949,6 +2435,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09189",
+    "lat": 47.89873,
+    "long": 12.582843,
     "pop": 177319
   },
   {
@@ -1957,6 +2445,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09190",
+    "lat": 47.787291,
+    "long": 11.053654,
     "pop": 135478
   },
   {
@@ -1965,6 +2455,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09261",
+    "lat": 48.543948,
+    "long": 12.160501,
     "pop": 73411
   },
   {
@@ -1973,6 +2465,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09262",
+    "lat": 48.586691,
+    "long": 13.415058,
     "pop": 52803
   },
   {
@@ -1981,6 +2475,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09263",
+    "lat": 48.884215,
+    "long": 12.574082,
     "pop": 47791
   },
   {
@@ -1989,6 +2485,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09271",
+    "lat": 48.784508,
+    "long": 13.005449,
     "pop": 119478
   },
   {
@@ -1997,6 +2495,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09272",
+    "lat": 48.829498,
+    "long": 13.515194,
     "pop": 78362
   },
   {
@@ -2005,6 +2505,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09273",
+    "lat": 48.823577,
+    "long": 11.859606,
     "pop": 123058
   },
   {
@@ -2013,6 +2515,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09274",
+    "lat": 48.660179,
+    "long": 12.07862,
     "pop": 159895
   },
   {
@@ -2021,6 +2525,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09275",
+    "lat": 48.483276,
+    "long": 13.260599,
     "pop": 192656
   },
   {
@@ -2029,6 +2535,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09276",
+    "lat": 49.02731,
+    "long": 13.102578,
     "pop": 77410
   },
   {
@@ -2037,6 +2545,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09277",
+    "lat": 48.431852,
+    "long": 12.871481,
     "pop": 121502
   },
   {
@@ -2045,6 +2555,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09278",
+    "lat": 49.006714,
+    "long": 12.696094,
     "pop": 101120
   },
   {
@@ -2053,6 +2565,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09279",
+    "lat": 48.645574,
+    "long": 12.614768,
     "pop": 96683
   },
   {
@@ -2061,6 +2575,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09361",
+    "lat": 49.453399,
+    "long": 11.849567,
     "pop": 42207
   },
   {
@@ -2069,6 +2585,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09362",
+    "lat": 49.013426,
+    "long": 12.115815,
     "pop": 153094
   },
   {
@@ -2077,6 +2595,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09363",
+    "lat": 49.668596,
+    "long": 12.160877,
     "pop": 42743
   },
   {
@@ -2085,6 +2605,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09371",
+    "lat": 49.552624,
+    "long": 11.731463,
     "pop": 103049
   },
   {
@@ -2093,6 +2615,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09372",
+    "lat": 49.24159,
+    "long": 12.699762,
     "pop": 127998
   },
   {
@@ -2101,6 +2625,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09373",
+    "lat": 49.215729,
+    "long": 11.568611,
     "pop": 134573
   },
   {
@@ -2109,6 +2635,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09374",
+    "lat": 49.728007,
+    "long": 11.892742,
     "pop": 94450
   },
   {
@@ -2117,6 +2645,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09375",
+    "lat": 49.094466,
+    "long": 11.917086,
     "pop": 194070
   },
   {
@@ -2125,6 +2655,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09376",
+    "lat": 49.36972,
+    "long": 12.254654,
     "pop": 147872
   },
   {
@@ -2133,6 +2665,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09377",
+    "lat": 49.900466,
+    "long": 12.204166,
     "pop": 72046
   },
   {
@@ -2141,6 +2675,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09461",
+    "lat": 49.884114,
+    "long": 10.904317,
     "pop": 77373
   },
   {
@@ -2149,6 +2685,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09462",
+    "lat": 49.936515,
+    "long": 11.58837,
     "pop": 74783
   },
   {
@@ -2157,6 +2695,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09463",
+    "lat": 50.259816,
+    "long": 10.964065,
     "pop": 41072
   },
   {
@@ -2165,6 +2705,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09464",
+    "lat": 50.315974,
+    "long": 11.897202,
     "pop": 45825
   },
   {
@@ -2173,6 +2715,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09471",
+    "lat": 49.943897,
+    "long": 11.112155,
     "pop": 147163
   },
   {
@@ -2181,6 +2725,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09472",
+    "lat": 49.803643,
+    "long": 11.487996,
     "pop": 103664
   },
   {
@@ -2189,6 +2735,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09473",
+    "lat": 50.333655,
+    "long": 10.880832,
     "pop": 86747
   },
   {
@@ -2197,6 +2745,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09474",
+    "lat": 49.721287,
+    "long": 11.181625,
     "pop": 116203
   },
   {
@@ -2205,6 +2755,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09475",
+    "lat": 50.21569,
+    "long": 11.789149,
     "pop": 94801
   },
   {
@@ -2213,6 +2765,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09476",
+    "lat": 50.326531,
+    "long": 11.37212,
     "pop": 66743
   },
   {
@@ -2221,6 +2775,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09477",
+    "lat": 50.101067,
+    "long": 11.484014,
     "pop": 71566
   },
   {
@@ -2229,6 +2785,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09478",
+    "lat": 50.10915,
+    "long": 11.120815,
     "pop": 66776
   },
   {
@@ -2237,6 +2795,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09479",
+    "lat": 50.09149,
+    "long": 12.041012,
     "pop": 72655
   },
   {
@@ -2245,6 +2805,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09561",
+    "lat": 49.289653,
+    "long": 10.573355,
     "pop": 41798
   },
   {
@@ -2253,6 +2815,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09562",
+    "lat": 49.581177,
+    "long": 10.985761,
     "pop": 112528
   },
   {
@@ -2261,6 +2825,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09563",
+    "lat": 49.488147,
+    "long": 10.973388,
     "pop": 128497
   },
   {
@@ -2269,6 +2835,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09564",
+    "lat": 49.435679,
+    "long": 11.086215,
     "pop": 518370
   },
   {
@@ -2277,6 +2845,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09565",
+    "lat": 49.33246,
+    "long": 11.031057,
     "pop": 40981
   },
   {
@@ -2285,6 +2855,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09571",
+    "lat": 49.160088,
+    "long": 10.430621,
     "pop": 184591
   },
   {
@@ -2293,6 +2865,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09572",
+    "lat": 49.677346,
+    "long": 10.848502,
     "pop": 137262
   },
   {
@@ -2301,6 +2875,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09573",
+    "lat": 49.443756,
+    "long": 10.857838,
     "pop": 117853
   },
   {
@@ -2309,6 +2885,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09574",
+    "lat": 49.490782,
+    "long": 11.373909,
     "pop": 170792
   },
   {
@@ -2317,6 +2895,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09575",
+    "lat": 49.566294,
+    "long": 10.472122,
     "pop": 101014
   },
   {
@@ -2325,6 +2905,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09576",
+    "lat": 49.198729,
+    "long": 11.130104,
     "pop": 126749
   },
   {
@@ -2333,6 +2915,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09577",
+    "lat": 49.029091,
+    "long": 10.903037,
     "pop": 94734
   },
   {
@@ -2341,6 +2925,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09661",
+    "lat": 49.965224,
+    "long": 9.1598653,
     "pop": 71002
   },
   {
@@ -2349,6 +2935,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09662",
+    "lat": 50.042317,
+    "long": 10.223202,
     "pop": 53426
   },
   {
@@ -2357,6 +2945,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09663",
+    "lat": 49.780016,
+    "long": 9.9449642,
     "pop": 127934
   },
   {
@@ -2365,6 +2955,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09671",
+    "lat": 50.0068,
+    "long": 9.2512234,
     "pop": 174200
   },
   {
@@ -2373,6 +2965,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09672",
+    "lat": 50.221197,
+    "long": 9.9643468,
     "pop": 103235
   },
   {
@@ -2381,6 +2975,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09673",
+    "lat": 50.369698,
+    "long": 10.257982,
     "pop": 79635
   },
   {
@@ -2389,6 +2985,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09674",
+    "lat": 50.058476,
+    "long": 10.610977,
     "pop": 84384
   },
   {
@@ -2397,6 +2995,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09675",
+    "lat": 49.748753,
+    "long": 10.260365,
     "pop": 91155
   },
   {
@@ -2405,6 +3005,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09676",
+    "lat": 49.756799,
+    "long": 9.2445054,
     "pop": 128743
   },
   {
@@ -2413,6 +3015,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09677",
+    "lat": 49.991344,
+    "long": 9.6680921,
     "pop": 126158
   },
   {
@@ -2421,6 +3025,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09678",
+    "lat": 49.935132,
+    "long": 10.346527,
     "pop": 115445
   },
   {
@@ -2429,6 +3035,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09679",
+    "lat": 49.618894,
+    "long": 10.001447,
     "pop": 162302
   },
   {
@@ -2437,6 +3045,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09761",
+    "lat": 48.341627,
+    "long": 10.892835,
     "pop": 296582
   },
   {
@@ -2445,6 +3055,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09762",
+    "lat": 47.884084,
+    "long": 10.617797,
     "pop": 44398
   },
   {
@@ -2453,6 +3065,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09763",
+    "lat": 47.739602,
+    "long": 10.30596,
     "pop": 69151
   },
   {
@@ -2461,6 +3075,8 @@
     "type": "Stadt",
     "state": "Bayern",
     "ags": "09764",
+    "lat": 47.987559,
+    "long": 10.162409,
     "pop": 44100
   },
   {
@@ -2469,6 +3085,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09771",
+    "lat": 48.426496,
+    "long": 11.058273,
     "pop": 134655
   },
   {
@@ -2477,6 +3095,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09772",
+    "lat": 48.396895,
+    "long": 10.685283,
     "pop": 253468
   },
   {
@@ -2485,6 +3105,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09773",
+    "lat": 48.599273,
+    "long": 10.535961,
     "pop": 96562
   },
   {
@@ -2493,6 +3115,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09774",
+    "lat": 48.35839,
+    "long": 10.385559,
     "pop": 127027
   },
   {
@@ -2501,6 +3125,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09775",
+    "lat": 48.302863,
+    "long": 10.142761,
     "pop": 175204
   },
   {
@@ -2509,6 +3135,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09776",
+    "lat": 47.607267,
+    "long": 9.885544,
     "pop": 81981
   },
   {
@@ -2517,6 +3145,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09777",
+    "lat": 47.69976,
+    "long": 10.63783,
     "pop": 141182
   },
   {
@@ -2525,6 +3155,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09778",
+    "lat": 48.043666,
+    "long": 10.394069,
     "pop": 145341
   },
   {
@@ -2533,6 +3165,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09779",
+    "lat": 48.805268,
+    "long": 10.72336,
     "pop": 133783
   },
   {
@@ -2541,6 +3175,8 @@
     "type": "Landkreis",
     "state": "Bayern",
     "ags": "09780",
+    "lat": 47.514561,
+    "long": 10.255646,
     "pop": 156008
   },
   {
@@ -2549,6 +3185,8 @@
     "type": "Landkreis",
     "state": "Saarland",
     "ags": "10041",
+    "lat": 49.254221,
+    "long": 6.9624581,
     "pop": 328714
   },
   {
@@ -2557,6 +3195,8 @@
     "type": "Landkreis",
     "state": "Saarland",
     "ags": "10042",
+    "lat": 49.497743,
+    "long": 6.6812872,
     "pop": 103243
   },
   {
@@ -2565,6 +3205,8 @@
     "type": "Landkreis",
     "state": "Saarland",
     "ags": "10043",
+    "lat": 49.382253,
+    "long": 7.1228489,
     "pop": 131408
   },
   {
@@ -2573,6 +3215,8 @@
     "type": "Landkreis",
     "state": "Saarland",
     "ags": "10044",
+    "lat": 49.357861,
+    "long": 6.7777539,
     "pop": 194319
   },
   {
@@ -2581,6 +3225,8 @@
     "type": "Landkreis",
     "state": "Saarland",
     "ags": "10045",
+    "lat": 49.250003,
+    "long": 7.2453135,
     "pop": 142196
   },
   {
@@ -2589,6 +3235,8 @@
     "type": "Landkreis",
     "state": "Saarland",
     "ags": "10046",
+    "lat": 49.527195,
+    "long": 7.105983,
     "pop": 87007
   },
   {
@@ -2597,6 +3245,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 375238
   },
   {
@@ -2605,6 +3255,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 334401
   },
   {
@@ -2613,6 +3265,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 321123
   },
   {
@@ -2621,6 +3275,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 341772
   },
   {
@@ -2629,6 +3285,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 398036
   },
   {
@@ -2637,6 +3295,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 302177
   },
   {
@@ -2645,6 +3305,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 282059
   },
   {
@@ -2653,6 +3315,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 259689
   },
   {
@@ -2661,6 +3325,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 266488
   },
   {
@@ -2669,6 +3335,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 239019
   },
   {
@@ -2677,6 +3345,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 262967
   },
   {
@@ -2685,6 +3355,8 @@
     "type": "Stadt",
     "state": "Berlin",
     "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
     "pop": 286522
   },
   {
@@ -2693,6 +3365,8 @@
     "type": "Stadt",
     "state": "Brandenburg",
     "ags": "12051",
+    "lat": 52.393582,
+    "long": 12.513434,
     "pop": 72184
   },
   {
@@ -2701,6 +3375,8 @@
     "type": "Stadt",
     "state": "Brandenburg",
     "ags": "12052",
+    "lat": 51.773461,
+    "long": 14.379693,
     "pop": 99678
   },
   {
@@ -2709,6 +3385,8 @@
     "type": "Stadt",
     "state": "Brandenburg",
     "ags": "12053",
+    "lat": 52.326169,
+    "long": 14.488103,
     "pop": 57751
   },
   {
@@ -2717,6 +3395,8 @@
     "type": "Stadt",
     "state": "Brandenburg",
     "ags": "12054",
+    "lat": 52.396134,
+    "long": 13.05742,
     "pop": 180334
   },
   {
@@ -2725,6 +3405,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12060",
+    "lat": 52.82132,
+    "long": 13.711743,
     "pop": 185244
   },
   {
@@ -2733,6 +3415,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12061",
+    "lat": 52.044154,
+    "long": 13.829476,
     "pop": 170791
   },
   {
@@ -2741,6 +3425,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12062",
+    "lat": 51.613588,
+    "long": 13.476273,
     "pop": 101827
   },
   {
@@ -2749,6 +3435,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12063",
+    "lat": 52.616959,
+    "long": 12.632832,
     "pop": 162996
   },
   {
@@ -2757,6 +3445,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12064",
+    "lat": 52.606125,
+    "long": 14.148876,
     "pop": 195751
   },
   {
@@ -2765,6 +3455,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12065",
+    "lat": 52.903092,
+    "long": 13.210681,
     "pop": 212914
   },
   {
@@ -2773,6 +3465,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12066",
+    "lat": 51.618423,
+    "long": 13.959035,
     "pop": 109371
   },
   {
@@ -2781,6 +3475,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12067",
+    "lat": 52.246749,
+    "long": 14.218978,
     "pop": 178803
   },
   {
@@ -2789,6 +3485,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12068",
+    "lat": 52.986298,
+    "long": 12.642753,
     "pop": 98861
   },
   {
@@ -2797,6 +3495,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12069",
+    "lat": 52.251067,
+    "long": 12.708471,
     "pop": 216566
   },
   {
@@ -2805,6 +3505,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12070",
+    "lat": 53.104582,
+    "long": 11.968515,
     "pop": 76158
   },
   {
@@ -2813,6 +3515,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12071",
+    "lat": 51.622702,
+    "long": 14.370469,
     "pop": 113720
   },
   {
@@ -2821,6 +3525,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12072",
+    "lat": 52.072272,
+    "long": 13.287821,
     "pop": 169997
   },
   {
@@ -2829,6 +3535,8 @@
     "type": "Landkreis",
     "state": "Brandenburg",
     "ags": "12073",
+    "lat": 53.204681,
+    "long": 13.861258,
     "pop": 118947
   },
   {
@@ -2837,6 +3545,8 @@
     "type": "Stadt",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13003",
+    "lat": 54.15084,
+    "long": 12.150236,
     "pop": 209191
   },
   {
@@ -2845,6 +3555,8 @@
     "type": "Stadt",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13004",
+    "lat": 53.621983,
+    "long": 11.419816,
     "pop": 95653
   },
   {
@@ -2853,6 +3565,8 @@
     "type": "Landkreis",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13071",
+    "lat": 53.544128,
+    "long": 13.002276,
     "pop": 258074
   },
   {
@@ -2861,6 +3575,8 @@
     "type": "Landkreis",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13072",
+    "lat": 53.911856,
+    "long": 12.22239,
     "pop": 215794
   },
   {
@@ -2869,6 +3585,8 @@
     "type": "Landkreis",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13073",
+    "lat": 54.247992,
+    "long": 12.898721,
     "pop": 224702
   },
   {
@@ -2877,6 +3595,8 @@
     "type": "Landkreis",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13074",
+    "lat": 53.820465,
+    "long": 11.250093,
     "pop": 157322
   },
   {
@@ -2885,6 +3605,8 @@
     "type": "Landkreis",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13075",
+    "lat": 53.769177,
+    "long": 13.75855,
     "pop": 235623
   },
   {
@@ -2893,6 +3615,8 @@
     "type": "Landkreis",
     "state": "Mecklenburg-Vorpommern",
     "ags": "13076",
+    "lat": 53.450094,
+    "long": 11.534177,
     "pop": 211779
   },
   {
@@ -2901,6 +3625,8 @@
     "type": "Stadt",
     "state": "Sachsen",
     "ags": "14511",
+    "lat": 50.83261,
+    "long": 12.939141,
     "pop": 246334
   },
   {
@@ -2909,6 +3635,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14521",
+    "lat": 50.609375,
+    "long": 12.945301,
     "pop": 334948
   },
   {
@@ -2917,6 +3645,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14522",
+    "lat": 50.956407,
+    "long": 13.137541,
     "pop": 304099
   },
   {
@@ -2925,6 +3655,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14523",
+    "lat": 50.404913,
+    "long": 12.338026,
     "pop": 225997
   },
   {
@@ -2933,6 +3665,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14524",
+    "lat": 50.72636,
+    "long": 12.498494,
     "pop": 315002
   },
   {
@@ -2941,6 +3675,8 @@
     "type": "Stadt",
     "state": "Sachsen",
     "ags": "14612",
+    "lat": 51.100169,
+    "long": 13.799476,
     "pop": 556780
   },
   {
@@ -2949,6 +3685,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14625",
+    "lat": 51.172049,
+    "long": 14.3838,
     "pop": 299758
   },
   {
@@ -2957,6 +3695,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14626",
+    "lat": 51.13691,
+    "long": 14.961263,
     "pop": 252725
   },
   {
@@ -2965,6 +3705,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14627",
+    "lat": 51.136632,
+    "long": 13.434262,
     "pop": 241717
   },
   {
@@ -2973,6 +3715,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14628",
+    "lat": 50.917266,
+    "long": 13.871576,
     "pop": 245586
   },
   {
@@ -2981,6 +3725,8 @@
     "type": "Stadt",
     "state": "Sachsen",
     "ags": "14713",
+    "lat": 51.333118,
+    "long": 12.376875,
     "pop": 593145
   },
   {
@@ -2989,6 +3735,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14729",
+    "lat": 51.203509,
+    "long": 12.439818,
     "pop": 258139
   },
   {
@@ -2997,6 +3745,8 @@
     "type": "Landkreis",
     "state": "Sachsen",
     "ags": "14730",
+    "lat": 51.472542,
+    "long": 12.779554,
     "pop": 197741
   },
   {
@@ -3005,6 +3755,8 @@
     "type": "Stadt",
     "state": "Sachsen-Anhalt",
     "ags": "15001",
+    "lat": 51.813909,
+    "long": 12.241279,
     "pop": 80103
   },
   {
@@ -3013,6 +3765,8 @@
     "type": "Stadt",
     "state": "Sachsen-Anhalt",
     "ags": "15002",
+    "lat": 51.4803,
+    "long": 11.974528,
     "pop": 238762
   },
   {
@@ -3021,6 +3775,8 @@
     "type": "Stadt",
     "state": "Sachsen-Anhalt",
     "ags": "15003",
+    "lat": 52.115977,
+    "long": 11.648383,
     "pop": 237565
   },
   {
@@ -3029,6 +3785,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15081",
+    "lat": 52.676729,
+    "long": 11.229724,
     "pop": 83173
   },
   {
@@ -3037,6 +3795,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15082",
+    "lat": 51.647049,
+    "long": 12.299255,
     "pop": 158486
   },
   {
@@ -3045,6 +3805,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15083",
+    "lat": 52.059045,
+    "long": 11.284423,
     "pop": 170923
   },
   {
@@ -3053,6 +3815,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15084",
+    "lat": 51.134376,
+    "long": 11.83389,
     "pop": 178846
   },
   {
@@ -3061,6 +3825,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15085",
+    "lat": 51.822351,
+    "long": 10.95932,
     "pop": 213310
   },
   {
@@ -3069,6 +3835,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15086",
+    "lat": 52.287454,
+    "long": 12.029403,
     "pop": 89589
   },
   {
@@ -3077,6 +3845,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15087",
+    "lat": 51.535322,
+    "long": 11.354395,
     "pop": 134942
   },
   {
@@ -3085,6 +3855,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15088",
+    "lat": 51.363372,
+    "long": 11.798382,
     "pop": 183815
   },
   {
@@ -3093,6 +3865,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15089",
+    "lat": 51.851445,
+    "long": 11.641005,
     "pop": 189125
   },
   {
@@ -3101,6 +3875,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15090",
+    "lat": 52.693177,
+    "long": 11.845665,
     "pop": 111190
   },
   {
@@ -3109,6 +3885,8 @@
     "type": "Landkreis",
     "state": "Sachsen-Anhalt",
     "ags": "15091",
+    "lat": 51.791391,
+    "long": 12.791179,
     "pop": 124953
   },
   {
@@ -3117,6 +3895,8 @@
     "type": "Stadt",
     "state": "Thüringen",
     "ags": "16051",
+    "lat": 50.982466,
+    "long": 11.020683,
     "pop": 213981
   },
   {
@@ -3125,6 +3905,8 @@
     "type": "Stadt",
     "state": "Thüringen",
     "ags": "16052",
+    "lat": 50.90074,
+    "long": 12.093004,
     "pop": 93125
   },
   {
@@ -3133,6 +3915,8 @@
     "type": "Stadt",
     "state": "Thüringen",
     "ags": "16053",
+    "lat": 50.92588,
+    "long": 11.591162,
     "pop": 111343
   },
   {
@@ -3141,6 +3925,8 @@
     "type": "Stadt",
     "state": "Thüringen",
     "ags": "16054",
+    "lat": 50.608361,
+    "long": 10.693465,
     "pop": 36789
   },
   {
@@ -3149,6 +3935,8 @@
     "type": "Stadt",
     "state": "Thüringen",
     "ags": "16055",
+    "lat": 50.977554,
+    "long": 11.31781,
     "pop": 65228
   },
   {
@@ -3157,6 +3945,8 @@
     "type": "Stadt",
     "state": "Thüringen",
     "ags": "16056",
+    "lat": 50.990569,
+    "long": 10.296955,
     "pop": 42250
   },
   {
@@ -3165,6 +3955,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16061",
+    "lat": 51.38163,
+    "long": 10.257459,
     "pop": 100006
   },
   {
@@ -3173,6 +3965,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16062",
+    "lat": 51.501566,
+    "long": 10.73279,
     "pop": 83416
   },
   {
@@ -3181,6 +3975,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16063",
+    "lat": 50.892774,
+    "long": 10.217819,
     "pop": 118974
   },
   {
@@ -3189,6 +3985,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16064",
+    "lat": 51.182695,
+    "long": 10.555401,
     "pop": 102232
   },
   {
@@ -3197,6 +3995,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16065",
+    "lat": 51.323188,
+    "long": 10.989641,
     "pop": 74212
   },
   {
@@ -3205,6 +4005,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16066",
+    "lat": 50.628856,
+    "long": 10.407442,
     "pop": 124916
   },
   {
@@ -3213,6 +4015,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16067",
+    "lat": 50.907203,
+    "long": 10.696255,
     "pop": 134908
   },
   {
@@ -3221,6 +4025,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16068",
+    "lat": 51.156333,
+    "long": 11.156919,
     "pop": 69427
   },
   {
@@ -3229,6 +4035,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16069",
+    "lat": 50.431086,
+    "long": 10.737739,
     "pop": 63197
   },
   {
@@ -3237,6 +4045,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16070",
+    "lat": 50.736692,
+    "long": 10.968152,
     "pop": 106249
   },
   {
@@ -3245,6 +4055,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16071",
+    "lat": 51.032264,
+    "long": 11.507425,
     "pop": 82156
   },
   {
@@ -3253,6 +4065,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16072",
+    "lat": 50.413317,
+    "long": 11.133108,
     "pop": 57717
   },
   {
@@ -3261,6 +4075,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16073",
+    "lat": 50.638271,
+    "long": 11.311129,
     "pop": 103199
   },
   {
@@ -3269,6 +4085,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16074",
+    "lat": 50.905491,
+    "long": 11.735917,
     "pop": 82950
   },
   {
@@ -3277,6 +4095,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16075",
+    "lat": 50.582527,
+    "long": 11.713913,
     "pop": 80312
   },
   {
@@ -3285,6 +4105,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16076",
+    "lat": 50.753331,
+    "long": 12.084158,
     "pop": 97398
   },
   {
@@ -3293,6 +4115,8 @@
     "type": "Landkreis",
     "state": "Thüringen",
     "ags": "16077",
+    "lat": 50.961288,
+    "long": 12.410718,
     "pop": 89393
   }
 ]
