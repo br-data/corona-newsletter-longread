@@ -1,6 +1,7 @@
 import { select } from 'd3-selection';
 import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
+import { feature } from 'topojson-client';
 
 import { casesPer100Tsd7Days, germanDate } from '../utils';
 
@@ -12,7 +13,7 @@ const defaults = {
   maxRadius: 18
 };
 
-export default class LineChart {
+export default class BayernMap {
   constructor(config) {
     this.set(config);
     this.draw();
@@ -73,6 +74,9 @@ export default class LineChart {
 
     const path = geoPath().projection(projection);
 
+    // TopoJSON to GeoJSON feature
+    const geoFeature = feature(geoData, geoData.objects.counties);
+
     // Add SVG
     const svg = container.append('svg')
       .attr('xmlns', 'http://www.w3.org/2000/svg')
@@ -105,7 +109,7 @@ export default class LineChart {
 
     // Add base map
     map.append('path')
-      .attr('d', path(geoData))
+      .attr('d', path(geoFeature))
       .attr('fill', '#858999')
       .attr('stroke', '#383B47')
       .attr('stroke-width', 1.25);
