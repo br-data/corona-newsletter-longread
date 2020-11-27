@@ -2,81 +2,113 @@
   {
     "name": "Schleswig-Holstein",
     "ags": "01",
+    "lat": 54.188,
+    "long": 9.8061,
     "pop": 2903773
   },
   {
     "name": "Hamburg",
     "ags": "02",
+    "lat": 53.554,
+    "long": 10.026,
     "pop": 1847253
   },
   {
     "name": "Niedersachsen",
     "ags": "03",
+    "lat": 52.77,
+    "long": 9.17,
     "pop": 7993608
   },
   {
     "name": "Bremen",
     "ags": "04",
+    "lat": 53.111,
+    "long": 8.7868,
     "pop": 681202
   },
   {
     "name": "Nordrhein-Westfalen",
     "ags": "05",
+    "lat": 51.476,
+    "long": 7.5664,
     "pop": 17947221
   },
   {
     "name": "Hessen",
     "ags": "06",
+    "lat": 50.602,
+    "long": 9.0394,
     "pop": 6288080
   },
   {
     "name": "Rheinland-Pfalz",
     "ags": "07",
+    "lat": 49.914,
+    "long": 7.4542,
     "pop": 4093903
   },
   {
     "name": "Baden-Württemberg",
     "ags": "08",
+    "lat": 48.548,
+    "long": 9.0491,
     "pop": 11100394
   },
   {
     "name": "Bayern",
     "ags": "09",
+    "lat": 48.946,
+    "long": 11.422,
     "pop": 13124737
   },
   {
     "name": "Saarland",
-    "ags": 10,
+    "ags": "10",
+    "lat": 49.386,
+    "long": 6.9575,
     "pop": 986887
   },
   {
     "name": "Berlin",
-    "ags": 11,
+    "ags": "11",
+    "lat": 52.498,
+    "long": 13.409,
     "pop": 3669491
   },
   {
     "name": "Brandenburg",
-    "ags": 12,
+    "ags": "12",
+    "lat": 52.473,
+    "long": 13.399,
     "pop": 2521893
   },
   {
     "name": "Mecklenburg-Vorpommern",
-    "ags": 13,
+    "ags": "13",
+    "lat": 53.753,
+    "long": 12.536,
     "pop": 1608138
   },
   {
     "name": "Sachsen",
-    "ags": 14,
+    "ags": "14",
+    "lat": 51.051,
+    "long": 13.353,
     "pop": 4071971
   },
   {
     "name": "Sachsen-Anhalt",
-    "ags": 15,
+    "ags": "15",
+    "lat": 52.012,
+    "long": 11.705,
     "pop": 2194782
   },
   {
     "name": "Thüringen",
-    "ags": 16,
+    "ags": "16",
+    "lat": 50.903,
+    "long": 11.03,
     "pop": 2133378
   }
 ]
