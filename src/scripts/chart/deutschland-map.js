@@ -8,9 +8,9 @@ import { casesPer100Tsd7Days, germanDate } from '../utils';
 const defaults = {
   target: '#map',
   minValue: 0,
-  maxValue: 150,
+  maxValue: 300,
   minRadius: 3,
-  maxRadius: 18
+  maxRadius: 12
 };
 
 export default class DeutschlandMap {
@@ -36,7 +36,7 @@ export default class DeutschlandMap {
 
       return Object.assign(
         metaInfoCounty,
-        { valuePer100Tsd: casesPer100Tsd7Days(caseDataDistrict, metaInfoCounty.pop, 'value') }
+        { valuePer100Tsd: casesPer100Tsd7Days(caseDataDistrict, metaInfoCounty.pop) }
       );
     });
 
@@ -113,7 +113,8 @@ export default class DeutschlandMap {
       .attr('d', path(geoFeature))
       .attr('fill', '#858999')
       .attr('stroke', '#383B47')
-      .attr('stroke-width', 1.25);
+      .attr('stroke-width', 1)
+      .attr('stroke-opacity', 0.75);
 
     // Add circles to visualize the number of COVID-19 cases
     map.append('g')
@@ -206,13 +207,13 @@ export default class DeutschlandMap {
     const key = svg.append('g')
       .style('display', isMobile ? 'none' : 'block');
 
-    // Add key "more than 100 cases"
+    // Add key "more than 200 cases"
     key.append('circle')
       .attr('transform', 'translate(25, 90)')
-      .attr('r', radius(100))
-      .attr('cx', radius(100))
+      .attr('r', radius(200))
+      .attr('cx', radius(200))
       .attr('cy', 10)
-      .attr('fill', getColor(100));
+      .attr('fill', getColor(200));
 
     key.append('text')
       .attr('transform', 'translate(65, 90)')
@@ -221,7 +222,7 @@ export default class DeutschlandMap {
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('100 Fälle und mehr');
+      .text('200 Fälle und mehr');
 
     // Add key "more than 50 cases"
     key.append('circle')
@@ -291,7 +292,7 @@ export default class DeutschlandMap {
 }
 
 function getColor(value) {
-  if (value >= 100) {
+  if (value >= 200) {
     // dark red
     return '#bd0026';
   } else if (value >= 50) {
