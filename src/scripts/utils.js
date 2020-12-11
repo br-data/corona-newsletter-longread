@@ -49,7 +49,7 @@ export function casesPer100Tsd7Days(data, population, key = 'value') {
 }
 
 export function thresholdIndicator(value) {
-  if (value >= 100) {
+  if (value >= 200) {
     return 'dot-darkred';
   } else if (value >= 50) {
     return 'dot-red';
