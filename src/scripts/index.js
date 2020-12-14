@@ -19,15 +19,18 @@ import BarChart from './chart/bar-chart';
 import AreaChart from './chart/area-chart';
 import LineChart from './chart/line-chart';
 import BayernMap from './chart/bayern-map';
+import DeutschlandMap from './chart/deutschland-map';
 
 import bayernMeta from './data/meta/bayern-meta.json';
 import bayernRegbezMeta from './data/meta/bayern-regbez-meta.json';
 import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
-import bayernLkrGeo from './data/geo/bayern-lkr.geo.json';
+import bayernLkrGeo from './data/geo/bayern-lkr.topo.json';
 import bayernBigCities from './data/meta/bayern-big-cities.json';
 
 import deutschlandMeta from './data/meta/deutschland-meta.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
+import deutschlandLkrMeta from './data/meta/deutschland-lkr-meta.json';
+import deutschlandLkrGeo from './data/geo/deutschland-lkr.topo.json';
 
 import { germanDate } from './utils';
 
@@ -88,6 +91,7 @@ async function init() {
     });
   })();
 
+  // Text and chart for intensive care patients in Bavaria
   (async function () {
     const bayernPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
       .then(response => response.json())
@@ -329,6 +333,31 @@ async function init() {
     });
   })();
 
+  // Text and map for German counties (Landkreise)
+  // (async function () {
+  //   const deutschlandLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis`)
+  //     .then(response => response.json())
+  //     .catch(logError);
+
+  //   const deutschlandMap = new DeutschlandMap({
+  //     target: '#deutschland-cases-map',
+  //     caseData: deutschlandLkrCases,
+  //     metaData: deutschlandLkrMeta,
+  //     geoData: deutschlandLkrGeo,
+  //     labelData: deutschlandBlMeta,
+  //     meta: {
+  //       title: '7-Tage-Inzidenz in Deutschland',
+  //       description: 'Neuinfektionen pro 100.000 Einwohner in den letzten sieben Tagen',
+  //       author: 'BR',
+  //       source: 'Robert Koch-Institut, BR-Analyse',
+  //       date: endDate
+  //     }
+  //   });
+
+  //   charts.push(deutschlandMap);
+  // })();
+
+  // Text and chart for intensive care patients in Germany
   (async function () {
     const deutschlandPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=DE&indicator=Patienten')
       .then(response => response.json())

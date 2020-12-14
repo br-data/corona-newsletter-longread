@@ -8,7 +8,7 @@ import { casesPer100Tsd7Days, germanDate } from '../utils';
 const defaults = {
   target: '#map',
   minValue: 0,
-  maxValue: 150,
+  maxValue: 300,
   minRadius: 3,
   maxRadius: 18
 };
