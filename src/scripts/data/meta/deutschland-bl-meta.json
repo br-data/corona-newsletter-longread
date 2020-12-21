@@ -16,7 +16,7 @@
   {
     "name": "Niedersachsen",
     "ags": "03",
-    "lat": 52.77,
+    "lat": 52.57,
     "long": 9.17,
     "pop": 7993608
   },
@@ -79,14 +79,14 @@
   {
     "name": "Brandenburg",
     "ags": "12",
-    "lat": 52.473,
-    "long": 13.399,
+    "lat": 53.008,
+    "long": 12.676,
     "pop": 2521893
   },
   {
     "name": "Mecklenburg-Vorpommern",
     "ags": "13",
-    "lat": 53.753,
+    "lat": 53.853,
     "long": 12.536,
     "pop": 1608138
   },
