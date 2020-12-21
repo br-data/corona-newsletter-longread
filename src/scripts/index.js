@@ -1,6 +1,12 @@
 import '../index.html';
 import '../styles/index.scss';
 
+import BarChart from './chart/bar-chart';
+import AreaChart from './chart/area-chart';
+import LineChart from './chart/line-chart';
+import BayernMap from './chart/bayern-map';
+import DeutschlandMap from './chart/deutschland-map';
+
 import * as bayernIndicator from './indicator/bayern-indicator';
 import * as bayernText from './text/bayern-text';
 import * as bayernRegbezText from './text/bayern-regbez-text';
@@ -9,23 +15,18 @@ import * as bayernLkrText from './text/bayern-lkr-text';
 import * as bayernLkrTable from './table/bayern-lkr-table';
 import * as bayernPatientsText from './text/bayern-patients-text';
 
-import * as deutschlandIndicator from './indicator/deutschland-indicator';
-import * as deutschlandText from './text/deutschland-text';
-import * as deutschlandBlText from './text/deutschland-bl-text';
-import * as deutschlandBlTable from './table/deutschland-bl-table';
-import * as deutschlandPatientsText from './text/deutschland-patients-text';
-
-import BarChart from './chart/bar-chart';
-import AreaChart from './chart/area-chart';
-import LineChart from './chart/line-chart';
-import BayernMap from './chart/bayern-map';
-import DeutschlandMap from './chart/deutschland-map';
-
 import bayernMeta from './data/meta/bayern-meta.json';
 import bayernRegbezMeta from './data/meta/bayern-regbez-meta.json';
 import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
 import bayernLkrGeo from './data/geo/bayern-lkr.topo.json';
 import bayernBigCities from './data/meta/bayern-big-cities.json';
+
+import * as deutschlandIndicator from './indicator/deutschland-indicator';
+import * as deutschlandText from './text/deutschland-text';
+import * as deutschlandBlText from './text/deutschland-bl-text';
+import * as deutschlandBlTable from './table/deutschland-bl-table';
+import * as deutschlandPatientsText from './text/deutschland-patients-text';
+import * as deutschlandLkrText from './text/deutschland-lkr-text';
 
 import deutschlandMeta from './data/meta/deutschland-meta.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
@@ -334,28 +335,36 @@ async function init() {
   })();
 
   // Text and map for German counties (Landkreise)
-  // (async function () {
-  //   const deutschlandLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis`)
-  //     .then(response => response.json())
-  //     .catch(logError);
+  (async function () {
+    const deutschlandLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis`)
+      .then(response => response.json())
+      .catch(logError);
 
-  //   const deutschlandMap = new DeutschlandMap({
-  //     target: '#deutschland-cases-map',
-  //     caseData: deutschlandLkrCases,
-  //     metaData: deutschlandLkrMeta,
-  //     geoData: deutschlandLkrGeo,
-  //     labelData: deutschlandBlMeta,
-  //     meta: {
-  //       title: '7-Tage-Inzidenz in Deutschland',
-  //       description: 'Neuinfektionen pro 100.000 Einwohner in den letzten sieben Tagen',
-  //       author: 'BR',
-  //       source: 'Robert Koch-Institut, BR-Analyse',
-  //       date: endDate
-  //     }
-  //   });
+    const deutschlandMap = new DeutschlandMap({
+      target: '#deutschland-cases-map',
+      caseData: deutschlandLkrCases,
+      metaData: deutschlandLkrMeta,
+      geoData: deutschlandLkrGeo,
+      labelData: deutschlandBlMeta,
+      meta: {
+        title: '7-Tage-Inzidenz in Deutschland',
+        description: 'Neuinfektionen pro 100.000 Einwohner in den letzten sieben Tagen',
+        author: 'BR',
+        source: 'Robert Koch-Institut, BR-Analyse',
+        date: endDate
+      }
+    });
 
-  //   charts.push(deutschlandMap);
-  // })();
+    charts.push(deutschlandMap);
+
+    deutschlandLkrText.init({
+      summaryTarget: '#deutschland-lkr-summary-text',
+      detailTarget: '#deutschland-lkr-detail-text',
+      caseData: deutschlandLkrCases,
+      metaData: deutschlandLkrMeta,
+      metaDataStates: deutschlandBlMeta
+    });
+  })();
 
   // Text and chart for intensive care patients in Germany
   (async function () {
