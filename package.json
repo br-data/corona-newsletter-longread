@@ -2,7 +2,7 @@
   "name": "corona-zahlen-newsletter",
   "description": "Newsletter with all the latest Corona figures and statistics",
   "author": "Steffen Kühne",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "license": "MIT",
   "private": true,
   "repository": {
