@@ -25,6 +25,7 @@ export default class BarChart {
 
   draw() {
     const { target, data, meta, margin } = this;
+    const caseDataAverage = sma(data.slice(0, data.length - 2), 7, 'value');
     const container = select(target);
 
     // Set initial dimensions
@@ -155,7 +156,7 @@ export default class BarChart {
       .classed('line', true)
       .attr('transform', `translate(${margin.left}, ${margin.top})`)
       .append('path')
-      .attr('d', lineConstructor(sma(data, 7, 'value')))
+      .attr('d', lineConstructor(caseDataAverage))
       .attr('fill', 'none')
       .attr('stroke', '#ffffff')
       .attr('stroke-width', 3)

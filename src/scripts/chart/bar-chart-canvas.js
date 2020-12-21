@@ -24,6 +24,7 @@ export default class BarChart {
 
   draw() {
     const { target, data, meta, margin } = this;
+    const caseDataAverage = sma(data.slice(0, data.length - 2), 7, 'value');
     const container = select(target);
     const ratio = getRetinaRatio();
 
@@ -135,7 +136,7 @@ export default class BarChart {
     context.setLineDash([10, 10]);
     context.beginPath();
     context.lineCap = 'round';
-    lineConstructor(sma(data, 7, 'value'));
+    lineConstructor(caseDataAverage);
     context.lineWidth = 3;
     context.strokeStyle = '#ffffff';
     context.stroke();
