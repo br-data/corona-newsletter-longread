@@ -70,8 +70,8 @@ export default class DeutschlandMap {
     // Set map center and dimensions
     const projection = geoMercator()
       .translate([width/2, height/2])
-      .scale(width * 4)
-      .center([10.447683, 51.163375]);
+      .scale(width * 3.5)
+      .center([10.4, 51.8]);
 
     const path = geoPath().projection(projection);
 
