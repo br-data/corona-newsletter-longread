@@ -1,0 +1,10 @@
+########################
+## Cloud Build Config ##
+########################
+
+isEnabled: true
+build:
+    command: 'yarn && yarn build'
+    outputFolder: 'build'
+addOns:
+    isWebsite: true
