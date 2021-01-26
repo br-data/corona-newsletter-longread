@@ -16,7 +16,7 @@ Um die Module installieren und die Entwicklerwerkzeuge nutzen zu können, muss v
 
 ## Architektur
 
-Die Daten werden vom [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Der [Newsletter](https://github.com/br-data/corona-newsletter-longread) wird über [Jenkins](https://github.com/br-data/corona-newsletter-longread/blob/master/Jenkinsfile) gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
+Die Daten werden vom [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Der [Newsletter](https://github.com/br-data/corona-newsletter-longread) wird in der [Google Cloud](https://github.com/br-data/cloud-deploy-template) gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
 
 <img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="700px">
 
@@ -405,7 +405,3 @@ import { axisBottom, axisLeft } from 'd3-axis';
 ```
 
 [Sitepoint](https://www.sitepoint.com/understanding-es6-modules/) bietet einen gute Einführung in das Thema ES6-Module.
-
-## Jenkinsfile
-
-[Jenkins](https://jenkins.io/) ist eine Platform zur kontinuierlichen Integration (CI) von Anwendungen aller Art. Das Jenkinsfile ist eine Bauanleitung mithilfe derer das Projekt jedesmal neu gebaut und auf den Staging-Server kopiert wird, sobald Änderungen auf den master-Branch in Github gepusht werden. Dies passiert automatisch für alle öffentlichen und nicht-öffentlichen Repositories im [BR-Data-Github](https://github.com/br-data) deren Namen mit `-longread` endet. Ein Projekt mit Namen `demo-longread` wird so kontinuierlich auf `https://ddj.br.de/demo` ausgerollt.
