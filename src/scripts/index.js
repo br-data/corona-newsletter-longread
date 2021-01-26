@@ -189,15 +189,9 @@ async function init() {
 
   // Text and map for Bavarian counties (Landkreise)
   (async function () {
-    const bayernLkrCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
+    const bayernLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
       .then(response => response.json())
       .catch(logError);
-
-    const bayernLkrDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
-      .then(response => response.json())
-      .catch(logError);
-
-    const [bayernLkrCases, bayernLkrDeaths] = await Promise.all([bayernLkrCasesRequest, bayernLkrDeathsRequest]);
 
     const bayernMap = new BayernMap({
       target: '#bayern-cases-map',
@@ -223,6 +217,19 @@ async function init() {
       metaData: bayernLkrMeta,
       metaDataDistricts: bayernRegbezMeta
     });
+  })();
+
+  // Table for Bavarian counties (Landkreise)
+  (async function () {
+    const bayernLkrCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
+      .then(response => response.json())
+      .catch(logError);
+
+    const bayernLkrDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+      .then(response => response.json())
+      .catch(logError);
+
+    const [bayernLkrCases, bayernLkrDeaths] = await Promise.all([bayernLkrCasesRequest, bayernLkrDeathsRequest]);
 
     bayernLkrTable.init({
       target: '#bayern-lkr-table',
