@@ -215,6 +215,34 @@ export function json2table(json) {
   return tableHtml;
 }
 
+export function csvToJson(csv, columnSeparator = ',', rowSeparator = '\n') {
+  const inferType = (str) => {
+    if (!str) {
+      return;
+    } else if (!isNaN(str) || !isNaN(str.replace(',', '.'))) {
+      return parseFloat(str.replace(',', '.'));
+    } else if (Date.parse(str.replace(/"/g, ''))) {
+      return new Date(str.replace(/"/g, ''));
+    } else {
+      return str.replace(/"/g, '');
+    }
+  };
+  const [firstLine, ...lines] = csv.split(rowSeparator)
+    .filter(line => line.length);
+
+  return lines.map(line =>
+    firstLine.split(columnSeparator).reduce(
+      (curr, next, index) => {
+        return {
+          ...curr,
+          [next]: inferType(line.split(columnSeparator)[index])
+        };
+      },
+      {}
+    )
+  );
+}
+
 // http://bl.ocks.org/devgru/a9428ebd6e11353785f2
 export function getRetinaRatio() {
   const devicePixelRatio = window.devicePixelRatio || 1;
