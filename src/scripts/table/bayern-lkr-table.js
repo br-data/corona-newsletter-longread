@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPer100Tsd7Days, weekTrend, trendArrow, thresholdIndicator, json2table } from '../utils';
+import { pretty, currentCount, currentIncrease, casesPer100Tsd7Days, weekTrend, trendArrow, thresholdIndicator, jsonToTable } from '../utils';
 
 export function init(config) {
   const { target, caseData, deathData, metaData } = config;
@@ -16,7 +16,7 @@ export function init(config) {
     };
   }).sort((a, b) => b.value - a.value).map(d => { delete d.value; return d;});
 
-  const tableHtml = json2table(analysis);
+  const tableHtml = jsonToTable(analysis);
   const parentElement = document.querySelector(target);
   parentElement.innerHTML = tableHtml;
 }

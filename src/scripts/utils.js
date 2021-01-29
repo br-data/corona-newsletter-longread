@@ -185,7 +185,7 @@ export function pretty(number, prefix = false, method = 'round', factor = 10) {
   return prefixedString;
 }
 
-export function json2table(json) {
+export function jsonToTable(json) {
   const columns = Object.keys(json[0]);
   let headerRow = '';
   let bodyRows = '';
