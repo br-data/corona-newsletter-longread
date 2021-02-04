@@ -189,7 +189,7 @@ async function init() {
 
   // Text and map for Bavarian counties (Landkreise)
   (async function () {
-    const bayernLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
+    const bayernLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&group=Landkreis&bundesland=Bayern`)
       .then(response => response.json())
       .catch(logError);
 
@@ -343,7 +343,7 @@ async function init() {
 
   // Text and map for German counties (Landkreise)
   (async function () {
-    const deutschlandLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&newCases=true&group=Landkreis`)
+    const deutschlandLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&group=Landkreis`)
       .then(response => response.json())
       .catch(logError);
 
