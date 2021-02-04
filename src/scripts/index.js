@@ -1,6 +1,7 @@
 import '../index.html';
 import '../styles/index.scss';
 
+import SimpleChart from './chart/simple-chart';
 import BarChart from './chart/bar-chart';
 import AreaChart from './chart/area-chart';
 import LineChart from './chart/line-chart';
@@ -9,6 +10,7 @@ import DeutschlandMap from './chart/deutschland-map';
 
 import * as bayernIndicator from './indicator/bayern-indicator';
 import * as bayernText from './text/bayern-text';
+import * as bayernVaccinationsText from './text/bayern-vaccinations-text';
 import * as bayernRegbezText from './text/bayern-regbez-text';
 import * as bayernRegbezTable from './table/bayern-regbez-table';
 import * as bayernLkrText from './text/bayern-lkr-text';
@@ -33,7 +35,7 @@ import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
 import deutschlandLkrMeta from './data/meta/deutschland-lkr-meta.json';
 import deutschlandLkrGeo from './data/geo/deutschland-lkr.topo.json';
 
-import { germanDate } from './utils';
+import { germanDate, csvToJson } from './utils';
 
 window.addEventListener('load', init);
 
@@ -90,6 +92,33 @@ async function init() {
       deathData: bayernDeaths,
       metaData: bayernMeta
     });
+  })();
+
+  // Text and chart for vaccinations in Bavaria
+  (async function () {
+    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_DE.csv')
+      .then(response => response.text())
+      .catch(logError);
+
+    bayernVaccinationsText.init({
+      target: '#bayern-vaccinations-text',
+      vaccinationData: csvToJson(bayernVaccinations),
+      metaData: bayernMeta
+    });
+
+    const bayernVaccinationsChart = new SimpleChart({
+      target: '#bayern-vaccinations-chart',
+      data: csvToJson(bayernVaccinations),
+      meta: {
+        title: 'Corona-Impfungen in Bayern',
+        description: 'Anteil der geimpften Personen an der bayerischen Bevölkerung',
+        author: 'BR',
+        source: 'Robert Koch-Institut',
+        date: endDate
+      }
+    });
+
+    charts.push(bayernVaccinationsChart);
   })();
 
   // Text and chart for intensive care patients in Bavaria
