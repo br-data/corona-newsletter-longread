@@ -6,9 +6,9 @@ import { pretty, germanDate } from '../utils';
 
 const defaults = {
   target: '#simple-chart',
-  chartHeight: 230,
+  chartHeight: 250,
   barHeight: 25,
-  margin: { top: 140, right: 35, bottom: 75, left: 35 }
+  margin: { top: 140, right: 25, bottom: 85, left: 25 }
 };
 
 export default class SimpleChart {
@@ -98,6 +98,7 @@ export default class SimpleChart {
       .call(g => g.selectAll('.tick line').remove())
       .call(g => g.selectAll('.tick text')
         .attr('dy', 8)
+        .attr('dx', d => d === 0 ? 11 : (d === 100 ? -19 : 0))
         .attr('font-family', '"Open Sans", sans-serif')
         .attr('font-size', 14)
         .attr('font-weight', 300)
@@ -107,7 +108,7 @@ export default class SimpleChart {
     // Add bars
     const bars = svg.append('g')
       .classed('bars', true)
-      .attr('transform', `translate(${margin.left}, ${height - margin.bottom - barHeight})`);
+      .attr('transform', `translate(${margin.left}, ${height - margin.bottom - 30})`);
 
     // Population
     bars.append('rect')
