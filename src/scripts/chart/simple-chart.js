@@ -181,20 +181,18 @@ export default class SimpleChart {
       .text(meta.description);
 
     // Add key
-    const spacing = 190;
+    const spacing = 200;
 
     const key = svg.append('g')
       .classed('key', true)
       .attr('transform', `translate(${margin.left}, 90)`);
     
     key.append('rect')
-      .attr('x', 1 + 0 * spacing)
+      .attr('x', 0 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('stroke', '#6d7182')
-      .attr('stroke-width', 1)
-      .attr('fill', 'none');
+      .attr('fill', '#3ad29f');
 
     key.append('text')
       .attr('x', (0 * spacing) + 20)
@@ -203,7 +201,7 @@ export default class SimpleChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Gesamtbevölkerung');
+      .text('Zweitimpfung erhalten');
     
     key.append('rect')
       .attr('x', 1 * spacing)
@@ -220,13 +218,15 @@ export default class SimpleChart {
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .text('Erstimpfung erhalten');
-    
+
     key.append('rect')
       .attr('x', 2 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#3ad29f');
+      .attr('stroke', '#6d7182')
+      .attr('stroke-width', 1)
+      .attr('fill', 'none');
 
     key.append('text')
       .attr('x', (2 * spacing) + 20)
@@ -235,7 +235,7 @@ export default class SimpleChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Zweitimpfung erhalten');
+      .text('Gesamtbevölkerung');
 
     // Add author and source
     const footer = svg.append('g')
