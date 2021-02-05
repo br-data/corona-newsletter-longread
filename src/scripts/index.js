@@ -96,14 +96,13 @@ async function init() {
 
   // Text and chart for vaccinations in Bavaria
   (async function () {
-    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_DE.csv')
+    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_BY.csv')
       .then(response => response.text())
       .catch(logError);
 
     bayernVaccinationsText.init({
       target: '#bayern-vaccinations-text',
-      vaccinationData: csvToJson(bayernVaccinations),
-      metaData: bayernMeta
+      data: csvToJson(bayernVaccinations)
     });
 
     const bayernVaccinationsChart = new SimpleChart({
@@ -111,7 +110,7 @@ async function init() {
       data: csvToJson(bayernVaccinations),
       meta: {
         title: 'Corona-Impfungen in Bayern',
-        description: 'Anteil der geimpften Personen an der bayerischen Bevölkerung',
+        description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',
         author: 'BR',
         source: 'Robert Koch-Institut',
         date: endDate
