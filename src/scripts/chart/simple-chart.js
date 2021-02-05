@@ -79,6 +79,17 @@ export default class SimpleChart {
       .attr('offset', '1')
       .attr('stop-color', '#6d7182')
       .attr('stop-opacity', '1');
+
+    const diagonalHatching = defs.append('pattern')
+      .attr('id', 'diagonal-hatching')
+      .attr('width', 4)
+      .attr('height', 4)
+      .attr('patternUnits', 'userSpaceOnUse');
+
+    diagonalHatching.append('path')
+      .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
+      .attr('stroke', '#3ad29f')
+      .attr('stop-opacity', '0');
    
     // Add background element and apply gradient
     svg.append('rect')
@@ -122,7 +133,7 @@ export default class SimpleChart {
     bars.append('rect')
       .attr('width', x(currentData['impf_quote_erst']))
       .attr('height', barHeight)
-      .attr('fill', '#96f2d3')
+      .attr('fill', 'url(#diagonal-hatching)')
       .append('title')
       .text(`${pretty(currentData['personen_erst_kumulativ'])} (${pretty(currentData['impf_quote_erst'])} %)`);
     
@@ -199,7 +210,7 @@ export default class SimpleChart {
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#96f2d3');
+      .attr('fill', 'url(#diagonal-hatching)');
 
     key.append('text')
       .attr('x', (1 * spacing) + 20)
