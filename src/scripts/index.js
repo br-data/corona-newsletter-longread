@@ -10,11 +10,11 @@ import DeutschlandMap from './chart/deutschland-map';
 
 import * as bayernIndicator from './indicator/bayern-indicator';
 import * as bayernText from './text/bayern-text';
-import * as bayernVaccinationsText from './text/bayern-vaccinations-text';
 import * as bayernRegbezText from './text/bayern-regbez-text';
 import * as bayernRegbezTable from './table/bayern-regbez-table';
 import * as bayernLkrText from './text/bayern-lkr-text';
 import * as bayernLkrTable from './table/bayern-lkr-table';
+import * as bayernVaccinationsText from './text/bayern-vaccinations-text';
 import * as bayernPatientsText from './text/bayern-patients-text';
 
 import bayernMeta from './data/meta/bayern-meta.json';
@@ -27,8 +27,9 @@ import * as deutschlandIndicator from './indicator/deutschland-indicator';
 import * as deutschlandText from './text/deutschland-text';
 import * as deutschlandBlText from './text/deutschland-bl-text';
 import * as deutschlandBlTable from './table/deutschland-bl-table';
-import * as deutschlandPatientsText from './text/deutschland-patients-text';
 import * as deutschlandLkrText from './text/deutschland-lkr-text';
+import * as deutschlandVaccinationsText from './text/deutschland-vaccinations-text';
+import * as deutschlandPatientsText from './text/deutschland-patients-text';
 
 import deutschlandMeta from './data/meta/deutschland-meta.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
@@ -92,59 +93,6 @@ async function init() {
       deathData: bayernDeaths,
       metaData: bayernMeta
     });
-  })();
-
-  // Text and chart for vaccinations in Bavaria
-  (async function () {
-    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_BY.csv')
-      .then(response => response.text())
-      .catch(logError);
-
-    bayernVaccinationsText.init({
-      target: '#bayern-vaccinations-text',
-      data: csvToJson(bayernVaccinations)
-    });
-
-    const bayernVaccinationsChart = new SimpleChart({
-      target: '#bayern-vaccinations-chart',
-      data: csvToJson(bayernVaccinations),
-      meta: {
-        title: 'Corona-Impfungen in Bayern',
-        description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',
-        author: 'BR',
-        source: 'Robert Koch-Institut',
-        date: endDate
-      }
-    });
-
-    charts.push(bayernVaccinationsChart);
-  })();
-
-  // Text and chart for intensive care patients in Bavaria
-  (async function () {
-    const bayernPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
-      .then(response => response.json())
-      .catch(logError);
-
-    bayernPatientsText.init({
-      target: '#bayern-patients-text',
-      patientData: bayernPatients,
-      metaData: bayernMeta
-    });
-
-    const bayernPatientsChart = new LineChart({
-      target: '#bayern-patients-chart',
-      data: bayernPatients,
-      meta: {
-        title: 'Intensivpatienten in Bayern',
-        description: 'Anzahl der gemeldeten Corona-Fälle in intensivmedizinischer Behandlung',
-        author: 'BR',
-        source: 'DIVI-Intensivregister',
-        date: endDate
-      }
-    });
-
-    charts.push(bayernPatientsChart);
   })();
 
   // Charts for Bavaria
@@ -265,6 +213,59 @@ async function init() {
       deathData: bayernLkrDeaths,
       metaData: bayernLkrMeta
     });
+  })();
+
+  // Text and chart for intensive care patients in Bavaria
+  (async function () {
+    const bayernPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
+      .then(response => response.json())
+      .catch(logError);
+
+    bayernPatientsText.init({
+      target: '#bayern-patients-text',
+      patientData: bayernPatients,
+      metaData: bayernMeta
+    });
+
+    const bayernPatientsChart = new LineChart({
+      target: '#bayern-patients-chart',
+      data: bayernPatients,
+      meta: {
+        title: 'Intensivpatienten in Bayern',
+        description: 'Anzahl der gemeldeten Corona-Fälle in intensivmedizinischer Behandlung',
+        author: 'BR',
+        source: 'DIVI-Intensivregister',
+        date: endDate
+      }
+    });
+
+    charts.push(bayernPatientsChart);
+  })();
+
+  // Text and chart for vaccinations in Bavaria
+  (async function () {
+    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_BY.csv')
+      .then(response => response.text())
+      .catch(logError);
+
+    bayernVaccinationsText.init({
+      target: '#bayern-vaccinations-text',
+      data: csvToJson(bayernVaccinations)
+    });
+
+    const bayernVaccinationsChart = new SimpleChart({
+      target: '#bayern-vaccinations-chart',
+      data: csvToJson(bayernVaccinations),
+      meta: {
+        title: 'Corona-Impfungen in Bayern',
+        description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',
+        author: 'BR',
+        source: 'Robert Koch-Institut',
+        date: endDate
+      }
+    });
+
+    charts.push(bayernVaccinationsChart);
   })();
 
   // Text for Germany
@@ -426,6 +427,33 @@ async function init() {
     });
 
     charts.push(deutschlandPatientsChart);
+  })();
+
+
+  // Text and chart for vaccinations in Bavaria
+  (async function () {
+    const deutschlandVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_DE.csv')
+      .then(response => response.text())
+      .catch(logError);
+
+    deutschlandVaccinationsText.init({
+      target: '#deutschland-vaccinations-text',
+      data: csvToJson(deutschlandVaccinations)
+    });
+
+    const deutschlandVaccinationsChart = new SimpleChart({
+      target: '#deutschland-vaccinations-chart',
+      data: csvToJson(deutschlandVaccinations),
+      meta: {
+        title: 'Corona-Impfungen in Deutschland',
+        description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',
+        author: 'BR',
+        source: 'Robert Koch-Institut',
+        date: endDate
+      }
+    });
+
+    charts.push(deutschlandVaccinationsChart);
   })();
 
   resize(charts);
