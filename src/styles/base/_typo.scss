@@ -53,6 +53,10 @@ strong, b {
   text-decoration: underline;
 }
 
+.fallback {
+  color: $medium-grey;
+}
+
 .small-margin {
   margin-bottom: 1em;
 }
