@@ -108,6 +108,7 @@ Es stehen drei verschieden Diagrammtypen in `src/scripts/table/` zur Verfügung:
 - Liniendiagramm: `line-chart.js`
 - Säulendiagramm: `bar-chart.js`
 - Flächendiagramm: `area-chart.js`
+- Einfaches Balkendiagramm: `simple-chart.js`
 
 Die Initialisierung funktioniert für alle Diagramme gleich:
 
