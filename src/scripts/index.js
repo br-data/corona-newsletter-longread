@@ -308,7 +308,7 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const deutschlandCurrentRefRequest = await fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&currentCases=true`)
+    const deutschlandCurrentRefRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&currentCases=true`)
       .then(response => response.json())
       .catch(logError);
 
