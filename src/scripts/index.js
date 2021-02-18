@@ -197,11 +197,11 @@ async function init() {
 
   // Table for Bavarian counties (Landkreise)
   (async function () {
-    const bayernLkrCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
+    const bayernLkrCasesRequest = await fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernLkrDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
+    const bayernLkrDeathsRequest = await fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
       .then(response => response.json())
       .catch(logError);
 
