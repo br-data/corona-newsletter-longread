@@ -101,7 +101,7 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const bayernCurrentRefRequest = await fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&currentCases=true`)
+    const bayernCurrentRefRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&currentCases=true`)
       .then(response => response.json())
       .catch(logError);
 
