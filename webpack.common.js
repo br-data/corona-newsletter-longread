@@ -29,8 +29,7 @@ module.exports = {
         test: /\.html$/i,
         loader: 'html-loader',
         options: {
-          minimize: false,
-          attributes: true
+          minimize: false
         }
       }
     ]

@@ -1,6 +1,7 @@
 const Webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const svgToMiniDataURI = require('mini-svg-data-uri');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
@@ -27,15 +28,18 @@ module.exports = merge(common, {
         use: 'babel-loader'
       },
       {
-        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 1000000
-            }
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2)(\?.*)?$/,
+        type: 'asset/inline'
+      },
+      {
+        test: /\.svg/,
+        type: 'asset/inline',
+        generator: {
+          dataUrl: content => {
+            content = content.toString();
+            return svgToMiniDataURI(content);
           }
-        ]
+        }
       },
       {
         test: /\.s?css/i,
