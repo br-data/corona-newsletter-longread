@@ -43,7 +43,7 @@ window.addEventListener('load', init);
 async function init() {
   const logError = error => console.warn(error);
   
-  const apiUrl = 'https://europe-west3-brdata-corona.cloudfunctions.net/rkiApi/query';
+  const apiUrl = 'https://rki-api-v2.live.brdata-live.de/query';
 
   const urlParams = new URLSearchParams(window.location.search);
   const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
