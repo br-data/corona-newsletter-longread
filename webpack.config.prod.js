@@ -11,8 +11,7 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     filename: '[name].js',
-    chunkFilename: '[name].chunk.js',
-    publicPath: '/'
+    chunkFilename: '[name].chunk.js'  
   },
   plugins: [
     new CleanWebpackPlugin(),
