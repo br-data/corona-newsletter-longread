@@ -12,7 +12,7 @@ module.exports = merge(common, {
   output: {
     filename: '[name].js',
     chunkFilename: '[name].chunk.js',
-    publicPath: '/corona-newsletter-longread/'
+    publicPath: '/'
   },
   plugins: [
     new CleanWebpackPlugin(),
