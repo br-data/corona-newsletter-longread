@@ -29,10 +29,10 @@ jobs:
           gc_dev_user: ${{ secrets.GC_SA_DEV_USER }}
           gc_live_user: ${{ secrets.GC_SA_LIVE_USER }}
   build:
-    if: needs.setup.outputs.deployToK8s == true
     runs-on: ubuntu-latest
     needs:
       - setup
+    if: needs.setup.outputs.deployToK8s == 'true'
     name: Build k8s-app
     steps:
       - name: Download Deployment Artifact
@@ -50,10 +50,10 @@ jobs:
           context: ./deployment/k8s-app
   deploy:
     runs-on: ubuntu-latest
-    if: needs.setup.outputs.deployToK8s == true
     needs:
       - setup
       - build
+    if: needs.setup.outputs.deployToK8s == 'true'
     name: Deploy k8s-app
     steps:
       - uses: actions/checkout@v2
