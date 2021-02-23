@@ -43,7 +43,7 @@ window.addEventListener('load', init);
 async function init() {
   const logError = error => console.warn(error);
   
-  const apiUrl = 'https://corona-deutschland-api.interaktiv.br.de/';
+  const apiUrl = 'https://corona-deutschland-api.interaktiv.br.de/query';
 
   const urlParams = new URLSearchParams(window.location.search);
   const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
