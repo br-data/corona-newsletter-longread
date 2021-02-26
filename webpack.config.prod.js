@@ -11,7 +11,7 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     filename: '[name].js',
-    chunkFilename: '[name].chunk.js'  
+    chunkFilename: '[name].chunk.js'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -29,7 +29,10 @@ module.exports = merge(common, {
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2)(\?.*)?$/,
-        type: 'asset/inline'
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/[name][ext][query]'
+        }
       },
       {
         test: /\.svg/,
