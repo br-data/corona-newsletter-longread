@@ -29,10 +29,10 @@ module.exports = merge(common, {
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2)(\?.*)?$/,
-        type: 'asset/inline'
-        // generator: {
-        //   filename: 'static/[name][ext][query]'
-        // }
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/[name][ext][query]'
+        }
       },
       {
         test: /\.svg/,
