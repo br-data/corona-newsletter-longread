@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPer100Tsd7Days, trendClassifier, trendArrow, weekTrend, reproNumber, confidence, sma } from '../utils';
+import { pretty, currentCount, currentIncrease, incidence, trendClassifier, trendArrow, weekTrend, reproNumber, confidence, sma } from '../utils';
 
 // Die Zahl der gemeldeten Fälle verdoppelt sich zur Zeit alle ${doublingTime(caseData)} Tage.
 // (${pretty(currentIncreasePerc(caseData), true)} %)
@@ -18,7 +18,7 @@ export function init(config) {
 
   Im Vergleich zur Vorwoche ist die Zahl der Neuinfektionen jedoch ${trendClassifier(weekTrend(caseData))} (<span class="${trendArrow(weekTrend(caseData))}"></span>${pretty((weekTrend(caseData) || 0), true)} %).
 
-  Damit kommt Bayern auf einen <a href="#inzidenz">Inzidenzwert</a> von ${pretty(casesPer100Tsd7Days(caseData, metaData.pop))} gemeldeten Fällen pro 100.000 Einwohner in den vergangenen sieben Tagen. In der Woche zuvor lag die 7-Tage-Inzidenz noch bei ${pretty(casesPer100Tsd7Days(caseData.slice(0, caseData.length-7), metaData.pop))} Fällen pro 100.000 Einwohner.`;
+  Damit kommt Bayern auf einen <a href="#inzidenz">Inzidenzwert</a> von ${pretty(incidence(caseData, metaData.pop))} gemeldeten Fällen pro 100.000 Einwohner in den vergangenen sieben Tagen. In der Woche zuvor lag die 7-Tage-Inzidenz noch bei ${pretty(incidence(caseData.slice(0, caseData.length-7), metaData.pop))} Fällen pro 100.000 Einwohner.`;
 
   const reproText = `Die <a href="#reproduktionszahl">Reproduktionszahl</a> für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, false, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, die bestimmten Abweichungen unterliegt. Deshalb ist es sinnvoll, das sogenannte Konfidenzintervall zu betrachten: Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl in einem Bereich von ${pretty(lowerReproValue, false, 'floor', 100)} bis ${pretty(upperReproValue, false, 'ceil', 100)}.<br><br>
 

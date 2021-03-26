@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPer100Tsd7Days, weekTrend, trendArrow, thresholdIndicator, jsonToTable } from '../utils';
+import { pretty, currentCount, currentIncrease, incidence, weekTrend, trendArrow, thresholdIndicator, jsonToTable } from '../utils';
 
 export function init(config) {
   const { target, caseData, deathData, metaData } = config;
@@ -8,9 +8,9 @@ export function init(config) {
     const countyDeaths = deathData.filter(d => d.Landkreis === countyMeta.rkiName);
 
     return {
-      'value': casesPer100Tsd7Days(countyCases, countyMeta.pop),
+      'value': incidence(countyCases, countyMeta.pop),
       'Landkreis/Stadt': `${countyMeta.name} (${countyMeta.type})`,
-      'Inzidenz': `<span class="${thresholdIndicator(casesPer100Tsd7Days(countyCases, countyMeta.pop))}" title="${pretty(casesPer100Tsd7Days(countyCases, countyMeta.pop))}"></span>${pretty(casesPer100Tsd7Days(countyCases, countyMeta.pop))}`,
+      'Inzidenz': `<span class="${thresholdIndicator(incidence(countyCases, countyMeta.pop))}" title="${pretty(incidence(countyCases, countyMeta.pop))}"></span>${pretty(incidence(countyCases, countyMeta.pop))}`,
       'Fälle (neu)': `<span class="${trendArrow(weekTrend(countyCases))}" title="${pretty((weekTrend(countyCases) || 0), true)} %"></span> ${pretty(currentCount(countyCases))} (${pretty(currentIncrease(countyCases), true)})`,
       'Todesfälle (neu)': `<span class="${trendArrow(weekTrend(countyDeaths))}" title="${pretty((weekTrend(countyDeaths) || 0), true)} %"></span> ${pretty(currentCount(countyDeaths))} (${pretty(currentIncrease(countyDeaths), true)})`
     };

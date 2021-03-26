@@ -3,7 +3,7 @@ import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
 import { feature } from 'topojson-client';
 
-import { casesPer100Tsd7Days, germanDate } from '../utils';
+import { incidence, incidenceColor, germanDate } from '../utils';
 
 const defaults = {
   target: '#map',
@@ -35,7 +35,7 @@ export default class BayernMap {
       const metaInfoCounty = metaData.find(m => m.rkiName === name);
       return Object.assign(
         metaInfoCounty,
-        { valuePer100Tsd: casesPer100Tsd7Days(caseDataDistrict, metaInfoCounty.pop) }
+        { valuePer100Tsd: incidence(caseDataDistrict, metaInfoCounty.pop) }
       );
     });
 
@@ -131,7 +131,7 @@ export default class BayernMap {
       })
       .attr('cx', d => projection([d.long, d.lat])[0])
       .attr('cy', d => projection([d.long, d.lat])[1])
-      .attr('fill', d => getColor(d.valuePer100Tsd))
+      .attr('fill', d => incidenceColor(d.valuePer100Tsd))
       .style('mix-blend-mode', 'hard-light')
       .append('title')
       .text(d => `${d.name} (${d.type}): ${Math.round(d.valuePer100Tsd)}`);
@@ -206,13 +206,13 @@ export default class BayernMap {
     const key = svg.append('g')
       .style('display', isMobile ? 'none' : 'block');
 
-    // Add key "more than 200 cases"
+    // Add key "more than 100 cases"
     key.append('circle')
       .attr('transform', 'translate(25, 90)')
-      .attr('r', radius(200))
-      .attr('cx', radius(200))
+      .attr('r', radius(100))
+      .attr('cx', radius(100))
       .attr('cy', 10)
-      .attr('fill', getColor(200));
+      .attr('fill', incidenceColor(100));
 
     key.append('text')
       .attr('transform', 'translate(65, 90)')
@@ -221,7 +221,7 @@ export default class BayernMap {
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('200 Fälle und mehr');
+      .text('100 Fälle und mehr');
 
     // Add key "more than 50 cases"
     key.append('circle')
@@ -229,7 +229,7 @@ export default class BayernMap {
       .attr('r', radius(50))
       .attr('cx', radius(50))
       .attr('cy', 10)
-      .attr('fill', getColor(50));
+      .attr('fill', incidenceColor(50));
 
     key.append('text')
       .attr('transform', 'translate(258, 90)')
@@ -246,7 +246,7 @@ export default class BayernMap {
       .attr('r', radius(30))
       .attr('cx', radius(30))
       .attr('cy', 10)
-      .attr('fill', getColor(35));
+      .attr('fill', incidenceColor(35));
 
     key.append('text')
       .attr('transform', 'translate(440, 90)')
@@ -263,7 +263,7 @@ export default class BayernMap {
       .attr('r', radius(10))
       .attr('cx', radius(10))
       .attr('cy', 10)
-      .attr('fill', getColor(10));
+      .attr('fill', incidenceColor(10));
 
     key.append('text')
       .attr('transform', 'translate(610, 90)')
@@ -287,21 +287,5 @@ export default class BayernMap {
   update() {
     select(this.target).html('');
     this.draw();
-  }
-}
-
-function getColor(value) {
-  if (value >= 200) {
-    // dark red
-    return '#bd0026';
-  } else if (value >= 50) {
-    // red
-    return '#f03b20';
-  } else if (value >= 35) {
-    // orange
-    return '#feb24c';
-  } else {
-    // yellow
-    return '#ffeda0';
   }
 }
