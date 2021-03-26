@@ -142,7 +142,7 @@ export default class LineChart {
     lines.append('path')
       .datum(data)
       .attr('d', lineConstructor)
-      .attr('stroke', '#e64242')
+      .attr('stroke', '#e20d67')
       .attr('stroke-width', '3')
       .attr('fill', 'none');
 
@@ -156,7 +156,7 @@ export default class LineChart {
       .datum(data)
       .attr('d', areaConstructor)
       .attr('stroke', 'none')
-      .attr('fill', '#e64242')
+      .attr('fill', '#e20d67')
       .attr('fill-opacity', '0.5');
 
     // Add title and description
@@ -194,7 +194,7 @@ export default class LineChart {
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#e64242');
+      .attr('fill', '#e20d67');
 
     key.append('text')
       .attr('x', (0 * spacing) + 20)

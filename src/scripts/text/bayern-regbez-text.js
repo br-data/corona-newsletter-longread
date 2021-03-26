@@ -1,4 +1,4 @@
-import { pretty, currentCount, casesPer100Tsd7Days } from '../utils';
+import { pretty, currentCount, incidence } from '../utils';
 
 export function init(config) {
   const { target, caseData, deathData, metaData } = config;
@@ -10,14 +10,14 @@ export function init(config) {
     return {
       name: districtMeta.name,
       cases: currentCount(districtCases),
-      casesPer100Tsd7Days: casesPer100Tsd7Days(districtCases, districtMeta.pop),
+      incidence: incidence(districtCases, districtMeta.pop),
       deaths: currentCount(districtDeaths)
     };
-  }).sort((a, b) => b.casesPer100Tsd7Days - a.casesPer100Tsd7Days);
+  }).sort((a, b) => b.incidence - a.incidence);
 
-  const text = `Am stärksten betroffen ist der Regierungsbezirk ${worstDistrics[0].name}. Pro 100.000 Einwohner wurden in der letzten Woche ${pretty(worstDistrics[0].casesPer100Tsd7Days)} Corona-Fälle gemeldet.
+  const text = `Am stärksten betroffen ist der Regierungsbezirk ${worstDistrics[0].name}. Pro 100.000 Einwohner wurden in der letzten Woche ${pretty(worstDistrics[0].incidence)} Corona-Fälle gemeldet.
 
-  Vergleichsweise am besten steht der Regierungsbezirk ${worstDistrics[worstDistrics.length-1].name} da. Dort wurden in den letzten sieben Tagen nur ${pretty(worstDistrics[worstDistrics.length-1].casesPer100Tsd7Days)} Fälle pro 100.000 Einwohner gemeldet.`;
+  Vergleichsweise am besten steht der Regierungsbezirk ${worstDistrics[worstDistrics.length-1].name} da. Dort wurden in den letzten sieben Tagen nur ${pretty(worstDistrics[worstDistrics.length-1].incidence)} Fälle pro 100.000 Einwohner gemeldet.`;
 
   const textElement = document.querySelector(target);
   textElement.textContent = text;

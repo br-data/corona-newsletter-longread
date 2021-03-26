@@ -1,4 +1,4 @@
-import { pretty, currentCount, currentIncrease, casesPer100Tsd7Days, trendArrow, weekTrend, jsonToTable } from '../utils';
+import { pretty, currentCount, currentIncrease, incidence, trendArrow, weekTrend, jsonToTable } from '../utils';
 
 export function init(config) {
   const { target, caseData, deathData, metaData } = config;
@@ -8,9 +8,9 @@ export function init(config) {
     const districtDeaths = deathData.filter(d => d.Regierungsbezirk === districtMeta.name);
 
     return {
-      'value': casesPer100Tsd7Days(districtCases, districtMeta.pop),
+      'value': incidence(districtCases, districtMeta.pop),
       'Regierungsbezirk': districtMeta.name,
-      'Inzidenz': `${pretty(casesPer100Tsd7Days(districtCases, districtMeta.pop))}`,
+      'Inzidenz': `${pretty(incidence(districtCases, districtMeta.pop))}`,
       'Fälle (neu)': `<span class="${trendArrow(weekTrend(districtCases))}" title="${pretty((weekTrend(districtCases) || 0), true)} %"></span> ${pretty(currentCount(districtCases))} (${pretty(currentIncrease(districtCases), true)})`,
       'Todesfälle (neu)': `<span class="${trendArrow(weekTrend(districtDeaths))}" title="${pretty((weekTrend(districtDeaths) || 0), true)} %"></span> ${pretty(currentCount(districtDeaths))} (${pretty(currentIncrease(districtDeaths), true)})`
     };
