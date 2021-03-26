@@ -41,7 +41,8 @@ export function casesPerThousand(cases, population) {
   return (cases * 1000) / population;
 }
 
-export function casesPer100Tsd7Days(data, population, key = 'value') {
+// Cases per 100,000 population in 7 days
+export function incidence(data, population, key = 'value') {
   const currentWeek = data.slice(data.length-7, data.length);
   const cases = currentWeek.reduce((sum, curr) => (sum += curr[key]), 0);
 
@@ -49,7 +50,7 @@ export function casesPer100Tsd7Days(data, population, key = 'value') {
 }
 
 export function thresholdIndicator(value) {
-  if (value >= 200) {
+  if (value >= 100) {
     return 'dot-darkred';
   } else if (value >= 50) {
     return 'dot-red';
@@ -97,6 +98,22 @@ export function trendArrow(value) {
     return 'icono-arrow-up';
   } else {
     return 'icono-arrow-undefined';
+  }
+}
+
+export function incidenceColor(value) {
+  if (value >= 100) {
+    // dark red
+    return '#bd0026';
+  } else if (value >= 50) {
+    // red
+    return '#f03b20';
+  } else if (value >= 35) {
+    // orange
+    return '#feb24c';
+  } else {
+    // yellow
+    return '#ffeda0';
   }
 }
 
