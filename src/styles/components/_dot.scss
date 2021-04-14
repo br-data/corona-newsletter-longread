@@ -6,18 +6,22 @@
   border-radius: 50%;
 
   &[class*="-darkred"] {
-    background-color: #bd0026;
+    background-color: #bb212f;
   }
 
-  &[class*="-red"] {
-    background-color: #f03b20;
+  &[class*="-darkorange"] {
+    background-color: #ed4834;
   }
 
   &[class*="-orange"] {
-    background-color: #feb24c;
+    background-color: #fb8e4e;
   }
 
-  &[class*="-yellow"] {
-    background-color: #ffeda0;
+  &[class*="-lightorange"] {
+    background-color: #fdc96c;
+  }
+
+  &[class*="-lightyellow"] {
+    background-color: #fffbb9;
   }
 }

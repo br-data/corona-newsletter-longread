@@ -49,18 +49,6 @@ export function incidence(data, population, key = 'value') {
   return (cases * 100000) / population;
 }
 
-export function thresholdIndicator(value) {
-  if (value >= 100) {
-    return 'dot-darkred';
-  } else if (value >= 50) {
-    return 'dot-red';
-  } else if (value >= 35) {
-    return 'dot-orange';
-  } else {
-    return 'dot-yellow';
-  }
-}
-
 export function trendClassifier(value) {
   if (value <= -50) {
     return 'stark zurückgegangen';
@@ -101,19 +89,36 @@ export function trendArrow(value) {
   }
 }
 
-export function incidenceColor(value) {
-  if (value >= 100) {
-    // dark red
-    return '#bd0026';
+export function thresholdIndicator(value) {
+  if (value >= 200) {
+    return 'dot-darkred';
+  } else if (value >= 100) {
+    return 'dot-darkorange';
   } else if (value >= 50) {
-    // red
-    return '#f03b20';
+    return 'dot-orange';
   } else if (value >= 35) {
-    // orange
-    return '#feb24c';
+    return 'dot-lightorange';
   } else {
-    // yellow
-    return '#ffeda0';
+    return 'dot-lightyellow';
+  }
+}
+
+export function incidenceColor(value) {
+  if (value >= 200) {
+    // dark red
+    return '#bb212f';
+  } else if (value >= 100) {
+    // dark orange
+    return '#ed4834';
+  } else if (value >= 50) {
+    // orange
+    return '#fb8e4e';
+  } else if (value >= 35) {
+    // light orange
+    return '#fdc96c';
+  } else {
+    // light yellow
+    return '#fffbb9';
   }
 }
 
