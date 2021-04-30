@@ -3,7 +3,7 @@ import { pretty, currentCount, trendClassifier } from '../utils';
 export function init(config) {
   const { target, data } = config;
 
-  const partVaccCount = currentCount(data, 'personen_erst_kumulativ');
+  const partVaccCount = currentCount(data, 'personen_erst_kumulativ')+currentCount(data, 'dosen_voll_janssen_kumulativ');
   const fullVaccCount = currentCount(data, 'personen_voll_kumulativ');
   const partVaccPerc = partVaccCount/131247.37;
   const fullVaccPerc = fullVaccCount/131247.37;
