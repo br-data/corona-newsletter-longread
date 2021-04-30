@@ -13,7 +13,7 @@ export function init(config) {
   const previousWeekSum = data[data.length - 7].dosen_kumulativ - data[data.length - 12].dosen_kumulativ;
   const currentWeekTrend = ((currentWeekSum - previousWeekSum) / previousWeekSum) * 100;
   
-  const text = `Seit Beginn der Impfkampagne haben ${pretty(partVaccCount)} Menschen (insgesamt ${pretty(partVaccPerc)} %) in Deutschland mindestens eine erste <a href="#impfungen">Impfdosis</a> erhalten. Davon sind ${pretty(fullVaccCount)} Personen (insgesamt ${pretty(fullVaccPerc)} %) inzwischen vollständig geimpft.
+  const text = `Seit Beginn der Impfkampagne haben ${pretty(partVaccCount)} Menschen (insgesamt ${pretty(partVaccPerc)} %) in Deutschland mindestens eine <a href="#impfungen">Impfdosis</a> erhalten. Davon sind ${pretty(fullVaccCount)} Personen (insgesamt ${pretty(fullVaccPerc)} %) inzwischen vollständig geimpft.
   
   Insgesamt wurden bisher ${pretty(totalShots)} Impfdosen verabreicht. Das sind ${pretty(currentIncrease)} Impfdosen mehr als noch am Vortag.
   
