@@ -5,8 +5,8 @@ export function init(config) {
 
   const partVaccCount = currentCount(data, 'personen_erst_kumulativ');
   const fullVaccCount = currentCount(data, 'personen_voll_kumulativ');
-  const partVaccPerc = currentCount(data, 'impf_quote_erst');
-  const fullVaccPerc = currentCount(data, 'impf_quote_voll');
+  const partVaccPerc = partVaccCount/131247.37;
+  const fullVaccPerc = fullVaccCount/131247.37;
   const totalShots = currentCount(data, 'dosen_kumulativ');
   const currentIncrease = data[data.length - 1].dosen_kumulativ - data[data.length - 2].dosen_kumulativ;
   const currentWeekSum = data[data.length - 1].dosen_kumulativ - data[data.length - 6].dosen_kumulativ;
