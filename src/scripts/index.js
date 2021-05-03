@@ -270,7 +270,8 @@ async function init() {
 
     bayernVaccinationsText.init({
       target: '#bayern-vaccinations-text',
-      data: csvToJson(bayernVaccinations)
+      data: csvToJson(bayernVaccinations),
+      metaData: bayernMeta,
     });
 
     const bayernVaccinationsChart = new SimpleChart({
@@ -458,7 +459,8 @@ async function init() {
 
     deutschlandVaccinationsText.init({
       target: '#deutschland-vaccinations-text',
-      data: csvToJson(deutschlandVaccinations)
+      data: csvToJson(deutschlandVaccinations),
+      metaData: deutschlandMeta,
     });
 
     const deutschlandVaccinationsChart = new SimpleChart({
