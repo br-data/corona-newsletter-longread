@@ -42,24 +42,44 @@ window.addEventListener('load', init);
 
 async function init() {
   const logError = error => console.warn(error);
-  
-  const apiUrl = 'https://corona-deutschland-api.interaktiv.br.de/query';
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
-  const startDateString = startDate.toISOString().split('T')[0];
-  const endDate = new Date(urlParams.get('endDate') || new Date());
-  const endDateString = endDate.toISOString().split('T')[0];
-  let previousTwoWeeksDate = new Date();
-  previousTwoWeeksDate.setDate(endDate.getDate()-16);
-  const previousTwoWeeksDateString = previousTwoWeeksDate.toISOString().split('T')[0];
-
-  const dateElements = document.querySelectorAll('span.date');
-  dateElements.forEach(el => el.textContent = germanDate(endDateString));
-  const timeElements = document.querySelectorAll('span.time');
-  timeElements.forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
+  const toDateString = date => date.toISOString().split('T')[0];
 
   const charts = [];
+  
+  const apiUrl = 'https://corona-deutschland-api.interaktiv.br.de/query';
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
+  const startDateString = toDateString(startDate);
+
+  const endDate = new Date(urlParams.get('endDate') || new Date());
+  const endDateString = toDateString(endDate);
+
+  const previousDayDate = new Date();
+  previousDayDate.setDate(endDate.getDate()-1);
+  const previousDayDateString = toDateString(previousDayDate);
+
+  const previousTwoWeeksDate = new Date();
+  previousTwoWeeksDate.setDate(endDate.getDate()-16);
+  const previousTwoWeeksDateString = toDateString(previousTwoWeeksDate);
+
+  document.querySelectorAll('span.date')
+    .forEach(el => el.textContent = germanDate(endDateString));
+  document.querySelectorAll('span.time')
+    .forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
+
+  const dataCheckResult = await fetch(`${apiUrl}?startDate=${previousDayDateString}`)
+    .then(response => response.json())
+    .catch(logError);
+
+  if (!dataCheckResult.length) {
+    document.querySelectorAll('.warning')
+      .forEach(el => el.textContent = 'Gerade scheint es Probleme mit der Datenschnittstelle des Robert Koch-Instituts zu geben. Bis die Probleme behoben sind, wird der Datenstand von gestern angezeigt.');
+    document.querySelectorAll('span.date.updateable')
+      .forEach(el => el.textContent = germanDate(previousDayDate));
+    document.querySelectorAll('span.time.updateable')
+      .forEach(el => el.textContent = '24:00');
+  }
 
   // Text for Bavaria
   (async function () {
