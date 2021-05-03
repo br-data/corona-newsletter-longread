@@ -1,12 +1,12 @@
 import { pretty, currentCount, trendClassifier } from '../utils';
 
 export function init(config) {
-  const { target, data } = config;
+  const { target, data, metaData } = config;
 
   const minOneShotCount = currentCount(data, 'personen_erst_kumulativ')+currentCount(data, 'dosen_voll_janssen_kumulativ');
   const fullVaccCount = currentCount(data, 'personen_voll_kumulativ');
-  const minOneShotPerc = minOneShotCount/131247.37;
-  const fullVaccPerc = fullVaccCount/131247.37;
+  const minOneShotPerc = minOneShotCount*100/metaData.pop;
+  const fullVaccPerc = fullVaccCount*100/metaData.pop;
   const totalShots = currentCount(data, 'dosen_kumulativ');
   const currentIncrease = data[data.length - 1].dosen_kumulativ - data[data.length - 2].dosen_kumulativ;
   const currentWeekSum = data[data.length - 1].dosen_kumulativ - data[data.length - 6].dosen_kumulativ;
