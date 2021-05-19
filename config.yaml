@@ -4,7 +4,8 @@
 
 isEnabled: true
 build:
-    command: 'yarn && yarn build'
-    outputFolder: 'build'
-addOns:
-    isWebsite: true
+  command: "yarn && yarn build"
+  outputFolder: "build"
+settings:
+  type: website
+  inSecure: true
