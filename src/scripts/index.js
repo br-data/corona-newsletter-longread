@@ -41,6 +41,7 @@ import { germanDate, csvToJson } from './utils';
 window.addEventListener('load', init);
 
 async function init() {
+  // eslint-disable-next-line no-console
   const logError = error => console.warn(error);
   const toDateString = date => date.toISOString().split('T')[0];
 
@@ -271,7 +272,7 @@ async function init() {
     bayernVaccinationsText.init({
       target: '#bayern-vaccinations-text',
       data: csvToJson(bayernVaccinations),
-      metaData: bayernMeta,
+      metaData: bayernMeta
     });
 
     const bayernVaccinationsChart = new SimpleChart({
@@ -460,7 +461,7 @@ async function init() {
     deutschlandVaccinationsText.init({
       target: '#deutschland-vaccinations-text',
       data: csvToJson(deutschlandVaccinations),
-      metaData: deutschlandMeta,
+      metaData: deutschlandMeta
     });
 
     const deutschlandVaccinationsChart = new SimpleChart({
