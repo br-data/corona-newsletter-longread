@@ -56,11 +56,11 @@ async function init() {
   const endDate = new Date(urlParams.get('endDate') || new Date());
   const endDateString = toDateString(endDate);
 
-  const previousDayDate = new Date();
+  const previousDayDate = new Date(endDate);
   previousDayDate.setDate(endDate.getDate()-1);
   const previousDayDateString = toDateString(previousDayDate);
 
-  const previousTwoWeeksDate = new Date();
+  const previousTwoWeeksDate = new Date(endDate);
   previousTwoWeeksDate.setDate(endDate.getDate()-16);
   const previousTwoWeeksDateString = toDateString(previousTwoWeeksDate);
 
