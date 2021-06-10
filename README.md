@@ -406,3 +406,8 @@ import { axisBottom, axisLeft } from 'd3-axis';
 ```
 
 [Sitepoint](https://www.sitepoint.com/understanding-es6-modules/) bietet einen gute Einführung in das Thema ES6-Module.
+
+## Verbesserungen
+
+- Auf [react-longread-template](https://github.com/br-data/react-longread-template) upgraden
+- Möglichkeit anbieten, um eigenen Landkreis zu speichern (local storage)
