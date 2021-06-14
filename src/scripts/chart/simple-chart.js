@@ -201,7 +201,7 @@ export default class SimpleChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Zweitimpfung erhalten');
+      .text('vollständig geimpft');
     
     key.append('rect')
       .attr('x', 1 * spacing)
