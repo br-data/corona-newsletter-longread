@@ -265,7 +265,7 @@ async function init() {
 
   // Text and chart for vaccinations in Bavaria
   (async function () {
-    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_BY.csv')
+    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_BY.csv')
       .then(response => response.text())
       .catch(logError);
 
@@ -454,7 +454,7 @@ async function init() {
 
   // Text and chart for vaccinations in Bavaria
   (async function () {
-    const deutschlandVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v2/region_DE.csv')
+    const deutschlandVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_DE.csv')
       .then(response => response.text())
       .catch(logError);
 
