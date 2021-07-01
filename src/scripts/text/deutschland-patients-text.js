@@ -7,7 +7,7 @@ export function init(config) {
   const currentIncrease = patientData[patientData.length - 1].faelleCovidAktuell - patientData[patientData.length - 2].faelleCovidAktuell;
   const currentWeekTrend = weekTrend(patientData, 10, 'faelleCovidAktuell');
   
-  const text = `Ein weiterer wichtiger Indikator zur Einschätzung der Pandemie ist die Zahl der <a href="#intensivpatienten">Corona-Patienten</a>, die wegen der Schwere ihrer Erkrankung auf einer Intensivstation behandelt werden müssen. Nach Angaben des DIVI-Intensivregisters befinden sich bundesweit ${pretty(currentPatients)} Menschen wegen Corona in intensivmedizinischer Behandlung. Das sind ${pretty(Math.abs(currentIncrease))} Intensivpatienten ${moreLess(currentIncrease)} als noch am Vortag.
+  const text = `Ein weiterer wichtiger Indikator zur Einschätzung der Pandemie ist die Zahl der <a href="#intensivpatienten">Corona-Patienten</a>, die wegen der Schwere ihrer Erkrankung auf einer Intensivstation behandelt werden müssen. Nach Angaben des DIVI-Intensivregisters befinden sich bundesweit ${pretty(Math.abs(currentPatients))} Menschen wegen Corona in intensivmedizinischer Behandlung. Das sind ${pretty(Math.abs(currentIncrease))} Intensivpatienten ${moreLess(currentIncrease)} als noch am Vortag.
   
   Im Vergleich zur Vorwoche ist die Zahl der Intensivpatienten ${trendClassifier(currentWeekTrend)} (<span class="${trendArrow(currentWeekTrend)}"></span>${pretty((currentWeekTrend || 0), true)} %).
   
