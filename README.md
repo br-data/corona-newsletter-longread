@@ -1,6 +1,6 @@
 # Corona-Newsletter
 
-Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als täglicher, automatisch generierter Newsletter. Alle Texte, Grafiken und Tabellen werden aus den jeweils aktuellsten Daten des [Robert Koch-Instituts](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/) erzeugt.
+Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als täglicher, automatisch generierter Newsletter. Alle Texte, Grafiken und Tabellen werden aus den jeweils aktuellsten Daten des [Robert Koch-Instituts](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/) und des [DIVI-Intensivregisters](https://www.intensivregister.de/#/aktuelle-lage/zeitreihen) erzeugt.
 
 - **Webseite:** <https://ddj.br.de/corona-newsletter> (passwortgeschützt)
 - **Newsletter:** <https://storage.googleapis.com/corona-newsletter/index.html>
@@ -8,17 +8,19 @@ Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als täglic
 ## Verwendung
 
 1. Repository klonen `git clone https://...`
-2. Erforderliche Module installieren `npm install`
-3. Entwicklungsserver starten `npm start`
-4. Projekt bauen mit `npm run build`
+2. Erforderliche Module installieren `yarn`
+3. Entwicklungsserver starten `yarn start`
+4. Projekt bauen mit `yarn build`
 
-Um die Module installieren und die Entwicklerwerkzeuge nutzen zu können, muss vorher die JavaScript-Runtime [Node.js](https://nodejs.org/en/download/) installiert werden. Informationen für Entwickler finden sich weiter [unten](#user-content-entwickeln).
+Um die Module installieren und die Entwicklerwerkzeuge nutzen zu können, müssen vorher die JavaScript-Runtime [Node.js](https://nodejs.org/en/download/) und der Paketmanager [Yarn](https://yarnpkg.com/) installiert werden. Informationen für Entwickler finden sich weiter [unten](#user-content-entwickeln).
 
 ## Architektur
 
 Die Daten werden vom [RKI-API-Wrapper](https://github.com/br-data/corona-deutschland-api) bereitgestellt (gelb). Der [Newsletter](https://github.com/br-data/corona-newsletter-longread) wird in der [Google Cloud](https://github.com/br-data/cloud-deploy-template) gebaut (blau) und mit dem [Corona-Newsletter-Generator](https://github.com/br-data/corona-newsletter-generator) als statisches HTML gespeichert und versandt (grün).
 
 <img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="700px">
+
+**Hinweis:** Mittlerweile werden zusätzlich auch Daten des [DIVI-API-Wrappers](https://github.com/br-data/corona-divi-api) und des [RKI-Impfdaten-Scrapers](https://github.com/ard-data/2020-rki-impf-archive) verwendet.
 
 ## Spezielle Elemente
 
@@ -351,7 +353,7 @@ Alle Farben sind im Sass-Modul `_color.scss` definiert. Hier finden sich auch di
 
 ### Enwicklungsserver
 
-Zum lokalen Entwickeln ist ein kleiner [HTTP-Server](https://github.com/webpack/webpack-dev-server) integriert. Diesen kann man mit dem Befehl `npm start` starten. Der Server läuft unter <http://localhost:8080>. Beim Starten des Entwicklungsservers sollte automatisch ein neues Browserfenster aufgehen. Bei Änderungen am Quellcode wird die Seite automatisch neu geladen (Live Reloading).
+Zum lokalen Entwickeln ist ein kleiner [HTTP-Server](https://github.com/webpack/webpack-dev-server) integriert. Diesen kann man mit dem Befehl `yarn start` starten. Der Server läuft unter <http://localhost:8080>. Beim Starten des Entwicklungsservers sollte automatisch ein neues Browserfenster aufgehen. Bei Änderungen am Quellcode wird die Seite automatisch neu geladen (Live Reloading).
 
 ### Stylesheets
 
@@ -361,7 +363,7 @@ Die Stylesheets unter `src/styles/` sind in [Sass](http://sass-lang.com/) geschr
 - **components**: komponentenspezifische Styles (Navigation, Footer, Zitate ...)
 - **custom**: projektspezifische Stylesheets (Charts, ...)
 
-Das CSS wird bei jeder Änderungen den Sass-Dateien neu erzeugt, sofern man den Webpack-Watch-Task gestartet hat. `npm start`. Als Compiler kommt [Dart Sass](https://github.com/sass/dart-sass) zum Einsatz, welcher deutlich schneller ist als der alte Ruby-Sass-Compiler.
+Das CSS wird bei jeder Änderungen den Sass-Dateien neu erzeugt, sofern man den Webpack-Watch-Task gestartet hat. `yarn start`. Als Compiler kommt [Dart Sass](https://github.com/sass/dart-sass) zum Einsatz, welcher deutlich schneller ist als der alte Ruby-Sass-Compiler.
 
 *Hinweis*: Vendor-Prefixes wie `-webkit` oder `-moz` können weggelassen werden, das diese im Build durch den [Autoprefixer](https://github.com/postcss/autoprefixer) hinzugefügt werden.
 
@@ -390,10 +392,10 @@ import * as module from './custom/module';
 module.init();
 ```
 
-Die meisten Module sind in Vanilla-Javascript (ohne andere Bibliotheken) geschrieben. Sollte man eine externe Bibliothek benötigen, kann man diese mit NPM installieren:
+Die meisten Module sind in Vanilla-Javascript (ohne andere Bibliotheken) geschrieben. Sollte man eine externe Bibliothek benötigen, kann man diese mit [Yarn](https://yarnpkg.com/) installieren:
 
 ```shell
-npm install d3 --save
+yarn add d3
 ```
 
 Ein ausführliches Beispiel für einen D3.js-Diagramm findet sich unter `src/scripts/custom/chart.js`. Hier wird auch von der Möglichkeit der selektiven Imports Gebrauch gemacht. Es werden nur die Komponenten einer Bibliothek importiert, welche man in der eigenen Anwendung auch verwendet:
@@ -406,6 +408,15 @@ import { axisBottom, axisLeft } from 'd3-axis';
 ```
 
 [Sitepoint](https://www.sitepoint.com/understanding-es6-modules/) bietet einen gute Einführung in das Thema ES6-Module.
+
+## Deployment
+
+Die Anwendung wird automatisch mit Github Action gebaut und über die Google Cloud ausgeliefert. Jeder Commit auf den `develop` oder `live`-Branch des Repositories startet einen neuen Build. Statische Builds (`isWebsite=true`) werden automatisch über folgende URLs ausgeliefert:
+
+- **live:** `https://interaktiv.br.de/${repoName}`
+- **develop:** `https://interaktiv.brdata-dev.de/${repoName}`
+
+Das Deployment wird in der Datei `config.yaml` konfiguriert. Die Konfiguration für den Github-Workflow in `.github/workflow` sollte nicht angefasst werden. Für mehr Informationen, siehe [br-data/cloud-deploy-template](https://github.com/br-data/cloud-deploy-template).
 
 ## Verbesserungen
 
