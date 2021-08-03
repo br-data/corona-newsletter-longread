@@ -2,8 +2,9 @@
 
 Die wichtigsten Zahlen und Statistiken zur laufenden Corona-Pandemie als täglicher, automatisch generierter Newsletter. Alle Texte, Grafiken und Tabellen werden aus den jeweils aktuellsten Daten des [Robert Koch-Instituts](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/) und des [DIVI-Intensivregisters](https://www.intensivregister.de/#/aktuelle-lage/zeitreihen) erzeugt.
 
-- **Webseite:** <https://ddj.br.de/corona-newsletter> (passwortgeschützt)
-- **Newsletter:** <https://storage.googleapis.com/corona-newsletter/index.html>
+- **Link (Redirect):** <https://br.de/corona-newsletter>
+- **Statische Webseite:** <https://interaktiv.br.de/corona-newsletter/>
+- **Dynamische Webseite:** <https://interaktiv.br.de/corona-newsletter-longread/>
 
 ## Verwendung
 
@@ -20,7 +21,7 @@ Die Daten werden vom [RKI-API-Wrapper](https://github.com/br-data/corona-deutsch
 
 <img src="architecture.svg" alt="Architektur des Corona-Newsletters" width="700px">
 
-**Hinweis:** Mittlerweile werden zusätzlich auch Daten des [DIVI-API-Wrappers](https://github.com/br-data/corona-divi-api) und des [RKI-Impfdaten-Scrapers](https://github.com/ard-data/2020-rki-impf-archive) verwendet.
+**Update:** Mittlerweile werden zusätzlich auch Daten des [DIVI-API-Wrappers](https://github.com/br-data/corona-divi-api) und des [RKI-Impfdaten-Scrapers](https://github.com/ard-data/2020-rki-impf-archive) verwendet.
 
 ## Spezielle Elemente
 
