@@ -104,9 +104,12 @@ export function thresholdIndicator(value) {
 }
 
 export function incidenceColor(value) {
-  if (value >= 200) {
+  if (value >= 500) {
+    // very dark red
+    return '#800026';
+  } else if (value >= 200) {
     // dark red
-    return '#bb212f';
+    return '#bd0026';
   } else if (value >= 100) {
     // dark orange
     return '#ed4834';
