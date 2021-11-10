@@ -1,6 +1,6 @@
 import { select } from 'd3-selection';
-import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
+import { geoPath, geoMercator } from 'd3-geo';
 import { feature } from 'topojson-client';
 
 import { incidence, incidenceColor, germanDate } from '../utils';
@@ -8,8 +8,8 @@ import { incidence, incidenceColor, germanDate } from '../utils';
 const defaults = {
   target: '#map',
   minValue: 0,
-  maxValue: 300,
-  minRadius: 3,
+  maxValue: 500,
+  minRadius: 5,
   maxRadius: 18
 };
 
@@ -58,6 +58,7 @@ export default class BayernMap {
 
     const isMobile = width <= 640;
     
+
     // Set scaling factor for circles
     const scalingFactor = width / 800;
 
@@ -206,16 +207,33 @@ export default class BayernMap {
     const key = svg.append('g')
       .style('display', isMobile ? 'none' : 'block');
 
-    // Add key "more than 200 cases"
+    // Add key "more than 500 cases"
     key.append('circle')
       .attr('transform', 'translate(25, 90)')
+      .attr('r', radius(500))
+      .attr('cx', radius(500))
+      .attr('cy', 10)
+      .attr('fill', incidenceColor(500));
+
+    key.append('text')
+      .attr('transform', 'translate(68, 90)')
+      .attr('font-family', '"Open Sans", OpenSans, Arial')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .attr('dy', 15)
+      .text('≥ 500 Fälle');
+
+    // Add key "more than 200 cases"
+    key.append('circle')
+      .attr('transform', 'translate(165, 90)')
       .attr('r', radius(200))
       .attr('cx', radius(200))
       .attr('cy', 10)
       .attr('fill', incidenceColor(200));
 
     key.append('text')
-      .attr('transform', 'translate(65, 90)')
+      .attr('transform', 'translate(198, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -225,14 +243,14 @@ export default class BayernMap {
 
     // Add key "more than 100 cases"
     key.append('circle')
-      .attr('transform', 'translate(175, 90)')
+      .attr('transform', 'translate(295, 90)')
       .attr('r', radius(100))
       .attr('cx', radius(100))
       .attr('cy', 10)
       .attr('fill', incidenceColor(100));
 
     key.append('text')
-      .attr('transform', 'translate(208, 90)')
+      .attr('transform', 'translate(323, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -242,14 +260,14 @@ export default class BayernMap {
 
     // Add key "more than 50 cases"
     key.append('circle')
-      .attr('transform', 'translate(310, 90)')
+      .attr('transform', 'translate(420, 90)')
       .attr('r', radius(50))
       .attr('cx', radius(50))
       .attr('cy', 10)
       .attr('fill', incidenceColor(50));
 
     key.append('text')
-      .attr('transform', 'translate(338, 90)')
+      .attr('transform', 'translate(445, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -259,14 +277,14 @@ export default class BayernMap {
 
     // Add key "more than 35 cases"
     key.append('circle')
-      .attr('transform', 'translate(435, 90)')
+      .attr('transform', 'translate(530, 90)')
       .attr('r', radius(35))
       .attr('cx', radius(35))
       .attr('cy', 10)
       .attr('fill', incidenceColor(35));
 
     key.append('text')
-      .attr('transform', 'translate(460, 90)')
+      .attr('transform', 'translate(553, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -276,14 +294,14 @@ export default class BayernMap {
 
     // Add key "more than 1 case"
     key.append('circle')
-      .attr('transform', 'translate(560, 90)')
+      .attr('transform', 'translate(640, 90)')
       .attr('r', radius(1))
       .attr('cx', radius(1))
       .attr('cy', 10)
       .attr('fill', incidenceColor(1));
 
     key.append('text')
-      .attr('transform', 'translate(578, 90)')
+      .attr('transform', 'translate(658, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)

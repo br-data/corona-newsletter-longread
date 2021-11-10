@@ -18,7 +18,7 @@ export function germanDate(dateString) {
 }
 
 export function germanDateShort(dateString) {
-  const options = { month: 'numeric', day: 'numeric' };
+  const options = { year: '2-digit', month: 'numeric', day: 'numeric' };
   const date = new Date(dateString);
 
   return date.toLocaleDateString('de-DE', options);
@@ -90,7 +90,9 @@ export function trendArrow(value) {
 }
 
 export function thresholdIndicator(value) {
-  if (value >= 200) {
+  if (value >= 500) {
+    return 'dot-verydarkred';
+  } else if (value >= 200) {
     return 'dot-darkred';
   } else if (value >= 100) {
     return 'dot-darkorange';
@@ -104,9 +106,12 @@ export function thresholdIndicator(value) {
 }
 
 export function incidenceColor(value) {
-  if (value >= 200) {
+  if (value >= 500) {
+    // very dark red
+    return '#800026';
+  } else if (value >= 200) {
     // dark red
-    return '#bb212f';
+    return '#bd0026';
   } else if (value >= 100) {
     // dark orange
     return '#ed4834';

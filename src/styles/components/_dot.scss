@@ -5,8 +5,12 @@
   width: 10px;
   border-radius: 50%;
 
+  &[class*="-verydarkred"] {
+    background-color: #800026;
+  }
+
   &[class*="-darkred"] {
-    background-color: #bb212f;
+    background-color: #bd0026;
   }
 
   &[class*="-darkorange"] {

@@ -8,7 +8,7 @@ import { incidence, incidenceColor, germanDate } from '../utils';
 const defaults = {
   target: '#map',
   minValue: 0,
-  maxValue: 300,
+  maxValue: 500,
   minRadius: 3,
   maxRadius: 12
 };
@@ -207,16 +207,33 @@ export default class DeutschlandMap {
     const key = svg.append('g')
       .style('display', isMobile ? 'none' : 'block');
 
-    // Add key "more than 200 cases"
+    // Add key "more than 500 cases"
     key.append('circle')
       .attr('transform', 'translate(25, 90)')
+      .attr('r', radius(500))
+      .attr('cx', radius(500))
+      .attr('cy', 10)
+      .attr('fill', incidenceColor(500));
+
+    key.append('text')
+      .attr('transform', 'translate(55, 90)')
+      .attr('font-family', '"Open Sans", OpenSans, Arial')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .attr('dy', 15)
+      .text('≥ 500 Fälle');
+
+    // Add key "more than 200 cases"
+    key.append('circle')
+      .attr('transform', 'translate(150, 90)')
       .attr('r', radius(200))
       .attr('cx', radius(200))
       .attr('cy', 10)
       .attr('fill', incidenceColor(200));
 
     key.append('text')
-      .attr('transform', 'translate(55, 90)')
+      .attr('transform', 'translate(175, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -226,14 +243,14 @@ export default class DeutschlandMap {
 
     // Add key "more than 100 cases"
     key.append('circle')
-      .attr('transform', 'translate(165, 90)')
+      .attr('transform', 'translate(270, 90)')
       .attr('r', radius(100))
       .attr('cx', radius(100))
       .attr('cy', 10)
       .attr('fill', incidenceColor(100));
 
     key.append('text')
-      .attr('transform', 'translate(190, 90)')
+      .attr('transform', 'translate(293, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -243,14 +260,14 @@ export default class DeutschlandMap {
 
     // Add key "more than 50 cases"
     key.append('circle')
-      .attr('transform', 'translate(290, 90)')
+      .attr('transform', 'translate(385, 90)')
       .attr('r', radius(50))
       .attr('cx', radius(50))
       .attr('cy', 10)
       .attr('fill', incidenceColor(50));
 
     key.append('text')
-      .attr('transform', 'translate(312, 90)')
+      .attr('transform', 'translate(405, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -260,14 +277,14 @@ export default class DeutschlandMap {
 
     // Add key "more than 35 cases"
     key.append('circle')
-      .attr('transform', 'translate(405, 90)')
+      .attr('transform', 'translate(490, 90)')
       .attr('r', radius(35))
       .attr('cx', radius(35))
       .attr('cy', 10)
       .attr('fill', incidenceColor(35));
 
     key.append('text')
-      .attr('transform', 'translate(425, 90)')
+      .attr('transform', 'translate(510, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
@@ -277,14 +294,14 @@ export default class DeutschlandMap {
 
     // Add key "more than 1 case"
     key.append('circle')
-      .attr('transform', 'translate(520, 90)')
+      .attr('transform', 'translate(590, 90)')
       .attr('r', radius(1))
       .attr('cx', radius(1))
       .attr('cy', 10)
       .attr('fill', incidenceColor(1));
 
     key.append('text')
-      .attr('transform', 'translate(535, 90)')
+      .attr('transform', 'translate(605, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
