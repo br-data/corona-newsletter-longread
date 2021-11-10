@@ -90,7 +90,9 @@ export function trendArrow(value) {
 }
 
 export function thresholdIndicator(value) {
-  if (value >= 200) {
+  if (value >= 500) {
+    return 'dot-verydarkred';
+  } else if (value >= 200) {
     return 'dot-darkred';
   } else if (value >= 100) {
     return 'dot-darkorange';
