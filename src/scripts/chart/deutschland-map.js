@@ -4,6 +4,7 @@ import { scaleSqrt } from 'd3-scale';
 import { feature } from 'topojson-client';
 
 import { incidence, incidenceColor, germanDate } from '../utils';
+import { mergeBerlinData } from '../utils/merge-berlin';
 
 const defaults = {
   target: '#map',
@@ -27,11 +28,12 @@ export default class DeutschlandMap {
     const { target, caseData, metaData, geoData, labelData,
       meta, minValue, maxValue, minRadius, maxRadius } = this;
 
-    const uniqueCounties = [...new Set(caseData.map(d => d.Landkreis))];
+    const mergedCaseData = mergeBerlinData(caseData);
+    const uniqueCounties = [...new Set(mergedCaseData.map(d => d.Landkreis))];
 
     // Calculate 7-day-incidence per 100.000 population for each county
     const mergedCounties = uniqueCounties.map(name => {
-      const caseDataDistrict = caseData.filter(c => c.Landkreis === name);
+      const caseDataDistrict = mergedCaseData.filter(c => c.Landkreis === name);
       const metaInfoCounty = metaData.find(m => m.rkiName === name);
 
       return Object.assign(
