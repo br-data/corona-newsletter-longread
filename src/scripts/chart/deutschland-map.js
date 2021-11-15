@@ -3,8 +3,7 @@ import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
 import { feature } from 'topojson-client';
 
-import { incidence, incidenceColor, germanDate } from '../utils';
-import { mergeBerlinData } from '../utils/merge-berlin';
+import { incidence, incidenceColor, germanDate, mergeBerlinData } from '../utils';
 
 const defaults = {
   target: '#map',

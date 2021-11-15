@@ -1,3 +1,11 @@
+export function pretty(number, prefix = false, method = 'round', factor = 10) {
+  const string = (Math[method](number * factor) / factor).toString().split('.');
+  const prettyString = string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
+  const prefixedString = (prefix && number > 0) ? `+${prettyString}` : prettyString;
+
+  return prefixedString;
+}
+
 export function currentCount(data, key = 'sumValue') {
   return data[data.length-1][key];
 }
@@ -204,12 +212,30 @@ export function stdDev(data, key = 'value') {
   return Math.sqrt(squareDiffsAvg);
 }
 
-export function pretty(number, prefix = false, method = 'round', factor = 10) {
-  const string = (Math[method](number * factor) / factor).toString().split('.');
-  const prettyString = string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
-  const prefixedString = (prefix && number > 0) ? `+${prettyString}` : prettyString;
+export function mergeBerlinData(caseData) {
+  const berlinCounties = ['SK Berlin Mitte', 'SK Berlin Charlottenburg-Wilmersdorf', 'SK Berlin Neukölln', 'SK Berlin Tempelhof-Schöneberg', 'SK Berlin Pankow', 'SK Berlin Steglitz-Zehlendorf', 'SK Berlin Friedrichshain-Kreuzberg', 'SK Berlin Reinickendorf', 'SK Berlin Treptow-Köpenick', 'SK Berlin Spandau', 'SK Berlin Marzahn-Hellersdorf', 'SK Berlin Lichtenberg'];
 
-  return prefixedString;
+  const uniqueDates = [...new Set(caseData.map(d => d.date))];
+  const berlinCasesMerged = uniqueDates.map(date => {
+
+    return caseData
+      .filter(d => berlinCounties.includes(d.Landkreis) && d.date === date)
+      .reduce((acc, curr) => {
+        acc.date = curr.date;
+        acc.value += curr.value;
+        acc.sumValue += curr.value;
+
+        return acc;
+      }, {
+        Landkreis: 'Berlin',
+        value: 0,
+        sumValue: 0
+      });
+  });
+
+  return caseData
+    .filter(d => !berlinCounties.includes(d.Landkreis))
+    .concat(berlinCasesMerged);
 }
 
 export function jsonToTable(json) {
