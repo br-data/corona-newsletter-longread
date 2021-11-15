@@ -224,22 +224,22 @@ export default class DeutschlandMap {
       .attr('dy', 15)
       .text('≥ 500 Fälle');
 
-    // Add key "more than 200 cases"
+    // Add key "more than 300 cases"
     key.append('circle')
       .attr('transform', 'translate(150, 90)')
-      .attr('r', radius(200))
-      .attr('cx', radius(200))
+      .attr('r', radius(300))
+      .attr('cx', radius(300))
       .attr('cy', 10)
-      .attr('fill', incidenceColor(200));
+      .attr('fill', incidenceColor(300));
 
     key.append('text')
-      .attr('transform', 'translate(175, 90)')
+      .attr('transform', 'translate(180, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 200 Fälle');
+      .text('≥ 300 Fälle');
 
     // Add key "more than 100 cases"
     key.append('circle')

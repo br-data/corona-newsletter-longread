@@ -92,7 +92,7 @@ export function trendArrow(value) {
 export function thresholdIndicator(value) {
   if (value >= 500) {
     return 'dot-verydarkred';
-  } else if (value >= 200) {
+  } else if (value >= 300) {
     return 'dot-darkred';
   } else if (value >= 100) {
     return 'dot-darkorange';
@@ -109,7 +109,7 @@ export function incidenceColor(value) {
   if (value >= 500) {
     // very dark red
     return '#800026';
-  } else if (value >= 200) {
+  } else if (value >= 300) {
     // dark red
     return '#bd0026';
   } else if (value >= 100) {
