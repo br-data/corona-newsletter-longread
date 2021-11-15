@@ -24,7 +24,7 @@ export default class DeutschlandMap {
   }
 
   draw() {
-    const { target, caseData, metaData, geoData, labelData,
+    const { target, caseData, metaData, countiesGeoData, statesGeoData, labelData,
       meta, minValue, maxValue, minRadius, maxRadius } = this;
 
     const mergedCaseData = mergeBerlinData(caseData);
@@ -77,7 +77,8 @@ export default class DeutschlandMap {
     const path = geoPath().projection(projection);
 
     // TopoJSON to GeoJSON feature
-    const geoFeature = feature(geoData, geoData.objects.counties);
+    const countiesFeature = feature(countiesGeoData, countiesGeoData.objects.counties);
+    const statesFeature = feature(statesGeoData, statesGeoData.objects.collection);
 
     // Add SVG
     const svg = container.append('svg')
@@ -111,10 +112,18 @@ export default class DeutschlandMap {
 
     // Add base map
     map.append('path')
-      .attr('d', path(geoFeature))
+      .attr('d', path(countiesFeature))
       .attr('fill', '#858999')
       .attr('stroke', '#383B47')
-      .attr('stroke-width', 1)
+      .attr('stroke-width', 0.75)
+      .attr('stroke-opacity', 0.75);
+
+    map.append('path')
+      .attr('d', path(statesFeature))
+      .attr('fill', 'transparent')
+      .attr('fill-opacity', 0)
+      .attr('stroke', '#383B47')
+      .attr('stroke-width', 1.5)
       .attr('stroke-opacity', 0.75);
 
     // Add circles to visualize the number of COVID-19 cases

@@ -33,6 +33,7 @@ import * as deutschlandPatientsText from './text/deutschland-patients-text';
 
 import deutschlandMeta from './data/meta/deutschland-meta.json';
 import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
+import deutschlandBlGeo from './data/geo/deutschland-bl.topo.json';
 import deutschlandLkrMeta from './data/meta/deutschland-lkr-meta.json';
 import deutschlandLkrGeo from './data/geo/deutschland-lkr.topo.json';
 
@@ -402,7 +403,8 @@ async function init() {
       target: '#deutschland-cases-map',
       caseData: deutschlandLkrCases,
       metaData: deutschlandLkrMeta,
-      geoData: deutschlandLkrGeo,
+      countiesGeoData: deutschlandLkrGeo,
+      statesGeoData: deutschlandBlGeo,
       labelData: deutschlandBlMeta,
       meta: {
         title: '7-Tage-Inzidenz in Deutschland',
