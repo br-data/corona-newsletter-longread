@@ -3240,6 +3240,16 @@
     "pop": 86458
   },
   {
+    "name": "Berlin",
+    "rkiName": "Berlin",
+    "type": "Stadt",
+    "state": "Berlin",
+    "ags": "11000",
+    "lat": 52.502759,
+    "long": 13.399375,
+    "pop": 3664088
+  },
+  {
     "name": "Berlin Mitte",
     "rkiName": "SK Berlin Mitte",
     "type": "Stadt",

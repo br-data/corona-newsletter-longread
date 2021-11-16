@@ -131,11 +131,11 @@ export default class SimpleChart {
 
     // First dose
     bars.append('rect')
-      .attr('width', x(currentData['impf_quote_erst']))
+      .attr('width', x(currentData['impf_quote_min1']))
       .attr('height', barHeight)
       .attr('fill', 'url(#diagonal-hatching)')
       .append('title')
-      .text(`${pretty(currentData['personen_erst_kumulativ'])} (${pretty(currentData['impf_quote_erst'])} %)`);
+      .text(`${pretty(currentData['personen_min1_kumulativ'])} (${pretty(currentData['impf_quote_min1'])} %)`);
     
     // Second dose
     bars.append('rect')

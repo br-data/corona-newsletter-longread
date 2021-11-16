@@ -3,7 +3,7 @@ import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
 import { feature } from 'topojson-client';
 
-import { incidence, incidenceColor, germanDate } from '../utils';
+import { incidence, incidenceColor, germanDate, mergeBerlinData } from '../utils';
 
 const defaults = {
   target: '#map',
@@ -24,14 +24,15 @@ export default class DeutschlandMap {
   }
 
   draw() {
-    const { target, caseData, metaData, geoData, labelData,
+    const { target, caseData, metaData, countiesGeoData, statesGeoData, labelData,
       meta, minValue, maxValue, minRadius, maxRadius } = this;
 
-    const uniqueCounties = [...new Set(caseData.map(d => d.Landkreis))];
+    const mergedCaseData = mergeBerlinData(caseData);
+    const uniqueCounties = [...new Set(mergedCaseData.map(d => d.Landkreis))];
 
     // Calculate 7-day-incidence per 100.000 population for each county
     const mergedCounties = uniqueCounties.map(name => {
-      const caseDataDistrict = caseData.filter(c => c.Landkreis === name);
+      const caseDataDistrict = mergedCaseData.filter(c => c.Landkreis === name);
       const metaInfoCounty = metaData.find(m => m.rkiName === name);
 
       return Object.assign(
@@ -76,7 +77,8 @@ export default class DeutschlandMap {
     const path = geoPath().projection(projection);
 
     // TopoJSON to GeoJSON feature
-    const geoFeature = feature(geoData, geoData.objects.counties);
+    const countiesFeature = feature(countiesGeoData, countiesGeoData.objects.counties);
+    const statesFeature = feature(statesGeoData, statesGeoData.objects.collection);
 
     // Add SVG
     const svg = container.append('svg')
@@ -110,10 +112,18 @@ export default class DeutschlandMap {
 
     // Add base map
     map.append('path')
-      .attr('d', path(geoFeature))
+      .attr('d', path(countiesFeature))
       .attr('fill', '#858999')
       .attr('stroke', '#383B47')
-      .attr('stroke-width', 1)
+      .attr('stroke-width', 0.75)
+      .attr('stroke-opacity', 0.75);
+
+    map.append('path')
+      .attr('d', path(statesFeature))
+      .attr('fill', 'transparent')
+      .attr('fill-opacity', 0)
+      .attr('stroke', '#383B47')
+      .attr('stroke-width', 1.5)
       .attr('stroke-opacity', 0.75);
 
     // Add circles to visualize the number of COVID-19 cases
@@ -224,22 +234,22 @@ export default class DeutschlandMap {
       .attr('dy', 15)
       .text('≥ 500 Fälle');
 
-    // Add key "more than 200 cases"
+    // Add key "more than 300 cases"
     key.append('circle')
       .attr('transform', 'translate(150, 90)')
-      .attr('r', radius(200))
-      .attr('cx', radius(200))
+      .attr('r', radius(300))
+      .attr('cx', radius(300))
       .attr('cy', 10)
-      .attr('fill', incidenceColor(200));
+      .attr('fill', incidenceColor(300));
 
     key.append('text')
-      .attr('transform', 'translate(175, 90)')
+      .attr('transform', 'translate(180, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 200 Fälle');
+      .text('≥ 300 Fälle');
 
     // Add key "more than 100 cases"
     key.append('circle')
