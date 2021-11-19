@@ -266,7 +266,7 @@ export default class DeutschlandMap {
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 300');
+      .text('≥ 200');
 
     // Add key "more than 100 cases"
     key.append('circle')
