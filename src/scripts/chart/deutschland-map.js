@@ -251,7 +251,6 @@ export default class DeutschlandMap {
       .attr('dy', 15)
       .text('≥ 500');
 
-
     // Add key "more than 200 cases"
     key.append('circle')
       .attr('transform', 'translate(235, 90)')

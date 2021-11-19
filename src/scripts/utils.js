@@ -98,16 +98,18 @@ export function trendArrow(value) {
 }
 
 export function thresholdIndicator(value) {
-  if (value >= 500) {
-    return 'dot-verydarkred';
-  } else if (value >= 300) {
+  if (value >= 1000) {
     return 'dot-darkred';
-  } else if (value >= 100) {
+  } else if (value >= 500) {
+    return 'dot-mediumred';
+  } else if (value >= 200) {
     return 'dot-darkorange';
+  } else if (value >= 100) {
+    return 'dot-mediumorange';
   } else if (value >= 50) {
-    return 'dot-orange';
-  } else if (value >= 35) {
     return 'dot-lightorange';
+  } else if (value >= 35) {
+    return 'dot-mediumyellow';
   } else {
     return 'dot-lightyellow';
   }

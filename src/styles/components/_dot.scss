@@ -5,27 +5,31 @@
   width: 10px;
   border-radius: 50%;
 
-  &[class*="-verydarkred"] {
+  &[class*="-darkred"] {
     background-color: #800026;
   }
 
-  &[class*="-darkred"] {
+  &[class*="-mediumred"] {
     background-color: #bd0026;
   }
 
   &[class*="-darkorange"] {
-    background-color: #ed4834;
+    background-color: #f03b20;
   }
 
-  &[class*="-orange"] {
-    background-color: #fb8e4e;
+  &[class*="-mediumorange"] {
+    background-color: #fd7c3c;
   }
 
   &[class*="-lightorange"] {
-    background-color: #fdc96c;
+    background-color: #feb24c;
+  }
+
+  &[class*="-mediumyellow"] {
+    background-color: #fed976;
   }
 
   &[class*="-lightyellow"] {
-    background-color: #fffbb9;
+    background-color: #ffffb2;
   }
 }
