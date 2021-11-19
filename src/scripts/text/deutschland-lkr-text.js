@@ -15,11 +15,13 @@ export function init(config) {
     );
   }).sort((a, b) => b.incidence - a.incidence);
 
+  const over1000Counties = worstCounties.filter(d => d.incidence >= 1000);
+  const over500Counties = worstCounties.filter(d => d.incidence >= 500);
   const over200Counties = worstCounties.filter(d => d.incidence >= 200);
-  const over50Counties = worstCounties.filter(d => d.incidence >= 50);
-  const over35Counties = worstCounties.filter(d => d.incidence >= 35);
+  // const over50Counties = worstCounties.filter(d => d.incidence >= 50);
+  // const over200Counties = worstCounties.filter(d => d.incidence >= 35);
 
-  const summaryText = `Zur Zeit gibt es deutschlandweit ${numeral1(over35Counties.length)} ${plural1(over35Counties.length)}, ${plural2(over35Counties.length)} auf mehr als 35 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over35Counties.length)}.${ over50Counties.length ? ' Davon wiederum ' + plural3(over50Counties.length) + ' ' + numeral2(over50Counties.length) + ' ' + plural1(over50Counties.length) + ' auf mehr als 50 Fälle pro 100.000 Einwohner.' : ''} ${ over50Counties.length ? ' ' + capitalize(numeral2(over200Counties.length)) + ' ' + plural1(over200Counties.length)  + ' ' + plural4(over200Counties.length) + ' aktuell den Grenzwert von 200 Fällen in der 7-Tage-Inzidenz.' : '' }`;
+  const summaryText = `Zur Zeit gibt es deutschlandweit ${numeral1(over200Counties.length)} ${plural1(over200Counties.length)}, ${plural2(over200Counties.length)} auf mehr als 200 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over200Counties.length)}.${ over500Counties.length ? ' Davon wiederum ' + plural3(over500Counties.length) + ' ' + numeral2(over500Counties.length) + ' ' + plural1(over500Counties.length) + ' auf mehr als 500 Fälle pro 100.000 Einwohner.' : ''} ${ over500Counties.length ? ' ' + capitalize(numeral2(over1000Counties.length)) + ' ' + plural1(over1000Counties.length)  + ' ' + plural4(over1000Counties.length) + ' aktuell den Grenzwert von 1.000 Fällen in der 7-Tage-Inzidenz.' : '' }`;
 
   const detailText = `Die drei am stärksten betroffenen Kreise sind zur Zeit ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name}, ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} und ${preposition1(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name}.
 
