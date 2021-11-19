@@ -217,101 +217,119 @@ export default class DeutschlandMap {
     const key = svg.append('g')
       .style('display', isMobile ? 'none' : 'block');
 
-    // Add key "more than 500 cases"
+    // Add key "more than 1000 cases"
     key.append('circle')
       .attr('transform', 'translate(25, 90)')
+      .attr('r', radius(1000))
+      .attr('cx', radius(1000))
+      .attr('cy', 10)
+      .attr('fill', incidenceColor(1000));
+
+    key.append('text')
+      .attr('transform', 'translate(67, 90)')
+      .attr('font-family', '"Open Sans", OpenSans, Arial')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .attr('dy', 15)
+      .text('≥ 1.000');
+
+    // Add key "more than 500 cases"
+    key.append('circle')
+      .attr('transform', 'translate(140, 90)')
       .attr('r', radius(500))
       .attr('cx', radius(500))
       .attr('cy', 10)
       .attr('fill', incidenceColor(500));
 
     key.append('text')
-      .attr('transform', 'translate(55, 90)')
+      .attr('transform', 'translate(173, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 500 Fälle');
+      .text('≥ 500');
 
-    // Add key "more than 300 cases"
+
+    // Add key "more than 200 cases"
     key.append('circle')
-      .attr('transform', 'translate(150, 90)')
-      .attr('r', radius(300))
-      .attr('cx', radius(300))
+      .attr('transform', 'translate(235, 90)')
+      .attr('r', radius(200))
+      .attr('cx', radius(200))
       .attr('cy', 10)
-      .attr('fill', incidenceColor(300));
+      .attr('fill', incidenceColor(200));
 
     key.append('text')
-      .attr('transform', 'translate(180, 90)')
+      .attr('transform', 'translate(260, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 300 Fälle');
+      .text('≥ 300');
 
     // Add key "more than 100 cases"
     key.append('circle')
-      .attr('transform', 'translate(270, 90)')
+      .attr('transform', 'translate(320, 90)')
       .attr('r', radius(100))
       .attr('cx', radius(100))
       .attr('cy', 10)
       .attr('fill', incidenceColor(100));
 
     key.append('text')
-      .attr('transform', 'translate(293, 90)')
+      .attr('transform', 'translate(340, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 100 Fälle');
+      .text('≥ 100');
 
     // Add key "more than 50 cases"
     key.append('circle')
-      .attr('transform', 'translate(385, 90)')
+      .attr('transform', 'translate(400, 90)')
       .attr('r', radius(50))
       .attr('cx', radius(50))
       .attr('cy', 10)
       .attr('fill', incidenceColor(50));
 
     key.append('text')
-      .attr('transform', 'translate(405, 90)')
+      .attr('transform', 'translate(420, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 50 Fälle');
+      .text('≥ 50');
 
     // Add key "more than 35 cases"
     key.append('circle')
-      .attr('transform', 'translate(490, 90)')
+      .attr('transform', 'translate(470, 90)')
       .attr('r', radius(35))
       .attr('cx', radius(35))
       .attr('cy', 10)
       .attr('fill', incidenceColor(35));
 
     key.append('text')
-      .attr('transform', 'translate(510, 90)')
+      .attr('transform', 'translate(490, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
       .attr('dy', 15)
-      .text('≥ 35 Fälle');
+      .text('≥ 35');
 
     // Add key "more than 1 case"
     key.append('circle')
-      .attr('transform', 'translate(590, 90)')
+      .attr('transform', 'translate(540, 90)')
       .attr('r', radius(1))
       .attr('cx', radius(1))
       .attr('cy', 10)
       .attr('fill', incidenceColor(1));
 
     key.append('text')
-      .attr('transform', 'translate(605, 90)')
+      .attr('transform', 'translate(558, 90)')
       .attr('font-family', '"Open Sans", OpenSans, Arial')
       .attr('font-size', 15)
       .attr('font-weight', 300)
