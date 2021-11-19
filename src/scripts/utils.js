@@ -1,4 +1,4 @@
-export function pretty(number, prefix = false, method = 'round', factor = 10) {
+export function pretty(number, prefix = false, method = 'round', factor = 1) {
   const string = (Math[method](number * factor) / factor).toString().split('.');
   const prettyString = string[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (string[1] ? `,${string[1]}` : '');
   const prefixedString = (prefix && number > 0) ? `+${prettyString}` : prettyString;
@@ -98,40 +98,45 @@ export function trendArrow(value) {
 }
 
 export function thresholdIndicator(value) {
-  if (value >= 500) {
-    return 'dot-verydarkred';
-  } else if (value >= 300) {
+  if (value >= 1000) {
     return 'dot-darkred';
-  } else if (value >= 100) {
+  } else if (value >= 500) {
+    return 'dot-mediumred';
+  } else if (value >= 200) {
     return 'dot-darkorange';
+  } else if (value >= 100) {
+    return 'dot-mediumorange';
   } else if (value >= 50) {
-    return 'dot-orange';
-  } else if (value >= 35) {
     return 'dot-lightorange';
+  } else if (value >= 35) {
+    return 'dot-mediumyellow';
   } else {
     return 'dot-lightyellow';
   }
 }
 
 export function incidenceColor(value) {
-  if (value >= 500) {
-    // very dark red
-    return '#800026';
-  } else if (value >= 300) {
+  if (value >= 1000) {
     // dark red
+    return '#800026';
+  } else if (value >= 500) {
+    // medium red
     return '#bd0026';
-  } else if (value >= 100) {
+  } else if (value >= 200) {
     // dark orange
-    return '#ed4834';
+    return '#f03b20';
+  } else if (value >= 100) {
+    // medium orange
+    return '#fd7c3c';
   } else if (value >= 50) {
-    // orange
-    return '#fb8e4e';
-  } else if (value >= 35) {
     // light orange
-    return '#fdc96c';
+    return '#feb24c';
+  } else if (value >= 35) {
+    // medium yellow
+    return '#fed976';
   } else {
     // light yellow
-    return '#fffbb9';
+    return '#ffffb2';
   }
 }
 
