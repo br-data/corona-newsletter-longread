@@ -26,7 +26,7 @@ export function germanDate(dateString) {
 }
 
 export function germanDateShort(dateString) {
-  const options = { year: '2-digit', month: 'numeric', day: 'numeric' };
+  const options = { year: '2-digit', month: 'short' };
   const date = new Date(dateString);
 
   return date.toLocaleDateString('de-DE', options);
