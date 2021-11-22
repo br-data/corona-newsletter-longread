@@ -12,7 +12,8 @@ export function init(config) {
       'Landkreis/Stadt': `${countyMeta.name} (${countyMeta.type})`,
       'Inzidenz': `<span class="${thresholdIndicator(incidence(countyCases, countyMeta.pop))}" title="${pretty(incidence(countyCases, countyMeta.pop))}"></span>${pretty(incidence(countyCases, countyMeta.pop))}`,
       'Fälle (neu)': `<span class="${trendArrow(weekTrend(countyCases))}" title="${pretty((weekTrend(countyCases) || 0), true)} %"></span> ${pretty(currentCount(countyCases))} (${pretty(currentIncrease(countyCases), true)})`,
-      'Todesfälle (neu)': `<span class="${trendArrow(weekTrend(countyDeaths))}" title="${pretty((weekTrend(countyDeaths) || 0), true)} %"></span> ${pretty(currentCount(countyDeaths))} (${pretty(currentIncrease(countyDeaths), true)})`
+      'Todesfälle (neu)': `${pretty(currentCount(countyDeaths))} (${pretty(currentIncrease(countyDeaths), true)})`
+      // 'Todesfälle (neu)': `<span class="${trendArrow(weekTrend(countyDeaths))}" title="${pretty((weekTrend(countyDeaths) || 0), true)} %"></span> ${pretty(currentCount(countyDeaths))} (${pretty(currentIncrease(countyDeaths), true)})`
     };
   }).sort((a, b) => b.value - a.value).map(d => { delete d.value; return d;});
 

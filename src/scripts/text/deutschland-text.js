@@ -27,9 +27,9 @@ export function init(config) {
 
   const deathText = `Bisher wurden insgesamt ${pretty(currentCount(deathData))} <a href="#todesfaelle">Todesfälle</a> in Deutschland gemeldet.
 
-  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : 'Im Vergleich zum Vortag gab es keine neuen Todesfälle.' }
+  ${(currentIncrease(deathData) > 0) ? 'Das ' + deathCasesPlural(currentIncrease(deathData)) + ' mehr als noch am Vortag.' : 'Im Vergleich zum Vortag gab es keine neuen Todesfälle.' }`;
 
-  Langfristig gibt es ${positiveNegative(weekTrend(deathData))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData))} (<span class="${trendArrow(weekTrend(deathData))}"></span>${pretty((weekTrend(deathData) || 0), true)} %).`;
+  // `Langfristig gibt es ${positiveNegative(weekTrend(deathData, 10, 'sumNewCases'))} Trend, denn die Zahl der neuen Todesfälle ist im Vergleich zur letzten Woche ${trendClassifier(weekTrend(deathData, 10, 'sumNewCases'))} (<span class="${trendArrow(weekTrend(deathData, 10, 'sumNewCases'))}"></span>${pretty((weekTrend(deathData, 10, 'sumNewCases') || 0), true)} %).`
 
   const caseElement = document.querySelector(caseTarget);
   caseElement.innerHTML = caseText;
