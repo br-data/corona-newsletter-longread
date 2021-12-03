@@ -2,7 +2,13 @@
   "@context": "https://schema.org/",
   "@type": "NewsArticle",
   "articleSection": "wissen",
-  "author": [{ "@type": "Person", "name": "Steffen Kühne" }],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Steffen Kühne",
+      "url": "https://www.br.de/nachrichten/autoren/steffen-kuehne,a23634a8-d1bd-47ca-bc5a-bf605c53b6ca"
+    }
+  ],
   "dateModified": "2021-12-03T05:29:56.738867+00:00",
   "datePublished": "2021-12-03T05:29:56.963+00:00",
   "description": "Tagesaktueller Newsletter zur Corona-Pandemie mit Fallzahlen, Inzidenzen, Todesfällen, Impfquoten und der Zahl der Intensivpatienten.",
