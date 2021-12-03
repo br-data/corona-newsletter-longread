@@ -1,5 +1,6 @@
 import '../index.html';
 import '../styles/index.scss';
+import metadata from '../metadata.json';
 
 import SimpleChart from './chart/simple-chart';
 import BarChart from './chart/bar-chart';
@@ -37,7 +38,7 @@ import deutschlandBlGeo from './data/geo/deutschland-bl.topo.json';
 import deutschlandLkrMeta from './data/meta/deutschland-lkr-meta.json';
 import deutschlandLkrGeo from './data/geo/deutschland-lkr.topo.json';
 
-import { germanDate, csvToJson } from './utils';
+import { germanDate, csvToJson, updateMetaData } from './utils';
 
 window.addEventListener('load', init);
 
@@ -47,7 +48,7 @@ async function init() {
   const toDateString = date => date.toISOString().split('T')[0];
 
   const charts = [];
-  
+
   const apiUrl = 'https://corona-deutschland-api.interaktiv.br.de/query';
   const urlParams = new URLSearchParams(window.location.search);
 
@@ -65,11 +66,21 @@ async function init() {
   previousTwoWeeksDate.setDate(endDate.getDate()-16);
   const previousTwoWeeksDateString = toDateString(previousTwoWeeksDate);
 
+  // Add structured metadata to header
+  const metaDataTag = document.createElement('script');
+  metaDataTag.type = 'application/ld+json';
+  metaDataTag.textContent = JSON.stringify(
+    updateMetaData(metadata, `${endDateString}T02:00:00`, endDate)
+  );
+  document.head.appendChild(metaDataTag);
+  
+  // Add date strings to page
   document.querySelectorAll('span.date')
     .forEach(el => el.textContent = germanDate(endDateString));
   document.querySelectorAll('span.time')
     .forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
 
+  // Check if new data is available
   const dataCheckResult = await fetch(`${apiUrl}?startDate=${previousDayDateString}`)
     .then(response => response.json())
     .catch(logError);
