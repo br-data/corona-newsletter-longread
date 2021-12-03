@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "NewsArticle",
+  "articleSection": "wissen",
+  "author": [{ "@type": "Person", "name": "Steffen Kühne" }],
+  "dateModified": "2021-12-03T05:29:56.738867+00:00",
+  "datePublished": "2021-12-03T05:29:56.963+00:00",
+  "description": "Tagesaktueller Newsletter zur Corona-Pandemie mit Fallzahlen, Inzidenzen, Todesfällen, Impfquoten und der Zahl der Intensivpatienten.",
+  "headline": "Corona: Aktuelle Zahlen für Bayern und Deutschland",
+  "image": {
+    "@type": "ImageObject",
+    "caption": "Symbolbild Corona-Newsletter",
+    "height": 900,
+    "width": 1600,
+    "url": "https://interaktiv.br.de/corona-newsletter/static/preview.jpg",
+    "copyrightHolder": { "@type": "Person", "name": "BR" }
+  },
+  "keywords": [
+    "Corona",
+    "Coronavirus",
+    "Statistik",
+    "Fallzahlen",
+    "Inzidenz",
+    "Intensivpatienten",
+    "Impfquote",
+    "Todesfälle",
+    "Reproduktionszahl",
+    "Newsletter",
+    "RKI",
+    "Robert Koch-Institut",
+    "DIVI",
+    "BR24",
+    "BR",
+    "Bayerischer Rundfunk"
+  ],
+  "mainEntityOfPage": "https://interaktiv.br.de/corona-newsletter/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "BR24",
+    "url": "https://www.br.de/nachrichten",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://images-eu.ssl-images-amazon.com/images/I/315jVRxtMcL.png",
+      "width": 60,
+      "height": 60
+    },
+    "sameAs": [
+      "https://www.facebook.com/BR24",
+      "https://twitter.com/BR24",
+      "https://www.instagram.com/BR24/",
+      "https://www.youtube.com/channel/UCcweJsCV2TUP_kzMX25U-oQ",
+      "https://www.pinterest.de/BR24news/",
+      "https://plus.google.com/u/1/+BR24"
+    ]
+  },
+  "url": "https://interaktiv.br.de/corona-newsletter/"
+}

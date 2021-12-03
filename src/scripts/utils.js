@@ -316,3 +316,10 @@ export function getRetinaRatio() {
 
   return devicePixelRatio / backingStoreRatio;
 }
+
+export function updateMetaData(schema, datePublished, dateModified) {
+  schema.datePublished = (new Date(datePublished)).toISOString();
+  schema.dateModified = (new Date(dateModified)).toISOString();
+  
+  return schema;
+}
