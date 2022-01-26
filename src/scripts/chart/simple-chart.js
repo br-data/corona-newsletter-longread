@@ -67,29 +67,30 @@ export default class SimpleChart {
       .attr('stop-color', '#1D2029');
 
     // Add definition for immunity gradient
-    const linearGradient = defs.append('linearGradient')
-      .attr('id', 'linear-gradient');
+    // const linearGradient = defs.append('linearGradient')
+    //   .attr('id', 'linear-gradient');
 
-    linearGradient.append('stop')
-      .attr('offset', '.6')
-      .attr('stop-color', '#6d7182')
-      .attr('stop-opacity', '0');
+    // linearGradient.append('stop')
+    //   .attr('offset', '.6')
+    //   .attr('stop-color', '#6d7182')
+    //   .attr('stop-opacity', '0');
 
-    linearGradient.append('stop')
-      .attr('offset', '1')
-      .attr('stop-color', '#6d7182')
-      .attr('stop-opacity', '1');
+    // linearGradient.append('stop')
+    //   .attr('offset', '1')
+    //   .attr('stop-color', '#6d7182')
+    //   .attr('stop-opacity', '1');
 
-    const diagonalHatching = defs.append('pattern')
-      .attr('id', 'diagonal-hatching')
-      .attr('width', 4)
-      .attr('height', 4)
-      .attr('patternUnits', 'userSpaceOnUse');
+    // Add definition for first vaccination cross hatching
+    // const diagonalHatching = defs.append('pattern')
+    //   .attr('id', 'diagonal-hatching')
+    //   .attr('width', 4)
+    //   .attr('height', 4)
+    //   .attr('patternUnits', 'userSpaceOnUse');
 
-    diagonalHatching.append('path')
-      .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-      .attr('stroke', '#3ad29f')
-      .attr('stop-opacity', '0');
+    // diagonalHatching.append('path')
+    //   .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
+    //   .attr('stroke', '#3ad29f')
+    //   .attr('stop-opacity', '0');
    
     // Add background element and apply gradient
     svg.append('rect')
@@ -133,7 +134,7 @@ export default class SimpleChart {
     bars.append('rect')
       .attr('width', x(currentData['impf_quote_min1']))
       .attr('height', barHeight)
-      .attr('fill', 'url(#diagonal-hatching)')
+      .attr('fill', '#158f66')
       .append('title')
       .text(`${pretty(currentData['personen_min1_kumulativ'])} (${pretty(currentData['impf_quote_min1'])} %)`);
     
@@ -144,18 +145,26 @@ export default class SimpleChart {
       .attr('fill', '#3ad29f')
       .append('title')
       .text(`${pretty(currentData['personen_voll_kumulativ'])} (${pretty(currentData['impf_quote_voll'])} %)`);
+    
+    // Third dose
+    bars.append('rect')
+      .attr('width', x(currentData['impf_quote_auffr']))
+      .attr('height', barHeight)
+      .attr('fill', '#7dffd3')
+      .append('title')
+      .text(`${pretty(currentData['personen_auffr_kumulativ'])} (${pretty(currentData['impf_quote_auffr'])} %)`);
 
     // Add label for herd immunity
-    bars.append('text')
-      .attr('x', x(100))
-      .attr('y', 17)
-      .attr('dx', -7)
-      .attr('text-anchor', 'end')
-      .attr('font-family', '"Open Sans", sans-serif')
-      .attr('font-size', 15)
-      .attr('font-weight', 300)
-      .attr('fill', '#ffffff')
-      .text('Herdenimmunität erreicht');
+    // bars.append('text')
+    //   .attr('x', x(100))
+    //   .attr('y', 17)
+    //   .attr('dx', -7)
+    //   .attr('text-anchor', 'end')
+    //   .attr('font-family', '"Open Sans", sans-serif')
+    //   .attr('font-size', 15)
+    //   .attr('font-weight', 300)
+    //   .attr('fill', '#ffffff')
+    //   .text('Herdenimmunität erreicht');
 
     // Add title and description
     const header = svg.append('g')
@@ -181,18 +190,19 @@ export default class SimpleChart {
       .text(meta.description);
 
     // Add key
-    const spacing = 200;
+    const spacing = 130;
 
     const key = svg.append('g')
       .classed('key', true)
       .attr('transform', `translate(${margin.left}, 90)`);
     
+    // First dose
     key.append('rect')
       .attr('x', 0 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#3ad29f');
+      .attr('fill', '#7dffd3');
 
     key.append('text')
       .attr('x', (0 * spacing) + 20)
@@ -201,26 +211,45 @@ export default class SimpleChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('vollständig geimpft');
+      .text('Erstimpfung');
     
+    // Second dose
     key.append('rect')
-      .attr('x', 1 * spacing)
+      .attr('x', 1 * spacing - 5)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', 'url(#diagonal-hatching)');
+      .attr('fill', '#3ad29f');
 
     key.append('text')
-      .attr('x', (1 * spacing) + 20)
+      .attr('x', (1 * spacing) + 20 - 5)
       .attr('dominant-baseline', 'hanging')
       .attr('font-family', '"Open Sans", sans-serif')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Erstimpfung erhalten');
+      .text('Zweitimpfung');
 
+    // Third dose
     key.append('rect')
       .attr('x', 2 * spacing)
+      .attr('y', 2)
+      .attr('width', 12)
+      .attr('height', 12)
+      .attr('fill', '#158f66');
+
+    key.append('text')
+      .attr('x', (2 * spacing) + 20)
+      .attr('dominant-baseline', 'hanging')
+      .attr('font-family', '"Open Sans", sans-serif')
+      .attr('font-size', 15)
+      .attr('font-weight', 300)
+      .attr('fill', '#ffffff')
+      .text('Drittimpfung');
+
+    // Population
+    key.append('rect')
+      .attr('x', 3 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
@@ -229,7 +258,7 @@ export default class SimpleChart {
       .attr('fill', 'none');
 
     key.append('text')
-      .attr('x', (2 * spacing) + 20)
+      .attr('x', (3 * spacing) + 20)
       .attr('dominant-baseline', 'hanging')
       .attr('font-family', '"Open Sans", sans-serif')
       .attr('font-size', 15)
