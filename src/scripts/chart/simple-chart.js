@@ -128,7 +128,8 @@ export default class SimpleChart {
       .attr('height', barHeight)
       .attr('stroke', '#6d7182')
       .attr('stroke-width', 1)
-      .attr('fill', 'url(#linear-gradient)');
+      // .attr('fill', 'url(#linear-gradient)');
+      .attr('fill', 'transparent');
 
     // First dose
     bars.append('rect')
