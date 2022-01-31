@@ -203,7 +203,7 @@ export default class SimpleChart {
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#7dffd3');
+      .attr('fill', '#158f66');
 
     key.append('text')
       .attr('x', (0 * spacing) + 20)
@@ -237,7 +237,7 @@ export default class SimpleChart {
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#158f66');
+      .attr('fill', '#7dffd3');
 
     key.append('text')
       .attr('x', (2 * spacing) + 20)
