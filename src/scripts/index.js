@@ -145,7 +145,7 @@ async function init() {
       data: bayernCurrentRef,
       meta: {
         title: 'Corona in Bayern',
-        description: 'Entwicklung der wichtigsten Indikatoren nach Erkrankungsdatum',
+        description: 'Entwicklung der wichtigsten Indikatoren',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
@@ -159,7 +159,7 @@ async function init() {
       data: bayernCasesRef,
       meta: {
         title: 'Neue Coronafälle in Bayern',
-        description: 'Entwicklung der Neuinfektionen nach Erkrankungsdatum',
+        description: 'Entwicklung der Neuinfektionen nach Referenzdatum',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
@@ -353,7 +353,7 @@ async function init() {
       data: deutschlandCurrentRef,
       meta: {
         title: 'Corona in Deutschland',
-        description: 'Entwicklung der wichtigsten Indikatoren nach Erkrankungsdatum',
+        description: 'Entwicklung der wichtigsten Indikatoren',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
@@ -367,7 +367,7 @@ async function init() {
       data: deutschlandCasesRef,
       meta: {
         title: 'Neue Coronafälle in Deutschland',
-        description: 'Entwicklung der Neuinfektionen nach Erkrankungsdatum',
+        description: 'Entwicklung der Neuinfektionen nach Referenzdatum',
         author: 'BR',
         source: 'Robert Koch-Institut, BR-Analyse',
         date: endDate
