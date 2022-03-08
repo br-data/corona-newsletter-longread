@@ -2,41 +2,41 @@ import '../index.html';
 import '../styles/index.scss';
 import metadata from '../metadata.json';
 
-import SimpleChart from './chart/simple-chart';
-import BarChart from './chart/bar-chart';
-import AreaChart from './chart/area-chart';
-import LineChart from './chart/line-chart';
-import BayernMap from './chart/bayern-map';
-import DeutschlandMap from './chart/deutschland-map';
+import VaccinationChart from './chart/vaccination-chart';
+import InfectionChart from './chart/infection-chart';
+import OverviewChart from './chart/overview-chart';
+import IntensiveCareChart from './chart/intensive-care-chart';
+import BavariaMap from './chart/bavaria-map';
+import GermanyMap from './chart/germany-map';
 
-import * as bayernIndicator from './indicator/bayern-indicator';
-import * as bayernText from './text/bayern-text';
-import * as bayernRegbezText from './text/bayern-regbez-text';
-import * as bayernRegbezTable from './table/bayern-regbez-table';
-import * as bayernLkrText from './text/bayern-lkr-text';
-import * as bayernLkrTable from './table/bayern-lkr-table';
-import * as bayernVaccinationsText from './text/bayern-vaccinations-text';
-import * as bayernPatientsText from './text/bayern-patients-text';
+import * as bavariaIndicator from './indicator/bavaria-indicator';
+import * as bavariaText from './text/bavaria-text';
+import * as bavariaDistrictsText from './text/bavaria-districts-text';
+import * as bavariaDistrictsTable from './table/bavaria-districts-table';
+import * as bavariaCountiesText from './text/bavaria-counties-text';
+import * as bavariaCountiesTable from './table/bavaria-counties-table';
+import * as bavariaVaccinationsText from './text/bavaria-vaccinations-text';
+import * as bavariaPatientsText from './text/bavaria-patients-text';
 
-import bayernMeta from './data/meta/bayern-meta.json';
-import bayernRegbezMeta from './data/meta/bayern-regbez-meta.json';
-import bayernLkrMeta from './data/meta/bayern-lkr-meta.json';
-import bayernLkrGeo from './data/geo/bayern-lkr.topo.json';
-import bayernBigCities from './data/meta/bayern-big-cities.json';
+import bavariaMeta from './data/meta/bavaria-meta.json';
+import bavariaDistrictsMeta from './data/meta/bavaria-districts-meta.json';
+import bavariaCountiesMeta from './data/meta/bavaria-counties-meta.json';
+import bavariaCountiesGeo from './data/geo/bavaria-counties.topo.json';
+import bavariaBigCities from './data/meta/bavaria-big-cities.json';
 
-import * as deutschlandIndicator from './indicator/deutschland-indicator';
-import * as deutschlandText from './text/deutschland-text';
-import * as deutschlandBlText from './text/deutschland-bl-text';
-import * as deutschlandBlTable from './table/deutschland-bl-table';
-import * as deutschlandLkrText from './text/deutschland-lkr-text';
-import * as deutschlandVaccinationsText from './text/deutschland-vaccinations-text';
-import * as deutschlandPatientsText from './text/deutschland-patients-text';
+import * as germanyIndicator from './indicator/germany-indicator';
+import * as germanyText from './text/germany-text';
+import * as germanyStatesText from './text/germany-state-text';
+import * as germanyStatesTable from './table/germany-states-table';
+import * as germanyCountiesText from './text/germany-counties-text';
+import * as germanyVaccinationsText from './text/germany-vaccinations-text';
+import * as germanyPatientsText from './text/germany-patients-text';
 
-import deutschlandMeta from './data/meta/deutschland-meta.json';
-import deutschlandBlMeta from './data/meta/deutschland-bl-meta.json';
-import deutschlandBlGeo from './data/geo/deutschland-bl.topo.json';
-import deutschlandLkrMeta from './data/meta/deutschland-lkr-meta.json';
-import deutschlandLkrGeo from './data/geo/deutschland-lkr.topo.json';
+import germanyMeta from './data/meta/germany-meta.json';
+import germanyStatesMeta from './data/meta/germany-states-meta.json';
+import germanyStatesGeo from './data/geo/germany-states.topo.json';
+import germanyCountiesMeta from './data/meta/germany-counties-meta.json';
+import germanyCountiesGeo from './data/geo/germany-counties.topo.json';
 
 import { germanDate, csvToJson, updateMetaData } from './utils';
 
@@ -49,7 +49,7 @@ async function init() {
 
   const charts = [];
 
-  const apiUrl = 'https://corona-deutschland-api.interaktiv.br.de/query';
+  const apiUrl = 'https://corona-api.interaktiv.br.de/query';
   const urlParams = new URLSearchParams(window.location.search);
 
   const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
@@ -81,7 +81,7 @@ async function init() {
     .forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
 
   // Check if new data is available
-  const dataCheckResult = await fetch(`${apiUrl}?startDate=${previousDayDateString}`)
+  const dataCheckResult = await fetch(`${apiUrl}/infektionen-de?filter=meldedatum==${previousDayDateString}&format=json`)
     .then(response => response.json())
     .catch(logError);
 
@@ -96,53 +96,40 @@ async function init() {
 
   // Text for Bavaria
   (async function () {
-    const bayernCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern`)
+    const bavariaCasesRequest = fetch(`${apiUrl}/infektionen-bl?filter=meldedatum%3E=${previousTwoWeeksDateString}&filter=bundesland==Bayern&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernRecoveriesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlGenesen`)
+    const bavariaNewCasesRequest = fetch(`${apiUrl}/infektionen-bl-neu?filter=bundesland==Bayern&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&bundesland=Bayern&sumField=AnzahlTodesfall`)
-      .then(response => response.json())
-      .catch(logError);
+    const [bavariaCases, bavariaNewCases] = await Promise.all([bavariaCasesRequest, bavariaNewCasesRequest]);
 
-    const [bayernCases, bayernRecoveries, bayernDeaths] = await Promise.all([bayernCasesRequest, bayernRecoveriesRequest, bayernDeathsRequest]);
-
-    bayernIndicator.init({
-      target: '#bayern-indicator',
-      caseData: bayernCases,
-      recoveredData: bayernRecoveries,
-      deathData: bayernDeaths
+    bavariaIndicator.init({
+      target: '#bavaria-indicator',
+      cases: bavariaCases,
+      newCases: bavariaNewCases
     });
 
-    bayernText.init({
-      caseTarget: '#bayern-cases-text',
-      reproTarget: '#bayern-repro-text',
-      deathTarget: '#bayern-deaths-text',
-      caseData: bayernCases,
-      recoveredData: bayernRecoveries,
-      deathData: bayernDeaths,
-      metaData: bayernMeta
+    bavariaText.init({
+      caseTarget: '#bavaria-cases-text',
+      reproTarget: '#bavaria-repro-text',
+      deathTarget: '#bavaria-deaths-text',
+      cases: bavariaCases,
+      newCases: bavariaNewCases
     });
   })();
 
   // Charts for Bavaria
   (async function () {
-    const bayernCasesRefRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true&group=Bundesland&bundesland=Bayern`)
+    const bavariaCases = await fetch(`${apiUrl}/infektionen-bl?filter=meldedatum%3E=${startDateString}&filter=bundesland==Bayern&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernCurrentRefRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&group=Bundesland&bundesland=Bayern&currentCases=true`)
-      .then(response => response.json())
-      .catch(logError);
-
-    const [bayernCasesRef, bayernCurrentRef] = await Promise.all([bayernCasesRefRequest, bayernCurrentRefRequest]);
-
-    const bayernIndicatorsChart = new AreaChart({
-      target: '#bayern-indicators-chart',
-      data: bayernCurrentRef,
+    const bavariaOverviewChart = new OverviewChart({
+      target: '#bavaria-indicators-chart',
+      cases: bavariaCases,
       meta: {
         title: 'Corona in Bayern',
         description: 'Entwicklung der wichtigsten Indikatoren',
@@ -152,11 +139,11 @@ async function init() {
       }
     });
 
-    charts.push(bayernIndicatorsChart);
+    charts.push(bavariaOverviewChart);
 
-    const bayernCasesChart = new BarChart({
-      target: '#bayern-cases-chart',
-      data: bayernCasesRef,
+    const bavariaCasesChart = new InfectionChart({
+      target: '#bavaria-cases-chart',
+      cases: bavariaCases,
       meta: {
         title: 'Neue Coronafälle in Bayern',
         description: 'Entwicklung der Neuinfektionen nach Referenzdatum',
@@ -166,48 +153,52 @@ async function init() {
       }
     });
 
-    charts.push(bayernCasesChart);
+    charts.push(bavariaCasesChart);
   })();
 
-  // Text for Bavarian administrative districts (Regierungsbezirke)
+  // Text and table for Bavarian administrative districts (Regierungsbezirke)
   (async function () {
-    const bayernRegbezCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern`)
+    const bavariaAdmDistrictCasesRequest = fetch(`${apiUrl}/infektionen-rb?filter=meldedatum%3E=${previousTwoWeeksDateString}&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernRegbezDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Regierungsbezirk&bundesland=Bayern&sumField=AnzahlTodesfall`)
+    const bavariaAdmDistrictNewCasesRequest = fetch(`${apiUrl}/infektionen-rb-neu?format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const [bayernRegbezCases, bayernRegbezDeaths] = await Promise.all([bayernRegbezCasesRequest, bayernRegbezDeathsRequest]);
+    const [bavariaAdmDistrictCases, bavariaAdmDistrictNewCases] = await Promise.all([bavariaAdmDistrictCasesRequest, bavariaAdmDistrictNewCasesRequest]);
 
-    bayernRegbezTable.init({
-      target: '#bayern-regbez-table',
-      caseData: bayernRegbezCases,
-      deathData: bayernRegbezDeaths,
-      metaData: bayernRegbezMeta
+    bavariaDistrictsTable.init({
+      target: '#bavaria-districts-table',
+      cases: bavariaAdmDistrictCases,
+      newCases: bavariaAdmDistrictNewCases
     });
 
-    bayernRegbezText.init({
-      target: '#bayern-regbez-text',
-      caseData: bayernRegbezCases,
-      deathData: bayernRegbezDeaths,
-      metaData: bayernRegbezMeta
+    bavariaDistrictsText.init({
+      target: '#bavaria-districts-text',
+      cases: bavariaAdmDistrictCases,
+      newCases: bavariaAdmDistrictNewCases
     });
   })();
 
-  // Text and map for Bavarian counties (Landkreise)
+  // Text, table and map for Bavarian counties (Landkreise)
   (async function () {
-    const bayernLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&group=Landkreis&bundesland=Bayern`)
+    const bavariaCountyCasesRequest = fetch(`${apiUrl}/infektionen-lk?filter=meldedatum%3E=${previousTwoWeeksDateString}&filter=bundesland==Bayern&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const bayernMap = new BayernMap({
-      target: '#bayern-cases-map',
-      caseData: bayernLkrCases,
-      metaData: bayernLkrMeta,
-      geoData: bayernLkrGeo,
-      labelData: bayernBigCities,
+    const bavariaCountyNewCasesRequest = fetch(`${apiUrl}/infektionen-lk-neu?filter=bundesland==Bayern&format=json`)
+      .then(response => response.json())
+      .catch(logError);
+
+    const [bavariaCountyCases, bavariaCountyNewCases] = await Promise.all([bavariaCountyCasesRequest, bavariaCountyNewCasesRequest]);
+
+    const bavariaMap = new BavariaMap({
+      target: '#bavaria-cases-map',
+      cases: bavariaCountyCases,
+      metaData: bavariaCountiesMeta,
+      geoData: bavariaCountiesGeo,
+      labelData: bavariaBigCities,
       meta: {
         title: '7-Tage-Inzidenz in Bayern',
         description: 'Neuinfektionen pro 100.000 Einwohner in den letzten sieben Tagen',
@@ -217,52 +208,38 @@ async function init() {
       }
     });
 
-    charts.push(bayernMap);
+    charts.push(bavariaMap);
 
-    bayernLkrText.init({
-      summaryTarget: '#bayern-lkr-summary-text',
-      detailTarget: '#bayern-lkr-detail-text',
-      caseData: bayernLkrCases,
-      metaData: bayernLkrMeta,
-      metaDataDistricts: bayernRegbezMeta
+    bavariaCountiesTable.init({
+      target: '#bavaria-counties-table',
+      cases: bavariaCountyCases,
+      newCases: bavariaCountyNewCases
     });
-  })();
 
-  // Table for Bavarian counties (Landkreise)
-  (async function () {
-    const bayernLkrCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern`)
-      .then(response => response.json())
-      .catch(logError);
-
-    const bayernLkrDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Landkreis&bundesland=Bayern&sumField=AnzahlTodesfall`)
-      .then(response => response.json())
-      .catch(logError);
-
-    const [bayernLkrCases, bayernLkrDeaths] = await Promise.all([bayernLkrCasesRequest, bayernLkrDeathsRequest]);
-
-    bayernLkrTable.init({
-      target: '#bayern-lkr-table',
-      caseData: bayernLkrCases,
-      deathData: bayernLkrDeaths,
-      metaData: bayernLkrMeta
+    bavariaCountiesText.init({
+      summaryTarget: '#bavaria-counties-summary-text',
+      detailTarget: '#bavaria-counties-detail-text',
+      cases: bavariaCountyCases,
+      newCases: bavariaCountyNewCases,
+      metaDataDistricts: bavariaDistrictsMeta
     });
   })();
 
   // Text and chart for intensive care patients in Bavaria
   (async function () {
-    const bayernPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
+    const bavariaPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
       .then(response => response.json())
       .catch(logError);
 
-    bayernPatientsText.init({
-      target: '#bayern-patients-text',
-      patientData: bayernPatients,
-      metaData: bayernMeta
+    bavariaPatientsText.init({
+      target: '#bavaria-patients-text',
+      patientData: bavariaPatients,
+      metaData: bavariaMeta
     });
 
-    const bayernPatientsChart = new LineChart({
-      target: '#bayern-patients-chart',
-      data: bayernPatients,
+    const bavariaPatientsChart = new IntensiveCareChart({
+      target: '#bavaria-patients-chart',
+      data: bavariaPatients,
       meta: {
         title: 'Intensivpatienten in Bayern',
         description: 'Anzahl der gemeldeten Corona-Fälle in intensivmedizinischer Behandlung',
@@ -272,24 +249,24 @@ async function init() {
       }
     });
 
-    charts.push(bayernPatientsChart);
+    charts.push(bavariaPatientsChart);
   })();
 
   // Text and chart for vaccinations in Bavaria
   (async function () {
-    const bayernVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_BY.csv')
+    const bavariaVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_BY.csv')
       .then(response => response.text())
       .catch(logError);
 
-    bayernVaccinationsText.init({
-      target: '#bayern-vaccinations-text',
-      data: csvToJson(bayernVaccinations),
-      metaData: bayernMeta
+    bavariaVaccinationsText.init({
+      target: '#bavaria-vaccinations-text',
+      data: csvToJson(bavariaVaccinations),
+      metaData: bavariaMeta
     });
 
-    const bayernVaccinationsChart = new SimpleChart({
-      target: '#bayern-vaccinations-chart',
-      data: csvToJson(bayernVaccinations),
+    const bavariaVaccinationsChart = new VaccinationChart({
+      target: '#bavaria-vaccinations-chart',
+      data: csvToJson(bavariaVaccinations),
       meta: {
         title: 'Corona-Impfungen in Bayern',
         description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',
@@ -299,58 +276,45 @@ async function init() {
       }
     });
 
-    charts.push(bayernVaccinationsChart);
+    charts.push(bavariaVaccinationsChart);
   })();
 
   // Text for Germany
   (async function () {
-    const deutschlandCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true`)
+    const germanyCasesRequest = fetch(`${apiUrl}/infektionen-de?filter=meldedatum%3E=${previousTwoWeeksDateString}&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const deutschlandDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlTodesfall`)
+    const germanyNewCasesRequest = fetch(`${apiUrl}/infektionen-de-neu?format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const deutschlandRecoveriesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&sumField=AnzahlGenesen`)
-      .then(response => response.json())
-      .catch(logError);
+    const [germanyCases, germanyNewCases] = await Promise.all([germanyCasesRequest, germanyNewCasesRequest]);
 
-    const [deutschlandCases, deutschlandDeaths, deutschlandRecoveries] = await Promise.all([deutschlandCasesRequest, deutschlandDeathsRequest, deutschlandRecoveriesRequest]);
-
-    deutschlandIndicator.init({
-      target: '#deutschland-indicator',
-      caseData: deutschlandCases,
-      recoveredData: deutschlandRecoveries,
-      deathData: deutschlandDeaths
+    germanyIndicator.init({
+      target: '#germany-indicator',
+      cases: germanyCases,
+      newCases: germanyNewCases
     });
 
-    deutschlandText.init({
-      caseTarget: '#deutschland-cases-text',
-      reproTarget: '#deutschland-repro-text',
-      deathTarget: '#deutschland-deaths-text',
-      caseData: deutschlandCases,
-      recoveredData: deutschlandRecoveries,
-      deathData: deutschlandDeaths,
-      metaData: deutschlandMeta
+    germanyText.init({
+      caseTarget: '#germany-cases-text',
+      reproTarget: '#germany-repro-text',
+      deathTarget: '#germany-deaths-text',
+      cases: germanyCases,
+      newCases: germanyNewCases
     });
   })();
 
   // Charts for Germany
   (async function () {
-    const deutschlandCasesRefRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&newCases=true`)
+    const germanyCases = await fetch(`${apiUrl}/infektionen-de?filter=meldedatum%3E=${startDateString}&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const deutschlandCurrentRefRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&dateField=Refdatum&currentCases=true`)
-      .then(response => response.json())
-      .catch(logError);
-
-    const [deutschlandCasesRef, deutschlandCurrentRef] = await Promise.all([deutschlandCasesRefRequest, deutschlandCurrentRefRequest]);
-
-    const deutschlandIndicatorsChart = new AreaChart({
-      target: '#deutschland-indicators-chart',
-      data: deutschlandCurrentRef,
+    const germanyOverviewChart = new OverviewChart({
+      target: '#germany-indicators-chart',
+      cases: germanyCases,
       meta: {
         title: 'Corona in Deutschland',
         description: 'Entwicklung der wichtigsten Indikatoren',
@@ -360,11 +324,11 @@ async function init() {
       }
     });
 
-    charts.push(deutschlandIndicatorsChart);
+    charts.push(germanyOverviewChart);
 
-    const deutschlandCasesChart = new BarChart({
-      target: '#deutschland-cases-chart',
-      data: deutschlandCasesRef,
+    const germanyCasesChart = new InfectionChart({
+      target: '#germany-cases-chart',
+      cases: germanyCases,
       meta: {
         title: 'Neue Coronafälle in Deutschland',
         description: 'Entwicklung der Neuinfektionen nach Referenzdatum',
@@ -374,49 +338,47 @@ async function init() {
       }
     });
 
-    charts.push(deutschlandCasesChart);
+    charts.push(germanyCasesChart);
   })();
 
-  // Text for German federal states (Bundesländer)
+  // Text for German State states (Bundesländer)
   (async function () {
-    const deutschlandBlCasesRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland`)
+    const germanyStateCasesRequest = fetch(`${apiUrl}/infektionen-bl?filter=meldedatum%3E=${previousTwoWeeksDateString}&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const deutschlandBlDeathsRequest = fetch(`${apiUrl}?startDate=${startDateString}&endDate=${endDateString}&newCases=true&group=Bundesland&sumField=AnzahlTodesfall`)
+    const germanyStateNewCasesRequest = fetch(`${apiUrl}/infektionen-bl-neu?format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const [deutschlandBlCases, deutschlandBlDeaths] = await Promise.all([deutschlandBlCasesRequest,deutschlandBlDeathsRequest]);
+    const [germanyStateCases, germanyStateNewCases] = await Promise.all([germanyStateCasesRequest,germanyStateNewCasesRequest]);
 
-    deutschlandBlText.init({
-      target: '#deutschland-bl-text',
-      caseData: deutschlandBlCases,
-      deathData: deutschlandBlDeaths,
-      metaData: deutschlandBlMeta
+    germanyStatesText.init({
+      target: '#germany-states-text',
+      cases: germanyStateCases,
+      newCases: germanyStateNewCases
     });
 
-    deutschlandBlTable.init({
-      target: '#deutschland-bl-table',
-      caseData: deutschlandBlCases,
-      deathData: deutschlandBlDeaths,
-      metaData: deutschlandBlMeta
+    germanyStatesTable.init({
+      target: '#germany-states-table',
+      cases: germanyStateCases,
+      newCases: germanyStateNewCases
     });
   })();
 
   // Text and map for German counties (Landkreise)
   (async function () {
-    const deutschlandLkrCases = await fetch(`${apiUrl}?startDate=${previousTwoWeeksDateString}&endDate=${endDateString}&group=Landkreis`)
+    const germanyCountyCases = await fetch(`${apiUrl}/infektionen-lk?filter=meldedatum%3E=${previousTwoWeeksDateString}&format=json`)
       .then(response => response.json())
       .catch(logError);
 
-    const deutschlandMap = new DeutschlandMap({
-      target: '#deutschland-cases-map',
-      caseData: deutschlandLkrCases,
-      metaData: deutschlandLkrMeta,
-      countiesGeoData: deutschlandLkrGeo,
-      statesGeoData: deutschlandBlGeo,
-      labelData: deutschlandBlMeta,
+    const bavariaMap = new GermanyMap({
+      target: '#germany-cases-map',
+      cases: germanyCountyCases,
+      metaData: germanyCountiesMeta,
+      countiesGeoData: germanyCountiesGeo,
+      statesGeoData: germanyStatesGeo,
+      labelData: germanyStatesMeta,
       meta: {
         title: '7-Tage-Inzidenz in Deutschland',
         description: 'Neuinfektionen pro 100.000 Einwohner in den letzten sieben Tagen',
@@ -426,32 +388,30 @@ async function init() {
       }
     });
 
-    charts.push(deutschlandMap);
+    charts.push(bavariaMap);
 
-    deutschlandLkrText.init({
-      summaryTarget: '#deutschland-lkr-summary-text',
-      detailTarget: '#deutschland-lkr-detail-text',
-      caseData: deutschlandLkrCases,
-      metaData: deutschlandLkrMeta,
-      metaDataStates: deutschlandBlMeta
+    germanyCountiesText.init({
+      summaryTarget: '#germany-counties-summary-text',
+      detailTarget: '#germany-counties-detail-text',
+      cases: germanyCountyCases
     });
   })();
 
   // Text and chart for intensive care patients in Germany
   (async function () {
-    const deutschlandPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=DE&indicator=Patienten')
+    const germanyPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=DE&indicator=Patienten')
       .then(response => response.json())
       .catch(logError);
 
-    deutschlandPatientsText.init({
-      target: '#deutschland-patients-text',
-      patientData: deutschlandPatients,
-      metaData: deutschlandMeta
+    germanyPatientsText.init({
+      target: '#germany-patients-text',
+      patientData: germanyPatients,
+      metaData: germanyMeta
     });
 
-    const deutschlandPatientsChart = new LineChart({
-      target: '#deutschland-patients-chart',
-      data: deutschlandPatients,
+    const germanyPatientsChart = new IntensiveCareChart({
+      target: '#germany-patients-chart',
+      data: germanyPatients,
       meta: {
         title: 'Intensivpatienten in Deutschland',
         description: 'Anzahl der gemeldeten Corona-Fälle in intensivmedizinischer Behandlung',
@@ -461,25 +421,24 @@ async function init() {
       }
     });
 
-    charts.push(deutschlandPatientsChart);
+    charts.push(germanyPatientsChart);
   })();
 
-
-  // Text and chart for vaccinations in Bavaria
+  // Text and chart for vaccinations in Germany
   (async function () {
-    const deutschlandVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_DE.csv')
+    const germanyVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_DE.csv')
       .then(response => response.text())
       .catch(logError);
 
-    deutschlandVaccinationsText.init({
-      target: '#deutschland-vaccinations-text',
-      data: csvToJson(deutschlandVaccinations),
-      metaData: deutschlandMeta
+    germanyVaccinationsText.init({
+      target: '#germany-vaccinations-text',
+      data: csvToJson(germanyVaccinations),
+      metaData: germanyMeta
     });
 
-    const deutschlandVaccinationsChart = new SimpleChart({
-      target: '#deutschland-vaccinations-chart',
-      data: csvToJson(deutschlandVaccinations),
+    const germanyVaccinationsChart = new VaccinationChart({
+      target: '#germany-vaccinations-chart',
+      data: csvToJson(germanyVaccinations),
       meta: {
         title: 'Corona-Impfungen in Deutschland',
         description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',
@@ -489,7 +448,7 @@ async function init() {
       }
     });
 
-    charts.push(deutschlandVaccinationsChart);
+    charts.push(germanyVaccinationsChart);
   })();
 
   resize(charts);

@@ -3,7 +3,7 @@ import { geoPath, geoMercator } from 'd3-geo';
 import { scaleSqrt } from 'd3-scale';
 import { feature } from 'topojson-client';
 
-import { incidence, incidenceColor, germanDate, mergeBerlinData } from '../utils';
+import { incidenceColor, germanDate } from '../utils';
 
 const defaults = {
   target: '#map',
@@ -13,7 +13,7 @@ const defaults = {
   maxRadius: 12
 };
 
-export default class DeutschlandMap {
+export default class GermanyMap {
   constructor(config) {
     this.set(config);
     this.draw();
@@ -24,33 +24,23 @@ export default class DeutschlandMap {
   }
 
   draw() {
-    const { target, caseData, metaData, countiesGeoData, statesGeoData, labelData,
+    const { target, cases, metaData, countiesGeoData, statesGeoData, labelData,
       meta, minValue, maxValue, minRadius, maxRadius } = this;
 
-    const mergedCaseData = mergeBerlinData(caseData);
-    const uniqueCounties = [...new Set(mergedCaseData.map(d => d.Landkreis))];
+    const uniqueCounties = [...new Set(cases.map(d => d.landkreisId))];
 
-    // Calculate 7-day-incidence per 100.000 population for each county
-    const mergedCounties = uniqueCounties.map(name => {
-      const caseDataDistrict = mergedCaseData.filter(c => c.Landkreis === name);
-      const metaInfoCounty = metaData.find(m => m.rkiName === name);
-
+    // Get latest cases and geo coordinates for each county
+    const mergedCounties = uniqueCounties.map(countyId => {
+      const currentCountyCases = cases.filter(c => c.landkreisId === countyId);
+      const metaInfoCounty = metaData.find(m => parseInt(m.ags) === countyId);
+      
       return Object.assign(
-        metaInfoCounty,
-        { valuePer100Tsd: incidence(caseDataDistrict, metaInfoCounty.pop) }
+        { lat: metaInfoCounty.lat, long: metaInfoCounty.long },
+        currentCountyCases[currentCountyCases.length - 1]
       );
     });
 
-    // Create labels for all counties over 35 cases
-    // const worstCounties = mergedCounties.filter(d => d.valuePer100Tsd >= 35);
-
-    // Create city labels for all districts which don't have cases
-    // const cities = labelData.filter(city =>
-    //   worstCounties.find(county =>
-    //     county.district === city.district
-    //   ) === undefined
-    // );
-
+    // Set up map
     const container = select(target);
     container.select('svg.map').remove();
 
@@ -129,23 +119,23 @@ export default class DeutschlandMap {
     // Add circles to visualize the number of COVID-19 cases
     map.append('g')
       .selectAll('circle')
-      .data(mergedCounties, d => d.ags)
+      .data(mergedCounties)
       .enter()
       .append('circle')
       .attr('r', d => {
-        if (d.valuePer100Tsd) {
-          return (radius(d.valuePer100Tsd) > maxRadius) ?
-            maxRadius : radius(d.valuePer100Tsd);
+        if (d.inzidenz) {
+          return (radius(d.inzidenz) > maxRadius) ?
+            maxRadius : radius(d.inzidenz);
         } else {
           return 0;
         }
       })
       .attr('cx', d => projection([d.long, d.lat])[0])
       .attr('cy', d => projection([d.long, d.lat])[1])
-      .attr('fill', d => incidenceColor(d.valuePer100Tsd))
+      .attr('fill', d => incidenceColor(d.inzidenz))
       .style('mix-blend-mode', 'hard-light')
       .append('title')
-      .text(d => `${d.name} (${d.type}): ${Math.round(d.valuePer100Tsd)}`);
+      .text(d => `${d.landkreis} (${d.landkreisTyp}): ${Math.round(d.inzidenz)}`);
 
     // Add labels for bigger cities
     const cityLabels = map.append('g')
@@ -171,27 +161,6 @@ export default class DeutschlandMap {
         // Show fewer labels on small maps
         (isMobile && i > 6) ? '' : d.name
       );
-
-    // Add labels for the most affected counties
-    // const worstCountyLabels = map.append('g')
-    //   .selectAll('.worstCounties')
-    //   .data(worstCounties)
-    //   .enter();
-
-    // worstCountyLabels.append('text')
-    //   .attr('font-family', '"Open Sans", OpenSans, Arial')
-    //   .attr('font-size', 15)
-    //   .attr('fill', '#ffffff')
-    //   .attr('stroke', '#31343F')
-    //   .attr('stroke-width', 3)
-    //   .attr('stroke-linejoin', 'round')
-    //   .attr('paint-order', 'stroke')
-    //   .attr('text-anchor', 'middle')
-    //   .attr('x', d => projection([d.long, d.lat])[0])
-    //   .attr('y', d => projection([d.long, d.lat])[1])
-    //   .attr('dy', 15)
-    //   .style('pointer-events', 'none')
-    //   .text(d => (d.name.length > 12) ? `${d.name.slice(0, 12)}…` : d.name);
 
     // Add title
     svg.append('text')

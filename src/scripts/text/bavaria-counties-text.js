@@ -1,35 +1,34 @@
-import { pretty, incidence } from '../utils';
+import { pretty } from '../utils';
 
 export function init(config) {
-  const { summaryTarget, detailTarget, caseData, metaData, metaDataDistricts } = config;
-  const uniqueCounties = [...new Set(caseData.map(d => d.Landkreis))];
+  const { summaryTarget, detailTarget, cases, metaDataDistricts } = config;
+  const uniqueCounties = [...new Set(cases.map(d => d.landkreisId))];
 
-  const worstCounties = uniqueCounties.map(name => {
-    const caseDataCounty = caseData.filter(c => c.Landkreis === name);
-    const metaInfoCounty = metaData.find(m => m.rkiName === name);
-    const metaInfoDistrict = metaDataDistricts.find(m => m.ags === metaInfoCounty.ags.slice(0,3));
+  const worstCounties = uniqueCounties.map(countyId => {
+    const currentCountyCases = cases.filter(c => c.landkreisId === countyId);
+    const metaInfoDistrict = metaDataDistricts.find(m => parseInt(m.ags) === parseInt(countyId.toString().slice(0,2)));
+
     return Object.assign(
-      metaInfoCounty,
       { district: metaInfoDistrict.name },
-      { incidence: incidence(caseDataCounty, metaInfoCounty.pop) }
+      currentCountyCases[currentCountyCases.length - 1]
     );
-  }).sort((a, b) => b.incidence - a.incidence);
+  }).sort((a, b) => b.inzidenz - a.inzidenz);
 
-  const over1000Counties = worstCounties.filter(d => d.incidence >= 1000);
-  const over500Counties = worstCounties.filter(d => d.incidence >= 500);
-  const over200Counties = worstCounties.filter(d => d.incidence >= 200);
-  // const over50Counties = worstCounties.filter(d => d.incidence >= 50);
-  // const over200Counties = worstCounties.filter(d => d.incidence >= 35);
+  const over1000Counties = worstCounties.filter(d => d.inzidenz >= 1000);
+  const over500Counties = worstCounties.filter(d => d.inzidenz >= 500);
+  const over200Counties = worstCounties.filter(d => d.inzidenz >= 200);
+  // const over50Counties = worstCounties.filter(d => d.inzidenz >= 50);
+  // const over200Counties = worstCounties.filter(d => d.inzidenz >= 35);
 
   const summaryText = `In Bayern gibt es momentan ${numeral1(over200Counties.length)} ${plural1(over200Counties.length)}, ${plural2(over200Counties.length)} auf mehr als 200 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over200Counties.length)}.${ over500Counties.length ? ' Davon wiederum ' + plural3(over500Counties.length) + ' ' + numeral2(over500Counties.length) + ' ' + plural1(over500Counties.length) + ' auf mehr als 500 Fälle pro 100.000 Einwohner.' : ''} ${ over500Counties.length ? ' ' + capitalize(numeral2(over1000Counties.length)) + ' ' + plural1(over1000Counties.length)  + ' ' + plural4(over1000Counties.length) + ' aktuell den Grenzwert von 1.000 Fällen in der 7-Tage-Inzidenz.' : '' }`;
 
-  const detailText = `Die drei am stärksten betroffenen Kreise sind zur Zeit ${preposition1(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name}, ${preposition1(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} und ${preposition1(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name}.
+  const detailText = `Die drei am stärksten betroffenen Kreise sind zur Zeit ${preposition1(worstCounties[0].landkreisTyp)} ${worstCounties[0].landkreis}, ${preposition1(worstCounties[1].landkreisTyp)} ${worstCounties[1].landkreis} und ${preposition1(worstCounties[2].landkreisTyp)} ${worstCounties[2].landkreis}.
 
-  ${preposition2(worstCounties[0].type)} ${worstCounties[0].type} ${worstCounties[0].name} (${worstCounties[0].district}) wurden bislang ${pretty(worstCounties[0].incidence)} Fälle pro 100.000 Einwohner in den letzten sieben Tagen gemeldet.
+  ${preposition2(worstCounties[0].landkreisTyp)} ${worstCounties[0].landkreisTyp} ${worstCounties[0].landkreis} (${worstCounties[0].district}) wurden bislang ${pretty(worstCounties[0].inzidenz)} Fälle pro 100.000 Einwohner in den letzten sieben Tagen gemeldet.
 
-  ${preposition2(worstCounties[1].type)} ${worstCounties[1].type} ${worstCounties[1].name} (${worstCounties[1].district}) waren es ${pretty(worstCounties[1].incidence)} Fälle.
+  ${preposition2(worstCounties[1].landkreisTyp)} ${worstCounties[1].landkreisTyp} ${worstCounties[1].landkreis} (${worstCounties[1].district}) waren es ${pretty(worstCounties[1].inzidenz)} Fälle.
 
-  Aus ${preposition3(worstCounties[2].type)} ${worstCounties[2].type} ${worstCounties[2].name} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].incidence)} Fälle gemeldet.`;
+  Aus ${preposition3(worstCounties[2].landkreisTyp)} ${worstCounties[2].landkreisTyp} ${worstCounties[2].landkreis} (${worstCounties[2].district}) wurden ${pretty(worstCounties[2].inzidenz)} Fälle gemeldet.`;
 
   const summaryElement = document.querySelector(summaryTarget);
   summaryElement.textContent = summaryText;

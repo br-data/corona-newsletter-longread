@@ -1,17 +1,17 @@
 import { select } from 'd3-selection';
-import { scaleLinear } from 'd3-scale';
-import { axisBottom } from 'd3-axis';
+import { max, min } from 'd3-array';
+import { scaleLinear, scaleBand } from 'd3-scale';
+import { area, curveMonotoneX } from 'd3-shape';
+import { axisRight, axisBottom } from 'd3-axis';
 
-import { pretty, germanDate } from '../utils';
+import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
 
 const defaults = {
-  target: '#simple-chart',
-  chartHeight: 230,
-  barHeight: 25,
-  margin: { top: 140, right: 25, bottom: 80, left: 25 }
+  target: '#area-chart',
+  margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 
-export default class SimpleChart {
+export default class OverviewChart {
 
   constructor(config) {
     this.set(config);
@@ -23,27 +23,51 @@ export default class SimpleChart {
   }
 
   draw() {
-    const { target, data, meta, chartHeight, barHeight, margin } = this;
-    const currentData = data[data.length - 1];
+    const { target, cases, meta, margin } = this;
     const container = select(target);
-    
+
     // Set initial dimensions
     const width = container.node().getBoundingClientRect().width;
-    // const height = (width * 1) / 4;
-    const height = chartHeight;
+    const height = (width * 9) / 16;
 
     // Set drawing dimensions
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
-    const x = scaleLinear()
-      .domain([0, 100])
+    // Calculate horizontal scale and axis
+    const xMin = min(cases, d => d.meldedatum);
+    const xMinBracket = new Date(xMin);
+    xMinBracket.setDate(xMinBracket.getDate() - 8);
+
+    const xMax = max(cases, d => d.meldedatum);
+    const xMaxBracket = new Date(xMax);
+    xMaxBracket.setDate(xMaxBracket.getDate() + 8);
+
+    const xValues = dateRange(xMinBracket, xMaxBracket, 1);
+    const xTicks = dateRange(xMin, xMax, Math.floor(cases.length / 6));
+
+    const x = scaleBand()
+      .paddingOuter(0)
+      .paddingInner(.4)
+      .domain(xValues)
       .range([0, innerWidth]);
 
     const xAxis = axisBottom(x)
-      .ticks(5)
-      .tickFormat(d => `${d} %`);
+      .tickValues(xTicks)
+      .tickFormat(d => germanDateShort(d));
     
+    // Calculate vertical scale and axis
+    const yMax = max(cases, d => d.anzahlFall);
+
+    const y = scaleLinear()
+      .domain([0, yMax * 1.1])
+      .range([innerHeight, 0]);
+
+    const yAxis = axisRight(y)
+      .tickSize(innerWidth)
+      .tickFormat(d => pretty(d))
+      .ticks(3);
+
     // Add SVG and set dimensions
     const svg = container.append('svg')
       .attr('xmlns', 'http://www.w3.org/2000/svg')
@@ -52,7 +76,7 @@ export default class SimpleChart {
       .attr('id', `${target.replace('#', '')}-${meta.date.toISOString().split('T')[0]}`)
       .style('width', '100%');
 
-    // Add definition for background gradient
+    // Add background definition
     const defs = svg.append('defs');
 
     const radialGradient = defs.append('radialGradient')
@@ -65,34 +89,8 @@ export default class SimpleChart {
     radialGradient.append('stop')
       .attr('offset', '1')
       .attr('stop-color', '#1D2029');
-
-    // Add definition for immunity gradient
-    // const linearGradient = defs.append('linearGradient')
-    //   .attr('id', 'linear-gradient');
-
-    // linearGradient.append('stop')
-    //   .attr('offset', '.6')
-    //   .attr('stop-color', '#6d7182')
-    //   .attr('stop-opacity', '0');
-
-    // linearGradient.append('stop')
-    //   .attr('offset', '1')
-    //   .attr('stop-color', '#6d7182')
-    //   .attr('stop-opacity', '1');
-
-    // Add definition for first vaccination cross hatching
-    // const diagonalHatching = defs.append('pattern')
-    //   .attr('id', 'diagonal-hatching')
-    //   .attr('width', 4)
-    //   .attr('height', 4)
-    //   .attr('patternUnits', 'userSpaceOnUse');
-
-    // diagonalHatching.append('path')
-    //   .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-    //   .attr('stroke', '#3ad29f')
-    //   .attr('stop-opacity', '0');
    
-    // Add background element and apply gradient
+    // Add background element and apply definition
     svg.append('rect')
       .attr('width', width)
       .attr('height', height)
@@ -104,68 +102,70 @@ export default class SimpleChart {
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
     axes.append('g')
-      .attr('transform', `translate(0, ${innerHeight})`)
-      .call(xAxis)
+      .call(yAxis)
       .call(g => g.select('.domain').remove())
-      .call(g => g.selectAll('.tick line').remove())
+      .call(g => g.selectAll('.tick line')
+        .attr('stroke', '#6d7182')
+      )
       .call(g => g.selectAll('.tick text')
-        .attr('dy', 8)
-        .attr('dx', d => d === 0 ? 11 : (d === 100 ? -19 : 0))
+        .attr('x', 0)
+        .attr('dy', -5)
         .attr('font-family', '"Open Sans", sans-serif')
         .attr('font-size', 14)
         .attr('font-weight', 300)
         .attr('fill', '#ffffff')
       );
 
-    // Add bars
-    const bars = svg.append('g')
-      .classed('bars', true)
-      .attr('transform', `translate(${margin.left}, ${height - margin.bottom - 27})`);
+    axes.append('g')
+      .attr('transform', `translate(0, ${innerHeight})`)
+      .call(xAxis)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line').remove())
+      .call(g => g.selectAll('.tick text')
+        .attr('dy', 8)
+        .attr('font-family', '"Open Sans", sans-serif')
+        .attr('font-size', 14)
+        .attr('font-weight', 300)
+        .attr('fill', '#ffffff')
+      );
 
-    // Population
-    bars.append('rect')
-      .attr('width', x(100))
-      .attr('height', barHeight)
-      .attr('stroke', '#6d7182')
-      .attr('stroke-width', 1)
-      // .attr('fill', 'url(#linear-gradient)');
-      .attr('fill', 'transparent');
+    // Add area plot
+    const areas = svg.append('g')
+      .classed('areas', true)
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
-    // First dose
-    bars.append('rect')
-      .attr('width', x(currentData['impf_quote_min1']))
-      .attr('height', barHeight)
-      .attr('fill', '#158f66')
-      .append('title')
-      .text(`${pretty(currentData['personen_min1_kumulativ'])} (${pretty(currentData['impf_quote_min1'])} %)`);
-    
-    // Second dose
-    bars.append('rect')
-      .attr('width', x(currentData['impf_quote_voll']))
-      .attr('height', barHeight)
-      .attr('fill', '#3ad29f')
-      .append('title')
-      .text(`${pretty(currentData['personen_voll_kumulativ'])} (${pretty(currentData['impf_quote_voll'])} %)`);
-    
-    // Third dose
-    bars.append('rect')
-      .attr('width', x(currentData['impf_quote_auffr']))
-      .attr('height', barHeight)
-      .attr('fill', '#7dffd3')
-      .append('title')
-      .text(`${pretty(currentData['personen_auffr_kumulativ'])} (${pretty(currentData['impf_quote_auffr'])} %)`);
+    const recoveredCasesArea = area()
+      .x(d => x(d.meldedatum))
+      .y0(d => y(d.anzahlFall + d.anzahlTodesfall))
+      .y1(d => y(d.anzahlGenesen + d.anzahlFall + d.anzahlTodesfall))
+      .curve(curveMonotoneX);
 
-    // Add label for herd immunity
-    // bars.append('text')
-    //   .attr('x', x(100))
-    //   .attr('y', 17)
-    //   .attr('dx', -7)
-    //   .attr('text-anchor', 'end')
-    //   .attr('font-family', '"Open Sans", sans-serif')
-    //   .attr('font-size', 15)
-    //   .attr('font-weight', 300)
-    //   .attr('fill', '#ffffff')
-    //   .text('Herdenimmunität erreicht');
+    areas.append('path')
+      .datum(cases)
+      .attr('d', recoveredCasesArea)
+      .attr('fill', '#3ad29f');
+
+    const activeCasesArea = area()
+      .x(d => x(d.meldedatum))
+      .y0(d => y(d.anzahlTodesfall) + 1)
+      .y1(d => y(d.anzahlFall + d.anzahlTodesfall) - 1)
+      .curve(curveMonotoneX);
+
+    areas.append('path')
+      .datum(cases)
+      .attr('d', activeCasesArea)
+      .attr('fill', '#0b9fd8');
+
+    const deathsArea = area()
+      .x(d => x(d.meldedatum))
+      .y0(y(0))
+      .y1(d => y(d.anzahlTodesfall))
+      .curve(curveMonotoneX);
+
+    areas.append('path')
+      .datum(cases)
+      .attr('d', deathsArea)
+      .attr('fill', '#fbb800');
 
     // Add title and description
     const header = svg.append('g')
@@ -191,19 +191,18 @@ export default class SimpleChart {
       .text(meta.description);
 
     // Add key
-    const spacing = 130;
+    const spacing = 105;
 
     const key = svg.append('g')
       .classed('key', true)
       .attr('transform', `translate(${margin.left}, 90)`);
     
-    // First dose
     key.append('rect')
       .attr('x', 0 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#158f66');
+      .attr('fill', '#0b9fd8');
 
     key.append('text')
       .attr('x', (0 * spacing) + 20)
@@ -212,32 +211,30 @@ export default class SimpleChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Erstimpfung');
-    
-    // Second dose
+      .text('Erkrankte');
+
     key.append('rect')
-      .attr('x', 1 * spacing - 5)
+      .attr('x', 1 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
       .attr('fill', '#3ad29f');
 
     key.append('text')
-      .attr('x', (1 * spacing) + 20 - 5)
+      .attr('x', (1 * spacing) + 20)
       .attr('dominant-baseline', 'hanging')
       .attr('font-family', '"Open Sans", sans-serif')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Zweitimpfung');
+      .text('Genesene');
 
-    // Third dose
     key.append('rect')
       .attr('x', 2 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#7dffd3');
+      .attr('fill', '#fbb800');
 
     key.append('text')
       .attr('x', (2 * spacing) + 20)
@@ -246,26 +243,7 @@ export default class SimpleChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Drittimpfung');
-
-    // Population
-    key.append('rect')
-      .attr('x', 3 * spacing)
-      .attr('y', 2)
-      .attr('width', 12)
-      .attr('height', 12)
-      .attr('stroke', '#6d7182')
-      .attr('stroke-width', 1)
-      .attr('fill', 'none');
-
-    key.append('text')
-      .attr('x', (3 * spacing) + 20)
-      .attr('dominant-baseline', 'hanging')
-      .attr('font-family', '"Open Sans", sans-serif')
-      .attr('font-size', 15)
-      .attr('font-weight', 300)
-      .attr('fill', '#ffffff')
-      .text('Gesamtbevölkerung');
+      .text('Todesfälle');
 
     // Add author and source
     const footer = svg.append('g')

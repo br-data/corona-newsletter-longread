@@ -11,7 +11,7 @@ const defaults = {
   margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 
-export default class LineChart {
+export default class IntensiveCareChart {
 
   constructor(config) {
     this.set(config);
