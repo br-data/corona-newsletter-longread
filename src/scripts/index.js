@@ -227,7 +227,7 @@ async function init() {
 
   // Text and chart for intensive care patients in Bavaria
   (async function () {
-    const bavariaPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=BY&indicator=Patienten')
+    const bavariaPatients = await fetch(`${apiUrl}/intensivpatienten-bl?filter=bundesland==Bayern&fieldList=datum,anzahlIntensivpatienten&format=json`)
       .then(response => response.json())
       .catch(logError);
 
@@ -399,7 +399,7 @@ async function init() {
 
   // Text and chart for intensive care patients in Germany
   (async function () {
-    const germanyPatients = await fetch('https://europe-west3-brdata-corona.cloudfunctions.net/diviApi/query?area=DE&indicator=Patienten')
+    const germanyPatients = await fetch(`${apiUrl}/intensivpatienten-de?fieldList=datum,anzahlIntensivpatienten&format=json`)
       .then(response => response.json())
       .catch(logError);
 
