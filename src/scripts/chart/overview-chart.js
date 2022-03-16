@@ -57,7 +57,7 @@ export default class OverviewChart {
       .tickFormat(d => germanDateShort(d));
     
     // Calculate vertical scale and axis
-    const yMax = max(cases, d => d.anzahlFall);
+    const yMax = max(cases, d => d.aktuellInfiziert + d.aktuellGenesen);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
@@ -136,8 +136,8 @@ export default class OverviewChart {
 
     const recoveredCasesArea = area()
       .x(d => x(d.meldedatum))
-      .y0(d => y(d.anzahlFall + d.anzahlTodesfall))
-      .y1(d => y(d.anzahlGenesen + d.anzahlFall + d.anzahlTodesfall))
+      .y0(d => y(d.aktuellInfiziert + d.summeTodesfall))
+      .y1(d => y(d.aktuellGenesen + d.aktuellInfiziert + d.summeTodesfall))
       .curve(curveMonotoneX);
 
     areas.append('path')
@@ -147,8 +147,8 @@ export default class OverviewChart {
 
     const activeCasesArea = area()
       .x(d => x(d.meldedatum))
-      .y0(d => y(d.anzahlTodesfall) + 1)
-      .y1(d => y(d.anzahlFall + d.anzahlTodesfall) - 1)
+      .y0(d => y(d.summeTodesfall) + 1)
+      .y1(d => y(d.aktuellInfiziert + d.summeTodesfall) - 1)
       .curve(curveMonotoneX);
 
     areas.append('path')
@@ -159,7 +159,7 @@ export default class OverviewChart {
     const deathsArea = area()
       .x(d => x(d.meldedatum))
       .y0(y(0))
-      .y1(d => y(d.anzahlTodesfall))
+      .y1(d => y(d.summeTodesfall))
       .curve(curveMonotoneX);
 
     areas.append('path')
