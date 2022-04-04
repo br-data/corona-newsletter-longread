@@ -6,6 +6,14 @@ export function pretty(number, prefix = false, method = 'round', factor = 1) {
   return prefixedString;
 }
 
+export function current(data, key = 'anzahlFall') {
+  return data[data.length-1][key];
+}
+
+export function lastWeek(data, key = 'anzahlFall') {
+  return data[data.length-8][key];
+}
+
 export function currentCount(data, key = 'sumValue') {
   return data[data.length-1][key];
 }

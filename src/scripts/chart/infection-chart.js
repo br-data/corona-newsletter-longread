@@ -1,17 +1,17 @@
 import { select } from 'd3-selection';
 import { max, min } from 'd3-array';
 import { scaleLinear, scaleBand } from 'd3-scale';
-import { area, curveMonotoneX } from 'd3-shape';
+import { line, curveMonotoneX } from 'd3-shape';
 import { axisRight, axisBottom } from 'd3-axis';
 
 import { pretty, germanDate, germanDateShort, dateRange } from '../utils';
 
 const defaults = {
-  target: '#area-chart',
+  target: '#bar-chart',
   margin: { top: 130, right: 25, bottom: 75, left: 25 }
 };
 
-export default class AreaChart {
+export default class InfectionChart {
 
   constructor(config) {
     this.set(config);
@@ -23,7 +23,7 @@ export default class AreaChart {
   }
 
   draw() {
-    const { target, data, meta, margin } = this;
+    const { target, cases, meta, margin } = this;
     const container = select(target);
 
     // Set initial dimensions
@@ -35,38 +35,29 @@ export default class AreaChart {
     const innerHeight = height - margin.top - margin.bottom;
 
     // Calculate horizontal scale and axis
-    const xMin = min(data, d => d.date);
+    const xMin = min(cases, d => new Date(d.meldedatum));
     const xMinBracket = new Date(xMin);
     xMinBracket.setDate(xMinBracket.getDate() - 8);
 
-    const xMax = max(data, d => d.date);
+    const xMax = max(cases, d => new Date(d.meldedatum));
     const xMaxBracket = new Date(xMax);
     xMaxBracket.setDate(xMaxBracket.getDate() + 8);
 
     const xValues = dateRange(xMinBracket, xMaxBracket, 1);
-    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
+    const xTicks = dateRange(xMin, xMax, Math.floor(cases.length / 6));
 
     const x = scaleBand()
       .paddingOuter(0)
       .paddingInner(.4)
       .domain(xValues)
       .range([0, innerWidth]);
-
-    const xAxis = axisBottom(x)
-      .tickValues(xTicks)
-      .tickFormat(d => germanDateShort(d));
     
     // Calculate vertical scale and axis
-    const yMax = max(data, d => d.sumValue);
+    const yMax = max(cases, d => d.anzahlFall);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
       .range([innerHeight, 0]);
-
-    const yAxis = axisRight(y)
-      .tickSize(innerWidth)
-      .tickFormat(d => pretty(d))
-      .ticks(3);
 
     // Add SVG and set dimensions
     const svg = container.append('svg')
@@ -81,7 +72,7 @@ export default class AreaChart {
 
     const radialGradient = defs.append('radialGradient')
       .attr('id', 'radial-gradient');
-
+      
     radialGradient.append('stop')
       .attr('offset', '.25')
       .attr('stop-color', '#484B5A');
@@ -89,12 +80,21 @@ export default class AreaChart {
     radialGradient.append('stop')
       .attr('offset', '1')
       .attr('stop-color', '#1D2029');
-   
+
     // Add background element and apply definition
     svg.append('rect')
       .attr('width', width)
       .attr('height', height)
       .attr('fill', 'url(#radial-gradient)');
+
+    const xAxis = axisBottom(x)
+      .tickValues(xTicks)
+      .tickFormat(d => germanDateShort(d));
+
+    const yAxis = axisRight(y)
+      .tickSize(width - margin.left - margin.right)
+      .tickFormat(d => pretty(d))
+      .ticks(3);
 
     // Add axes
     const axes = svg.append('g')
@@ -117,7 +117,7 @@ export default class AreaChart {
       );
 
     axes.append('g')
-      .attr('transform', `translate(0, ${innerHeight})`)
+      .attr('transform', `translate(0, ${height - margin.top - margin.bottom})`)
       .call(xAxis)
       .call(g => g.select('.domain').remove())
       .call(g => g.selectAll('.tick line').remove())
@@ -129,43 +129,37 @@ export default class AreaChart {
         .attr('fill', '#ffffff')
       );
 
-    // Add area plot
-    const areas = svg.append('g')
-      .classed('areas', true)
-      .attr('transform', `translate(${margin.left}, ${margin.top})`);
-
-    const recoveredCasesArea = area()
-      .x(d => x(d.date))
-      .y0(d => y(d.currentlyInfected + d.deathSum))
-      .y1(d => y(d.currentlyRecovered + d.currentlyInfected + d.deathSum))
-      .curve(curveMonotoneX);
-
-    areas.append('path')
-      .datum(data)
-      .attr('d', recoveredCasesArea)
-      .attr('fill', '#3ad29f');
-
-    const activeCasesArea = area()
-      .x(d => x(d.date))
-      .y0(d => y(d.deathSum) + 1)
-      .y1(d => y(d.currentlyInfected + d.deathSum) - 1)
-      .curve(curveMonotoneX);
-
-    areas.append('path')
-      .datum(data)
-      .attr('d', activeCasesArea)
+    // Draw bars
+    svg.append('g')
+      .classed('bars', true)
+      .attr('transform', `translate(${margin.left}, ${margin.top})`)
+      .selectAll('rect')
+      .data(cases)
+      .enter()
+      .append('rect')
+      .attr('x', d => x(d.meldedatum))
+      .attr('y', d => y(d.anzahlFall))
+      .attr('width', x.bandwidth())
+      .attr('height', d => innerHeight - y(d.anzahlFall))
+      // .attr('shape-rendering', 'crispEdges')
       .attr('fill', '#0b9fd8');
 
-    const deathsArea = area()
-      .x(d => x(d.date))
-      .y0(y(0))
-      .y1(d => y(d.deathSum))
+    // Draw line
+    const lineConstructor = line()
+      .x(d => x(d.meldedatum) + (x.bandwidth() / 2))
+      .y(d => y(d.mittlere7TageInfektionen))
       .curve(curveMonotoneX);
 
-    areas.append('path')
-      .datum(data)
-      .attr('d', deathsArea)
-      .attr('fill', '#fbb800');
+    svg.append('g')
+      .classed('line', true)
+      .attr('transform', `translate(${margin.left}, ${margin.top})`)
+      .append('path')
+      .attr('d', lineConstructor(cases))
+      .attr('fill', 'none')
+      .attr('stroke', '#ffffff')
+      .attr('stroke-width', 3)
+      .attr('stroke-dasharray', [10, 10])
+      .attr('stroke-linecap', 'round');
 
     // Add title and description
     const header = svg.append('g')
@@ -191,7 +185,7 @@ export default class AreaChart {
       .text(meta.description);
 
     // Add key
-    const spacing = 105;
+    const spacing = 155;
 
     const key = svg.append('g')
       .classed('key', true)
@@ -211,39 +205,24 @@ export default class AreaChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Erkrankte');
+      .text('Neuinfektionen');
 
-    key.append('rect')
-      .attr('x', 1 * spacing)
-      .attr('y', 2)
-      .attr('width', 12)
-      .attr('height', 12)
-      .attr('fill', '#3ad29f');
+    key.append('path')
+      .attr('d', `M ${1 * spacing} 8 L ${(1 * spacing) + 30} 8`)
+      .attr('fill', 'none')
+      .attr('stroke', '#ffffff')
+      .attr('stroke-width', 3)
+      .attr('stroke-dasharray', [5, 5])
+      .attr('stroke-linecap', 'round');
 
     key.append('text')
-      .attr('x', (1 * spacing) + 20)
+      .attr('x', (1 * spacing) + 35)
       .attr('dominant-baseline', 'hanging')
       .attr('font-family', '"Open Sans", sans-serif')
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Genesene');
-
-    key.append('rect')
-      .attr('x', 2 * spacing)
-      .attr('y', 2)
-      .attr('width', 12)
-      .attr('height', 12)
-      .attr('fill', '#fbb800');
-
-    key.append('text')
-      .attr('x', (2 * spacing) + 20)
-      .attr('dominant-baseline', 'hanging')
-      .attr('font-family', '"Open Sans", sans-serif')
-      .attr('font-size', 15)
-      .attr('font-weight', 300)
-      .attr('fill', '#ffffff')
-      .text('Todesfälle');
+      .text('7-Tage-Mittelwert');
 
     // Add author and source
     const footer = svg.append('g')
