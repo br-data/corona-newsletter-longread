@@ -49,7 +49,8 @@ async function init() {
 
   const charts = [];
 
-  const apiUrl = 'https://corona-api.interaktiv.br.de/query';
+  const apiUrl = 'https://corona-api.brdata-dev.de/query';
+  // const apiUrl = 'https://corona-api.interaktiv.br.de/query';
   const urlParams = new URLSearchParams(window.location.search);
 
   const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
@@ -100,7 +101,7 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const bavariaNewCasesRequest = fetch(`${apiUrl}/infektionen-bl-neu?filter=bundesland==Bayern&format=json`)
+    const bavariaNewCasesRequest = fetch(`${apiUrl}/infektionen-bl-aktuell?filter=bundesland==Bayern&format=json`)
       .then(response => response.json())
       .catch(logError);
 
@@ -162,7 +163,7 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const bavariaAdmDistrictNewCasesRequest = fetch(`${apiUrl}/infektionen-rb-neu?format=json`)
+    const bavariaAdmDistrictNewCasesRequest = fetch(`${apiUrl}/infektionen-rb-aktuell?format=json`)
       .then(response => response.json())
       .catch(logError);
 
@@ -187,7 +188,7 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const bavariaCountyNewCasesRequest = fetch(`${apiUrl}/infektionen-lk-neu?filter=bundesland==Bayern&format=json`)
+    const bavariaCountyNewCasesRequest = fetch(`${apiUrl}/infektionen-lk-aktuell?filter=bundesland==Bayern&format=json`)
       .then(response => response.json())
       .catch(logError);
 
@@ -285,7 +286,7 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const germanyNewCasesRequest = fetch(`${apiUrl}/infektionen-de-neu?format=json`)
+    const germanyNewCasesRequest = fetch(`${apiUrl}/infektionen-de-aktuell?format=json`)
       .then(response => response.json())
       .catch(logError);
 
@@ -347,7 +348,7 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const germanyStateNewCasesRequest = fetch(`${apiUrl}/infektionen-bl-neu?format=json`)
+    const germanyStateNewCasesRequest = fetch(`${apiUrl}/infektionen-bl-aktuell?format=json`)
       .then(response => response.json())
       .catch(logError);
 
