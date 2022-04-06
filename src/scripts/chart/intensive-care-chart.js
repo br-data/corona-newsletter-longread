@@ -35,11 +35,11 @@ export default class IntensiveCareChart {
     const innerHeight = height - margin.top - margin.bottom;
 
     // Calculate horizontal scale and axis
-    const xMin = min(data, d => new Date(d.date));
+    const xMin = min(data, d => new Date(d.datum));
     const xMinBracket = new Date(xMin);
     xMinBracket.setDate(xMinBracket.getDate() - 8);
 
-    const xMax = max(data, d => d.date);
+    const xMax = max(data, d => d.datum);
     const xMaxBracket = new Date(xMax);
     xMaxBracket.setDate(xMaxBracket.getDate() + 8);
 
@@ -57,7 +57,7 @@ export default class IntensiveCareChart {
       .tickFormat(d => germanDateShort(d));
     
     // Calculate vertical scale and axis
-    const yMax = max(data, d => d.faelleCovidAktuell);
+    const yMax = max(data, d => d.anzahlIntensivpatienten);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
@@ -135,8 +135,8 @@ export default class IntensiveCareChart {
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
     const lineConstructor = line()
-      .x(d => x(d.date))
-      .y(d => y(d.faelleCovidAktuell))
+      .x(d => x(d.datum))
+      .y(d => y(d.anzahlIntensivpatienten))
       .curve(curveMonotoneX);
 
     lines.append('path')
@@ -147,9 +147,9 @@ export default class IntensiveCareChart {
       .attr('fill', 'none');
 
     const areaConstructor = area()
-      .x(d => x(d.date))
+      .x(d => x(d.datum))
       .y0(() => innerHeight)
-      .y1(d => y(d.faelleCovidAktuell))
+      .y1(d => y(d.anzahlIntensivpatienten))
       .curve(curveMonotoneX);
 
     lines.append('path')
