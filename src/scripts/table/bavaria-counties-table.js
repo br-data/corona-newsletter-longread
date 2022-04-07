@@ -4,7 +4,7 @@ export function init(config) {
   const { target, cases, newCases } = config;
 
   const analysis = newCases.map(countyNewCases => {
-    const countyCases = cases.filter(d => d.landkreis === countyNewCases.landkreis);
+    const countyCases = cases.filter(d => d.landkreisId === countyNewCases.landkreisId);
 
     return {
       'value': current(countyCases, 'inzidenz'),
