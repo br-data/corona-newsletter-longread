@@ -3,10 +3,10 @@ import { pretty } from '../utils';
 export function init(config) {
   const { target, cases } = config;
 
-  const uniqueDistricts = [...new Set(cases.map(d => d.bundeslandId))];
+  const uniqueDistricts = [...new Set(cases.map(d => d.regierungsbezirk))];
 
-  const worstDistricts = uniqueDistricts.map(districtId => {
-    const currentDistrictCases = cases.filter(c => c.bundeslandId === districtId);
+  const worstDistricts = uniqueDistricts.map(district => {
+    const currentDistrictCases = cases.filter(c => c.regierungsbezirk === district);
 
     return currentDistrictCases[currentDistrictCases.length - 1];
   }).sort((a, b) => b.inzidenz - a.inzidenz);

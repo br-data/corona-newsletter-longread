@@ -18,11 +18,11 @@ export function init(config) {
   const over500Counties = worstCounties.filter(d => d.inzidenz >= 500);
   const over200Counties = worstCounties.filter(d => d.inzidenz >= 200);
   // const over50Counties = worstCounties.filter(d => d.inzidenz >= 50);
-  // const over200Counties = worstCounties.filter(d => d.inzidenz >= 35);
+  // const over35Counties = worstCounties.filter(d => d.inzidenz >= 35);
 
   const summaryText = `In Bayern gibt es momentan ${numeral1(over200Counties.length)} ${plural1(over200Counties.length)}, ${plural2(over200Counties.length)} auf mehr als 200 gemeldete Fälle pro 100.000 Einwohner in den letzten sieben Tagen ${plural3(over200Counties.length)}.${ over500Counties.length ? ' Davon wiederum ' + plural3(over500Counties.length) + ' ' + numeral2(over500Counties.length) + ' ' + plural1(over500Counties.length) + ' auf mehr als 500 Fälle pro 100.000 Einwohner.' : ''} ${ over500Counties.length ? ' ' + capitalize(numeral2(over1000Counties.length)) + ' ' + plural1(over1000Counties.length)  + ' ' + plural4(over1000Counties.length) + ' aktuell den Grenzwert von 1.000 Fällen in der 7-Tage-Inzidenz.' : '' }`;
 
-  const detailText = `Die drei am stärksten betroffenen Kreise sind zur Zeit ${preposition1(worstCounties[0].landkreisTyp)} ${worstCounties[0].landkreis}, ${preposition1(worstCounties[1].landkreisTyp)} ${worstCounties[1].landkreis} und ${preposition1(worstCounties[2].landkreisTyp)} ${worstCounties[2].landkreis}.
+  const detailText = `Die drei am stärksten betroffenen Kreise sind zur Zeit ${preposition1(worstCounties[0].landkreisTyp)} ${worstCounties[0].landkreisTyp} ${worstCounties[0].landkreis}, ${preposition1(worstCounties[1].landkreisTyp)} ${worstCounties[1].landkreisTyp} ${worstCounties[1].landkreis} und ${preposition1(worstCounties[2].landkreisTyp)} ${worstCounties[2].landkreisTyp} ${worstCounties[2].landkreis}.
 
   ${preposition2(worstCounties[0].landkreisTyp)} ${worstCounties[0].landkreisTyp} ${worstCounties[0].landkreis} (${worstCounties[0].district}) wurden bislang ${pretty(worstCounties[0].inzidenz)} Fälle pro 100.000 Einwohner in den letzten sieben Tagen gemeldet.
 
