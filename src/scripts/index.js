@@ -64,7 +64,7 @@ async function init() {
   const previousDayDateString = toDateString(previousDayDate);
 
   const previousTwoWeeksDate = new Date(endDate);
-  previousTwoWeeksDate.setDate(endDate.getDate()-16);
+  previousTwoWeeksDate.setDate(endDate.getDate()-18); // 14 days + 2 days cut-off + 2 days weekend
   const previousTwoWeeksDateString = toDateString(previousTwoWeeksDate);
 
   // Add structured metadata to header
