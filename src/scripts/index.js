@@ -49,8 +49,8 @@ async function init() {
 
   const charts = [];
 
-  const apiUrl = 'https://corona-api.brdata-dev.de/query';
-  // const apiUrl = 'https://corona-api.interaktiv.br.de/query';
+  // const apiUrl = 'https://corona-api.brdata-dev.de/query';
+  const apiUrl = 'https://corona-api.interaktiv.br.de/query';
   const urlParams = new URLSearchParams(window.location.search);
 
   const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
@@ -64,7 +64,7 @@ async function init() {
   const previousDayDateString = toDateString(previousDayDate);
 
   const previousTwoWeeksDate = new Date(endDate);
-  previousTwoWeeksDate.setDate(endDate.getDate()-16);
+  previousTwoWeeksDate.setDate(endDate.getDate()-18); // 14 days + 2 days cut-off + 2 days weekend
   const previousTwoWeeksDateString = toDateString(previousTwoWeeksDate);
 
   // Add structured metadata to header
@@ -81,16 +81,23 @@ async function init() {
   document.querySelectorAll('span.time')
     .forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
 
-  // Check if new data is available
+  // Check if yesterday's data is available
   const dataCheckResult = await fetch(`${apiUrl}/infektionen-de?filter=meldedatum==${previousDayDateString}&format=json`)
     .then(response => response.json())
     .catch(logError);
-
+  
+  // Get the timestamp from the last available data point
+  const dataLastUpdated = await fetch(`${apiUrl}/infektionen-de?fieldList=meldedatum&format=json`)
+    .then(response => response.json())
+    .catch(logError);
+  const lastUpdatedDate = dataLastUpdated[dataLastUpdated.length - 1].meldedatum;
+  
+  // Display warning if there is no data from yesterday
   if (!dataCheckResult.length) {
     document.querySelectorAll('.warning')
-      .forEach(el => el.textContent = 'Gerade scheint es Probleme mit der Datenschnittstelle des Robert Koch-Instituts zu geben. Bis die Probleme behoben sind, wird der Datenstand von gestern angezeigt.');
+      .forEach(el => el.textContent = 'Für den heutigen Tag wurden noch keine vollständigen Daten vom Robert Koch-Institut übermittelt. Da die Aussagekraft der Zahlen am Wochenende und zu Beginn der Woche stark eingeschränkt ist, wird nur der letzte vollständige Datenstand angezeigt.');
     document.querySelectorAll('span.date.updateable')
-      .forEach(el => el.textContent = germanDate(previousDayDate));
+      .forEach(el => el.textContent = germanDate(lastUpdatedDate));
     document.querySelectorAll('span.time.updateable')
       .forEach(el => el.textContent = '24:00');
   }
