@@ -81,16 +81,23 @@ async function init() {
   document.querySelectorAll('span.time')
     .forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
 
-  // Check if new data is available
+  // Check if yesterday's data is available
   const dataCheckResult = await fetch(`${apiUrl}/infektionen-de?filter=meldedatum==${previousDayDateString}&format=json`)
     .then(response => response.json())
     .catch(logError);
-
+  
+  // Get the timestamp from the last available data point
+  const dataLastUpdated = await fetch(`${apiUrl}/infektionen-de?fieldList=meldedatum&format=json`)
+    .then(response => response.json())
+    .catch(logError);
+  const lastUpdatedDate = dataLastUpdated[dataLastUpdated.length - 1].meldedatum;
+  
+  // Display warning if there is no data from yesterday
   if (!dataCheckResult.length) {
     document.querySelectorAll('.warning')
-      .forEach(el => el.textContent = 'Gerade scheint es Probleme mit der Datenschnittstelle des Robert Koch-Instituts zu geben. Bis die Probleme behoben sind, wird der Datenstand von gestern angezeigt.');
+      .forEach(el => el.textContent = 'Für den heutigen Tag wurden noch keine vollständigen Daten vom Robert Koch-Institut übermittelt. Da die Aussagekraft der Zahlen am Wochenende und zu Beginn der Woche stark eingeschränkt ist, wird nur der letzte vollständige Datenstand angezeigt.');
     document.querySelectorAll('span.date.updateable')
-      .forEach(el => el.textContent = germanDate(previousDayDate));
+      .forEach(el => el.textContent = germanDate(lastUpdatedDate));
     document.querySelectorAll('span.time.updateable')
       .forEach(el => el.textContent = '24:00');
   }
