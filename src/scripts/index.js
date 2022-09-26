@@ -49,8 +49,8 @@ async function init() {
 
   const charts = [];
 
-  const apiUrl = 'https://corona-api.brdata-dev.de/query';
-  // const apiUrl = 'https://corona-api.interaktiv.br.de/query';
+  // const apiUrl = 'https://corona-api.brdata-dev.de/query';
+  const apiUrl = 'https://corona-api.interaktiv.br.de/query';
   const urlParams = new URLSearchParams(window.location.search);
 
   const startDate = new Date(urlParams.get('startDate') || new Date('2020-02-25'));
