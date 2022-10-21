@@ -38,7 +38,7 @@ import germanyStatesGeo from './data/geo/germany-states.topo.json';
 import germanyCountiesMeta from './data/meta/germany-counties-meta.json';
 import germanyCountiesGeo from './data/geo/germany-counties.topo.json';
 
-import { germanDate, csvToJson, updateMetaData } from './utils';
+import { germanDate, updateMetaData } from './utils';
 
 window.addEventListener('load', init);
 
@@ -262,19 +262,18 @@ async function init() {
 
   // Text and chart for vaccinations in Bavaria
   (async function () {
-    const bavariaVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_BY.csv')
-      .then(response => response.text())
+    const bavariaVaccinations = await fetch(`${apiUrl}/impfungen-bl?filter=bundesland==Bayern&format=json`)
+      .then(response => response.json())
       .catch(logError);
 
     bavariaVaccinationsText.init({
       target: '#bavaria-vaccinations-text',
-      data: csvToJson(bavariaVaccinations),
-      metaData: bavariaMeta
+      data: bavariaVaccinations
     });
 
     const bavariaVaccinationsChart = new VaccinationChart({
       target: '#bavaria-vaccinations-chart',
-      data: csvToJson(bavariaVaccinations),
+      data: bavariaVaccinations,
       meta: {
         title: 'Corona-Impfungen in Bayern',
         description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',
@@ -434,19 +433,18 @@ async function init() {
 
   // Text and chart for vaccinations in Germany
   (async function () {
-    const germanyVaccinations = await fetch('https://raw.githubusercontent.com/ard-data/2020-rki-impf-archive/master/data/9_csv_v3/region_DE.csv')
-      .then(response => response.text())
+    const germanyVaccinations = await fetch(`${apiUrl}/impfungen-bl?filter=bundesland==Deutschland&format=json`)
+      .then(response => response.json())
       .catch(logError);
 
     germanyVaccinationsText.init({
       target: '#germany-vaccinations-text',
-      data: csvToJson(germanyVaccinations),
-      metaData: germanyMeta
+      data: germanyVaccinations
     });
 
     const germanyVaccinationsChart = new VaccinationChart({
       target: '#germany-vaccinations-chart',
-      data: csvToJson(germanyVaccinations),
+      data: germanyVaccinations,
       meta: {
         title: 'Corona-Impfungen in Deutschland',
         description: 'Prozentualer Anteil der geimpften Personen an der Bevölkerung',

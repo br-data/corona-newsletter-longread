@@ -133,27 +133,35 @@ export default class VaccinationChart {
 
     // First dose
     bars.append('rect')
-      .attr('width', x(currentData['impf_quote_min1']))
+      .attr('width', x(currentData.quoteErstimpfung))
       .attr('height', barHeight)
       .attr('fill', '#158f66')
       .append('title')
-      .text(`${pretty(currentData['personen_min1_kumulativ'])} (${pretty(currentData['impf_quote_min1'])} %)`);
+      .text(`${pretty(currentData.anzahlErstimpfung)} (${pretty(currentData.quoteErstimpfung)} %)`);
     
     // Second dose
     bars.append('rect')
-      .attr('width', x(currentData['impf_quote_voll']))
+      .attr('width', x(currentData.quoteZweitimpfung))
       .attr('height', barHeight)
-      .attr('fill', '#3ad29f')
+      .attr('fill', '#3cb389')
       .append('title')
-      .text(`${pretty(currentData['personen_voll_kumulativ'])} (${pretty(currentData['impf_quote_voll'])} %)`);
+      .text(`${pretty(currentData.anzahlZweitimpfung)} (${pretty(currentData.quoteZweitimpfung)} %)`);
     
     // Third dose
     bars.append('rect')
-      .attr('width', x(currentData['impf_quote_auffr']))
+      .attr('width', x(currentData.quoteDrittimpfung))
+      .attr('height', barHeight)
+      .attr('fill', '#5dd8ad')
+      .append('title')
+      .text(`${pretty(currentData.anzahlDrittimpfung)} (${pretty(currentData.quoteDrittimpfung)} %)`);
+
+    // Fourth dose
+    bars.append('rect')
+      .attr('width', x(currentData.quoteViertimpfung))
       .attr('height', barHeight)
       .attr('fill', '#7dffd3')
       .append('title')
-      .text(`${pretty(currentData['personen_auffr_kumulativ'])} (${pretty(currentData['impf_quote_auffr'])} %)`);
+      .text(`${pretty(currentData.anzahlViertimpfung)} (${pretty(currentData.quoteViertimpfung)} %)`);
 
     // Add label for herd immunity
     // bars.append('text')
@@ -220,7 +228,7 @@ export default class VaccinationChart {
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#3ad29f');
+      .attr('fill', '#3cb389');
 
     key.append('text')
       .attr('x', (1 * spacing) + 20 - 5)
@@ -237,7 +245,7 @@ export default class VaccinationChart {
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('fill', '#7dffd3');
+      .attr('fill', '#5dd8ad');
 
     key.append('text')
       .attr('x', (2 * spacing) + 20)
@@ -248,15 +256,13 @@ export default class VaccinationChart {
       .attr('fill', '#ffffff')
       .text('Drittimpfung');
 
-    // Population
+    // Fourth dose
     key.append('rect')
       .attr('x', 3 * spacing)
       .attr('y', 2)
       .attr('width', 12)
       .attr('height', 12)
-      .attr('stroke', '#6d7182')
-      .attr('stroke-width', 1)
-      .attr('fill', 'none');
+      .attr('fill', '#7dffd3');
 
     key.append('text')
       .attr('x', (3 * spacing) + 20)
@@ -265,7 +271,26 @@ export default class VaccinationChart {
       .attr('font-size', 15)
       .attr('font-weight', 300)
       .attr('fill', '#ffffff')
-      .text('Gesamtbevölkerung');
+      .text('Viertimpfung');
+
+    // // Population
+    // key.append('rect')
+    //   .attr('x', 4 * spacing)
+    //   .attr('y', 2)
+    //   .attr('width', 12)
+    //   .attr('height', 12)
+    //   .attr('stroke', '#6d7182')
+    //   .attr('stroke-width', 1)
+    //   .attr('fill', 'none');
+
+    // key.append('text')
+    //   .attr('x', (4 * spacing) + 20)
+    //   .attr('dominant-baseline', 'hanging')
+    //   .attr('font-family', '"Open Sans", sans-serif')
+    //   .attr('font-size', 15)
+    //   .attr('font-weight', 300)
+    //   .attr('fill', '#ffffff')
+    //   .text('Gesamtbevölkerung');
 
     // Add author and source
     const footer = svg.append('g')
