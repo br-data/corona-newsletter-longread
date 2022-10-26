@@ -38,7 +38,7 @@ import germanyStatesGeo from './data/geo/germany-states.topo.json';
 import germanyCountiesMeta from './data/meta/germany-counties-meta.json';
 import germanyCountiesGeo from './data/geo/germany-counties.topo.json';
 
-import { germanDate, updateMetaData } from './utils';
+import { germanDate, germanTime, updateMetaData } from './utils';
 
 window.addEventListener('load', init);
 
@@ -79,7 +79,7 @@ async function init() {
   document.querySelectorAll('span.date')
     .forEach(el => el.textContent = germanDate(endDateString));
   document.querySelectorAll('span.time')
-    .forEach(el => el.textContent = `${new Date().toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin' }).split(':')[0]}:00 Uhr`);
+    .forEach(el => el.textContent = germanTime(new Date()));
 
   // Check if yesterday's data is available
   const dataCheckResult = await fetch(`${apiUrl}/infektionen-de?filter=meldedatum==${previousDayDateString}&format=json`)
