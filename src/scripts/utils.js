@@ -27,17 +27,23 @@ export function currentDate(data) {
 }
 
 export function germanDate(dateString) {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
   const date = new Date(dateString);
 
-  return date.toLocaleDateString('de-DE', options);
+  return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
 }
 
 export function germanDateShort(dateString) {
-  const options = { year: '2-digit', month: 'short' };
+  const date = new Date(dateString);
+  const monthsShort = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+  const yearShort = date.getFullYear().toString().substring(2);
+
+  return `${monthsShort[date.getMonth()]}. ${yearShort}`;
+}
+
+export function germanTime(dateString) {
   const date = new Date(dateString);
 
-  return date.toLocaleDateString('de-DE', options);
+  return `${date.getHours()}:00 Uhr`;
 }
 
 export function dateRange(startDate, endDate, steps) {
