@@ -1,6 +1,7 @@
 const path = require('path');
 const Webpack = require('webpack');
 const { merge } = require('webpack-merge');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
@@ -11,24 +12,24 @@ module.exports = merge(common, {
     chunkFilename: 'js/[name].chunk.js'
   },
   devServer: {
-    inline: true
+    port: 8080,
+    open: true,
+    hot: true,
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false
+      }
+    }
   },
   plugins: [
     new Webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
-    })
+    }),
+    new ESLintPlugin()
   ],
   module: {
     rules: [
-      {
-        test: /\.(js)$/,
-        include: path.resolve(__dirname, './src'),
-        enforce: 'pre',
-        loader: 'eslint-loader',
-        options: {
-          emitWarning: true
-        }
-      },
       {
         test: /\.(js)$/,
         include: path.resolve(__dirname, './src'),
