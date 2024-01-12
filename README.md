@@ -423,3 +423,4 @@ Das Deployment wird in der Datei `config.yaml` konfiguriert. Die Konfiguration f
 
 - Auf [react-longread-template](https://github.com/br-data/react-longread-template) upgraden
 - Möglichkeit anbieten, um eigenen Landkreis zu speichern (local storage)
+
