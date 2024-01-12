@@ -26,6 +26,11 @@ export default class IntensiveCareChart {
     const { target, data, meta, margin } = this;
     const container = select(target);
 
+    const filteredData = data.filter(d => d.anzahlIntensivpatienten);
+
+    console.log(filteredData);
+    
+
     // Set initial dimensions
     const width = container.node().getBoundingClientRect().width;
     const height = (width * 9) / 16;
@@ -35,16 +40,16 @@ export default class IntensiveCareChart {
     const innerHeight = height - margin.top - margin.bottom;
 
     // Calculate horizontal scale and axis
-    const xMin = min(data, d => new Date(d.datum));
+    const xMin = min(filteredData, d => new Date(d.datum));
     const xMinBracket = new Date(xMin);
     xMinBracket.setDate(xMinBracket.getDate() - 8);
 
-    const xMax = max(data, d => d.datum);
+    const xMax = max(filteredData, d => d.datum);
     const xMaxBracket = new Date(xMax);
     xMaxBracket.setDate(xMaxBracket.getDate() + 8);
 
     const xValues = dateRange(xMinBracket, xMaxBracket, 1);
-    const xTicks = dateRange(xMin, xMax, Math.floor(data.length / 6));
+    const xTicks = dateRange(xMin, xMax, Math.floor(filteredData.length / 6));
 
     const x = scaleBand()
       .paddingOuter(0)
@@ -57,7 +62,7 @@ export default class IntensiveCareChart {
       .tickFormat(d => germanDateShort(d));
     
     // Calculate vertical scale and axis
-    const yMax = max(data, d => d.anzahlIntensivpatienten);
+    const yMax = max(filteredData, d => d.anzahlIntensivpatienten);
 
     const y = scaleLinear()
       .domain([0, yMax * 1.1])
@@ -140,7 +145,7 @@ export default class IntensiveCareChart {
       .curve(curveMonotoneX);
 
     lines.append('path')
-      .datum(data)
+      .datum(filteredData)
       .attr('d', lineConstructor)
       .attr('stroke', '#e20d67')
       .attr('stroke-width', '3')
@@ -153,7 +158,7 @@ export default class IntensiveCareChart {
       .curve(curveMonotoneX);
 
     lines.append('path')
-      .datum(data)
+      .datum(filteredData)
       .attr('d', areaConstructor)
       .attr('stroke', 'none')
       .attr('fill', '#e20d67')
