@@ -6,6 +6,9 @@ isEnabled: true
 build:
   command: "yarn && yarn build"
   outputFolder: "build"
+envs:
+  - name: NODE_OPTIONS
+    value: "--openssl-legacy-provider"
 settings:
   type: website
   inSecure: true
