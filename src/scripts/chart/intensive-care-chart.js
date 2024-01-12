@@ -28,9 +28,6 @@ export default class IntensiveCareChart {
 
     const filteredData = data.filter(d => d.anzahlIntensivpatienten);
 
-    console.log(filteredData);
-    
-
     // Set initial dimensions
     const width = container.node().getBoundingClientRect().width;
     const height = (width * 9) / 16;
