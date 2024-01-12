@@ -9,17 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     name: Build & Deploy
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           repository: br-data/cloud-deploy-action
           token: ${{ secrets.BRDATA_ACCESS }}
           path: ./
       - id: build-and-deploy
-        name: Private Action
+        name: Build and Deploy
         uses: ./
         with:
           access_token: ${{ secrets.BRDATA_ACCESS }}
           repo_name: ${{ github.event.repository.name }}
           tag: ${{ github.sha }}
           branch: ${{ github.ref }}
+          basic_auth: ${{ secrets.BASIC_PW }}
           gpg_key: ${{ secrets.GPG_ACTION_PASSPHRASE }}
