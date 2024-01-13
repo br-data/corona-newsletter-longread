@@ -135,19 +135,19 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const bavariaOverviewChart = new OverviewChart({
-      target: '#bavaria-indicators-chart',
-      cases: bavariaCases,
-      meta: {
-        title: 'Corona in Bayern',
-        description: 'Entwicklung der wichtigsten Indikatoren',
-        author: 'BR',
-        source: 'Robert Koch-Institut, BR-Analyse',
-        date: endDate
-      }
-    });
+    // const bavariaOverviewChart = new OverviewChart({
+    //   target: '#bavaria-indicators-chart',
+    //   cases: bavariaCases,
+    //   meta: {
+    //     title: 'Corona in Bayern',
+    //     description: 'Entwicklung der wichtigsten Indikatoren',
+    //     author: 'BR',
+    //     source: 'Robert Koch-Institut, BR-Analyse',
+    //     date: endDate
+    //   }
+    // });
 
-    charts.push(bavariaOverviewChart);
+    // charts.push(bavariaOverviewChart);
 
     const bavariaCasesChart = new InfectionChart({
       target: '#bavaria-cases-chart',
@@ -319,19 +319,19 @@ async function init() {
       .then(response => response.json())
       .catch(logError);
 
-    const germanyOverviewChart = new OverviewChart({
-      target: '#germany-indicators-chart',
-      cases: germanyCases,
-      meta: {
-        title: 'Corona in Deutschland',
-        description: 'Entwicklung der wichtigsten Indikatoren',
-        author: 'BR',
-        source: 'Robert Koch-Institut, BR-Analyse',
-        date: endDate
-      }
-    });
+    // const germanyOverviewChart = new OverviewChart({
+    //   target: '#germany-indicators-chart',
+    //   cases: germanyCases,
+    //   meta: {
+    //     title: 'Corona in Deutschland',
+    //     description: 'Entwicklung der wichtigsten Indikatoren',
+    //     author: 'BR',
+    //     source: 'Robert Koch-Institut, BR-Analyse',
+    //     date: endDate
+    //   }
+    // });
 
-    charts.push(germanyOverviewChart);
+    // charts.push(germanyOverviewChart);
 
     const germanyCasesChart = new InfectionChart({
       target: '#germany-cases-chart',

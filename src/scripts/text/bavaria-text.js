@@ -17,9 +17,9 @@ export function init(config) {
 
   Damit kommt Bayern auf einen <a href="#inzidenz">Inzidenzwert</a> von ${pretty(current(cases, 'inzidenz'))} gemeldeten Fällen pro 100.000 Einwohner in den vergangenen sieben Tagen. In der Woche zuvor lag die 7-Tage-Inzidenz noch bei ${pretty(lastWeek(cases, 'inzidenz'))} Fällen pro 100.000 Einwohner.`;
 
-  const reproText = `Die <a href="#reproduktionszahl">Reproduktionszahl</a> für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, false, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, die bestimmten Abweichungen unterliegt. Deshalb ist es sinnvoll, das sogenannte Konfidenzintervall zu betrachten: Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl in einem Bereich von ${pretty(lowerReproValue, false, 'floor', 100)} bis ${pretty(upperReproValue, false, 'ceil', 100)}.<br><br>
+  const reproText = `Die <a href="#reproduktionszahl">Reproduktionszahl</a> für Bayern liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, false, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, die bestimmten Abweichungen unterliegt. Deshalb ist es sinnvoll, das sogenannte Konfidenzintervall zu betrachten: Mit sehr hoher Wahrscheinlichkeit (95 %) liegt die Reproduktionszahl in einem Bereich von ${pretty(lowerReproValue, false, 'floor', 100)} bis ${pretty(upperReproValue, false, 'ceil', 100)}.`;
 
-  Nach Berechnungen des RKI sind mittlerweile wieder mindestens ${pretty(current(cases, 'summeGenesen'))} Menschen in Bayern <a href="#genesungen">genesen</a>.`;
+  // `Nach Berechnungen des RKI sind mittlerweile wieder mindestens ${pretty(current(cases, 'summeGenesen'))} Menschen in Bayern <a href="#genesungen">genesen</a>.`
 
   const deathText = `Insgesamt wurden ${pretty(current(cases, 'summeTodesfall'))} <a href="#todesfaelle">Todesfälle</a> im Freistaat gemeldet.
 

@@ -16,9 +16,9 @@ export function init(config) {
 
   Bundesweit entspricht das einem <a href="#inzidenz">Inzidenzwert</a> von ${pretty(current(cases, 'inzidenz'))} gemeldeten Fällen pro 100.000 Einwohnern in den vergangenen sieben Tagen. In der Woche zuvor lag die 7-Tage-Inzidenz noch bei ${pretty(lastWeek(cases, 'inzidenz'))} Fällen pro 100.000 Einwohner.`;
 
-  const reproText = `Die <a href="#reproduktionszahl">Reproduktionszahl</a> für Deutschland liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, false, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, die bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 % Konfidenzintervall) liegt die Reproduktionszahl in einem Bereich von ${pretty(lowerReproValue, false, 'floor', 100)} bis ${pretty(upperReproValue, false, 'ceil', 100)}.<br><br>
+  const reproText = `Die <a href="#reproduktionszahl">Reproduktionszahl</a> für Deutschland liegt nach Berechnungen von BR Data bei ungefähr ${pretty(reproValue, false, 'round', 100)}. Das bedeutet, dass jede infizierte Person durchschnittlich ${oneManyPersons(reproValue)} ansteckt. Diese Berechnung ist jedoch nur eine Schätzung, die bestimmten Abweichungen unterliegt. Mit sehr hoher Wahrscheinlichkeit (95 % Konfidenzintervall) liegt die Reproduktionszahl in einem Bereich von ${pretty(lowerReproValue, false, 'floor', 100)} bis ${pretty(upperReproValue, false, 'ceil', 100)}.`;
 
-  Das Robert Koch-Institut schätzt, dass mittlerweile mindestens ${pretty(current(cases, 'summeGenesen'))} Menschen wieder <a href="#genesungen">gesund</a> sind.`;
+  // `Das Robert Koch-Institut schätzt, dass mittlerweile mindestens ${pretty(current(cases, 'summeGenesen'))} Menschen wieder <a href="#genesungen">gesund</a> sind.`
 
   const deathText = `Bisher wurden insgesamt ${pretty(current(cases, 'summeTodesfall'))} <a href="#todesfaelle">Todesfälle</a> in Deutschland gemeldet.
 
