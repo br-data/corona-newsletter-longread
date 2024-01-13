@@ -4,7 +4,7 @@ import metadata from '../metadata.json';
 
 import VaccinationChart from './chart/vaccination-chart';
 import InfectionChart from './chart/infection-chart';
-import OverviewChart from './chart/overview-chart';
+// import OverviewChart from './chart/overview-chart';
 import IntensiveCareChart from './chart/intensive-care-chart';
 import BavariaMap from './chart/bavaria-map';
 import GermanyMap from './chart/germany-map';
